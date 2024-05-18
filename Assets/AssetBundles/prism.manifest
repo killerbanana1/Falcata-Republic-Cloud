@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2997912219
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2cfdb80c146de0b7cba2b56a5595f905
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6a0f7d8196988be5c0d312f8c0a1168c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 72
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 2058629509
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundle/resources/FXs/trail_base.png
+- Assets/Bundle/resources/FXs/Thruster.vfx
+Dependencies: []

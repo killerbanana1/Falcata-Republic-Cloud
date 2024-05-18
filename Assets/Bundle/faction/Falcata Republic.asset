@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1239139125, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Falcata Republic
+  m_EditorClassIdentifier: 
+  FactionName: Falcata Republic
+  SmallLogo: {fileID: 21300000, guid: db91db54a3f03cd438b7a1519601617d, type: 3}
+  LargeLogo: {fileID: 21300000, guid: 63535c5a3f3b1c749b857625ccec18f1, type: 3}
+  Description: "The Falcata Republic is a strong, unitary republic centered on the
+    planet Strata in the Falcata system. From this seat of power, the Falcatan congress
+    administers 15 major populated planets and many more minor outposts across 10
+    different star systems. While its control is looser in its further reaches, the
+    overall strength of Falcata is not doubted amongst the nations of the cluster.
+    A Falcatan state has existed in one form or another for roughly 650 years, with
+    the sole exception being its occupation by Imperial Venuma from -6 I.Y. - 77
+    I.Y. The area of space controlled by Falcata was settled primarily by two groups,
+    Anglois and Francois, and these two cultures have remained dominant in the region
+    ever since. As such the republic is primarily a blingual state, with each group
+    having roughly equal representation in congress. despite the fact that the Francois
+    population is 10% smaller. \n\nBeing a unitary system, most laws and regulations
+    are made applicable across the whole of Falcatan space, while this would be infeasable
+    for most stellar polities, the smaller nature of the Falcatan state, combined
+    with cutting edge hyperspace and communications technologies makes it a passible
+    method of governing. Even still, unrest is common the further you go from the
+    core, and many politicians are pressuring for a switch to a federative regime.
+    \n\nFor most of recent history, Falcatan foreign policy has focused strongly
+    on self preservation and cooperation with its allies. This was a natural result
+    of the Venuman occupation, but as that war slips further and further into the
+    past, congress has found more and more hawkish members entering its chambers.
+    Many right wingers call for the initiation of a conflict in an attempt to further
+    unify the republic, either against the increasingly authoritarian Indivism Technocracy
+    to the north, or the long dominant Shelter Alliance to the southeast. \n\nThough
+    Shelter and Falcata share an ideology, and were historical allies against Venuma.
+    200 years with no common enemy saw discontent grow in Falcata and elsewhere against
+    shelter dominion. This discontent lead to more abrasive diplomacy and rising
+    tensions, eventually culminating in a small border skirmish which left 3 Falcatan
+    bulk liners and a Shelter cruiser clouds of expanding gas. While the root cause
+    of the skirmish is currently unknown, emotions ran high and relations were cut
+    entirely. Now, as Shelter finds itself bogged down in the Bethel Rebellion, Falcata
+    readies its fleet, lifting a knife set to plunge into Shelters exposed back...\n"
+  NewFleetFirstShip: Falcata Republic/FF_Moxella
+  _sharedFactionAll: []
+  _sharedEquipmentList:
+  - Stock/L50 Laser Dazzler
+  - Stock/J360 Jammer
+  - Stock/Basic CIC
+  - Stock/Reinforced CIC
+  - Stock/Citadel CIC
+  - Stock/Auxiliary Steering
+  - Stock/Berthing
+  - Stock/Small DC Locker
+  - Stock/Reinforced DC Locker
+  - Stock/Large DC Locker
+  - Stock/Rapid DC Locker
+  - Stock/Damage Control Central
+  - Stock/Small Workshop
+  - Stock/Bulk Magazine
+  - Stock/Reinforced Magazine
+  - Stock/Battle Dressing Station
+  - Stock/Analysis Annex
+  - Stock/Intelligence Center
+  - Stock/Plant Control Center
+  - Stock/Small Reactor Booster
+  - Stock/Adaptive Radar Receiver
+  - Stock/Track Correlator
+  - Stock/Strobe Correlator
+  - Stock/Mount Gyros
+  - Stock/Supplementary Radio Amplifiers
+  - Stock/Launcher Deluge System
+  - Stock/Magazine Sprinklers
+  - Stock/Redundant Reactor Failsafes
+  - Stock/Reinforced Thruster Nozzles
+  - Stock/Energy Regulator
+  - Stock/Small Energy Regulator
+  - Stock/Focused Particle Accelerator
+  - Stock/Ammunition Elevators
+  - Stock/Rapid-Cycle Cradle
+  - Stock/Actively Cooled Amplifiers
+  - Stock/Missile Programming Bus
+  - Stock/Missile Programming Bus Array
+  - Stock/Missile Parallel Interface
+  - Stock/CR10 Antenna
+  - Stock/VLS-1-23 Launcher
+  - Stock/VLS-1-46 Launcher
+  - Stock/Strike Planning Center
+  - Stock/FM200 Drive
+  - Stock/FM200R Drive
+  - Stock/FM230 'Whiplash' Drive
+  - Stock/FM240 'Dragonfly' Drive
+  - Stock/FM280 'Raider' Drive
+  - Stock/FM30X 'Prowler' Drive
+  - Stock/FM500 Drive
+  - Stock/FM500R Drive
+  - Stock/FM530 'Whiplash' Drive
+  - Stock/FM540 'Dragonfly' Drive
+  - Stock/FM580 'Raider' Drive
+  - Stock/FR3300 Micro Reactor
+  - Stock/FR4800 Reactor
+  - Stock/RS35 'Frontline' Radar
+  - Stock/RS41 'Spyglass' Radar
+  - Stock/RM50 'Parallax' Radar
+  - Stock/VLS-2 Launcher
+  - Stock/VLS-3 Launcher
+  - Stock/CLS-3 Launcher
+  - Stock/Torpedo Turret
+  - Stock/Mk20 'Defender' PDT
+  - Stock/Mk25 'Rebound' PDT
+  - Stock/Mk29 'Stonewall' PDT
+  - Stock/Mk90 'Aurora' PDT
+  - Stock/Mk95 'Sarissa' PDT
+  - Stock/ES22 'Pinard' Electronic Support Module
+  - Stock/ES32 'Scryer' Missile ID System
+  - Stock/E55 'Spotlight' Illuminator
+  - Stock/E57 'Floodlight' Illuminator
+  - Stock/E71 'Hangup' Jammer
+  - Stock/E70 'Interruption' Jammer
+  - Stock/E90 'Blanket' Jammer
+  - Stock/RF101 'Bullseye' Radar
+  - Stock/Signature Scrambler
+  - Stock/CR70 Antenna
+  - Stock/20mm Slug
+  - Stock/Flak Round
+  - Stock/15mm Sandshot
+  - Stock/EA12 Chaff Decoy
+  - Stock/EA20 Flare Decoy
+  - Stock/EA99 Active Decoy
+  - Stock/SGM-H-2 Body
+  - Stock/SGM-100 Body
+  - Stock/SGM-200 Body
+  - Stock/SGT-300 Body
+  - Stock/Mk64 Cannon
+  - $MODMIS$/SGM-H-200 Cyclone
+  - $MODMIS$/SGM-100 Balestra
+  - $MODMIS$/SGM-200 Tempest
+  - $MODMIS$/SGT-300 Pilum
+  - Stock/HE Kinetic Penetrator
+  - Stock/Electro-Optical Seeker
+  _sharedEquipmentPatterns: []
+  _saveKey: 
+  _modId: 0
