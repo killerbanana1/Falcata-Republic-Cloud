@@ -1,4 +1,0 @@
-repository "Falcata Republic@freelandzack@cloud"
-  path "/"
-    br "/main"
-    co "/main"

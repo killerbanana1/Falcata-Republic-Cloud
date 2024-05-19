@@ -6784,7 +6784,7 @@ MonoBehaviour:
     Helmsman
 
 '
-  _pointCost: 175
+  _pointCost: 200
   _mass: 6000
   _weightClass: 1
   _maxSpeed: 2.5

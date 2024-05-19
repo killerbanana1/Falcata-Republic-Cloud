@@ -429,7 +429,7 @@ MonoBehaviour:
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: 1
+      _modifier: 2
       _permanent: 0
     Duration: 12
   _aimCheckFrom: {fileID: 3141358387994803669}
