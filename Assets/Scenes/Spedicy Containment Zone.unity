@@ -123,3 +123,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!115 &183922366
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: Holder
+  m_Namespace: 
+--- !u!1 &1575229881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575229883}
+  - component: {fileID: 1575229882}
+  m_Layer: 0
+  m_Name: 250mm HE-RPF Shell holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1575229882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575229881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 183922366}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: {fileID: -1403731849216654502, guid: 00000000000000000000000000000000, type: 0}
+--- !u!4 &1575229883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575229881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8220460222994247708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -68.04308
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 45.528133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 52.893826
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110220, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220460221795110226, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}
+      propertyPath: m_Name
+      value: Capacitor Bank
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efe0cd6a2c86b744db90e41e428b8bbe, type: 3}

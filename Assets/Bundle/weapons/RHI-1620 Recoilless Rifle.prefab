@@ -1171,9 +1171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: G1yK7-U2HkODVZx3SKkRSw
-  _maxHealth: 600
-  _functioningThreshold: 20
-  _damageThreshold: 45
+  _maxHealth: 500
+  _functioningThreshold: 30
+  _damageThreshold: 30
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
