@@ -7662,7 +7662,7 @@ MonoBehaviour:
   _maxTurnSpeed: 0.14
   _linearMotorForce: 1300
   _angularMotorForce: 380
-  _crewComplement: 160
+  _crewComplement: 180
   _crewVulnerability: 0.25
   _interiorDensityArmorEquivalent: 1.2
   _componentDR: 0.4
@@ -7682,7 +7682,7 @@ MonoBehaviour:
     _modifier: 0
     _permanent: 0
   - _statName: hull-component-max-repair
-    _literal: 0.05
+    _literal: 0.1
     _modifier: 0
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}
