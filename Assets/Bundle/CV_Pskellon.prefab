@@ -5122,6 +5122,7 @@ MonoBehaviour:
   - FFE
   - ESV
   - CV
+  - KE
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: e6fe1154777608441b316adf64da8ec3, type: 3}
@@ -5143,7 +5144,7 @@ MonoBehaviour:
   _maxSpeed: 2.5
   _maxTurnSpeed: 0.1
   _linearMotorForce: 650
-  _angularMotorForce: 150
+  _angularMotorForce: 120
   _crewComplement: 50
   _crewVulnerability: 0.4
   _interiorDensityArmorEquivalent: 0.3

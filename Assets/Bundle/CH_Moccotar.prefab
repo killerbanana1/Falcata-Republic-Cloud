@@ -7662,7 +7662,7 @@ MonoBehaviour:
   _maxTurnSpeed: 0.14
   _linearMotorForce: 1300
   _angularMotorForce: 380
-  _crewComplement: 180
+  _crewComplement: 165
   _crewVulnerability: 0.25
   _interiorDensityArmorEquivalent: 1.2
   _componentDR: 0.4

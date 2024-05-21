@@ -26,7 +26,6 @@
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
-	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>
   </Components>
   <Munitions>
     <Entry Name="380mm AP Shell" Address="weapons/380mm AP Shell.asset"/>
