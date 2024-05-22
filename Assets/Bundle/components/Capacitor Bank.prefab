@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8220460221795110226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.04308, y: 45.528133, z: 52.893826}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: Guu3CbUa-EmOxypGuhLluw
-  _maxHealth: 100
-  _functioningThreshold: 10
+  _maxHealth: 150
+  _functioningThreshold: 15
   _damageThreshold: 15
   _reinforced: 0
   _bindTag: 
@@ -60,7 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Gunnery
-  _longDescription: 
+  _longDescription: An array of electrical capacitors that assist in the recharge
+    rait of Falcata rail weaponry
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6
@@ -68,9 +69,9 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 25
+  _pointCost: 20
   _type: 2
-  _size: {x: 3, y: 3, z: 3}
+  _size: {x: 2, y: 2, z: 2}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 20
@@ -78,13 +79,17 @@ MonoBehaviour:
   _rotateToFit: 0
   _canTile: 0
   Modifiers:
-  - _statName: 
+  - _statName: discreteweapon-reload:energy
     _literal: 0
-    _modifier: 0
+    _modifier: -0.15
     _permanent: 0
-  _resourceDemandPriority: 10
+  _resourceDemandPriority: 0
   ResourcesProvided: []
-  ResourcesRequired: []
+  ResourcesRequired:
+  - _resourceName: Power
+    _amount: 450
+    _perUnit: 0
+    _onlyWhenOperating: 0
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
   _rareDebuffSubtype: 

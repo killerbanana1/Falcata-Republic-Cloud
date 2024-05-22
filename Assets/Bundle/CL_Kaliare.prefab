@@ -10750,7 +10750,15 @@ MonoBehaviour:
   - {fileID: 8154991452644501290}
   _powerOutageEffects:
   - {fileID: 5874639540730910446}
-  _lifeboats: []
+  _lifeboats:
+  - {fileID: 4655267350064206214}
+  - {fileID: 9144172695352858796}
+  - {fileID: 5409930029928688215}
+  - {fileID: 411190325502635318}
+  - {fileID: 7670778835147329811}
+  - {fileID: 3738246374473196299}
+  - {fileID: 2714133113424668949}
+  - {fileID: 4688511569301075438}
   _lifeboatPrefab: {fileID: 0}
   _driveFlareScaling: 0.8
   _customMissileAnnouncement: {fileID: 0}

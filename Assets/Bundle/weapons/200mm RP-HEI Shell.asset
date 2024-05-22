@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 200mm RP-HEI Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
-  _pointDivision: 25
+  _pointDivision: 50
   _storageVolume: 0.2
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: 'A 200mm shell loaded into a barrel of a recoilless rifle or recoilless
@@ -28,7 +28,7 @@ MonoBehaviour:
     Subclass: 200mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 9
+  _maxFlightTime: 7.5
   _flightSpeed: 60
   _repoolDelay: 5
   _armorPenetration: 85
