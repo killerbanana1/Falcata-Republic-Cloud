@@ -257,7 +257,7 @@ MonoBehaviour:
   _minElevation: -5
   _maxElevation: 18
   _muzzleVerticalOffset: 0
-  _motorDecelAngle: 7.5
+  _motorDecelAngle: 4.5
 --- !u!114 &4686017207439299415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,9 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 3CDhhidZleeq1DLvP3iiuTWQ
-  _maxHealth: 400
+  _maxHealth: 250
   _functioningThreshold: 30
-  _damageThreshold: 30
+  _damageThreshold: 20
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
