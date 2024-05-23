@@ -10741,6 +10741,10 @@ MonoBehaviour:
     _literal: 2
     _modifier: 0
     _permanent: 0
+  - _statName: discreteweapon-reload:energy
+    _literal: 0
+    _modifier: -0.2
+    _permanent: 0
   _selectVolume: {fileID: 3087690062574032761}
   _radarSignature: {fileID: 3501775665640737056}
   _structure: {fileID: 3121140887133817253}

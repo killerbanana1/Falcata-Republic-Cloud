@@ -265,7 +265,7 @@ MonoBehaviour:
   _minElevation: -5
   _maxElevation: 18
   _muzzleVerticalOffset: 0
-  _motorDecelAngle: 4.5
+  _motorDecelAngle: 7.5
 --- !u!114 &8471294505575321096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 45
+  _pointCost: 50
   _type: 0
   _size: {x: 6, y: 4, z: 6}
   _interiorOverhang: 0
@@ -404,8 +404,8 @@ MonoBehaviour:
       _permanent: 0
     Duration: 10
   _turretControl: {fileID: 2629748424958069389}
-  _traverseRate: 9
-  _elevationRate: 9
+  _traverseRate: 4
+  _elevationRate: 5
 --- !u!114 &6565306083018779142
 MonoBehaviour:
   m_ObjectHideFlags: 0
