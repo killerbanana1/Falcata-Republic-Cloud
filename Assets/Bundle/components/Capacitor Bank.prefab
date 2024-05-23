@@ -61,7 +61,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Gunnery
   _longDescription: An array of electrical capacitors that assist in the recharge
-    rait of Falcata rail weaponry
+    rate of Falcata rail weaponry
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6
