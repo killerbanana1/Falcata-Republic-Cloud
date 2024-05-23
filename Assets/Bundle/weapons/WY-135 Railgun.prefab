@@ -271,9 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 3CDhhidZleeq1DLvP3iiuTWQ
-  _maxHealth: 400
+  _maxHealth: 250
   _functioningThreshold: 30
-  _damageThreshold: 30
+  _damageThreshold: 20
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -300,7 +300,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 30
+  _pointCost: 40
   _type: 0
   _size: {x: 5, y: 3, z: 5}
   _interiorOverhang: 0
@@ -397,8 +397,8 @@ MonoBehaviour:
       _permanent: 0
     Duration: 10
   _turretControl: {fileID: 1217864058674632658}
-  _traverseRate: 9
-  _elevationRate: 9
+  _traverseRate: 4
+  _elevationRate: 5
 --- !u!114 &8035725429002942297
 MonoBehaviour:
   m_ObjectHideFlags: 0
