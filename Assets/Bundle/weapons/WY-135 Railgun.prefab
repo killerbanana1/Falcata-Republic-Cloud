@@ -373,7 +373,8 @@ MonoBehaviour:
   - 500
   - 750
   - 1000
-  - 1200
+  - 1250
+  - 1600
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

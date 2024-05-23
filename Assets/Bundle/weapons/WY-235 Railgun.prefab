@@ -381,7 +381,8 @@ MonoBehaviour:
   - 500
   - 750
   - 1000
-  - 1200
+  - 1250
+  - 1600
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -696,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0
+  _baseAccuracy: 0.28
   _flash: {fileID: 1164939665728588165}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -990,7 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0
+  _baseAccuracy: 0.28
   _flash: {fileID: 3662846357687837176}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
