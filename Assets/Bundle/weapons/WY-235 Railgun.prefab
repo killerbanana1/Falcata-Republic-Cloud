@@ -322,7 +322,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 2250
+    _amount: 1750
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -396,10 +396,16 @@ MonoBehaviour:
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
-  _temporaryFiringEffects: []
+  _temporaryFiringEffects:
+  - Modifier:
+      _statName: hull-sigmult-radar
+      _literal: 0
+      _modifier: 2
+      _permanent: 0
+    Duration: 10
   _turretControl: {fileID: 2629748424958069389}
-  _traverseRate: 6
-  _elevationRate: 6
+  _traverseRate: 9
+  _elevationRate: 9
 --- !u!114 &6565306083018779142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.08
+  _baseAccuracy: 0
   _flash: {fileID: 1164939665728588165}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -984,7 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.08
+  _baseAccuracy: 0
   _flash: {fileID: 3662846357687837176}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

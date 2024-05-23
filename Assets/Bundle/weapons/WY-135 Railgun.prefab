@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.08
+  _baseAccuracy: 0.28
   _flash: {fileID: 454034469738888359}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1250
+    _amount: 1000
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -384,14 +384,20 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 1
-  _reloadTime: 11
+  _reloadTime: 10
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
-  _temporaryFiringEffects: []
+  _temporaryFiringEffects:
+  - Modifier:
+      _statName: hull-sigmult-radar
+      _literal: 0
+      _modifier: 2
+      _permanent: 0
+    Duration: 10
   _turretControl: {fileID: 1217864058674632658}
-  _traverseRate: 6
-  _elevationRate: 6
+  _traverseRate: 9
+  _elevationRate: 9
 --- !u!114 &8035725429002942297
 MonoBehaviour:
   m_ObjectHideFlags: 0
