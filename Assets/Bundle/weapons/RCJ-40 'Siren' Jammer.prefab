@@ -216,8 +216,8 @@ MonoBehaviour:
   _traverseSource: {fileID: 5102464683155207510}
   _minElevation: -5
   _maxElevation: 89
-  _muzzleVerticalOffset: 0
-  _motorDecelAngle: 7.5
+  _muzzleVerticalOffset: 0.276
+  _motorDecelAngle: 2.5
 --- !u!114 &4778501097452949710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,28 +246,28 @@ MonoBehaviour:
   _smallImage: {fileID: 21300000, guid: e88577fcdbbed7149ac41b6b68ee4d52, type: 3}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: Spinal Jammer (All)
+  _shortDescription: Radar Jammer
   _longDescription: 
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 5
   _compoundingCost: 0
-  _compoundingCostClass: Omnijammer
+  _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
   _pointCost: 60
   _type: 0
-  _size: {x: 2, y: 2, z: 2}
+  _size: {x: 2, y: 1, z: 2}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 5
+  _mass: 3
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
   Modifiers:
   - _statName: hull-sigmult-radar
     _literal: 0
-    _modifier: 0.1
+    _modifier: 0.125
     _permanent: 0
   _resourceDemandPriority: 100
   ResourcesProvided: []
@@ -275,7 +275,7 @@ MonoBehaviour:
   - _resourceName: Power
     _amount: 1200
     _perUnit: 0
-    _onlyWhenOperating: 0
+    _onlyWhenOperating: 1
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
   _rareDebuffSubtype: 
@@ -321,36 +321,36 @@ MonoBehaviour:
   _requireExternalAmmoFeed: 0
   _allowAmmoSelection: 0
   _compatibleAmmoTags: []
-  _detailType: 
+  _detailType: Radar Jamming Turret
   _leadTargets: 0
   _leadIterations: 2
-  _onTargetAngle: 5
+  _onTargetAngle: 45
   _aimCheckRangeMultiplier: 1
   _accuracyMeasurementDistances:
   - 500
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
-  _allowVisualTargeting: 0
+  _allowVisualTargeting: 1
   _positionTargetIsDirection: 1
   _shoulderCamEnabled: 0
   _shoulderCamOffset: {x: 0, y: 0, z: 0}
-  _statGroupSubtype: 
+  _statGroupSubtype: emitters
   _burstDuration: 90
   _cooldownStyle: 3
   _cooldownTime: 60
   _gradualCooldownSpeed: 0.5
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 1
-  _overheatDamageProbability: 0.05
+  _overheatDamageProbability: 0.1
   _overheatDamagePerSecond: 10
   _singleCycleOrder: 1
   _turretControl: {fileID: 4778501097452949709}
-  _traverseRate: 20
-  _elevationRate: 20
-  _limitRotationSpeedWhenFiring: 1
-  _firingRotationSpeedModifier: 0.5
+  _traverseRate: 80
+  _elevationRate: 80
+  _limitRotationSpeedWhenFiring: 0
+  _firingRotationSpeedModifier: 1
   _sigType: 1
-  _coneFov: 5
+  _coneFov: 35
   _maxRange: 900
   _effectAreaRatio: 0.4
   _radiatedPower: 1.5

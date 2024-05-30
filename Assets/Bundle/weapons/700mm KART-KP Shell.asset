@@ -35,7 +35,7 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: -1
-  _overrideComponentSearchDistance: 11
+  _overrideComponentSearchDistance: 13
   _overpenDamageMultiplier: 0.45
   _overpenDamageSpreadMethod: 0
   _ignoreDamageReduction: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     - Name: Color
       Value:
         serializedVersion: 2
-        key0: {r: 67.793495, g: 40.782806, b: 0, a: 1}
-        key1: {r: 67.793495, g: 40.834614, b: 0, a: 0.9577465}
+        key0: {r: 1.1590972, g: 0.81240296, b: 0, a: 1}
+        key1: {r: 67.793495, g: 33.689976, b: 0, a: 0.9577465}
         key2: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 0.25882354}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}

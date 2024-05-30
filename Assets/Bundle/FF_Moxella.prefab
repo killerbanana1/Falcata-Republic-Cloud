@@ -6784,16 +6784,16 @@ MonoBehaviour:
     Helmsman
 
 '
-  _pointCost: 200
+  _pointCost: 175
   _mass: 6000
   _weightClass: 1
   _maxSpeed: 2.5
   _maxTurnSpeed: 0.09
   _linearMotorForce: 720
-  _angularMotorForce: 140
+  _angularMotorForce: 185
   _crewComplement: 60
   _crewVulnerability: 0.5
-  _interiorDensityArmorEquivalent: 0.7
+  _interiorDensityArmorEquivalent: 0.65
   _componentDR: 0.1
   _visionDistance: 5
   _identityWorkRequired: 200

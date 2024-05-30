@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 150mm AP-S Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
-  _pointDivision: 75
+  _pointDivision: 100
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: AP-Sabot Round
@@ -30,7 +30,7 @@ MonoBehaviour:
   _armorDamageRadius: 0.5
   _heatPower: 0
   _componentDamage: 20
-  _randomEffectMultiplier: 11
+  _randomEffectMultiplier: 15
   _neverCrit: 1
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 5

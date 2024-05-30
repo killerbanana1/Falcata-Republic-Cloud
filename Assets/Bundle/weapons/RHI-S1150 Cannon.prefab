@@ -507,7 +507,7 @@ MonoBehaviour:
   - 750
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
-  _allowVisualTargeting: 0
+  _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 0
   _shoulderCamOffset: {x: 0, y: 0, z: 0}

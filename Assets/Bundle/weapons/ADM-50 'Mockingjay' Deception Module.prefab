@@ -127,7 +127,7 @@ MonoBehaviour:
   _identOptions:
   - Class: Heavy Cruiser
     ClassName: Moccotar
-    MaxRCS: 1850
+    MaxRCS: 1805
   - Class: Cruiser
     ClassName: Irsavatha
     MaxRCS: 1360

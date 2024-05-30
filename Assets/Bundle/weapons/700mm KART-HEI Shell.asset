@@ -30,7 +30,7 @@ MonoBehaviour:
   _armorPenetration: 130
   _armorDamageRadius: 1.8
   _heatPower: 1000
-  _componentDamage: 300
+  _componentDamage: 360
   _randomEffectMultiplier: 1
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
@@ -91,7 +91,7 @@ MonoBehaviour:
   _castType: 3
   _spherecastRadius: 0.25
   _rayAngle: 15
-  _rayCount: 20
+  _rayCount: 24
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0

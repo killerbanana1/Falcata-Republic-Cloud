@@ -10741,10 +10741,6 @@ MonoBehaviour:
     _literal: 2
     _modifier: 0
     _permanent: 0
-  - _statName: discreteweapon-reload:recoilless
-    _literal: 0
-    _modifier: -0.2
-    _permanent: 0
   - _statName: discreteweapon-reload:energy
     _literal: 0
     _modifier: -0.2
