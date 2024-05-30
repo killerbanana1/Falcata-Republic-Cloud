@@ -30,16 +30,15 @@ public class CopyShellData : IModEntryPoint
     public static void updateAllTurrets()
     {
         Dictionary<string, HullComponent> componentDictionary = (Dictionary<string, HullComponent>)GetPrivateField(BundleManager.Instance, "_components");
-        /*foreach (string componentName in componentDictionary.Keys)
+        foreach (string componentName in componentDictionary.Keys)
         {
             Debug.Log(componentName);
-        }*/
+        }
         updateTurret(componentDictionary, "Stock/Mk68 Cannon", "Falcata Republic/RHI-4380 Cannon");
         updateTurret(componentDictionary, "Stock/Mk68 Cannon", "Falcata Republic/RHI-3380 Cannon");
         updateTurret(componentDictionary, "Stock/Mk68 Cannon", "Falcata Republic/RHI-2380 Cannon");
         updateTurret(componentDictionary, "Stock/Mk65 Cannon", "Falcata Republic/RHI-4150 Cannon");
         updateTurret(componentDictionary, "Stock/Mk65 Cannon", "Falcata Republic/RHI-2150 Cannon");
-        updateTurret(componentDictionary, "Stock/Mk68 Cannon", "Falcata Republic/RHI-1700 Kinetic Artillery");
         updateTurret(componentDictionary, "Stock/Mk65 Cannon", "Falcata Republic/RHI-1620 Recoilless Rifle");
         updateTurret(componentDictionary, "Stock/C65 Cannon", "Falcata Republic/RHI-S820 Recoilless Rifle");
         updateTurret(componentDictionary, "Stock/C65 Cannon", "Falcata Republic/RHI-S1700 Kinetic Artillery");
@@ -50,34 +49,34 @@ public class CopyShellData : IModEntryPoint
 
     public static void updateTurret(Dictionary<string, HullComponent> componentDictionary, string keySource, string keyDestination)
     {
-        //Debug.Log($"Called updateTurret on componentDictionary: {componentDictionary} keySource: {keySource} keyDestination: {keyDestination}");
+        Debug.Log($"Called updateTurret on componentDictionary: {componentDictionary} keySource: {keySource} keyDestination: {keyDestination}");
 
         HullComponent componentSource, componentDestination;
         componentDictionary.TryGetValue(keySource, out componentSource);
         componentDictionary.TryGetValue(keyDestination, out componentDestination);
 
-        //Debug.Log($"componentSource: {componentSource}");
-        //Debug.Log($"componentDestination: {componentDestination}");
+        Debug.Log($"componentSource: {componentSource}");
+        Debug.Log($"componentDestination: {componentDestination}");
 
         DynamicVisibleParticles sourceDVP = (DynamicVisibleParticles)GetPrivateField(componentSource, "_disabledParticles");
         DynamicVisibleParticles destinationDVP = (DynamicVisibleParticles)GetPrivateField(componentDestination, "_disabledParticles");
 
-        //Debug.Log($"sourceDVP: {sourceDVP}");
-        //Debug.Log($"destinationDVP: {destinationDVP}");
+        Debug.Log($"sourceDVP: {sourceDVP}");
+        Debug.Log($"destinationDVP: {destinationDVP}");
 
         VisualEffect sourceVisualEffect = (VisualEffect)GetPrivateField(sourceDVP, "_particles");
         VisualEffect destinationVisualEffect = (VisualEffect)GetPrivateField(destinationDVP, "_particles");
 
-        //Debug.Log($"sourceVisualEffect: {sourceVisualEffect}");
-        //Debug.Log($"destinationVisualEffect: {destinationVisualEffect}");
+        Debug.Log($"sourceVisualEffect: {sourceVisualEffect}");
+        Debug.Log($"destinationVisualEffect: {destinationVisualEffect}");
 
         destinationVisualEffect.visualEffectAsset = sourceVisualEffect.visualEffectAsset;
 
         Muzzle sourceMuzzle = ((Muzzle[])GetPrivateField(componentSource, "_muzzles"))[0];
         Muzzle[] destinationMuzzles = (Muzzle[])GetPrivateField(componentDestination, "_muzzles");
 
-        //Debug.Log($"sourceMuzzle: {sourceMuzzle}");
-        //Debug.Log($"destinationMuzzles: {destinationMuzzles}");
+        Debug.Log($"sourceMuzzle: {sourceMuzzle}");
+        Debug.Log($"destinationMuzzles: {destinationMuzzles}");
 
         VisualEffect sourceFlash = (VisualEffect)GetPrivateField((RezzingMuzzle)sourceMuzzle, "_flash");
 
@@ -91,10 +90,10 @@ public class CopyShellData : IModEntryPoint
     public static void updateAllMunitions()
     {
         Dictionary<string, IMunition> munitionDictionary = (Dictionary<string, IMunition>)GetPrivateField(BundleManager.Instance, "_munitionsBySaveKey");
-        /*foreach (string munitionName in munitionDictionary.Keys)
+        foreach (string munitionName in munitionDictionary.Keys)
         {
             Debug.Log(munitionName);
-        }*/
+        }
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/380mm AP Shell");
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/450mm HE Shell", "Falcata Republic/380mm HE Shell");
         updateMunition<LightweightProximityShell>(munitionDictionary, "Stock/250mm HE-RPF Shell", "Falcata Republic/380mm HE-RPF Shell");

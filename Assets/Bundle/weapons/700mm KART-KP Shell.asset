@@ -90,8 +90,8 @@ MonoBehaviour:
   _whine: {fileID: 8300000, guid: 3a3519090b043e04d8b1a7bedbd19371, type: 3}
   _castType: 2
   _spherecastRadius: 1
-  _rayAngle: 15
-  _rayCount: 5
+  _rayAngle: 35
+  _rayCount: 10
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0
