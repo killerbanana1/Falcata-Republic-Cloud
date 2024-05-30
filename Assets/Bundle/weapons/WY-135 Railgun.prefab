@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.28
+  _baseAccuracy: 0.2
   _flash: {fileID: 454034469738888359}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 40
+  _pointCost: 45
   _type: 0
   _size: {x: 5, y: 3, z: 5}
   _interiorOverhang: 0

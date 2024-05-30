@@ -5150,12 +5150,8 @@ MonoBehaviour:
   _interiorDensityArmorEquivalent: 0.3
   _componentDR: 0
   _visionDistance: 5
-  _identityWorkRequired: 200
-  BaseModifiers:
-  - _statName: hull-flankdamageprob
-    _literal: 0
-    _modifier: -0.5
-    _permanent: 0
+  _identityWorkRequired: 450
+  BaseModifiers: []
   _selectVolume: {fileID: 5132376608656868247}
   _radarSignature: {fileID: 6735343248398704078}
   _structure: {fileID: 5093841161394707787}

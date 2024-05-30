@@ -16,45 +16,35 @@ using UnityEngine;
 using Utility;
 using UI;
 using Game;
+using System.Diagnostics;
 
-namespace DefaultLock
+[HarmonyPatch(typeof(HullComponent), "UseableByFaction")]
+class Patch_HullComponent_UseableByFaction
 {
-    public class FalcataFactionLock : IModEntryPoint
+    public static bool Prefix(ref HullComponent __instance, ref bool __result, ref FactionDescription faction)
     {
-        public void PostLoad()
-        {
-            Harmony harmony = new Harmony("nebulous.FalcataFactionLock");
-            harmony.PatchAll();
-        }
+        UnityEngine.Debug.Log("[Falcata] Patch_HullComponent_UseableByFaction Prefix start");
+        if (faction != null)
+            UnityEngine.Debug.Log("\tFaction key: " + faction.SaveKey);
+        else
+            UnityEngine.Debug.Log("\tFaction is null");
 
-        public void PreLoad()
+        // Check if faction matches
+        if (faction != null && faction.SaveKey == "Falcata Republic/Falcata Republic")
         {
-        }
-    }
+            UnityEngine.Debug.Log("\tSaveKey matched");
+            List<string> _lockedComponents = new List<string>() { "Stock/Gun Plotting Center", "Stock/Energy Regulator", "Stock/Small Energy Regulator" }; // Add your component keys here
 
-    [HarmonyPatch(typeof(HullComponent), "UseableByFaction")]
-    class Patch_HullComponent_UseableByFaction
-    {
-        public static bool Prefix(ref HullComponent __instance, ref bool __result, ref FactionDescription faction)
-        {
-            if (faction != null && faction.SaveKey == "Falcata Republic/Falcata Republic")
+            // Check if the component is in the locked list
+            if (_lockedComponents.Contains(__instance.SaveKey))
             {
-                List<string> _lockedComponents = new List<string>() { "Stock/Gun Plotting Center", "Stock/Energy Regulator", "Stock/Small Energy Regulator" }; // Add your component keys here
-
-                for (int i = 0; i < _lockedComponents.Count; i++)
-                {
-                    if (__instance.SaveKey == _lockedComponents[i])
-                    {
-                        __result = false;
-                        return false;
-                    }
-                }
-
-                __result = true;
-                return false;
+                UnityEngine.Debug.Log($"\t\tComponent \"{__instance.SaveKey}\" is forbidden");
+                __result = false;
+                return false; // Skip the original method
             }
-
-            return true;
         }
+
+        // Allow original method execution for non-matching components or non-matching factions
+        return true;
     }
 }

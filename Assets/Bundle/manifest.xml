@@ -18,12 +18,12 @@
 	<Entry Name="RHI-S1150 Cannon" Address="weapons/RHI-S1150 Cannon.prefab"/>
 	<Entry Name="WY-135 Railgun" Address="weapons/WY-135 Railgun.prefab"/>
 	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
-	<Entry Name="RHI-1700 Kinetic Artillery" Address="weapons/RHI-1700 Kinetic Artillery.prefab"/>
 	<Entry Name="RHI-S1700 Kinetic Artillery" Address="weapons/RHI-S1700 Kinetic Artillery.prefab"/>
 	<Entry Name="RHI-1620 Recoilless Rifle" Address="weapons/RHI-1620 Recoilless Rifle.prefab"/>
 	<Entry Name="RHI-S820 Recoilless Rifle" Address="weapons/RHI-S820 Recoilless Rifle.prefab"/>
 	<Entry Name="MLS-3-S Launcher" Address="weapons/MLS-3-S Launcher.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
+	<Entry Name="RCJ-40 'Siren' Jammer" Address="weapons/RCJ-40 'Siren' Jammer.prefab"/>
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>

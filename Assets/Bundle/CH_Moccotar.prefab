@@ -7682,7 +7682,7 @@ MonoBehaviour:
     _modifier: 0
     _permanent: 0
   - _statName: hull-component-max-repair
-    _literal: 0.1
+    _literal: 0.05
     _modifier: 0
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}

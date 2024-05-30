@@ -308,7 +308,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 50
+  _pointCost: 65
   _type: 0
   _size: {x: 6, y: 4, z: 6}
   _interiorOverhang: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.28
+  _baseAccuracy: 0.2
   _flash: {fileID: 1164939665728588165}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

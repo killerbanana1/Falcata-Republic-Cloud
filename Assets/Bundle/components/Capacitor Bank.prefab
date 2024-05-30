@@ -69,9 +69,9 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 20
+  _pointCost: 25
   _type: 2
-  _size: {x: 2, y: 2, z: 2}
+  _size: {x: 3, y: 3, z: 3}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 20
