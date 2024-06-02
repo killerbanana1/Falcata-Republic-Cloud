@@ -1,5 +1,88 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108282866008025111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7928626641462412395}
+  - component: {fileID: 1705752255882416230}
+  - component: {fileID: 2532413316952108570}
+  m_Layer: 11
+  m_Name: Compartment 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7928626641462412395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108282866008025111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.839, z: -20.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5173381382066251815}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1705752255882416230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108282866008025111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.25, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2532413316952108570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108282866008025111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: Compartment10
+  _size: {x: 4, y: 1, z: 6}
+  _interiorOverhangSpace: 63
+  _attachPoint: {x: 0, y: 0, z: 0}
+  _type: 1
+  _shortName: 
+  _defaultComponent: 
+  _component: {fileID: 0}
+  _cap: {fileID: 0}
+  _collider: {fileID: 1705752255882416230}
+  _hasTraverseLimits: 0
+  _traverseLimits:
+    LimitFiringOnly: 0
+    LeftAngle: 0
+    RightAngle: 0
+    UseElevationLimit: 0
+    ElevationAngle: 0
+  _hasForwardLimits: 0
+  _forwardLimits:
+    LimitFiringOnly: 0
+    LeftAngle: 0
+    RightAngle: 0
+    UseElevationLimit: 0
+    ElevationAngle: 0
+  _unmaskAxis: 0
+  _unmaskSide: 0
 --- !u!1 &134948552497012589
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +299,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 1
@@ -522,6 +605,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -8757030916330537782, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &413720353042144945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7652654510676004257}
+  - component: {fileID: 2376400424171459671}
+  m_Layer: 0
+  m_Name: Lifeboat 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7652654510676004257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413720353042144945}
+  m_LocalRotation: {x: 0, y: -0.29539123, z: 0, w: 0.9553764}
+  m_LocalPosition: {x: -2.4, y: -0.033, z: 1.079}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -34.362, z: 0}
+--- !u!114 &2376400424171459671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413720353042144945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &546264208828332413
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +842,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -2724236880770897625, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &846641820213251675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3329072652425117946}
+  - component: {fileID: 3540686188015452426}
+  m_Layer: 0
+  m_Name: Lifeboat 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3329072652425117946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846641820213251675}
+  m_LocalRotation: {x: -0, y: 0.90051806, z: -0, w: 0.43481866}
+  m_LocalPosition: {x: 2.9420002, y: -0.019, z: -1.921}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 128.452, z: 0}
+--- !u!114 &3540686188015452426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846641820213251675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &889443734016203245
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &184054079171066860
 MonoBehaviour:
@@ -1319,6 +1498,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 3775812790008204771, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &1234010746753489074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4279006707443586744}
+  - component: {fileID: 6889888976793648955}
+  m_Layer: 0
+  m_Name: Lifeboat 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4279006707443586744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234010746753489074}
+  m_LocalRotation: {x: -0, y: 0.30443358, z: -0, w: 0.95253354}
+  m_LocalPosition: {x: 3.07, y: -0.033, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 35.448, z: 0}
+--- !u!114 &6889888976793648955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234010746753489074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &1788032652263588588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5686950509263291970
 BoxCollider:
@@ -1539,6 +1766,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -7049961479604630992, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &2446700470002161894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2753737217563507326}
+  - component: {fileID: 8761429488564932152}
+  m_Layer: 0
+  m_Name: Lifeboat 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2753737217563507326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446700470002161894}
+  m_LocalRotation: {x: 0, y: -0.89893556, z: 0, w: 0.438081}
+  m_LocalPosition: {x: -2.46, y: -0.019, z: -2.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -128.037, z: 0}
+--- !u!114 &8761429488564932152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446700470002161894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &2531915976187794133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1862,7 @@ Transform:
   - {fileID: 7803804089021418558}
   - {fileID: 5225369742349768907}
   - {fileID: 8591155558584089285}
+  - {fileID: 7928626641462412395}
   - {fileID: 1998793394296855385}
   - {fileID: 5294894367859081133}
   - {fileID: 5294894366998305222}
@@ -1682,7 +1958,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1442137730608575788
 MonoBehaviour:
@@ -1749,7 +2025,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -7.730941e+11, y: 15.233, z: -7.730941e+11}
 --- !u!114 &5051036228236270963
 MonoBehaviour:
@@ -2212,6 +2488,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 920227454358380879, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &3053839392076237098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6782831784490352509}
+  - component: {fileID: 2773932088231248194}
+  m_Layer: 0
+  m_Name: Lifeboat 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6782831784490352509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053839392076237098}
+  m_LocalRotation: {x: -0, y: 0.2953922, z: -0, w: 0.9553761}
+  m_LocalPosition: {x: 2.3999999, y: -0.033, z: 1.079}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 34.362, z: 0}
+--- !u!114 &2773932088231248194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053839392076237098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &3179364052896843203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,7 +2795,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 1
@@ -2693,7 +3017,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 7.6589554e+28, y: 1.0597115e-38, z: 2.6221498e+20}
 --- !u!114 &1560883835460003806
 MonoBehaviour:
@@ -2938,6 +3262,54 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 1
   _unmaskSide: 0
+--- !u!1 &4038816988849010319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6937760659927180852}
+  - component: {fileID: 272955947008478451}
+  m_Layer: 0
+  m_Name: Lifeboat 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6937760659927180852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038816988849010319}
+  m_LocalRotation: {x: 0, y: -0.90051615, z: 0, w: 0.43482265}
+  m_LocalPosition: {x: -2.942, y: -0.019, z: -1.921}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -128.452, z: 0}
+--- !u!114 &272955947008478451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038816988849010319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &4161293889941369103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3364,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -3460234973074029239, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &4363288886836540691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8876621823098544206}
+  - component: {fileID: 8184377685455070047}
+  m_Layer: 0
+  m_Name: Lifeboat 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8876621823098544206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363288886836540691}
+  m_LocalRotation: {x: -0, y: 0.89893514, z: -0, w: 0.4380817}
+  m_LocalPosition: {x: 2.46, y: -0.019, z: -2.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 128.037, z: 0}
+--- !u!114 &8184377685455070047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363288886836540691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &4864767165744018948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3602,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 1
@@ -3349,7 +3769,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894366920075560
 BoxCollider:
@@ -3800,7 +4220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894366998305220
 BoxCollider:
@@ -4179,7 +4599,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 5294894367233242483}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -4528,7 +4948,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 5294894367332008214}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -4877,7 +5297,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 5294894367467773827}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -5061,7 +5481,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 5294894367588517095}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -5400,7 +5820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894367686801404
 BoxCollider:
@@ -5667,7 +6087,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894367859081139
 BoxCollider:
@@ -5779,7 +6199,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 5294894367890061008}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -5963,7 +6383,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 5294894367893028275}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -6361,7 +6781,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894368077772392
 BoxCollider:
@@ -6444,7 +6864,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894368090749708
 BoxCollider:
@@ -6556,7 +6976,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 5294894368165397047}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -7249,7 +7669,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -7577,7 +7997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5294894368550074309
 BoxCollider:
@@ -7772,7 +8192,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 5294894368620075876}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -7951,7 +8371,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -8137,7 +8557,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -8592,7 +9012,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 7.6589554e+28, y: 1.0597115e-38, z: 2.6221498e+20}
 --- !u!114 &3447727474637919801
 MonoBehaviour:
@@ -9191,6 +9611,7 @@ Transform:
   - {fileID: 8837109581814083723}
   - {fileID: 5173381382066251815}
   - {fileID: 5294894368018553434}
+  - {fileID: 8233237196960121765}
   - {fileID: 2377813527536715762}
   - {fileID: 295602391478445123}
   - {fileID: 1847351331554034203}
@@ -9226,8 +9647,16 @@ MonoBehaviour:
   _smallSilhouette: {fileID: 21300000, guid: 48f9af5725be99545b2c4231e09a0cc9, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: 5019ea00fd4091741a12ef8186ab7191, type: 3}
-  _screenshot: {fileID: 21300000, guid: a1b51d1bb82a7a74682bdc7b7d04ef2a, type: 3}
-  _longDescription: Irsavatha
+  _screenshot: {fileID: 21300000, guid: 28cdd9d427137b34c9a2637de7028880, type: 3}
+  _longDescription: 'The Irsavatha class cruisers are the most modern and advanced
+    ships within the Falcatan navy, having entered service only five years ago. They
+    are fast, reasonably maneuverable, and pack a powerful punch. This package is
+    additionally sweetened by the classes advanced EWAR capabilities.
+
+
+    Suitable
+    for use independently or in a group, the Irsavatha can be expected to handily
+    defeat peer opponents, while retaining enough speed to flee from anything larger.'
   _flavorText: To Do.
   _pointCost: 400
   _mass: 9000
@@ -9239,7 +9668,7 @@ MonoBehaviour:
   _crewComplement: 95
   _crewVulnerability: 0.35
   _interiorDensityArmorEquivalent: 0.8
-  _componentDR: 0.2
+  _componentDR: 0.3
   _visionDistance: 5
   _identityWorkRequired: 200
   BaseModifiers:
@@ -9251,6 +9680,10 @@ MonoBehaviour:
     _literal: 0
     _modifier: -0.15
     _permanent: 0
+  - _statName: continuousweapon-burstduration:emitters
+    _literal: 0
+    _modifier: 0.25
+    _permanent: 0
   _selectVolume: {fileID: 1027633299427273589}
   _radarSignature: {fileID: 1442137730608575788}
   _structure: {fileID: 1138227440222221737}
@@ -9260,9 +9693,17 @@ MonoBehaviour:
   - {fileID: 6176431041205230374}
   _powerOutageEffects:
   - {fileID: 8439085185772415714}
-  _lifeboats: []
+  _lifeboats:
+  - {fileID: 6889888976793648955}
+  - {fileID: 2773932088231248194}
+  - {fileID: 7739322084221407459}
+  - {fileID: 2376400424171459671}
+  - {fileID: 3540686188015452426}
+  - {fileID: 8184377685455070047}
+  - {fileID: 272955947008478451}
+  - {fileID: 8761429488564932152}
   _lifeboatPrefab: {fileID: 0}
-  _driveFlareScaling: 1
+  _driveFlareScaling: 0.64
   _customMissileAnnouncement: {fileID: 0}
   _saveKey: 
   _modId: 0
@@ -9849,7 +10290,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -10035,7 +10476,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 1
@@ -10474,7 +10915,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 5173381382066251815}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5561751106278145285
 BoxCollider:
@@ -11107,7 +11548,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6176431041205230393}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1027633299427273589
 BoxCollider:
@@ -11217,6 +11658,44 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+--- !u!1 &7739327483807084386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8233237196960121765}
+  m_Layer: 0
+  m_Name: Lifeboats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8233237196960121765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739327483807084386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4279006707443586744}
+  - {fileID: 6782831784490352509}
+  - {fileID: 2012136149154538035}
+  - {fileID: 7652654510676004257}
+  - {fileID: 3329072652425117946}
+  - {fileID: 8876621823098544206}
+  - {fileID: 6937760659927180852}
+  - {fileID: 2753737217563507326}
+  m_Father: {fileID: 6176431041205230393}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7814673684637469272
 GameObject:
   m_ObjectHideFlags: 0
@@ -11545,6 +12024,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -8244492039933619428, guid: 3e5dadd980adc4440a84e4fc72b18462, type: 3}
+--- !u!1 &8169908601914804583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012136149154538035}
+  - component: {fileID: 7739322084221407459}
+  m_Layer: 0
+  m_Name: Lifeboat 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2012136149154538035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169908601914804583}
+  m_LocalRotation: {x: 0, y: -0.30443212, z: 0, w: 0.952534}
+  m_LocalPosition: {x: -3.07, y: -0.033, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8233237196960121765}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -35.448, z: 0}
+--- !u!114 &7739322084221407459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169908601914804583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 5
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &8169987903592275261
 GameObject:
   m_ObjectHideFlags: 0

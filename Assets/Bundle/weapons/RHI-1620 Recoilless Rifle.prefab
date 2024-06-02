@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37996837688683929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.258, y: 0.087, z: 0.449}
+  m_LocalPosition: {x: 0.258, y: 0.087, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -156,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37996837908288380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0861, y: 0.087, z: 0.44900006}
+  m_LocalPosition: {x: 0.0861, y: 0.087, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37996838606986225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.601, y: 0.087, z: 0.449}
+  m_LocalPosition: {x: 0.601, y: 0.087, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -414,7 +414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37996838978207286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.431, y: 0.087, z: 0.449}
+  m_LocalPosition: {x: 0.431, y: 0.087, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -543,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642172727809326039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2586, y: 0.087, z: 0.44900006}
+  m_LocalPosition: {x: -0.2586, y: 0.087, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -670,7 +670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020674722505360365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.419, z: 0.3419895}
+  m_LocalPosition: {x: 0, y: 0.419, z: 0.617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5916871135149127916}
@@ -738,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2280700468660460956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6023, y: 0.087, z: 0.44900006}
+  m_LocalPosition: {x: -0.6023, y: 0.087, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -867,7 +867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2320091522718653457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4301, y: 0.087, z: 0.44900006}
+  m_LocalPosition: {x: -0.4301, y: 0.087, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -996,7 +996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2595394925789630974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.431, y: -0.08439998, z: 0.449}
+  m_LocalPosition: {x: 0.431, y: -0.08439998, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -1154,8 +1154,8 @@ MonoBehaviour:
   _barrel: {fileID: 4078781416373779807}
   _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
   _traverseSource: {fileID: 422829230105087073}
-  _minElevation: -5
-  _maxElevation: 5
+  _minElevation: -9
+  _maxElevation: 9
   _muzzleVerticalOffset: 0
   _motorDecelAngle: 6
 --- !u!114 &5171227276317692363
@@ -1191,7 +1191,12 @@ MonoBehaviour:
     out a flurry of rocket propelled shells that explode on impact with a target
     ship and deal heavy damage, after which a longer reload period is required. This
     variant comes with 16 shells in a C5 turret.
-  _flavorText: 
+  _flavorText: Its not really a recoilless rifle you know. That misnomer is a relic
+    from when they were first designing the thing. But given enough time and iterations,
+    the design goals for the weapon met the requirements of a more traditional rocket
+    launcher. Its essentially one big turreted VLS array. Naming confusion aside,
+    it packs one hell of a punch if you can get close enough to deliver it. Not even
+    AN beams match this firepower.
   _category: Weapons - Projectile
   _costBreakdownClass: 2
   _compoundingCost: 0
@@ -1292,11 +1297,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0, y: 0.416, z: 0.123}
-  _timeBetweenMuzzles: 0.06
+  _timeBetweenMuzzles: 0.03
   _resetMuzzleIndexOnReload: 1
-  _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 8
-  _reloadTime: 20
+  _randomlyDeviateMuzzleTime: 0
+  _magazineSize: 16
+  _reloadTime: 35
   _reloadStatSubtype: recoilless
   _recycleStatSubtype: recoilless
   _randomlyDeviateReloadTime: 1
@@ -1304,11 +1309,11 @@ MonoBehaviour:
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: 1
+      _modifier: 10
       _permanent: 0
     Duration: 12
   _turretControl: {fileID: 1598013660015875406}
-  _traverseRate: 5
+  _traverseRate: 6
   _elevationRate: 20
 --- !u!114 &7588373706808276421
 MonoBehaviour:
@@ -1563,7 +1568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3262005675641344750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4301, y: -0.0844, z: 0.449}
+  m_LocalPosition: {x: -0.4301, y: -0.0844, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -1773,7 +1778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4658114778903809585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2586, y: -0.08439998, z: 0.44900006}
+  m_LocalPosition: {x: -0.2586, y: -0.08439998, z: 0.157}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -1901,7 +1906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5484441874597773239}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: -0.306}
   m_LocalScale: {x: 4.073609, y: 11.71624, z: 4.073609}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -1983,7 +1988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5537282272899676678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0861, y: -0.08439998, z: 0.44900006}
+  m_LocalPosition: {x: 0.0861, y: -0.08439998, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -2112,7 +2117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6158863818007616512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6023, y: -0.08439998, z: 0.44900006}
+  m_LocalPosition: {x: -0.6023, y: -0.08439998, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -2241,7 +2246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7222362825847515399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0857, y: 0.087, z: 0.44900006}
+  m_LocalPosition: {x: -0.0857, y: 0.087, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -2370,7 +2375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7524564080256985969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0857, y: -0.08439998, z: 0.44900006}
+  m_LocalPosition: {x: -0.0857, y: -0.08439998, z: 0.15700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -2499,7 +2504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7669551878714889561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.601, y: -0.08439998, z: 0.449}
+  m_LocalPosition: {x: 0.601, y: -0.08439998, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}
@@ -2628,7 +2633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8178506232568758137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.258, y: -0.08439998, z: 0.449}
+  m_LocalPosition: {x: 0.258, y: -0.08439998, z: 0.15699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4078781416373779807}

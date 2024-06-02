@@ -24,10 +24,10 @@ MonoBehaviour:
     Subclass: 700mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 15
-  _flightSpeed: 70
+  _maxFlightTime: 18
+  _flightSpeed: 68
   _repoolDelay: 5
-  _armorPenetration: 100
+  _armorPenetration: 145
   _armorDamageRadius: 1.8
   _heatPower: 500
   _componentDamage: 180
@@ -35,7 +35,8 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: -1
-  _overrideComponentSearchDistance: 13
+  _neverOverpen: 0
+  _overrideComponentSearchDistance: 12
   _overpenDamageMultiplier: 0.45
   _overpenDamageSpreadMethod: 0
   _ignoreDamageReduction: 0
@@ -55,8 +56,8 @@ MonoBehaviour:
     - Name: Color
       Value:
         serializedVersion: 2
-        key0: {r: 1.1590972, g: 0.81240296, b: 0, a: 1}
-        key1: {r: 67.793495, g: 33.689976, b: 0, a: 0.9577465}
+        key0: {r: 5.992157, g: 2.4156864, b: 0, a: 1}
+        key1: {r: 67.793495, g: 35.136593, b: 0, a: 0.9577465}
         key2: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 0.25882354}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}

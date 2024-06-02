@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4584092226739362353}
   m_LocalRotation: {x: 1, y: 0.000000043711385, z: -0.000000043711392, w: -0.000000037748944}
   m_LocalPosition: {x: 0, y: -0.01, z: 0}
-  m_LocalScale: {x: 121.31532, y: 121.31532, z: 121.31532}
+  m_LocalScale: {x: 130, y: 130, z: 130}
   m_Children: []
   m_Father: {fileID: 5150210356797113301}
   m_RootOrder: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 65
+  _pointCost: 40
   _type: 0
   _size: {x: 2, y: 12, z: 2}
   _interiorOverhang: 0

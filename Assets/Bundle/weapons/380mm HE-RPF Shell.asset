@@ -34,7 +34,7 @@ MonoBehaviour:
   _weightClassDiscrepancy: 2
   _maxFlightTime: 9
   _flightSpeed: 90
-  _repoolDelay: 6
+  _repoolDelay: 5
   _armorPenetration: 28
   _armorDamageRadius: 0.45
   _heatPower: 0
@@ -43,6 +43,7 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: -1
+  _neverOverpen: 0
   _overrideComponentSearchDistance: 5
   _overpenDamageMultiplier: 2.5
   _overpenDamageSpreadMethod: 0

@@ -31,7 +31,7 @@
   <Munitions>
     <Entry Name="380mm AP Shell" Address="weapons/380mm AP Shell.asset"/>
 	<Entry Name="380mm HE Shell" Address="weapons/380mm HE Shell.asset"/>
-	<Entry Name="380mm HE-RPF Shell" Address="weapons/380mm HE-RPF Shell.asset"/>
+	<Entry Name="380mm HE-ABF Shell" Address="weapons/380mm HE-ABF Shell.asset"/>
 	<Entry Name="200mm RP-HEI Shell" Address="weapons/200mm RP-HEI Shell.asset"/>
 	<Entry Name="700mm KART-HEI Shell" Address="weapons/700mm KART-HEI Shell.asset"/>
 	<Entry Name="700mm KART-KP Shell" Address="weapons/700mm KART-KP Shell.asset"/>

@@ -164,6 +164,7 @@ MonoBehaviour:
   _visibility: {fileID: 0}
   _ejectionVelocity: 2
   _ejectionDirection: {x: 0, y: 0, z: 1}
+  _addRotation: {x: 0, y: 0, z: 0}
   _launchDelay: 1
   _ignitionDelay: 1
   _pathDeviation: 1
@@ -233,7 +234,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Size 3 Torpedo Launcher
   _longDescription: A simple tube launcher designed to eject three torpedoes from
-    a vertical spinal mount.
+    a vertical spinal mount. Good for ambush or cap ships.
   _flavorText: 
   _category: Weapons - Missile
   _costBreakdownClass: 2

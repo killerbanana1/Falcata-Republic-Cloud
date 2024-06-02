@@ -993,7 +993,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 602747782}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 1191107676}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 1198172592}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -2938,7 +2938,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 1463374585}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -3205,7 +3205,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: 1, z: 0}
   _particles: {fileID: 1617521669}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -3738,7 +3738,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 0, y: 0, z: 0}
+  _overrideNormal: {x: 0, y: -1, z: 0}
   _particles: {fileID: 1996974481}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -4213,7 +4213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 7.6589554e+28, y: 1.0597115e-38, z: 2.6221498e+20}
 --- !u!114 &7396027145943269083
 MonoBehaviour:
@@ -4764,7 +4764,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 0.9
@@ -5060,6 +5060,7 @@ Transform:
   - {fileID: 2873866502631997004}
   - {fileID: 1058544557933740229}
   - {fileID: 130790072}
+  - {fileID: 1655568071437527253}
   - {fileID: 7603358827916570384}
   - {fileID: 5575753829022551201}
   - {fileID: 5825443915253312249}
@@ -5089,6 +5090,7 @@ MonoBehaviour:
   - FFE
   - ESV
   - CV
+  - KE
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: e6fe1154777608441b316adf64da8ec3, type: 3}
@@ -5096,25 +5098,31 @@ MonoBehaviour:
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: d4af93996ccc191449f37c3d165f1614, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: 49aa22359dba0f04996d73b57e4dec5a, type: 3}
   _screenshot: {fileID: 21300000, guid: 7494d20277c2ef045ba3ed0ab4c747d0, type: 3}
-  _longDescription: Pskellon
+  _longDescription: "One of the naval offices newest additions, the Pskellon class
+    corvette has been in use with the Falcatan navy for less than a decade. The class
+    was designed primarily to fill the roll of point defense and sensor escort, something
+    that the naval asset pool had been sorely lacking for the better part of its
+    history. \n\nWhile a lone Pskellon might struggle, these ships thrive as escorts
+    or in groups, where their weaker firepower is negated, and their combination
+    of utility and solid maneuverability can be exercized to its greatest extent."
   _flavorText: To Do.
-  _pointCost: 125
+  _pointCost: 100
   _mass: 4500
   _weightClass: 0
   _maxSpeed: 2.5
   _maxTurnSpeed: 0.1
   _linearMotorForce: 650
-  _angularMotorForce: 150
+  _angularMotorForce: 110
   _crewComplement: 50
   _crewVulnerability: 0.4
   _interiorDensityArmorEquivalent: 0.3
   _componentDR: 0
   _visionDistance: 5
-  _identityWorkRequired: 200
+  _identityWorkRequired: 450
   BaseModifiers:
   - _statName: hull-flankdamageprob
     _literal: 0
-    _modifier: -0.5
+    _modifier: -0.25
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}
   _radarSignature: {fileID: 6735343248398704078}
@@ -5125,7 +5133,9 @@ MonoBehaviour:
   - {fileID: 2075078681327711172}
   _powerOutageEffects:
   - {fileID: 7245432202243331080}
-  _lifeboats: []
+  _lifeboats:
+  - {fileID: 7255473520342387576}
+  - {fileID: 5054544941200172268}
   _lifeboatPrefab: {fileID: 0}
   _driveFlareScaling: 0.5
   _customMissileAnnouncement: {fileID: 0}
@@ -5302,7 +5312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5132376608656868247
 BoxCollider:
@@ -5312,10 +5322,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2478233823342906805}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.5, y: 3.5, z: 11}
+  m_Size: {x: 6.5, y: 3.5, z: 11}
   m_Center: {x: 0, y: 0, z: -0.7}
 --- !u!114 &4741332690757186632
 MonoBehaviour:
@@ -5851,6 +5861,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -6859184213397277131, guid: a0e50bd24a1663f46a342d6a6ff94834, type: 3}
+--- !u!1 &3143684108079736653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352948848851108118}
+  - component: {fileID: 5054544941200172268}
+  m_Layer: 0
+  m_Name: Lifeboat 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1352948848851108118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143684108079736653}
+  m_LocalRotation: {x: 0, y: -0.8496213, z: 0, w: 0.5273933}
+  m_LocalPosition: {x: -1.285, y: -0.014, z: -2.153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1655568071437527253}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -116.341, z: 0}
+--- !u!114 &5054544941200172268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143684108079736653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &3160947256181123630
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,7 +6325,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5473802547918410510
 MonoBehaviour:
@@ -6854,6 +6912,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 3685988947264480968, guid: a0e50bd24a1663f46a342d6a6ff94834, type: 3}
+--- !u!1 &5967072297078552016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6233911583285965049}
+  - component: {fileID: 7255473520342387576}
+  m_Layer: 0
+  m_Name: Lifeboat 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6233911583285965049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967072297078552016}
+  m_LocalRotation: {x: -0, y: 0.8496196, z: -0, w: 0.5273961}
+  m_LocalPosition: {x: 1.285, y: -0.014, z: -2.153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1655568071437527253}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 116.341, z: 0}
+--- !u!114 &7255473520342387576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967072297078552016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &5990434495510458227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6938,7 +7044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &546946581826399904
 BoxCollider:
@@ -7537,7 +7643,7 @@ MonoBehaviour:
   _reinforced: 0
   _bindTag: Thruster
   _dcPriority: 10
-  _casualtyClass: 0
+  _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _power: 1
@@ -7754,7 +7860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7145425552396181065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3484144479710304778}
@@ -8306,7 +8412,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 7.6589554e+28, y: 1.0597115e-38, z: 2.6221498e+20}
 --- !u!114 &1108972856288163217
 MonoBehaviour:
@@ -8462,7 +8568,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6735343248398704078
 MonoBehaviour:
@@ -8496,7 +8602,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.7, y: 2, z: 9}
+  m_Size: {x: 3, y: 2.5, z: 9}
   m_Center: {x: 0, y: 0, z: -0.7}
 --- !u!1 &8080286000397262156
 GameObject:
@@ -8999,7 +9105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 7.6589554e+28, y: 1.0597115e-38, z: 2.6221498e+20}
 --- !u!114 &6688515924779323196
 MonoBehaviour:
@@ -9233,3 +9339,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -1256843483671745029, guid: a0e50bd24a1663f46a342d6a6ff94834, type: 3}
+--- !u!1 &9170615638792746437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655568071437527253}
+  m_Layer: 0
+  m_Name: Lifeboats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655568071437527253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170615638792746437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6233911583285965049}
+  - {fileID: 1352948848851108118}
+  m_Father: {fileID: 2075078681327711195}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
