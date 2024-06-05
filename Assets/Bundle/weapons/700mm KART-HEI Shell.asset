@@ -17,7 +17,9 @@ MonoBehaviour:
   _storageVolume: 0.6
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: KART - High Explosive Impact Shell. Meant to degrade a ships components
-    over time at range.
+    over time at range. Will not kill a ship outright, that must be done by KARTS
+    KP counterpart, or other high single component damage weapons such as railguns
+    and 380mm AP.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
@@ -30,12 +32,12 @@ MonoBehaviour:
   _armorPenetration: 130
   _armorDamageRadius: 1.8
   _heatPower: 1000
-  _componentDamage: 360
+  _componentDamage: 300
   _randomEffectMultiplier: 1
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
-  _maxPenetrationDistance: 7.5
-  _neverOverpen: 1
+  _maxPenetrationDistance: 6
+  _neverOverpen: 0
   _overrideComponentSearchDistance: -1
   _overpenDamageMultiplier: 0.9
   _overpenDamageSpreadMethod: 1
@@ -56,8 +58,8 @@ MonoBehaviour:
     - Name: Color
       Value:
         serializedVersion: 2
-        key0: {r: 0.7529412, g: 47.937256, b: 0, a: 1}
-        key1: {r: 0.5019608, g: 95.87451, b: 0, a: 0.9577465}
+        key0: {r: 0.8684712, g: 47.937256, b: 0, a: 1}
+        key1: {r: 0, g: 95.87451, b: 2.0450146, a: 0.9577465}
         key2: {r: 1, g: 1, b: 1, a: 0.25882354}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -92,7 +94,7 @@ MonoBehaviour:
   _castType: 3
   _spherecastRadius: 0.25
   _rayAngle: 15
-  _rayCount: 24
+  _rayCount: 20
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0

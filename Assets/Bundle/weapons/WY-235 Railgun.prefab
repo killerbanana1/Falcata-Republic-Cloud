@@ -301,7 +301,7 @@ MonoBehaviour:
     armor and through the hull of enemy vessels. These weapons are excellent zoning
     tools and fire supplements for the commander of any FRN fleet. This variant has
     double barrels for a C4 mount.
-  _flavorText: Made by Weyland-Yutani
+  _flavorText: Manufactured by Weyland-Yutani Corp
   _category: Weapons - Projectile
   _costBreakdownClass: 2
   _compoundingCost: 0

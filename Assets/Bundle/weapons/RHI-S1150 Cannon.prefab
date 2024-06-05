@@ -343,7 +343,7 @@ MonoBehaviour:
     shells have low penetration but high damage, and the AP-S shells have low damage,
     but high fire and critical chance, intended to suppress large capital ships whilst
     allowing the 150mm armed ship to slip away. It also comes equipped with a proximity
-    flak shell for long range anti missile purposes. This is a spinal barelled variant.
+    flak shell for long range anti missile purposes. This is a spinal casemate variant.
   _flavorText: 
   _category: Weapons - Projectile
   _costBreakdownClass: 2

@@ -16,7 +16,9 @@ MonoBehaviour:
   _pointDivision: 100
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: 
+  _flavorText: 150mm HE, highly effective against small vessels, with enough armor
+    penetration to pose a threat to medium sized ones as well. Range is the major
+    drawback.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
@@ -34,6 +36,7 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 2
+  _neverOverpen: 0
   _overrideComponentSearchDistance: -1
   _overpenDamageMultiplier: 0.2
   _overpenDamageSpreadMethod: 0

@@ -16,7 +16,8 @@ MonoBehaviour:
   _pointDivision: 100
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: AP-Sabot Round
+  _flavorText: AP-Sabot Round, good for suppressing systems on enemy ships. However,
+    very low damage, innefectual for actually killing enemy vessels.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
