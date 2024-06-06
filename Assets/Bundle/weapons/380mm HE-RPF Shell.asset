@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 380mm HE-RPF Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
-  _pointDivision: 25
+  _pointDivision: 50
   _storageVolume: 0.35
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: 'High-explosive rounds utilized by medium-heavy cannon weapons, such

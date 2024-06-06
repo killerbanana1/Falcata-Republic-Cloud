@@ -34,14 +34,14 @@ MonoBehaviour:
   _armorPenetration: 90
   _armorDamageRadius: 1.75
   _heatPower: 500
-  _componentDamage: 250
+  _componentDamage: 300
   _randomEffectMultiplier: 0.5
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 6
   _neverOverpen: 0
   _overrideComponentSearchDistance: -1
-  _overpenDamageMultiplier: 0.5
+  _overpenDamageMultiplier: 0.35
   _overpenDamageSpreadMethod: 0
   _ignoreDamageReduction: 0
   _alwaysSpreadDamage: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 1735
-        ctime1: 7132
+        ctime1: 7310
         ctime2: 47609
         ctime3: 0
         ctime4: 0
@@ -77,8 +77,8 @@ MonoBehaviour:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 6168
-        atime2: 13107
+        atime1: 8192
+        atime2: 31759
         atime3: 65535
         atime4: 0
         atime5: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   _castType: 3
   _spherecastRadius: 1
   _rayAngle: 20
-  _rayCount: 5
+  _rayCount: 6
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0

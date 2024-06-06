@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 380mm HE Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
-  _pointDivision: 25
+  _pointDivision: 50
   _storageVolume: 0.35
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: High-Explosive shells for use in medium-heavy ballistic weapons, effective
@@ -37,6 +37,7 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 3.2
+  _neverOverpen: 0
   _overrideComponentSearchDistance: -1
   _overpenDamageMultiplier: 0.2
   _overpenDamageSpreadMethod: 0

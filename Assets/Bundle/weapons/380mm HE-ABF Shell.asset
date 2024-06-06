@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 380mm HE-ABF Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
-  _pointDivision: 25
+  _pointDivision: 50
   _storageVolume: 0.35
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: High-explosive rounds utilized by medium-heavy cannon weapons, such
@@ -34,7 +34,7 @@ MonoBehaviour:
   _armorPenetration: 29
   _armorDamageRadius: 0.45
   _heatPower: 5
-  _componentDamage: 15
+  _componentDamage: 22
   _randomEffectMultiplier: 0.1
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 0.1
@@ -104,7 +104,7 @@ MonoBehaviour:
   _fuzeMargin: 0.3
   _minFuzeTime: 0.75
   _fuzeAdvanceRetard: -0.2
-  _blastRadius: 7
+  _blastRadius: 14
   _fragmentCountPerTarget: 4
   _fragmentSearchDistance: 5
   _damagePotentialMaxHits: 5

@@ -357,6 +357,7 @@ MonoBehaviour:
   _jobName: Gun Crew
   _muzzles:
   - {fileID: 3662846357687837177}
+  - {fileID: 5494690964650506242}
   _optimalTargetWeight: 2
   _allowGrouping: 1
   _groupingName: 35mm Railgun

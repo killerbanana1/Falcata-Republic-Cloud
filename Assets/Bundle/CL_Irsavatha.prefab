@@ -7258,7 +7258,7 @@ MonoBehaviour:
   _pointCost: 400
   _mass: 9000
   _weightClass: 2
-  _maxSpeed: 2.1
+  _maxSpeed: 2.4
   _maxTurnSpeed: 0.1
   _linearMotorForce: 1050
   _angularMotorForce: 325
@@ -7309,7 +7309,7 @@ MonoBehaviour:
   _paintableMeshes:
   - {fileID: 3857523873805413623}
   - {fileID: 2976859401502984613}
-  _armorThickness: 30
+  _armorThickness: 34
   _dynamicArmorZones:
   - HullSeg: {fileID: 3857523873805413623}
     Colliders:

@@ -24,7 +24,7 @@ MonoBehaviour:
     Subclass: 150mm
   _role: 3
   _weightClassDiscrepancy: 2
-  _maxFlightTime: 6
+  _maxFlightTime: 6.5
   _flightSpeed: 125
   _repoolDelay: 5
   _armorPenetration: 2.5
