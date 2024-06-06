@@ -256,7 +256,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 50
+    _amount: 200
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []

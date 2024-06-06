@@ -34,7 +34,7 @@ MonoBehaviour:
   _randomEffectMultiplier: 1
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
-  _maxPenetrationDistance: 0
+  _maxPenetrationDistance: -1
   _neverOverpen: 0
   _overrideComponentSearchDistance: 11.5
   _overpenDamageMultiplier: 0.45
