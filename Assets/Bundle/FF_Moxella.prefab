@@ -6802,6 +6802,10 @@ MonoBehaviour:
     _literal: 0
     _modifier: -0.15
     _permanent: 0
+  - _statName: discreteweapon-reload:ETC
+    _literal: 0
+    _modifier: -0.15
+    _permanent: 0
   - _statName: hull-missilechannels
     _literal: 2
     _modifier: 0

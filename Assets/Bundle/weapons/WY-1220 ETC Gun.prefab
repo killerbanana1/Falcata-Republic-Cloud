@@ -233,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 3258015530563398017}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 85, y: 85, z: 85}
+  m_LocalScale: {x: 90, y: 90, z: 90}
   m_Children: []
   m_Father: {fileID: 5681126309429315178}
   m_RootOrder: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: cRnzSY91r0SyBmE5Pq1C0A
-  _maxHealth: 300
+  _maxHealth: 250
   _functioningThreshold: 20
   _damageThreshold: 20
   _reinforced: 0
@@ -771,13 +771,13 @@ MonoBehaviour:
   _waitForFCLock: 0
   _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
-  _shoulderCamEnabled: 0
+  _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.139, y: 0.238, z: 0.132}
   _timeBetweenMuzzles: 2
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
-  _reloadTime: 18
+  _reloadTime: 16
   _reloadStatSubtype: ETC
   _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
@@ -786,7 +786,7 @@ MonoBehaviour:
   _traverseRate: 15
   _elevationRate: 20
   _bshortReloadReductionPercent: 0.8
-  _overheatDamage: 12
+  _overheatDamage: 23
   _overheatDamageSubtype: 
 --- !u!114 &5681126309429315184
 MonoBehaviour:
@@ -967,7 +967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5681126310087154588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.295, z: 0.419}
+  m_LocalPosition: {x: 0, y: 0.269, z: 0.419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7654068167278207790}
