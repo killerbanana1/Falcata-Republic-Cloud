@@ -29,7 +29,7 @@ MonoBehaviour:
   _role: 1
   _weightClassDiscrepancy: 1
   _maxFlightTime: 12.5
-  _flightSpeed: 400
+  _flightSpeed: 40
   _repoolDelay: 5
   _armorPenetration: 90
   _armorDamageRadius: 1.75
