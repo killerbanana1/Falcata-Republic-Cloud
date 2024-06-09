@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _partKey: 3CDhhidZleeq1DLvP3iiuTWQ
   _maxHealth: 250
-  _functioningThreshold: 30
+  _functioningThreshold: 20
   _damageThreshold: 20
   _reinforced: 0
   _bindTag: 

@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: cRnzSY91r0SyBmE5Pq1C0A
-  _maxHealth: 250
+  _maxHealth: 300
   _functioningThreshold: 20
   _damageThreshold: 20
   _reinforced: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   _size: {x: 3, y: 1, z: 5}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 5
+  _mass: 10
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 350
+    _amount: 1000
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []
@@ -763,24 +763,24 @@ MonoBehaviour:
   - 750
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
-  _allowVisualTargeting: 0
+  _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
-  _shoulderCamEnabled: 0
-  _shoulderCamOffset: {x: 0.139, y: 0.238, z: 0.132}
+  _shoulderCamEnabled: 1
+  _shoulderCamOffset: {x: 0, y: 0.238, z: 0.132}
   _timeBetweenMuzzles: 0
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 1
-  _reloadTime: 10
+  _magazineSize: 3
+  _reloadTime: 30
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 5681126309429315179}
-  _traverseRate: 16
+  _traverseRate: 15
   _elevationRate: 20
   _bshortReloadReductionPercent: 0.75
-  _overheatDamage: 4
+  _overheatDamage: 8
   _overheatDamageSubtype: 
 --- !u!114 &5681126309429315184
 MonoBehaviour:

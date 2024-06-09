@@ -27,10 +27,10 @@ MonoBehaviour:
     Subclass: 220mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 10
-  _flightSpeed: 80
+  _maxFlightTime: 6.5
+  _flightSpeed: 120
   _repoolDelay: 5
-  _armorPenetration: 66
+  _armorPenetration: 65
   _armorDamageRadius: 0.8
   _heatPower: 0
   _componentDamage: 70
