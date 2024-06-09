@@ -45,6 +45,7 @@ public class CopyShellData : IModEntryPoint
         updateTurret(componentDictionary, "Stock/C53 Cannon", "Falcata Republic/RHI-S1150 Cannon");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-135 Railgun");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-235 Railgun");
+        updateTurret(componentDictionary, "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun");
     }
 
     public static void updateTurret(Dictionary<string, HullComponent> componentDictionary, string keySource, string keyDestination)
@@ -98,6 +99,7 @@ public class CopyShellData : IModEntryPoint
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/450mm HE Shell", "Falcata Republic/380mm HE Shell");
         updateMunition<LightweightAirburstFragShell>(munitionDictionary, "Stock/600mm Bomb Shell", "Falcata Republic/380mm HE-ABF Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/200mm RP-HEI Shell");
+        updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/220mm AP Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/700mm KART-HEI Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/700mm KART-KP Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm AP Rail Pinshot");

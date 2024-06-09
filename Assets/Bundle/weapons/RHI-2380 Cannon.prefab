@@ -742,7 +742,7 @@ MonoBehaviour:
   _size: {x: 5, y: 3, z: 5}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 18
+  _mass: 8
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0

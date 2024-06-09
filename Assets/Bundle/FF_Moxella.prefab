@@ -6789,7 +6789,7 @@ MonoBehaviour:
   _weightClass: 1
   _maxSpeed: 2.5
   _maxTurnSpeed: 0.09
-  _linearMotorForce: 720
+  _linearMotorForce: 750
   _angularMotorForce: 200
   _crewComplement: 60
   _crewVulnerability: 0.5

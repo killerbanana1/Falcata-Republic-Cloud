@@ -775,7 +775,7 @@ MonoBehaviour:
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 40
+  _mass: 35
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
