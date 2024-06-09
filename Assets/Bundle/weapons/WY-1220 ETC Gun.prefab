@@ -680,7 +680,13 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 3 Cannon
-  _longDescription: 
+  _longDescription: Affectionately known as the Woodpecker for its long pointed barrel,
+    the Weyland Yutani 1x220mm Electrothermochemical Gun makes use of an efficient
+    and advanced plasma ignition system for its shells. This efficiency lends itself
+    to a very high fire rate, however the intense amount of heat generated each time
+    the weapon fires necessitates high capacity radiators. The heat safety threshold
+    can be ignored in battle to achieve a staggeringly high fire rate for a short
+    period of time before the gun damages itself too much to be operable.
   _flavorText: 
   _category: Weapons - Projectile
   _costBreakdownClass: 0
@@ -702,7 +708,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 350
+    _amount: 1000
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []
@@ -767,20 +773,20 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 0
   _shoulderCamOffset: {x: 0.139, y: 0.238, z: 0.132}
-  _timeBetweenMuzzles: 0
+  _timeBetweenMuzzles: 2
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 1
-  _reloadTime: 10
-  _reloadStatSubtype: 
-  _recycleStatSubtype: 
+  _magazineSize: 3
+  _reloadTime: 18
+  _reloadStatSubtype: ETC
+  _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 5681126309429315179}
   _traverseRate: 16
   _elevationRate: 20
-  _bshortReloadReductionPercent: 0.75
-  _overheatDamage: 4
+  _bshortReloadReductionPercent: 0.8
+  _overheatDamage: 12
   _overheatDamageSubtype: 
 --- !u!114 &5681126309429315184
 MonoBehaviour:
