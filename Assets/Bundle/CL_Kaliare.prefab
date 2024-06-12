@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 7486041891874537474}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -2410,7 +2410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 2542970309776172863}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -6843,7 +6843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5385555869948975634}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -10720,7 +10720,7 @@ MonoBehaviour:
     meet the navies need for a small utility vessel, the other, to make a long range
     support weapons platform. The Kaliare is a result of the latter. Its designation
     as a light cruiser is perhaps flawed, as it will struggle to meet the demands
-    of a deedicated frontline asset. However, making use of long range firepower,
+    of a dedicated frontline asset. However, making use of long range firepower,
     the Kaliare''s are some of the deadliest ships in the cluster. '
   _flavorText: To Do.
   _pointCost: 275
@@ -11313,7 +11313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 3202863782943474375}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible

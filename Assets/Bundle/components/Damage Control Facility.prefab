@@ -55,7 +55,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _saveKey: 
   _modId: 0
-  _shortUIName: DC Fabricators
+  _shortUIName: DC Facility
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
@@ -67,13 +67,13 @@ MonoBehaviour:
   _compoundingCost: 1
   _compoundingCostClass: Hull Repair
   _firstInstanceFree: 0
-  _compoundingMultiplier: 2
-  _pointCost: 40
+  _compoundingMultiplier: 1.55
+  _pointCost: 45
   _type: 2
   _size: {x: 5, y: 5, z: 5}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 15
+  _mass: 25
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
@@ -89,9 +89,9 @@ MonoBehaviour:
   _resourceDemandPriority: 10
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 500
+    _amount: 750
     _perUnit: 0
-    _onlyWhenOperating: 0
+    _onlyWhenOperating: 1
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
@@ -122,11 +122,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _crewRequired: 10
   _reinforceCrewAt: -1
-  _jobName: 
-  _teamTitle: Flying Team
-  _teamsProduced: 1
+  _jobName: Damage Control
+  _teamTitle: Elite Team
+  _teamsProduced: 2
   _crewPerTeam: 5
-  _movementSpeed: 1
-  _repairPerTick: 0.8
-  _canRestore: 0
+  _movementSpeed: 0.5
+  _repairPerTick: 0.3
+  _canRestore: 1
   _restoreCount: 1

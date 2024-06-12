@@ -39,9 +39,9 @@ MonoBehaviour:
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 6
-  _neverOverpen: 0
+  _neverOverpen: 1
   _overrideComponentSearchDistance: -1
-  _overpenDamageMultiplier: 0.35
+  _overpenDamageMultiplier: 1
   _overpenDamageSpreadMethod: 0
   _ignoreDamageReduction: 0
   _alwaysSpreadDamage: 0

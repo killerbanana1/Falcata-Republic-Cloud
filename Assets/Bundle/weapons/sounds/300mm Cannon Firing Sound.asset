@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 300mm Cannon Firing Sound
   m_EditorClassIdentifier: 
   _loop: 0
-  _priority: 154
-  _volume: 4000
+  _priority: 128
+  _volume: 6000
   _maxFalloffDistance: 150
   _doppler: 0
   _rolloffMode: 0

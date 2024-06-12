@@ -5118,11 +5118,11 @@ MonoBehaviour:
   _className: Pskellon
   _hullClassification: Corvette
   _hullSymbolOptions:
+  - KE
   - FFL
   - FFE
   - ESV
   - CV
-  - KE
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: e6fe1154777608441b316adf64da8ec3, type: 3}
@@ -5136,7 +5136,8 @@ MonoBehaviour:
     that the naval asset pool had been sorely lacking for the better part of its
     history. \n\nWhile a lone Pskellon might struggle, these ships thrive as escorts
     or in groups, where their weaker firepower is negated, and their combination
-    of utility and solid maneuverability can be exercized to its greatest extent."
+    of utility and solid maneuverability can be exercized to its greatest extent.\n\nIdentification
+    Work Required: +125%"
   _flavorText: To Do.
   _pointCost: 100
   _mass: 4500
@@ -5151,11 +5152,7 @@ MonoBehaviour:
   _componentDR: 0
   _visionDistance: 5
   _identityWorkRequired: 450
-  BaseModifiers:
-  - _statName: 
-    _literal: 0
-    _modifier: 0
-    _permanent: 0
+  BaseModifiers: []
   _selectVolume: {fileID: 5132376608656868247}
   _radarSignature: {fileID: 6735343248398704078}
   _structure: {fileID: 5093841161394707787}
@@ -7808,7 +7805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 6441749818466700600}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible

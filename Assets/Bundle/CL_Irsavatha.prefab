@@ -3454,7 +3454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 2836465200321449724}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -6538,7 +6538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 4725027190149846569}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -10468,7 +10468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5668345915344958417}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -11643,7 +11643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 721618165504595180}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible

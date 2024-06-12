@@ -23,30 +23,32 @@ MonoBehaviour:
     A Falcatan state has existed in one form or another for roughly 650 years, with
     the sole exception being its occupation by Imperial Venuma from -6 I.Y. - 77
     I.Y. The area of space controlled by Falcata was settled primarily by two groups,
-    Anglois and Francois, and these two cultures have remained dominant in the region
-    ever since. As such the republic is primarily a blingual state, with each group
-    having roughly equal representation in congress. despite the fact that the Francois
-    population is 10% smaller. \n\nBeing a unitary system, most laws and regulations
-    are made applicable across the whole of Falcatan space, while this would be infeasable
-    for most stellar polities, the smaller nature of the Falcatan state, combined
-    with cutting edge hyperspace and communications technologies makes it a passible
-    method of governing. Even still, unrest is common the further you go from the
-    core, and many politicians are pressuring for a switch to a federative regime.
-    \n\nFor most of recent history, Falcatan foreign policy has focused strongly
-    on self preservation and cooperation with its allies. This was a natural result
-    of the Venuman occupation, but as that war slips further and further into the
-    past, congress has found more and more hawkish members entering its chambers.
-    Many right wingers call for the initiation of a conflict in an attempt to further
-    unify the republic, either against the increasingly authoritarian Indivism Technocracy
-    to the north, or the long dominant Shelter Alliance to the southeast. \n\nThough
-    Shelter and Falcata share an ideology, and were historical allies against Venuma.
-    200 years with no common enemy saw discontent grow in Falcata and elsewhere against
-    shelter dominion. This discontent lead to more abrasive diplomacy and rising
-    tensions, eventually culminating in a small border skirmish which left 3 Falcatan
-    bulk liners and a Shelter cruiser clouds of expanding gas. While the root cause
-    of the skirmish is currently unknown, emotions ran high and relations were cut
-    entirely. Now, as Shelter finds itself bogged down in the Bethel Rebellion, Falcata
-    readies its fleet, lifting a knife set to plunge into Shelters exposed back...\n"
+    Anglois and Francois of old earth, and these two cultures have remained dominant
+    in the region ever since. As such the republic is primarily a blingual state,
+    with each group having roughly equal representation in congress. despite the
+    fact that the Francois population is 10% smaller. \r\n\r\nBeing a unitary system,
+    most laws and regulations are made applicable across the whole of Falcatan space,
+    while this would be infeasable for most stellar polities, the smaller nature
+    of the Falcatan state, combined with cutting edge hyperspace and communications
+    technologies makes it a passible method of governing. Even still, unrest is common
+    the further you go from the core, and many politicians are pressuring for a switch
+    to a federative regime. \r\n\r\nFor most of recent history, Falcatan foreign
+    policy has focused strongly on self preservation and cooperation with its allies.
+    This was a natural result of the Venuman occupation, but as that war slips further
+    and further into the past, congress has found more and more hawkish members entering
+    its chambers. Many right wingers call for the initiation of a conflict in an
+    attempt to further unify the republic, either against the increasingly authoritarian
+    Indivism Technocracy to the north, or the long dominant Shelter Alliance to the
+    southeast. \r\n\r\nThough Shelter and Falcata share an ideology, and were historical
+    allies against Venuma. 200 years with no common enemy saw discontent grow in
+    Falcata and elsewhere against shelter dominion. This discontent lead to more
+    abrasive diplomacy and rising tensions, and as shelters domination of the clusters
+    trade became ever more beligerent, said tensions would culminate in a small border 
+    skirmish which left 3 Falcatan cargo liners and a Shelter cruiser clouds of expanding
+    gas. While the root cause of the skirmish is currently unknown, emotions ran
+    high and relations were cut entirely. Now, as Shelter finds itself bogged down
+    in the Bethel Rebellion, Falcata readies its fleet, lifting a knife set to plunge
+    into Shelters exposed back..."
   NewFleetFirstShip: Falcata Republic/FF_Moxella
   _sharedFactionAll: []
   _sharedEquipmentList:
@@ -140,7 +142,6 @@ MonoBehaviour:
   - $MODMIS$/SGM-200 Tempest
   - $MODMIS$/SGT-300 Pilum
   - Stock/HE Kinetic Penetrator
-  - Stock/Electro-Optical Seeker
   _sharedEquipmentPatterns: []
   _saveKey: 
   _modId: 0

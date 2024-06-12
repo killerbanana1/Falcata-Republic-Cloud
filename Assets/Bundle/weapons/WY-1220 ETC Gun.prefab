@@ -233,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 3258015530563398017}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 90, y: 90, z: 90}
+  m_LocalScale: {x: 85, y: 85, z: 85}
   m_Children: []
   m_Father: {fileID: 5681126309429315178}
   m_RootOrder: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.2
+  _baseAccuracy: 0.15
   _flash: {fileID: 5681126308224027854}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: 917042b83f356244e944a4b4b72fccbe, type: 3}
-  _largeImage: {fileID: 0}
+  _largeImage: {fileID: 21300000, guid: 52ffe3ea488e374429aa383c517be512, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 3 Cannon
   _longDescription: Affectionately known as the Woodpecker for its long pointed barrel,

@@ -31,10 +31,10 @@ MonoBehaviour:
   _maxFlightTime: 14.4
   _flightSpeed: 75
   _repoolDelay: 5
-  _armorPenetration: 32
+  _armorPenetration: 29
   _armorDamageRadius: 0.45
   _heatPower: 5
-  _componentDamage: 24
+  _componentDamage: 23
   _randomEffectMultiplier: 0.1
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 0.1
@@ -89,7 +89,7 @@ MonoBehaviour:
         m_NumAlphaKeys: 4
     _floats:
     - Name: Width
-      Value: 0.25
+      Value: 0.28
     - Name: Lifetime
       Value: 2.5
   _whine: {fileID: 8300000, guid: 3a3519090b043e04d8b1a7bedbd19371, type: 3}

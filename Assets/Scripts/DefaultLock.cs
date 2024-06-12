@@ -23,11 +23,11 @@ class Patch_HullComponent_UseableByFaction
 {
     public static bool Prefix(ref HullComponent __instance, ref bool __result, ref FactionDescription faction)
     {
-        UnityEngine.Debug.Log("[Falcata] Patch_HullComponent_UseableByFaction Prefix start");
-        if (faction != null)
-            UnityEngine.Debug.Log("\tFaction key: " + faction.SaveKey);
-        else
-            UnityEngine.Debug.Log("\tFaction is null");
+        // UnityEngine.Debug.Log("[Falcata] Patch_HullComponent_UseableByFaction Prefix start");
+        //if (faction != null)
+          //  UnityEngine.Debug.Log("\tFaction key: " + faction.SaveKey);
+        //else
+          //  UnityEngine.Debug.Log("\tFaction is null"); 
 
         // Check if faction matches
         if (faction != null && faction.SaveKey == "Falcata Republic/Falcata Republic")
@@ -38,7 +38,7 @@ class Patch_HullComponent_UseableByFaction
             // Check if the component is in the locked list
             if (_lockedComponents.Contains(__instance.SaveKey))
             {
-                UnityEngine.Debug.Log($"\t\tComponent \"{__instance.SaveKey}\" is forbidden");
+            //    UnityEngine.Debug.Log($"\t\tComponent \"{__instance.SaveKey}\" is forbidden");
                 __result = false;
                 return false; // Skip the original method
             }
