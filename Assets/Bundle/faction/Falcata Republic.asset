@@ -15,40 +15,46 @@ MonoBehaviour:
   FactionName: Falcata Republic
   SmallLogo: {fileID: 21300000, guid: db91db54a3f03cd438b7a1519601617d, type: 3}
   LargeLogo: {fileID: 21300000, guid: 63535c5a3f3b1c749b857625ccec18f1, type: 3}
-  Description: "The Falcata Republic is a strong, unitary republic centered on the
-    planet Strata in the Falcata system. From this seat of power, the Falcatan congress
+  Description: "The Falcata Republic is a major cluster polity centered on the planet
+    Strata in the Falcata system. From this seat of power, the Falcatan congress
     administers 15 major populated planets and many more minor outposts across 10
     different star systems. While its control is looser in its further reaches, the
     overall strength of Falcata is not doubted amongst the nations of the cluster.
     A Falcatan state has existed in one form or another for roughly 650 years, with
     the sole exception being its occupation by Imperial Venuma from -6 I.Y. - 77
     I.Y. The area of space controlled by Falcata was settled primarily by two groups,
-    Anglois and Francois of old earth, and these two cultures have remained dominant
+    the Anglois and Francois of old earth, and these two cultures have remained dominant
     in the region ever since. As such the republic is primarily a blingual state,
-    with each group having roughly equal representation in congress. despite the
-    fact that the Francois population is 10% smaller. \r\n\r\nBeing a unitary system,
-    most laws and regulations are made applicable across the whole of Falcatan space,
-    while this would be infeasable for most stellar polities, the smaller nature
-    of the Falcatan state, combined with cutting edge hyperspace and communications
-    technologies makes it a passible method of governing. Even still, unrest is common
-    the further you go from the core, and many politicians are pressuring for a switch
-    to a federative regime. \r\n\r\nFor most of recent history, Falcatan foreign
-    policy has focused strongly on self preservation and cooperation with its allies.
-    This was a natural result of the Venuman occupation, but as that war slips further
-    and further into the past, congress has found more and more hawkish members entering
-    its chambers. Many right wingers call for the initiation of a conflict in an
-    attempt to further unify the republic, either against the increasingly authoritarian
-    Indivism Technocracy to the north, or the long dominant Shelter Alliance to the
-    southeast. \r\n\r\nThough Shelter and Falcata share an ideology, and were historical
-    allies against Venuma. 200 years with no common enemy saw discontent grow in
-    Falcata and elsewhere against shelter dominion. This discontent lead to more
-    abrasive diplomacy and rising tensions, and as shelters domination of the clusters
-    trade became ever more beligerent, said tensions would culminate in a small border 
-    skirmish which left 3 Falcatan cargo liners and a Shelter cruiser clouds of expanding
-    gas. While the root cause of the skirmish is currently unknown, emotions ran
-    high and relations were cut entirely. Now, as Shelter finds itself bogged down
-    in the Bethel Rebellion, Falcata readies its fleet, lifting a knife set to plunge
-    into Shelters exposed back..."
+    with each group having roughly equal demographic representation, followed by
+    a large minority of immigrants from the more chaotic northeast.\r\n\r\nThe Falcatan
+    system is somewhat unique for an interstellar polity, a hybrid of a demarchy
+    and a republic, in which a certain amount of eligible and willing citizens are
+    directed to congress by lottery. From here this group performs elections and
+    picks new leaders for the various ministries of Falcata's government. This process
+    occurs once every decade and depending on the draw of citizens put into government,
+    Falcatan policy can shift wildly. Within the republic, there are many critics
+    of the unstable nature of this system, nonetheless, it persists.\r\n\r\nDespite
+    its constantly shifting internal policy, Falcatan relations with its neighbors
+    have remained generally consistent since Venuma. The turbulent Houses to the
+    south, the Skirvaldr to the west, and the Indivisum to the north have remained
+    terse rivals, while the Sultunate, the Vesperians, and Shelter have been longstanding
+    allies. However, in recent times this order has been shifting, a combination
+    of discontent with Shelter dominion over the clusters trade, and the sortition
+    of more abrasive representatives to congress has lead to increasingly tense relations
+    with Shelter. Indeed, just 20 years ago in 458 IY Falcata normalized relations
+    with the previously hostile Houses, and in 473IY a defensive alliance was formed.
+    In this time frame, multiple trade incidents have occurred, the most major of
+    which resulted in the destruction of an Alliance light cruiser and three Falcatan
+    cargo liners. It is this incident in particular that resulted in the severance
+    of relations between Boardman and Strata. With a newly secured government, the
+    Falcatans are itching for a chance to flip the proverbial table against Shelter,
+    and bring their current hegemon to an end. With the newly sparked bethel rebellion,
+    it seems their chance has arrived, and across Falcatan space fleets mobilize
+    for war. \n\nThe Falcatan Navy is neer-peer or peer compared the the AN, however
+    due to a more limited industrial capacity, Falcatan capital ships tend to be
+    less numerous but higher quality than their AN counterparts, however, their lighter
+    ships are usually more plentiful, intended to operate in groups to achieve local
+    superiority against the individually superior AN sceening ships. "
   NewFleetFirstShip: Falcata Republic/FF_Moxella
   _sharedFactionAll: []
   _sharedEquipmentList:

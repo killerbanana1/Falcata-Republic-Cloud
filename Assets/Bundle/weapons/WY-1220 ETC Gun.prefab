@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.15
+  _baseAccuracy: 0.14
   _flash: {fileID: 5681126308224027854}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -664,9 +664,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: cRnzSY91r0SyBmE5Pq1C0A
-  _maxHealth: 250
+  _maxHealth: 275
   _functioningThreshold: 20
-  _damageThreshold: 20
+  _damageThreshold: 25
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -708,7 +708,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1000
+    _amount: 750
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []
@@ -773,11 +773,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.139, y: 0.238, z: 0.132}
-  _timeBetweenMuzzles: 2
+  _timeBetweenMuzzles: 1.5
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
-  _reloadTime: 16
+  _reloadTime: 17
   _reloadStatSubtype: ETC
   _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
