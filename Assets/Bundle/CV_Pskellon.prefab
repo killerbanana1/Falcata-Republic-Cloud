@@ -5129,7 +5129,7 @@ MonoBehaviour:
   _smallSilhouette: {fileID: 21300000, guid: 0b01ea26608803743a7efdc47227feae, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: d4af93996ccc191449f37c3d165f1614, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: 49aa22359dba0f04996d73b57e4dec5a, type: 3}
-  _screenshot: {fileID: 21300000, guid: 7494d20277c2ef045ba3ed0ab4c747d0, type: 3}
+  _screenshot: {fileID: 21300000, guid: a562c3ba903bc4a49b98a9bdc824c4fe, type: 3}
   _longDescription: "One of the naval offices newest additions, the Pskellon class
     corvette has been in use with the Falcatan navy for less than a decade. The class
     was designed primarily to fill the roll of point defense and sensor escort, something

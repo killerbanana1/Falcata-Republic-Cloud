@@ -1184,7 +1184,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: RHI-1620 Rifle
   _smallImage: {fileID: 21300000, guid: a40f5a10f98c3304687133d976c9e1ce, type: 3}
-  _largeImage: {fileID: 0}
+  _largeImage: {fileID: 21300000, guid: 8ac9c2beda9c2a746a38da58237b84e3, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 5 Cannon
   _longDescription: Recoilless Rifles behave similar to primitive shotguns, spewing
@@ -1313,7 +1313,7 @@ MonoBehaviour:
       _permanent: 0
     Duration: 12
   _turretControl: {fileID: 1598013660015875406}
-  _traverseRate: 6
+  _traverseRate: 8
   _elevationRate: 20
 --- !u!114 &7588373706808276421
 MonoBehaviour:

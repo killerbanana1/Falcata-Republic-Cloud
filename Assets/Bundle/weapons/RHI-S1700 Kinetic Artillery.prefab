@@ -329,7 +329,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: RHI-1700 KART
   _smallImage: {fileID: 21300000, guid: 9999cf79f0532d54bb82c21ff10eb106, type: 3}
-  _largeImage: {fileID: 21300000, guid: 594b56466505d9f48b5675e27637bc6e, type: 3}
+  _largeImage: {fileID: 21300000, guid: 3e91f05cb8476ab499a49deb1973e988, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Spinal Kinetic Artillery
   _longDescription: Kinetic Artillery, or KART, is a long range support tool. Intended
@@ -351,11 +351,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
-  Modifiers:
-  - _statName: hull-angularmotor
-    _literal: 0
-    _modifier: -0.1
-    _permanent: 0
+  Modifiers: []
   _resourceDemandPriority: 10
   ResourcesProvided: []
   ResourcesRequired:
@@ -430,7 +426,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 1
-  _reloadTime: 29
+  _reloadTime: 26
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1

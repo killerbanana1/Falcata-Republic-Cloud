@@ -8265,7 +8265,7 @@ MonoBehaviour:
   _smallSilhouette: {fileID: 21300000, guid: 0639bfd0628fae14c80243abb463807e, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 9475ec03ef3e5314e9d573c7d5ed1fba, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: dad656b836f3fcb4eb436f2ec507e297, type: 3}
-  _screenshot: {fileID: 21300000, guid: 27d7c283d31e6614ab1320e10f334c04, type: 3}
+  _screenshot: {fileID: 21300000, guid: 55b20407d36432642b307fc743d3a65d, type: 3}
   _longDescription: In Falcatan naval doctrine, heavy cruisers are meant to bear
     the brunt of the enmies firepower, while dishing out a heavy beating in exchange.
     They function as the anchor of a fleet, and when adequately supported by smaller

@@ -20,6 +20,7 @@
 	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
 	<Entry Name="WY-1220 ETC Gun" Address="weapons/WY-1220 ETC Gun.prefab"/>
 	<Entry Name="RHI-S1700 Kinetic Artillery" Address="weapons/RHI-S1700 Kinetic Artillery.prefab"/>
+	<Entry Name="RHI-1700 Kinetic Artillery" Address="weapons/RHI-1700 Kinetic Artillery.prefab"/>
 	<Entry Name="RHI-1620 Recoilless Rifle" Address="weapons/RHI-1620 Recoilless Rifle.prefab"/>
 	<Entry Name="RHI-S820 Recoilless Rifle" Address="weapons/RHI-S820 Recoilless Rifle.prefab"/>
 	<Entry Name="MLS-3-S Launcher" Address="weapons/MLS-3-S Launcher.prefab"/>
@@ -34,6 +35,7 @@
 	<Entry Name="380mm HE Shell" Address="weapons/380mm HE Shell.asset"/>
 	<Entry Name="380mm HE-ABF Shell" Address="weapons/380mm HE-ABF Shell.asset"/>
 	<Entry Name="200mm RP-HEI Shell" Address="weapons/200mm RP-HEI Shell.asset"/>
+	<Entry Name="200mm RP-SS Shell" Address="weapons/200mm RP-SS Shell.asset"/>
 	<Entry Name="220mm AP Shell" Address="weapons/220mm AP Shell.asset"/>
 	<Entry Name="700mm KART-HEI Shell" Address="weapons/700mm KART-HEI Shell.asset"/>
 	<Entry Name="700mm KART-KP Shell" Address="weapons/700mm KART-KP Shell.asset"/>

@@ -490,7 +490,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 55
+  _pointCost: 40
   _type: 0
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
@@ -579,8 +579,8 @@ MonoBehaviour:
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 1333112242563966887}
-  _traverseRate: 4
-  _elevationRate: 6
+  _traverseRate: 8
+  _elevationRate: 12
 --- !u!114 &7917948123613267756
 MonoBehaviour:
   m_ObjectHideFlags: 0

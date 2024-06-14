@@ -323,7 +323,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: RHI- S1150
   _smallImage: {fileID: 21300000, guid: 4a8406260d4833a4ca93ce13a36e69f3, type: 3}
-  _largeImage: {fileID: 0}
+  _largeImage: {fileID: 21300000, guid: b4be68df26ccb524bbb30f4c4dcb7485, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Casemate Cannon
   _longDescription: 150mm shells are short range small craft devastators. the HE
