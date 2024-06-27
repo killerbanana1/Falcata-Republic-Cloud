@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: NEMfl9wgqEmyCJsnEDtZQA
-  _maxHealth: 350
+  _maxHealth: 300
   _functioningThreshold: 20
   _damageThreshold: 30
   _reinforced: 0
@@ -554,7 +554,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 80
+  _pointCost: 65
   _type: 0
   _size: {x: 2, y: 8, z: 2}
   _interiorOverhang: 0

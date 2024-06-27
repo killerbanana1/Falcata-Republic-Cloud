@@ -31,11 +31,11 @@ MonoBehaviour:
   _maxFlightTime: 14.4
   _flightSpeed: 75
   _repoolDelay: 5
-  _armorPenetration: 29
+  _armorPenetration: 25
   _armorDamageRadius: 0.45
   _heatPower: 5
   _componentDamage: 23
-  _randomEffectMultiplier: 0.1
+  _randomEffectMultiplier: 0.05
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 0.1
   _maxPenetrationDistance: 5
@@ -101,10 +101,10 @@ MonoBehaviour:
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0
   _playDestructionEffectOnTimeout: 1
-  _fuzeMargin: 0.3
+  _fuzeMargin: 0.34
   _minFuzeTime: 0.75
   _fuzeAdvanceRetard: -0.2
-  _blastRadius: 14
+  _blastRadius: 24
   _fragmentCountPerTarget: 4
   _fragmentSearchDistance: 5
   _damagePotentialMaxHits: 5

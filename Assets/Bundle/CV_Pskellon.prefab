@@ -5174,7 +5174,7 @@ MonoBehaviour:
   _subPartRoot: {fileID: 130790072}
   _paintableMeshes:
   - {fileID: 4688509451188725681}
-  _armorThickness: 5
+  _armorThickness: 10
   _dynamicArmorZones:
   - HullSeg: {fileID: 4688509451188725681}
     Colliders:

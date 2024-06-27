@@ -786,7 +786,7 @@ MonoBehaviour:
   _traverseRate: 15
   _elevationRate: 20
   _bshortReloadReductionPercent: 0.8
-  _overheatDamage: 12
+  _overheatDamage: 18
   _overheatDamageSubtype: 
 --- !u!114 &5681126309429315184
 MonoBehaviour:

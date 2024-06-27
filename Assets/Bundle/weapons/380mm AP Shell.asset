@@ -29,7 +29,7 @@ MonoBehaviour:
   _flightSpeed: 90
   _repoolDelay: 5
   _armorPenetration: 90
-  _armorDamageRadius: 1.1
+  _armorDamageRadius: 1.15
   _heatPower: 0
   _componentDamage: 85
   _randomEffectMultiplier: 0.1
