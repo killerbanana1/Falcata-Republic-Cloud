@@ -15,7 +15,7 @@ MonoBehaviour:
   _pointCost: 1
   _pointDivision: 50
   _storageVolume: 0.15
-  _factionKey: 
+  _factionKey: Falcata Republic/Falcata Republic
   _flavorText: Armor-piercing shells utilized by cannon weapons, such as the WY-1220.
     Effective on light or medium-type warships, with acceptable performance on heavy-type
     warships.  Has increased effectiveness against penetrating or destroying hull
