@@ -17,7 +17,7 @@ MonoBehaviour:
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: Meant for use against missiles. Middling effectiveness, most useful
-    against large clouds of slow moving missiles.
+    against large clouds of slow moving missiles. DEFENSIVE ONLY. 2.5CM penetration.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical

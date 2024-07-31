@@ -91,7 +91,7 @@ MonoBehaviour:
   - _resourceName: Power
     _amount: 750
     _perUnit: 0
-    _onlyWhenOperating: 1
+    _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05

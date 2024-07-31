@@ -286,7 +286,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 250
   - 500
-  - 750
+  - 680
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
