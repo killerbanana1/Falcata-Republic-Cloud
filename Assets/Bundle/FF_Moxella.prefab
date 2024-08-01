@@ -2863,8 +2863,8 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: Module3
-  _size: {x: 6, y: 4, z: 6}
+  _key: MoxModule3
+  _size: {x: 5, y: 5, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
@@ -5171,8 +5171,8 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: Module2
-  _size: {x: 5, y: 5, z: 5}
+  _key: MoxModule2
+  _size: {x: 5, y: 3, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2

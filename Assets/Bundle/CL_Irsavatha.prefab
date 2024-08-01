@@ -6600,7 +6600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Module1
-  _size: {x: 10, y: 8, z: 10}
+  _size: {x: 9, y: 7, z: 9}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
