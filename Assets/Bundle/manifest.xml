@@ -9,6 +9,9 @@
 	<Entry Name="CL_Irsavatha" Address="CL_Irsavatha.prefab"/>
 	<Entry Name="CH_Moccotar" Address="CH_Moccotar.prefab"/>
   </Hulls>
+  <MissileComponents>
+	<Entry Name="Fixed Laser-Guided Seeker" Address="weapons/Missiles/Fixed Laser-Guided Seeker.asset"/>
+  </MissileComponents>
   <Components>
 	<Entry Name="RHI-4380 Cannon" Address="weapons/RHI-4380 Cannon.prefab"/>
 	<Entry Name="RHI-3380 Cannon" Address="weapons/RHI-3380 Cannon.prefab"/>
@@ -26,6 +29,7 @@
 	<Entry Name="MLS-3-S Launcher" Address="weapons/MLS-3-S Launcher.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
 	<Entry Name="UC-LRR57 'Sauron' Radar" Address="weapons/UC-LRR57 'Sauron' Radar.prefab"/>
+	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>

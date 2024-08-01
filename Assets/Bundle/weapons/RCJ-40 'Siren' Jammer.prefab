@@ -598,6 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4778501098130696532}
   - component: {fileID: 4778501098130696533}
+  - component: {fileID: 6217759119328490403}
   m_Layer: 0
   m_Name: Radar Jam Muzzle
   m_TagString: Untagged
@@ -635,6 +636,23 @@ MonoBehaviour:
   _matchRotation: 1
   _updateEveryFrame: 1
   _updateInterval: 0.5
+--- !u!114 &6217759119328490403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778501098130696534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 860895539, guid: a7a25bc0619be8e46a78e5bc64c08bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &6218069133618044749
 GameObject:
   m_ObjectHideFlags: 0
