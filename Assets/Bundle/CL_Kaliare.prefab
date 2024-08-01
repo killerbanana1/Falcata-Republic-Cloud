@@ -10711,8 +10711,8 @@ MonoBehaviour:
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: f16379f4be5bcf644b3ea74f2c7a4448, type: 3}
   _smallSilhouette: {fileID: 21300000, guid: a5830f8bad05bba41b56d234f799b2bc, type: 3}
-  _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 7edf9bb4e1025ae40af6b4b020458aa6, type: 3}
-  _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: e22064509fb53244a93c4dfb5ed3ec60, type: 3}
+  _statusDisplayPrefab: {fileID: 4915532643607095751, guid: ef5a26a67f675514d902c43a0f9582be, type: 3}
+  _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: c012184030879b542927cc861e251f5b, type: 3}
   _screenshot: {fileID: 21300000, guid: 53852100d301b4640a21e896a98230ea, type: 3}
   _longDescription: 'The Kaliare Class is an ofshoot of the same program that created
     the Pskellon class corvette. Conflicting views on the naval acquisitions board

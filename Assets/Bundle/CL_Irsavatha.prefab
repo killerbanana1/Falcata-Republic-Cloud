@@ -7259,7 +7259,7 @@ MonoBehaviour:
   _mass: 9000
   _weightClass: 2
   _maxSpeed: 2.4
-  _maxTurnSpeed: 0.1
+  _maxTurnSpeed: 0.15
   _linearMotorForce: 1050
   _angularMotorForce: 325
   _crewComplement: 95

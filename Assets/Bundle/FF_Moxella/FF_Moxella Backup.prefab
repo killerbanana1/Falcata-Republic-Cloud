@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment7
+  _key: Compartment7
   _size: {x: 4, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment5
+  _key: Compartment5
   _size: {x: 6, y: 1, z: 8}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -438,8 +438,8 @@ MonoBehaviour:
   - DDL
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
-  _silhouette: {fileID: 21300000, guid: 210354408a63f0441b8beb13da505bf7, type: 3}
-  _smallSilhouette: {fileID: 21300000, guid: c078e0021af3db240affd8d1d20b33ce, type: 3}
+  _silhouette: {fileID: 21300000, guid: 926eabcc5bac9ae4fb674d4e72a1b2e9, type: 3}
+  _smallSilhouette: {fileID: 21300000, guid: 22487ce7443d688448ab82dbd6856151, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 20ce9eb7f5b48ab4dabdb141808e38bf, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: 8b2c29e0bc618804cbb842d50e062d7b, type: 3}
   _screenshot: {fileID: 21300000, guid: 054ca24c02079644f9cbe6ff5afc76c8, type: 3}
@@ -475,8 +475,8 @@ MonoBehaviour:
   _weightClass: 1
   _maxSpeed: 2.5
   _maxTurnSpeed: 0.09
-  _linearMotorForce: 720
-  _angularMotorForce: 185
+  _linearMotorForce: 750
+  _angularMotorForce: 200
   _crewComplement: 60
   _crewVulnerability: 0.5
   _interiorDensityArmorEquivalent: 0.65
@@ -485,6 +485,10 @@ MonoBehaviour:
   _identityWorkRequired: 200
   BaseModifiers:
   - _statName: discreteweapon-reload
+    _literal: 0
+    _modifier: -0.15
+    _permanent: 0
+  - _statName: discreteweapon-reload:ETC
     _literal: 0
     _modifier: -0.15
     _permanent: 0
@@ -1061,7 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment6
+  _key: Compartment6
   _size: {x: 6, y: 1, z: 8}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -1198,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule1
+  _key: Module1
   _size: {x: 5, y: 5, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -1352,7 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 862674389, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxBRPanel
+  _partKey: BRPanel
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -1517,7 +1521,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster9
+  _partKey: Thruster9
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -1701,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 862674389, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxBLPanel
+  _partKey: BLPanel
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -1866,7 +1870,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster10
+  _partKey: Thruster10
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -2031,13 +2035,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561162483343728}
-  m_LocalRotation: {x: 0.7445411, y: 0.25091988, z: 0.2509144, w: 0.5654554}
-  m_LocalPosition: {x: 0.708, y: -0.803, z: -5.134}
+  m_LocalRotation: {x: 0.7357495, y: -0.27651274, z: -0.275606, w: 0.5534029}
+  m_LocalPosition: {x: -0.698, y: -0.815, z: -5.125}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 134.267, y: -70.359985, z: -70.36099}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 41.446, y: -108.317, z: -108.236}
 --- !u!114 &1850561162483343722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,7 +2054,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster14
+  _partKey: Thruster16
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -2062,7 +2066,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: 1, y: 0, z: 0}
+  _overrideNormal: {x: -1, y: 0, z: 0}
   _particles: {fileID: 1850561162483343726}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -2216,11 +2220,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561162501992423}
   m_LocalRotation: {x: 0.7745069, y: -0, z: -0, w: 0.63256556}
-  m_LocalPosition: {x: 0.28, y: -0.871, z: -5.576}
+  m_LocalPosition: {x: -0.28, y: -0.871, z: -5.576}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 101.520996, y: 0, z: 0}
 --- !u!114 &1850561162501992417
 MonoBehaviour:
@@ -2234,7 +2238,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster12
+  _partKey: Thruster14
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -2428,7 +2432,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule8
+  _key: Module8
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -2511,7 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule6
+  _key: Module6
   _size: {x: 3, y: 3, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -2572,20 +2576,20 @@ Transform:
   - {fileID: 1850561162133505868}
   - {fileID: 1850561164192929851}
   - {fileID: 1850561164240274271}
+  - {fileID: 1850561163839821632}
+  - {fileID: 1850561163680409700}
   - {fileID: 1850561163432715975}
   - {fileID: 1850561162829282167}
   - {fileID: 1850561163468319151}
   - {fileID: 1850561163094263738}
-  - {fileID: 1850561163839821632}
-  - {fileID: 1850561163680409700}
   - {fileID: 1850561162202701547}
   - {fileID: 1850561162480151054}
+  - {fileID: 1850561163972337071}
+  - {fileID: 1850561163706342800}
   - {fileID: 1850561163068411358}
   - {fileID: 1850561162501992422}
   - {fileID: 1850561164103409100}
   - {fileID: 1850561162483343727}
-  - {fileID: 1850561163972337071}
-  - {fileID: 1850561163706342800}
   - {fileID: 1850561162934040257}
   - {fileID: 1850561163041289743}
   - {fileID: 1850561162933317337}
@@ -2624,11 +2628,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561162829282168}
   m_LocalRotation: {x: 0.659037, y: -0, z: -0, w: 0.7521106}
-  m_LocalPosition: {x: 0.288, y: -0.947, z: 6.678}
+  m_LocalPosition: {x: -0.288, y: -0.947, z: 6.678}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 82.453, y: 0, z: 0}
 --- !u!114 &1850561162829282162
 MonoBehaviour:
@@ -2642,7 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster4
+  _partKey: Thruster6
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -2836,7 +2840,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount5
+  _key: Mount5
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 2, z: 0}
@@ -2909,7 +2913,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxRearThruster3
+  _partKey: RearThruster3
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -3092,7 +3096,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxRearThruster1
+  _partKey: RearThruster1
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -3285,7 +3289,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount2
+  _key: Mount2
   _size: {x: 3, y: 4, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 4, z: 0}
@@ -3358,7 +3362,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxRearThruster2
+  _partKey: RearThruster2
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -3551,7 +3555,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount3
+  _key: Mount3
   _size: {x: 3, y: 4, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 4, z: 0}
@@ -3606,11 +3610,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561163068411359}
   m_LocalRotation: {x: 0.7745069, y: -0, z: -0, w: 0.63256556}
-  m_LocalPosition: {x: -0.28, y: -0.871, z: -5.576}
+  m_LocalPosition: {x: 0.28, y: -0.871, z: -5.576}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 101.520996, y: 0, z: 0}
 --- !u!114 &1850561163068411353
 MonoBehaviour:
@@ -3624,7 +3628,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster11
+  _partKey: Thruster13
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -3794,7 +3798,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 130.719, y: 100.338, z: 99.174}
 --- !u!114 &1850561163094263733
 MonoBehaviour:
@@ -3808,7 +3812,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster6
+  _partKey: Thruster8
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -4002,7 +4006,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule4
+  _key: Module4
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -4085,7 +4089,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount1
+  _key: Mount1
   _size: {x: 3, y: 4, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 4, z: 0}
@@ -4168,7 +4172,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount4
+  _key: Mount4
   _size: {x: 3, y: 4, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 4, z: 0}
@@ -4241,7 +4245,7 @@ MonoBehaviour:
   m_Script: {fileID: 862674389, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxTRPanel
+  _partKey: TRPanel
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -4388,11 +4392,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561163432715976}
   m_LocalRotation: {x: 0.659037, y: -0, z: -0, w: 0.7521106}
-  m_LocalPosition: {x: -0.288, y: -0.947, z: 6.678}
+  m_LocalPosition: {x: 0.288, y: -0.947, z: 6.678}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 82.453, y: 0, z: 0}
 --- !u!114 &1850561163432715970
 MonoBehaviour:
@@ -4406,7 +4410,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster3
+  _partKey: Thruster5
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -4576,7 +4580,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 48.598, y: 77.564, z: 79.146}
 --- !u!114 &1850561163468319146
 MonoBehaviour:
@@ -4590,7 +4594,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster5
+  _partKey: Thruster7
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -4784,7 +4788,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule5
+  _key: Module5
   _size: {x: 3, y: 3, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -4857,7 +4861,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxMainEngine2
+  _partKey: MainEngine2
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -4997,7 +5001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 4536151222362176195}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -5058,7 +5062,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule3
+  _key: Module3
   _size: {x: 6, y: 4, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -5117,7 +5121,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 214.738, y: 90, z: 89.187}
 --- !u!114 &1850561163680409695
 MonoBehaviour:
@@ -5131,7 +5135,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster8
+  _partKey: Thruster4
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -5301,7 +5305,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 21
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 212.142, y: 86.798, z: 1.0599976}
 --- !u!114 &1850561163706342795
 MonoBehaviour:
@@ -5315,7 +5319,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster16
+  _partKey: Thruster12
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -5509,7 +5513,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule7
+  _key: Module7
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -5568,7 +5572,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -36.563, y: 87.865, z: 90.23}
 --- !u!114 &1850561163839821755
 MonoBehaviour:
@@ -5582,7 +5586,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster7
+  _partKey: Thruster3
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -5776,7 +5780,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxModule2
+  _key: Module2
   _size: {x: 5, y: 5, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -5835,7 +5839,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 20
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -35.172, y: 93.472, z: 2.255}
 --- !u!114 &1850561163972337066
 MonoBehaviour:
@@ -5849,7 +5853,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster15
+  _partKey: Thruster11
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -6043,7 +6047,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount6
+  _key: Mount6
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 2, z: 0}
@@ -6116,7 +6120,7 @@ MonoBehaviour:
   m_Script: {fileID: 862674389, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxTLPanel
+  _partKey: TLPanel
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -6262,13 +6266,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850561164103409101}
-  m_LocalRotation: {x: 0.7357495, y: -0.27651274, z: -0.275606, w: 0.5534029}
-  m_LocalPosition: {x: -0.698, y: -0.815, z: -5.125}
+  m_LocalRotation: {x: 0.7445411, y: 0.25091988, z: 0.2509144, w: 0.5654554}
+  m_LocalPosition: {x: 0.708, y: -0.803, z: -5.134}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1850561162626238087}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 41.446, y: -108.317, z: -108.236}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 134.267, y: -70.359985, z: -70.36099}
 --- !u!114 &1850561164103409095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6281,7 +6285,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster13
+  _partKey: Thruster15
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -6293,7 +6297,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _power: 0.8
   _contributeAngular: 1
-  _overrideNormal: {x: -1, y: 0, z: 0}
+  _overrideNormal: {x: 1, y: 0, z: 0}
   _particles: {fileID: 1850561164103409099}
   _tweenParticlePower: 0
   _particleThrottleRate: 0.5
@@ -6465,7 +6469,7 @@ MonoBehaviour:
   m_Script: {fileID: 1834869540, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxCR15
+  _partKey: CR15
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -6632,7 +6636,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster1
+  _partKey: Thruster1
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -6816,7 +6820,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxThruster2
+  _partKey: Thruster2
   _maxHealth: 75
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -7697,7 +7701,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment3
+  _key: Compartment3
   _size: {x: 4, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -7837,7 +7841,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment4
+  _key: Compartment4
   _size: {x: 4, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -7920,7 +7924,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment2
+  _key: Compartment2
   _size: {x: 4, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -8003,7 +8007,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment1
+  _key: Compartment1
   _size: {x: 4, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -8500,7 +8504,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxMainEngine1
+  _partKey: MainEngine1
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -8640,7 +8644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 6270278424491657198}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible
@@ -8851,7 +8855,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxMount7
+  _key: Mount7
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 2, z: 0}
@@ -9901,7 +9905,7 @@ MonoBehaviour:
   m_Script: {fileID: 1834869540, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxCR5
+  _partKey: CR5
   _maxHealth: 50
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -10550,7 +10554,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment9
+  _key: Compartment9
   _size: {x: 3, y: 1, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -10687,7 +10691,7 @@ MonoBehaviour:
   m_Script: {fileID: 1325435507, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: MoxCompartment8
+  _key: Compartment8
   _size: {x: 3, y: 1, z: 3}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
@@ -10760,7 +10764,7 @@ MonoBehaviour:
   m_Script: {fileID: -768538724, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: MoxMainEngine3
+  _partKey: MainEngine3
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
@@ -10900,7 +10904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 1417842747111235795}
-  _fullDisableDelay: 0
+  _fullDisableDelay: 20
   _disableWhenNotPlaying: 1
   _playBools:
   - Trail Visible

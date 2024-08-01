@@ -332,7 +332,7 @@ MonoBehaviour:
     allowing the 150mm armed ship to slip away. It also comes equipped with a proximity
     flak shell for long range anti missile purposes. This is a spinal casemate variant.
   _flavorText: 
-  _category: Weapons - Projectile
+  _category: Weapons - Spinal
   _costBreakdownClass: 2
   _compoundingCost: 0
   _compoundingCostClass: 
@@ -410,7 +410,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 250
   - 500
-  - 750
+  - 680
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

@@ -43,6 +43,7 @@ public class CopyShellData : IModEntryPoint
         updateTurret(componentDictionary, "Stock/C65 Cannon", "Falcata Republic/RHI-S820 Recoilless Rifle");
         updateTurret(componentDictionary, "Stock/C65 Cannon", "Falcata Republic/RHI-S1700 Kinetic Artillery");
         updateTurret(componentDictionary, "Stock/C53 Cannon", "Falcata Republic/RHI-S1150 Cannon");
+        updateTurret(componentDictionary, "Stock/C53 Cannon", "Falcata Republic/RHI-S4150 Cannon");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-135 Railgun");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-235 Railgun");
         updateTurret(componentDictionary, "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun");
