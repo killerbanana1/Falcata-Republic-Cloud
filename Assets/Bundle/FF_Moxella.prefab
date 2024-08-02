@@ -8150,7 +8150,7 @@ MonoBehaviour:
   _collider: {fileID: 4647688609985235570}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
+    LimitFiringOnly: 1
     LeftAngle: 170
     RightAngle: 170
     UseElevationLimit: 1

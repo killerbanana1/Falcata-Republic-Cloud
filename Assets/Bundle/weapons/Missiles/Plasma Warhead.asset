@@ -53,7 +53,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _heatPower: 1500
+  _heatPower: 5000
   _componentDamage:
     _amountPerIncrement: 0
     _falloff: 0

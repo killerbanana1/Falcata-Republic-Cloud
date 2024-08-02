@@ -40,7 +40,7 @@ MonoBehaviour:
   _sigType: 2
   _gain: 30
   _radiatedPower: 0
-  _requireIllumination: 1
+  _requireIllumination: 0
   _returnAngleBias:
     serializedVersion: 2
     m_Curve:
