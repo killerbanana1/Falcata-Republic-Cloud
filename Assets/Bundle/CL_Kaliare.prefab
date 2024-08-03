@@ -3362,7 +3362,7 @@ MonoBehaviour:
   m_Script: {fileID: -1419217067, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseIntegrity: 4750
+  _baseIntegrity: 5000
 --- !u!1 &4339714364644843722
 GameObject:
   m_ObjectHideFlags: 0
@@ -10724,10 +10724,10 @@ MonoBehaviour:
     the Kaliare''s are some of the deadliest ships in the cluster. '
   _flavorText: To Do.
   _pointCost: 275
-  _mass: 7800
+  _mass: 9000
   _weightClass: 1
   _maxSpeed: 2.2
-  _maxTurnSpeed: 0.15
+  _maxTurnSpeed: 0.08
   _linearMotorForce: 850
   _angularMotorForce: 280
   _crewComplement: 70

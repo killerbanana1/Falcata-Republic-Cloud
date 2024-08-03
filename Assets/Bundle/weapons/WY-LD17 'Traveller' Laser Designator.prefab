@@ -88,7 +88,7 @@ MonoBehaviour:
   _factionKey: 
   _shortDescription: Laser Designator
   _longDescription: Laser Designator
-  _flavorText: 
+  _flavorText: UNTESTED/NOT YET IMPLEMENTED
   _category: EWar
   _costBreakdownClass: 5
   _compoundingCost: 0

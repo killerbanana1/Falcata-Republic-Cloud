@@ -7256,10 +7256,10 @@ MonoBehaviour:
     defeat peer opponents, while retaining enough speed to flee from anything larger.'
   _flavorText: To Do.
   _pointCost: 400
-  _mass: 9000
-  _weightClass: 2
+  _mass: 11000
+  _weightClass: 1
   _maxSpeed: 2.4
-  _maxTurnSpeed: 0.15
+  _maxTurnSpeed: 0.08
   _linearMotorForce: 1050
   _angularMotorForce: 325
   _crewComplement: 95

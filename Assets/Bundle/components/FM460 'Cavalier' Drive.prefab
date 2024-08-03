@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3046223984018911464
+--- !u!1 &2408345682664124121
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7206416935242467867}
-  - component: {fileID: 1666113389714179575}
+  - component: {fileID: 3732463065979018274}
+  - component: {fileID: 7004778912628040796}
   m_Layer: 0
-  m_Name: WY-30X 'Caspian'
+  m_Name: FM460 'Cavalier' Drive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7206416935242467867
+--- !u!4 &3732463065979018274
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3046223984018911464}
+  m_GameObject: {fileID: 2408345682664124121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,22 +31,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1666113389714179575
+--- !u!114 &7004778912628040796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3046223984018911464}
+  m_GameObject: {fileID: 2408345682664124121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edd522d1b6684d48855fdb10be9d7ee, type: 3}
+  m_Script: {fileID: -1327320227, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: 5XOrVkC6a02yK-7nAw2CzA
-  _maxHealth: 200
-  _functioningThreshold: 20
-  _damageThreshold: 40
+  _partKey: xj5fak5JYkuW2g4mrxZ1IA
+  _maxHealth: 750
+  _functioningThreshold: 40
+  _damageThreshold: 60
   _reinforced: 0
   _bindTag: 
   _dcPriority: 1000
@@ -60,34 +60,60 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: 
-  _flavorText: 
+  _longDescription: A high-power drive designed for long-distance cruising.  Significantly
+    increases the ship's top speed, as well as its ability to maintain flank speed
+    without damage, but at the expense of maneuverability.
+  _flavorText: 'Codenamed ''Whiplash'', probably because the engines will make the
+    entire ship jolt and send crewmen all over the deck when Helm sets it to full
+    burn. The Naval Office liked the idea of applying some of the Sprinter''s speed
+    to the larger warships, and so does the Lee Helm when they hit a full ahead bell.
+
+
+    Overall,
+    Whiplash drives are an Alliance favorite, until the engine room is filled with
+    the drive grinding and the Chief Engineer is going off on one of their legendary
+    litanies of swearing. It''s a real treat.
+
+
+    - I. Parker, CMC'
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 25
-  _type: 0
-  _size: {x: 5, y: 5, z: 5}
+  _pointCost: 30
+  _type: 2
+  _size: {x: 9, y: 7, z: 9}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 20
-  _bindToTag: 
-  _rotateToFit: 0
+  _mass: 40
+  _bindToTag: Thruster
+  _rotateToFit: 2
   _canTile: 0
-  Modifiers: []
+  Modifiers:
+  - _statName: hull-maxspeed
+    _literal: 0
+    _modifier: 0.15
+    _permanent: 0
+  - _statName: hull-flankdamageprob
+    _literal: 0
+    _modifier: -0.25
+    _permanent: 0
+  - _statName: hull-angularmotor
+    _literal: 0
+    _modifier: 0.15
+    _permanent: 0
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 350
+    _amount: 750
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
-  _rareDebuffSubtype: 
+  _rareDebuffSubtype: drive
   _debuffProbability:
     serializedVersion: 2
     m_Curve:
@@ -112,9 +138,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _crewRequired: 0
+  _crewRequired: 10
   _reinforceCrewAt: -1
-  _jobName: 
-  _underSpeedThresholds: []
-  _aboveSpeedThresholds: []
-  _speedModifiers: []
+  _jobName: Engineering

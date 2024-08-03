@@ -2864,7 +2864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: MoxModule3
-  _size: {x: 5, y: 5, z: 5}
+  _size: {x: 5, y: 4, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
@@ -5172,7 +5172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: MoxModule2
-  _size: {x: 5, y: 3, z: 5}
+  _size: {x: 5, y: 5, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
@@ -6785,11 +6785,11 @@ MonoBehaviour:
 
 '
   _pointCost: 175
-  _mass: 6000
+  _mass: 7000
   _weightClass: 1
   _maxSpeed: 2.5
-  _maxTurnSpeed: 0.15
-  _linearMotorForce: 750
+  _maxTurnSpeed: 0.08
+  _linearMotorForce: 900
   _angularMotorForce: 200
   _crewComplement: 60
   _crewVulnerability: 0.5
@@ -9037,7 +9037,7 @@ MonoBehaviour:
   m_Script: {fileID: -1419217067, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseIntegrity: 3500
+  _baseIntegrity: 4000
 --- !u!1 &6239854721002967254
 GameObject:
   m_ObjectHideFlags: 0

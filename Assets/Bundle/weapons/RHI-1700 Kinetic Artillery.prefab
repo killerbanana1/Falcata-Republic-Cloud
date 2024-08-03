@@ -483,7 +483,7 @@ MonoBehaviour:
     primarily to suppress the enemy using KART shells, and to finish off crippled
     capital ships with the HESH shells. This variant is in a single barelled turret
     for C5 mounts.
-  _flavorText: 
+  _flavorText: EVILLLL
   _category: Weapons - Projectile
   _costBreakdownClass: 2
   _compoundingCost: 0

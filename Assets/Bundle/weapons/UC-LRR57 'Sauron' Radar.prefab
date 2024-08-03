@@ -69,7 +69,7 @@ MonoBehaviour:
   _longDescription: 'The UC-LRR57 ''Sauron'' Radar is an advanced search radar system
     that requires a deep suite of internal equipment, but in return provides a very
     accurate sensor picture of the surrounding environment. '
-  _flavorText: 
+  _flavorText: UNTESTED
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0

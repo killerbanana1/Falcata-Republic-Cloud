@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.32
+  _baseAccuracy: 0.4
   _flash: {fileID: 37996837688683934}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: G1yK7-U2HkODVZx3SKkRSw
-  _maxHealth: 500
+  _maxHealth: 400
   _functioningThreshold: 30
   _damageThreshold: 30
   _reinforced: 0
@@ -1203,12 +1203,12 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 80
+  _pointCost: 85
   _type: 0
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 45
+  _mass: 65
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
@@ -1301,17 +1301,11 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 16
-  _reloadTime: 32
+  _reloadTime: 50
   _reloadStatSubtype: recoilless
   _recycleStatSubtype: recoilless
   _randomlyDeviateReloadTime: 1
-  _temporaryFiringEffects:
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
-      _modifier: 10
-      _permanent: 0
-    Duration: 12
+  _temporaryFiringEffects: []
   _turretControl: {fileID: 1598013660015875406}
   _traverseRate: 8
   _elevationRate: 20
