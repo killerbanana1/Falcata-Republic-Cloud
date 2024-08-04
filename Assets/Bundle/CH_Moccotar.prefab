@@ -2876,7 +2876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Module3
-  _size: {x: 12, y: 8, z: 10}
+  _size: {x: 11, y: 9, z: 11}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
@@ -8275,10 +8275,10 @@ MonoBehaviour:
     for the poor PD, they will steamroll anything that stands in their way.
   _flavorText: To Do.
   _pointCost: 725
-  _mass: 12000
+  _mass: 14000
   _weightClass: 2
-  _maxSpeed: 18.5
-  _maxTurnSpeed: 0.15
+  _maxSpeed: 1.8
+  _maxTurnSpeed: 0.08
   _linearMotorForce: 1300
   _angularMotorForce: 380
   _crewComplement: 165
@@ -13143,7 +13143,7 @@ MonoBehaviour:
   m_Script: {fileID: -1419217067, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseIntegrity: 6000
+  _baseIntegrity: 7000
 --- !u!1 &6116217382016351467
 GameObject:
   m_ObjectHideFlags: 0

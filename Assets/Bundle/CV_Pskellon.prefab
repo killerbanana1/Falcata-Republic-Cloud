@@ -5118,11 +5118,11 @@ MonoBehaviour:
   _className: Pskellon
   _hullClassification: Corvette
   _hullSymbolOptions:
-  - KE
   - FFL
   - FFE
   - ESV
   - CV
+  - KE
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: e6fe1154777608441b316adf64da8ec3, type: 3}
@@ -5140,10 +5140,10 @@ MonoBehaviour:
     Work Required: +125%"
   _flavorText: To Do.
   _pointCost: 100
-  _mass: 4500
+  _mass: 4000
   _weightClass: 0
-  _maxSpeed: 2.5
-  _maxTurnSpeed: 0.15
+  _maxSpeed: 2.8
+  _maxTurnSpeed: 0.1
   _linearMotorForce: 650
   _angularMotorForce: 110
   _crewComplement: 50
@@ -7100,7 +7100,7 @@ MonoBehaviour:
   m_Script: {fileID: -1419217067, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseIntegrity: 1200
+  _baseIntegrity: 1250
 --- !u!1 &6172920087862325870
 GameObject:
   m_ObjectHideFlags: 0

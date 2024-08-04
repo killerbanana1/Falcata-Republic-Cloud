@@ -390,11 +390,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0, y: 0.416, z: 0.123}
-  _timeBetweenMuzzles: 0.5
+  _timeBetweenMuzzles: 0.825
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
-  _magazineSize: 2
-  _reloadTime: 10
+  _magazineSize: 6
+  _reloadTime: 25
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1

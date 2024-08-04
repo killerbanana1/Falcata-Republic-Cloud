@@ -34,6 +34,20 @@
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>
 	<Entry Name="Gun Plotting Center" Address="components/Gun Plotting Center.prefab"/>
+	<Entry Name="FM200 Drive" Address="components/FM200 Drive.prefab"/>
+	<Entry Name="FM200R Drive" Address="components/FM200R Drive.prefab"/>
+	<Entry Name="FM250 'Hussar' Drive" Address="components/FM250 'Hussar' Drive.prefab"/>
+	<Entry Name="FM270 'Hummingbird' Drive" Address="components/FM270 'Hummingbird' Drive.prefab"/>
+	<Entry Name="FM290 'Voltigeur' Drive" Address="components/FM290 'Voltigeur' Drive.prefab"/>
+	<Entry Name="FM400 Drive" Address="components/FM400 Drive.prefab"/>
+	<Entry Name="FM400R Drive" Address="components/FM400R Drive.prefab"/>
+	<Entry Name="FM460 'Cavalier' Drive" Address="components/FM460 'Cavalier' Drive.prefab"/>
+	<Entry Name="FM470 'Hummingbird' Drive" Address="components/FM470 'Hummingbird' Drive.prefab"/>
+	<Entry Name="FM600 Drive" Address="components/FM600 Drive.prefab"/>
+	<Entry Name="FM660 'Cavalier' Drive" Address="components/FM660 'Cavalier' Drive.prefab"/>
+	<Entry Name="FM690 'Voltigeur' Drive" Address="components/FM690 'Voltigeur' Drive.prefab"/>
+	<Entry Name="WY30X 'Newt' Drive" Address="components/WY30X 'Newt' Drive.prefab"/>
+	<Entry Name="WY50X 'Ripley' Drive" Address="components/WY50X 'Ripley' Drive.prefab"/>
   </Components>
   <Munitions>
     <Entry Name="380mm AP Shell" Address="weapons/380mm AP Shell.asset"/>

@@ -26,16 +26,16 @@ MonoBehaviour:
     Subclass: 700mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 21.5
-  _flightSpeed: 68
+  _maxFlightTime: 22
+  _flightSpeed: 67.5
   _repoolDelay: 5
-  _armorPenetration: 130
-  _armorDamageRadius: 4.5
+  _armorPenetration: 125
+  _armorDamageRadius: 2.5
   _heatPower: 5000
   _componentDamage: 300
   _randomEffectMultiplier: 0.15
-  _neverCrit: 0
-  _crewVulnerabilityMultiplier: 1.5
+  _neverCrit: 1
+  _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 6
   _neverOverpen: 1
   _overrideComponentSearchDistance: -1

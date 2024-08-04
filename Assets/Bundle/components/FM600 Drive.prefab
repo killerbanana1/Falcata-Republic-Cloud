@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4992802535107508236
+--- !u!1 &8471756859818650693
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5341578207009740657}
-  - component: {fileID: 1905093547952413670}
+  - component: {fileID: 4399148141946367321}
+  - component: {fileID: 4692760357704430240}
   m_Layer: 0
-  m_Name: SAI-660 'Cuirassier'
+  m_Name: FM600 Drive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5341578207009740657
+--- !u!4 &4399148141946367321
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4992802535107508236}
+  m_GameObject: {fileID: 8471756859818650693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,19 +31,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1905093547952413670
+--- !u!114 &4692760357704430240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4992802535107508236}
+  m_GameObject: {fileID: 8471756859818650693}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1327320227, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: xVBXFk5JYkuW2g4mrxZ1IA
+  _partKey: xVBXFkyf3kuW2g4mrxZ1IA
   _maxHealth: 1250
   _functioningThreshold: 50
   _damageThreshold: 70
@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Speed go burrr
+  _longDescription: Basic drive for medium ships
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -68,7 +68,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 40
+  _pointCost: 20
   _type: 2
   _size: {x: 11, y: 9, z: 11}
   _interiorOverhang: 0
@@ -77,29 +77,17 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
-  Modifiers:
-  - _statName: hull-maxspeed
-    _literal: 0
-    _modifier: 0.2
-    _permanent: 0
-  - _statName: hull-turnrate
-    _literal: 0
-    _modifier: 0.25
-    _permanent: 0
-  - _statName: hull-angularmotor
-    _literal: 0
-    _modifier: 0.2
-    _permanent: 0
+  Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 1000
+    _amount: 1500
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
-  _rareDebuffSubtype: 
+  _rareDebuffSubtype: drive
   _debuffProbability:
     serializedVersion: 2
     m_Curve:
