@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.4
+  _baseAccuracy: 0.32
   _flash: {fileID: 37996837688683934}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
