@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _componentSaveKey: 
   _modId: 0
-  _factionKey: 
+  _factionKey: None
   _settingsPanelName: Seeker - Beam
   _pointCost: 6
   _image: {fileID: 21300000, guid: 28155089db2a53942ad9a399ef62e864, type: 3}

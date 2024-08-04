@@ -15155,7 +15155,7 @@ GameObject:
   - component: {fileID: 252054907577814920}
   - component: {fileID: 6735343248398704078}
   - component: {fileID: 7679119561451544709}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Radar Signature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15194,7 +15194,7 @@ MonoBehaviour:
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}
   _randomPointInCollider: 0
-  _crossSectionSampler: {fileID: 0}
+  _crossSectionSampler: {fileID: 11400000, guid: 20bac6b715605294a89ad0b477932206, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
 --- !u!65 &7679119561451544709
