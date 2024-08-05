@@ -60,7 +60,22 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: NOT IMPLEMENTED
+  _longDescription: 'Increases power output based on speed.
+
+    0-25% Speed: +50%
+    Powerplant Efficiency
+
+    25-50% Speed: +40% Powerplant Efficiency
+
+    50-75%
+    Speed: +30% Powerplant Efficiency
+
+    75-100% Speed: +20% Powerplant Efficiency
+
+    100-125%
+    Speed: +10% Powerplant Efficiency
+
+    125-150% Speed: +10% Powerplant Efficiency'
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -111,6 +126,54 @@ MonoBehaviour:
   _crewRequired: 0
   _reinforceCrewAt: -1
   _jobName: 
-  _underSpeedThresholds: []
-  _aboveSpeedThresholds: []
-  _speedModifiers: []
+  _underSpeedThresholds:
+  - 0
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1
+  - 1.25
+  _aboveSpeedThresholds:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1
+  - 1.25
+  - 1.5
+  _speedModifiers:
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.5
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.4
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.3
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.2
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.1
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: powerplant-prodefficiency
+      _literal: 0
+      _modifier: 0.1
+      _permanent: 0
+    Duration: 0
