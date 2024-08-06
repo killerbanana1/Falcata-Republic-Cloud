@@ -66,10 +66,13 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Search Radar
-  _longDescription: 'The UC-LRR57 ''Sauron'' Radar is an advanced search radar system
+  _longDescription: "The UC-LRR57 'Sauron' Radar is an advanced search radar system
     that requires a deep suite of internal equipment, but in return provides a very
-    accurate sensor picture of the surrounding environment. '
-  _flavorText: UNTESTED
+    accurate sensor picture of the surrounding environment. \n"
+  _flavorText: 'UNTESTED
+
+
+    Manufactured by Union-Cassandra Corp.'
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0

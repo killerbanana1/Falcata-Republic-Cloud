@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 2633623567213170821}
   - component: {fileID: 9127770803405632400}
   m_Layer: 5
-  m_Name: Module 9
+  m_Name: Module 9,12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
   _graphic: {fileID: 2633623567213170821}
   _partKeys:
   - Module9
+  - Module12
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0

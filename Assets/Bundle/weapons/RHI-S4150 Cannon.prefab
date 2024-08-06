@@ -251,9 +251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: KIPC2EMXIUKJaasWE_33LE
-  _maxHealth: 400
+  _maxHealth: 450
   _functioningThreshold: 15
-  _damageThreshold: 35
+  _damageThreshold: 40
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -280,7 +280,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 25
+  _pointCost: 30
   _type: 0
   _size: {x: 3, y: 8, z: 2}
   _interiorOverhang: 0
@@ -365,7 +365,7 @@ MonoBehaviour:
   _timeBetweenMuzzles: 0.5
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 16
+  _magazineSize: 24
   _reloadTime: 26
   _reloadStatSubtype: 
   _recycleStatSubtype: 
