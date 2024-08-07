@@ -8274,7 +8274,7 @@ MonoBehaviour:
     forward firepower and excellent survivability. When paired with escorts to compensate
     for the poor PD, they will steamroll anything that stands in their way.
   _flavorText: To Do.
-  _pointCost: 775
+  _pointCost: 750
   _mass: 14000
   _weightClass: 2
   _maxSpeed: 1.8
