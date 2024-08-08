@@ -1307,8 +1307,8 @@ MonoBehaviour:
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 1598013660015875406}
-  _traverseRate: 8
-  _elevationRate: 20
+  _traverseRate: 5
+  _elevationRate: 10
 --- !u!114 &7588373706808276421
 MonoBehaviour:
   m_ObjectHideFlags: 0
