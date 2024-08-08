@@ -1203,7 +1203,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 120
+  _pointCost: 100
   _type: 0
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
@@ -1300,8 +1300,8 @@ MonoBehaviour:
   _timeBetweenMuzzles: 0.25
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
-  _magazineSize: 16
-  _reloadTime: 50
+  _magazineSize: 8
+  _reloadTime: 30
   _reloadStatSubtype: recoilless
   _recycleStatSubtype: recoilless
   _randomlyDeviateReloadTime: 1

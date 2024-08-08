@@ -640,7 +640,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 8
-  _reloadTime: 48
+  _reloadTime: 52
   _reloadStatSubtype: recoilless
   _recycleStatSubtype: recoilless
   _randomlyDeviateReloadTime: 1
