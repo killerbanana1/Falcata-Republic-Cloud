@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.4
+  _baseAccuracy: 0.3
   _flash: {fileID: 154456994849598861}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.4
+  _baseAccuracy: 0.3
   _flash: {fileID: 154456995220834368}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.4
+  _baseAccuracy: 0.3
   _flash: {fileID: 154456996139122216}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

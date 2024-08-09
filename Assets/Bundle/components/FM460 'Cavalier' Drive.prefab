@@ -60,22 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: A high-power drive designed for long-distance cruising.  Significantly
-    increases the ship's top speed, as well as its ability to maintain flank speed
-    without damage, but at the expense of maneuverability.
-  _flavorText: 'Codenamed ''Whiplash'', probably because the engines will make the
-    entire ship jolt and send crewmen all over the deck when Helm sets it to full
-    burn. The Naval Office liked the idea of applying some of the Sprinter''s speed
-    to the larger warships, and so does the Lee Helm when they hit a full ahead bell.
-
-
-    Overall,
-    Whiplash drives are an Alliance favorite, until the engine room is filled with
-    the drive grinding and the Chief Engineer is going off on one of their legendary
-    litanies of swearing. It''s a real treat.
-
-
-    - I. Parker, CMC'
+  _longDescription: Long term speed drive for medium ships.
+  _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0

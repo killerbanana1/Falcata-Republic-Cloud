@@ -60,22 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: 'Increases power output based on speed.
-
-    0-25% Speed: +50%
-    Powerplant Efficiency
-
-    25-50% Speed: +40% Powerplant Efficiency
-
-    50-75%
-    Speed: +30% Powerplant Efficiency
-
-    75-100% Speed: +20% Powerplant Efficiency
-
-    100-125%
-    Speed: +10% Powerplant Efficiency
-
-    125-150% Speed: +10% Powerplant Efficiency'
+  _longDescription: Increases power output based on speed.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -85,7 +70,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 30
   _type: 2
-  _size: {x: 0, y: 0, z: 0}
+  _size: {x: 9, y: 7, z: 9}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 40
@@ -94,7 +79,11 @@ MonoBehaviour:
   _canTile: 0
   Modifiers: []
   _resourceDemandPriority: 10
-  ResourcesProvided: []
+  ResourcesProvided:
+  - _resourceName: Power
+    _amount: 2000
+    _perUnit: 0
+    _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
@@ -127,26 +116,16 @@ MonoBehaviour:
   _reinforceCrewAt: -1
   _jobName: 
   _underSpeedThresholds:
-  - 0
-  - 0.25
-  - 0.5
-  - 0.75
-  - 1
-  - 1.25
-  _aboveSpeedThresholds:
-  - 0.25
-  - 0.5
-  - 0.75
-  - 1
-  - 1.25
+  - 0.35
+  - 0.7
+  - 1.05
   - 1.5
+  _aboveSpeedThresholds:
+  - 0
+  - 0.35
+  - 0.7
+  - 1.05
   _speedModifiers:
-  - Modifier:
-      _statName: powerplant-prodefficiency
-      _literal: 0
-      _modifier: 0.5
-      _permanent: 0
-    Duration: 0
   - Modifier:
       _statName: powerplant-prodefficiency
       _literal: 0
@@ -162,18 +141,12 @@ MonoBehaviour:
   - Modifier:
       _statName: powerplant-prodefficiency
       _literal: 0
-      _modifier: 0.2
-      _permanent: 0
-    Duration: 0
-  - Modifier:
-      _statName: powerplant-prodefficiency
-      _literal: 0
       _modifier: 0.1
       _permanent: 0
     Duration: 0
   - Modifier:
       _statName: powerplant-prodefficiency
       _literal: 0
-      _modifier: 0.1
+      _modifier: 0.05
       _permanent: 0
     Duration: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2651128618091893576
+--- !u!1 &942581349911697416
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,102 +8,94 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7095032266532723762}
-  - component: {fileID: 3260189470220887280}
+  - component: {fileID: 942581349911697418}
+  - component: {fileID: 942581349911697417}
   m_Layer: 0
-  m_Name: FM270 'Hummingbird' Drive
+  m_Name: Damage Control FacilityPowerfixBroken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7095032266532723762
+--- !u!4 &942581349911697418
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2651128618091893576}
+  m_GameObject: {fileID: 942581349911697416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.2533347, y: 0.4220147, z: 0.098703295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3260189470220887280
+--- !u!114 &942581349911697417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2651128618091893576}
+  m_GameObject: {fileID: 942581349911697416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1327320227, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 79578d2a51cab4f42a3733a74f0cd157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: xVBXFk5JYkuW2gerturAdo4io
-  _maxHealth: 250
-  _functioningThreshold: 25
+  _partKey: MnuZEwS3vkSR3ffP4fNZVA
+  _maxHealth: 400
+  _functioningThreshold: 15
   _damageThreshold: 40
   _reinforced: 0
   _bindTag: 
-  _dcPriority: 1000
+  _dcPriority: 10
   _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 0}
   _saveKey: 
   _modId: 0
-  _shortUIName: 
+  _shortUIName: DC Facility
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: Fusion Drive
-  _longDescription: Small turning drive.
+  _shortDescription: Modular DC Component
+  _longDescription: 
   _flavorText: 
-  _category: Propulsion
-  _costBreakdownClass: 8
-  _compoundingCost: 0
-  _compoundingCostClass: 
+  _category: Damage Control
+  _costBreakdownClass: 7
+  _compoundingCost: 1
+  _compoundingCostClass: Hull Repair
   _firstInstanceFree: 0
-  _compoundingMultiplier: 1
-  _pointCost: 20
+  _compoundingMultiplier: 1.55
+  _pointCost: 45
   _type: 2
-  _size: {x: 5, y: 3, z: 5}
+  _size: {x: 4, y: 4, z: 4}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 20
-  _bindToTag: Thruster
+  _mass: 25
+  _bindToTag: 
   _rotateToFit: 2
   _canTile: 0
   Modifiers:
-  - _statName: hull-maxspeed
-    _literal: 0
-    _modifier: -0.075
+  - _statName: hull-component-max-repair
+    _literal: 0.05
+    _modifier: 0
     _permanent: 0
-  - _statName: hull-linearmotor
+  - _statName: damagecontrol-repairspeed
     _literal: 0
     _modifier: 0.15
     _permanent: 0
-  - _statName: hull-turnrate
-    _literal: 0
-    _modifier: 0.4
-    _permanent: 0
-  - _statName: hull-angularmotor
-    _literal: 0
-    _modifier: 0.35
-    _permanent: 0
-  _resourceDemandPriority: 1000
+  _resourceDemandPriority: 100
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 500
+    _amount: 750
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
-  _rareDebuffSubtype: drive
+  _rareDebuffSubtype: 
   _debuffProbability:
     serializedVersion: 2
     m_Curve:
@@ -130,4 +122,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _crewRequired: 10
   _reinforceCrewAt: -1
-  _jobName: Engineering
+  _jobName: Damage Control
+  _teamTitle: Elite Team
+  _teamsProduced: 2
+  _crewPerTeam: 5
+  _movementSpeed: 0.5
+  _repairPerTick: 0.3
+  _canRestore: 1
+  _restoreCount: 1

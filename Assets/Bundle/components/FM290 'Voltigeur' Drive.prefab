@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: LT Small Drive
+  _longDescription: Small drive for boosting linear thrust.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

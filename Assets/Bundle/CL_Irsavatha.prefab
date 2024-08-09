@@ -1979,7 +1979,7 @@ MonoBehaviour:
   _collider: {fileID: 753923403}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
+    LimitFiringOnly: 1
     LeftAngle: 155
     RightAngle: 155
     UseElevationLimit: 1
@@ -6605,7 +6605,7 @@ MonoBehaviour:
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
   _shortName: 
-  _defaultComponent: Stock/FM500 Drive
+  _defaultComponent: Falcata Republic/FM400 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
   _collider: {fileID: 311999026451305959}

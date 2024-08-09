@@ -60,22 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: 'Reduces radar signature based on ship speed:
-
-    0-25% Speed:
-    -30% Radar Signature
-
-    25-50% Speed: -25% Radar Signature
-
-    50-75% Speed:
-    -20% Radar Signature
-
-    75-100% Speed: -15% Radar Signature
-
-    100-125% Speed:
-    -10% Radar Signature
-
-    125-150% Speed: -5% Radar Signature'
+  _longDescription: Decreases radar sig based on speed.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -85,7 +70,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 25
   _type: 2
-  _size: {x: 5, y: 5, z: 5}
+  _size: {x: 9, y: 7, z: 9}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 20
@@ -135,20 +120,22 @@ MonoBehaviour:
   _reinforceCrewAt: -1
   _jobName: 
   _underSpeedThresholds:
-  - 0
-  - 0.25
-  - 0.5
-  - 0.75
-  - 1
-  - 1.25
-  _aboveSpeedThresholds:
-  - 0.25
-  - 0.5
-  - 0.75
-  - 1
-  - 1.25
+  - 0.35
+  - 0.7
+  - 1.05
   - 1.5
+  _aboveSpeedThresholds:
+  - 0
+  - 0.35
+  - 0.7
+  - 1.05
   _speedModifiers:
+  - Modifier:
+      _statName: hull-sigmult-radar
+      _literal: 0
+      _modifier: -0.4
+      _permanent: 0
+    Duration: 0
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
@@ -158,25 +145,7 @@ MonoBehaviour:
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: -0.25
-      _permanent: 0
-    Duration: 0
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
-      _modifier: -0.2
-      _permanent: 0
-    Duration: 0
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
       _modifier: -0.15
-      _permanent: 0
-    Duration: 0
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
-      _modifier: -0.1
       _permanent: 0
     Duration: 0
   - Modifier:

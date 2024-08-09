@@ -4951,7 +4951,7 @@ MonoBehaviour:
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
   _shortName: 
-  _defaultComponent: Stock/FM200 Drive
+  _defaultComponent: Falcata Republic/FM200 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
   _collider: {fileID: 1715787653864116175}

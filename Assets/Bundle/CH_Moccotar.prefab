@@ -1774,7 +1774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster2
-  _maxHealth: 100
+  _maxHealth: 150
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -2411,7 +2411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster1
-  _maxHealth: 100
+  _maxHealth: 150
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -2597,7 +2597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster3
-  _maxHealth: 100
+  _maxHealth: 150
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
   _shortName: 
-  _defaultComponent: Stock/FM500 Drive
+  _defaultComponent: Falcata Republic/FM400 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
   _collider: {fileID: 1125871910}
@@ -7127,7 +7127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster4
-  _maxHealth: 100
+  _maxHealth: 150
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -8279,8 +8279,8 @@ MonoBehaviour:
   _weightClass: 2
   _maxSpeed: 1.8
   _maxTurnSpeed: 0.08
-  _linearMotorForce: 1300
-  _angularMotorForce: 380
+  _linearMotorForce: 1450
+  _angularMotorForce: 400
   _crewComplement: 165
   _crewVulnerability: 0.25
   _interiorDensityArmorEquivalent: 1.2

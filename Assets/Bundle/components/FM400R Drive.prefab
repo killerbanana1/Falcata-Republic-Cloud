@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Basic drive for medium ships
+  _longDescription: Basic reinforced drive for medium ships
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

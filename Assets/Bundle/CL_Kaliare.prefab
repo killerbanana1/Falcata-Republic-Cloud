@@ -10728,7 +10728,7 @@ MonoBehaviour:
   _weightClass: 1
   _maxSpeed: 2.2
   _maxTurnSpeed: 0.08
-  _linearMotorForce: 850
+  _linearMotorForce: 870
   _angularMotorForce: 280
   _crewComplement: 70
   _crewVulnerability: 0.4
@@ -10773,7 +10773,7 @@ MonoBehaviour:
   _paintableMeshes:
   - {fileID: 1606421885857003438}
   - {fileID: 760097256089572092}
-  _armorThickness: 25
+  _armorThickness: 22
   _dynamicArmorZones:
   - HullSeg: {fileID: 1606421885857003438}
     Colliders:
@@ -11463,7 +11463,7 @@ MonoBehaviour:
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
   _shortName: 
-  _defaultComponent: Stock/FM500 Drive
+  _defaultComponent: Falcata Republic/FM400 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
   _collider: {fileID: 7616714947704848649}
