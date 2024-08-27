@@ -365,8 +365,8 @@ MonoBehaviour:
   _timeBetweenMuzzles: 0.5
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 18
-  _reloadTime: 26
+  _magazineSize: 24
+  _reloadTime: 60
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1
@@ -799,6 +799,7 @@ GameObject:
   - component: {fileID: 6757027998309934710}
   - component: {fileID: 6794865366555411830}
   - component: {fileID: 1399895441192887469}
+  - component: {fileID: 1335136825958874891}
   m_Layer: 0
   m_Name: S 4x150mm Barrel
   m_TagString: Untagged
@@ -869,6 +870,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1335136825958874891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378756654020994534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1771112323, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 1399895441192887469}
+  _fade: 0
 --- !u!1 &5501033058080941647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1025,7 @@ GameObject:
   - component: {fileID: 4006260582239581396}
   - component: {fileID: 1512392390264609746}
   - component: {fileID: 3627095018403686090}
+  - component: {fileID: 8931516714397563287}
   m_Layer: 0
   m_Name: S 4x150mm Base
   m_TagString: Untagged
@@ -1092,6 +1108,20 @@ MonoBehaviour:
   m_Script: {fileID: 379092634, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8931516714397563287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150846188469555020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1771112323, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 1512392390264609746}
+  _fade: 0
 --- !u!1 &7400591666040713038
 GameObject:
   m_ObjectHideFlags: 0

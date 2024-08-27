@@ -58,7 +58,7 @@ MonoBehaviour:
   _shortUIName: 
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
-  _factionKey: 
+  _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Gunnery
   _longDescription: Additional ammunition elevators allow crewmembers to rapidly
     deliver shells and rounds to the warship's recoilless weapons, reducing reload

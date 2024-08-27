@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: KIPC2EMXIUKJuV_5YWBldg
-  _maxHealth: 450
+  _maxHealth: 400
   _functioningThreshold: 15
   _damageThreshold: 30
   _reinforced: 0

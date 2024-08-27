@@ -8337,7 +8337,7 @@ MonoBehaviour:
   - {fileID: 7023900530527701806}
   - {fileID: 8893625196240785722}
   - {fileID: 8310715220314681063}
-  _armorThickness: 42
+  _armorThickness: 40
   _dynamicArmorZones:
   - HullSeg: {fileID: 7023900530527701806}
     Colliders:

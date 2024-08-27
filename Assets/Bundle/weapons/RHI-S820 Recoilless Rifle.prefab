@@ -538,7 +538,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 3998587721998479521}
   _saveKey: 
   _modId: 0
-  _shortUIName: RHI-S280 Rifle
+  _shortUIName: RHI-S820 Rifle
   _smallImage: {fileID: 21300000, guid: 53a9ff2efe6558041b2a22f2a29d8588, type: 3}
   _largeImage: {fileID: 21300000, guid: e470202ee7b81014abdd93e005aeb2d2, type: 3}
   _factionKey: Falcata Republic/Falcata Republic

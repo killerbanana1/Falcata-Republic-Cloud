@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5253399766002253754}
+  - component: {fileID: 6420526775253002686}
   m_Layer: 18
   m_Name: Jammable
   m_TagString: Untagged
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 8471501955897541921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &6420526775253002686
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077096539170910649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8471501955897541923
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +211,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxError: 3
-  _maxVelocityError: 0.03
+  _maxError: 2.4
+  _maxVelocityError: 0.02
   _cueingOnly: 0
   _canLock: 0
   _lockErrorMultiplier: 0
