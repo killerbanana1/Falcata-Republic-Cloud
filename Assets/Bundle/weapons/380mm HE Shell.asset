@@ -29,10 +29,10 @@ MonoBehaviour:
   _maxFlightTime: 12
   _flightSpeed: 90
   _repoolDelay: 5
-  _armorPenetration: 62
+  _armorPenetration: 65
   _armorDamageRadius: 1.15
   _heatPower: 500
-  _componentDamage: 110
+  _componentDamage: 115
   _randomEffectMultiplier: 0.25
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1

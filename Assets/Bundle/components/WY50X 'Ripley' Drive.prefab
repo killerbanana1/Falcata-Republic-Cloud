@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: hg6fBFlWb0OONOOo9h6mHg
-  _maxHealth: 700
+  _maxHealth: 750
   _functioningThreshold: 40
   _damageThreshold: 60
   _reinforced: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 30
+  _pointCost: 35
   _type: 2
   _size: {x: 9, y: 7, z: 9}
   _interiorOverhang: 0
@@ -77,16 +77,20 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
-  Modifiers: []
+  Modifiers:
+  - _statName: hull-sigmult-radar
+    _literal: 0
+    _modifier: 0.1
+    _permanent: 0
   _resourceDemandPriority: 10
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 2000
+    _amount: 1000
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
-  _rareDebuffChance: 0.05
+  _rareDebuffChance: 0.075
   _rareDebuffSubtype: drive
   _debuffProbability:
     serializedVersion: 2
@@ -141,7 +145,7 @@ MonoBehaviour:
   - Modifier:
       _statName: powerplant-prodefficiency
       _literal: 0
-      _modifier: 0.1
+      _modifier: 0.2
       _permanent: 0
     Duration: 0
   - Modifier:

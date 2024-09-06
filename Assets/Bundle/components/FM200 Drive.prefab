@@ -81,7 +81,7 @@ MonoBehaviour:
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 650
+    _amount: 750
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []

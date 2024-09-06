@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ZbLvKxdSr0--ozYKs4ZnOA
-  _maxHealth: 200
+  _maxHealth: 250
   _functioningThreshold: 10
   _damageThreshold: 20
   _reinforced: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 500
+    _amount: 350
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []
@@ -296,7 +296,7 @@ MonoBehaviour:
   _missileSize: 3
   _loadTime: 50
   _launchesPerLoad: 3
-  _timeBetweenLaunches: 1
+  _timeBetweenLaunches: 0.75
   _requireProgrammingChannels: 0
   _checkLauncherBlocked: 1
   _launchBlockCheckNormal: {x: 0, y: 1, z: 0}

@@ -86,19 +86,15 @@ MonoBehaviour:
     _literal: 0
     _modifier: 0.25
     _permanent: 0
-  - _statName: hull-sigmult-radar
-    _literal: 0
-    _modifier: 0.15
-    _permanent: 0
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 350
+    _amount: 500
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
-  _rareDebuffChance: 0.075
+  _rareDebuffChance: 0.05
   _rareDebuffSubtype: drive
   _debuffProbability:
     serializedVersion: 2

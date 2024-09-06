@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3253288254031527667}
   - component: {fileID: 6508750405198752453}
   m_Layer: 0
-  m_Name: UC-LRR57 'Sauron' Radar
+  m_Name: UC-SA82 'Sauron' Radar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,15 +61,18 @@ MonoBehaviour:
   _disabledParticles: {fileID: 0}
   _saveKey: 
   _modId: 0
-  _shortUIName: LRR57 Sauron
+  _shortUIName: SA82 Sauron
   _smallImage: {fileID: 21300000, guid: 5344e8f2c3eb8214282946249b56a3fb, type: 3}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Spinal Search Radar
-  _longDescription: "The UC-LRR57 'Sauron' Radar is an advanced search radar system
-    that requires a deep suite of internal equipment, but in return provides a very
-    accurate sensor picture of the surrounding environment. \n"
-  _flavorText: Manufactured by Union-Cassandra Corp.
+  _longDescription: 'The UC-SA82 ''Sauron'' Radar is an advanced situational awareness
+    system that requires a deep suite of internal equipment, but in return provides
+    a very accurate sensor picture of the surrounding environment, at the cost of
+    being unable to fire upon its own tracks.
+
+'
+  _flavorText: Manufactured by Union-Cassandra Corp, with love.
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0
@@ -85,12 +88,16 @@ MonoBehaviour:
   _bindToTag: RadarPanel
   _rotateToFit: 2
   _canTile: 0
-  Modifiers: []
+  Modifiers:
+  - _statName: hull-sigmult-radar
+    _literal: 0
+    _modifier: 0.1
+    _permanent: 0
   _resourceDemandPriority: 1000
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 4600
+    _amount: 4800
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -123,12 +130,12 @@ MonoBehaviour:
   _sigType: 1
   _castType: 0
   _elintCategory: 1
-  _stackingSensorID: LRR57
+  _stackingSensorID: SA82
   _maxRange: 1350
   _radiatedPower: 4800
-  _gain: 60
+  _gain: 40
   _sensitivity: -38.5
-  _apertureSize: 60
+  _apertureSize: 40
   _noiseFiltering: 0
   _deviationCurve:
     serializedVersion: 2
@@ -172,16 +179,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxError: 20
+  _maxError: 10
   _maxVelocityError: 0.25
   _cueingOnly: 0
   _canLock: 0
-  _lockErrorMultiplier: 0.1
+  _lockErrorMultiplier: 0
   _maintainLockSNR: 0
   _canBurnthrough: 0
-  _burnthroughPowerMultiplier: 3
-  _burnthroughDamageProbability: 0.2
-  _burnthroughDamage: 25
+  _burnthroughPowerMultiplier: 0
+  _burnthroughDamageProbability: 0
+  _burnthroughDamage: 0
   _showJammingLOB: 1
   _jammingLOBAccuracy: 3
   _collectsIntel: 1

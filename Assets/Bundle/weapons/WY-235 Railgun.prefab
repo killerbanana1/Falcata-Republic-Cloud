@@ -279,9 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 4CDhhidZltyi1DLvP3iiuTWQ
-  _maxHealth: 375
+  _maxHealth: 250
   _functioningThreshold: 20
-  _damageThreshold: 30
+  _damageThreshold: 20
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -308,7 +308,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 65
+  _pointCost: 55
   _type: 0
   _size: {x: 6, y: 4, z: 6}
   _interiorOverhang: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1750
+    _amount: 1500
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -389,12 +389,12 @@ MonoBehaviour:
   _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
-  _shoulderCamOffset: {x: 0, y: 0.416, z: 0.123}
-  _timeBetweenMuzzles: 0.825
+  _shoulderCamOffset: {x: 0, y: 0.4, z: 0.1}
+  _timeBetweenMuzzles: 1.35
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 6
-  _reloadTime: 25
+  _reloadTime: 32
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
@@ -402,12 +402,12 @@ MonoBehaviour:
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: 2
+      _modifier: 3
       _permanent: 0
-    Duration: 10
+    Duration: 15
   _turretControl: {fileID: 2629748424958069389}
-  _traverseRate: 4
-  _elevationRate: 5
+  _traverseRate: 3
+  _elevationRate: 4
 --- !u!114 &6565306083018779142
 MonoBehaviour:
   m_ObjectHideFlags: 0

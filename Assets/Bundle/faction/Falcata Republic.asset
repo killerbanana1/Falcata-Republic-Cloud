@@ -76,7 +76,6 @@ MonoBehaviour:
   - Stock/Battle Dressing Station
   - Stock/Analysis Annex
   - Stock/Intelligence Center
-  - Stock/Plant Control Center
   - Stock/Small Reactor Booster
   - Stock/Adaptive Radar Receiver
   - Stock/Track Correlator
@@ -100,8 +99,6 @@ MonoBehaviour:
   - Stock/Strike Planning Center
   - Stock/FR3300 Micro Reactor
   - Stock/FR4800 Reactor
-  - Stock/RS35 'Frontline' Radar
-  - Stock/RM50 'Parallax' Radar
   - Stock/VLS-2 Launcher
   - Stock/VLS-3 Launcher
   - Stock/CLS-3 Launcher

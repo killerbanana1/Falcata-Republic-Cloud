@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.32
+  _baseAccuracy: 0.5
   _flash: {fileID: 37996837688683934}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 120
+  _pointCost: 125
   _type: 0
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 500
+    _amount: 1500
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   - {fileID: 7344123539160757624}
   - {fileID: 5115129492050117503}
   - {fileID: 5500902743407988208}
-  _optimalTargetWeight: 1
+  _optimalTargetWeight: 2
   _allowGrouping: 1
   _groupingName: Recoilless Rifle
   _role: 1
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 16
-  _reloadTime: 60
+  _reloadTime: 54
   _reloadStatSubtype: recoilless
   _recycleStatSubtype: recoilless
   _randomlyDeviateReloadTime: 1

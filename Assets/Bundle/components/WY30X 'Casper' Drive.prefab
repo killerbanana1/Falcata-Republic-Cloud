@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7206416935242467867}
   - component: {fileID: 1666113389714179575}
   m_Layer: 0
-  m_Name: WY30X 'Newt' Drive
+  m_Name: WY30X 'Casper' Drive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 5XOrVkC6a02yK-7nAw2CzA
-  _maxHealth: 200
+  _maxHealth: 250
   _functioningThreshold: 20
   _damageThreshold: 40
   _reinforced: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 25
   _type: 2
-  _size: {x: 9, y: 7, z: 9}
+  _size: {x: 5, y: 5, z: 5}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 20
@@ -78,19 +78,19 @@ MonoBehaviour:
   _rotateToFit: 2
   _canTile: 0
   Modifiers:
-  - _statName: hull-linearmotor
+  - _statName: hull-flankdamageprob
     _literal: 0
-    _modifier: -0.1
+    _modifier: 0.25
     _permanent: 0
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 350
+    _amount: 250
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []
   _uniqueDebuffs: []
-  _rareDebuffChance: 0.05
+  _rareDebuffChance: 0.075
   _rareDebuffSubtype: drive
   _debuffProbability:
     serializedVersion: 2
@@ -133,24 +133,24 @@ MonoBehaviour:
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: -0.4
-      _permanent: 0
-    Duration: 0
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
       _modifier: -0.3
       _permanent: 0
     Duration: 0
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: -0.15
+      _modifier: -0.2
       _permanent: 0
     Duration: 0
   - Modifier:
       _statName: hull-sigmult-radar
       _literal: 0
-      _modifier: -0.05
+      _modifier: -0.1
+      _permanent: 0
+    Duration: 0
+  - Modifier:
+      _statName: hull-sigmult-radar
+      _literal: 0
+      _modifier: 0
       _permanent: 0
     Duration: 0

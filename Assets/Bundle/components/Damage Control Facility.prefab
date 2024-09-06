@@ -71,7 +71,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1.55
   _pointCost: 45
   _type: 2
-  _size: {x: 4, y: 4, z: 4}
+  _size: {x: 5, y: 5, z: 5}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 25

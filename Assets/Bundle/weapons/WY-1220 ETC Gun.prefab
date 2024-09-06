@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: cRnzSY91r0SyBmE5Pq1C0A
-  _maxHealth: 275
+  _maxHealth: 250
   _functioningThreshold: 20
   _damageThreshold: 25
   _reinforced: 0
@@ -772,7 +772,7 @@ MonoBehaviour:
   _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
-  _shoulderCamOffset: {x: 0.139, y: 0.238, z: 0.132}
+  _shoulderCamOffset: {x: 0.14, y: 0.2, z: 0.14}
   _timeBetweenMuzzles: 1.5
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
@@ -781,13 +781,7 @@ MonoBehaviour:
   _reloadStatSubtype: ETC
   _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
-  _temporaryFiringEffects:
-  - Modifier:
-      _statName: hull-sigmult-radar
-      _literal: 0
-      _modifier: 2
-      _permanent: 0
-    Duration: 8
+  _temporaryFiringEffects: []
   _turretControl: {fileID: 5681126309429315179}
   _traverseRate: 15
   _elevationRate: 20

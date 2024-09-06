@@ -80,11 +80,11 @@ MonoBehaviour:
   Modifiers:
   - _statName: hull-maxspeed
     _literal: 0
-    _modifier: -0.075
+    _modifier: -0.05
     _permanent: 0
   - _statName: hull-linearmotor
     _literal: 0
-    _modifier: 0.15
+    _modifier: 0.1
     _permanent: 0
   - _statName: hull-turnrate
     _literal: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 500
+    _amount: 650
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []

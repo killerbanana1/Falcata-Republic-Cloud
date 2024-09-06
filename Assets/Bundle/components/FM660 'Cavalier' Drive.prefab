@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: General purpose maneuverability and speed drive for capital ships
+  _longDescription: General purpose maneuverability and speed drive for capital ships.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -93,7 +93,7 @@ MonoBehaviour:
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 1000
+    _amount: 1500
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []

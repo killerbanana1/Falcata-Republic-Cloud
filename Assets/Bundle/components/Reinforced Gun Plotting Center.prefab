@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: KKGDsLb-QU-wCu2gMszeoA
-  _maxHealth: 200
+  _maxHealth: 250
   _functioningThreshold: 15
   _damageThreshold: 25
   _reinforced: 1
@@ -80,7 +80,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 40
   _type: 1
-  _size: {x: 3, y: 1, z: 3}
+  _size: {x: 3, y: 1, z: 6}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 7

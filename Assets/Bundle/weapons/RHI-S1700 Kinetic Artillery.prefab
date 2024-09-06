@@ -316,9 +316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: NEMfl9wgqtdkajJsnED155s
-  _maxHealth: 350
+  _maxHealth: 200
   _functioningThreshold: 20
-  _damageThreshold: 35
+  _damageThreshold: 30
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -359,10 +359,6 @@ MonoBehaviour:
   - _statName: hull-turnrate
     _literal: 0
     _modifier: -0.2
-    _permanent: 0
-  - _statName: hull-linearmotor
-    _literal: 0
-    _modifier: -0.1
     _permanent: 0
   _resourceDemandPriority: 10
   ResourcesProvided: []

@@ -60,7 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Long term speed drive for medium ships.
+  _longDescription: 'Long term speed drive for medium ships. Reroutes some power
+    generation to the engines. '
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

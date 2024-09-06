@@ -1620,7 +1620,7 @@ MonoBehaviour:
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
   _shortName: 
-  _defaultComponent: Stock/RS35 'Frontline' Radar
+  _defaultComponent: Falcata Republic/UC-RS44 'Redoubt' Radar
   _component: {fileID: 0}
   _cap: {fileID: 0}
   _collider: {fileID: 664362791}
@@ -6713,7 +6713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075078681327711194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.664319, y: -2.4292831, z: -0.38037178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 595482576018900361}
