@@ -8617,7 +8617,7 @@ MonoBehaviour:
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}
   _randomPointInCollider: 0
-  _crossSectionSampler: {fileID: 11400000, guid: a026edb6e4fb87149b44892094852891, type: 2}
+  _crossSectionSampler: {fileID: 11400000, guid: e2f4f8bcbd66aa248a6f5c4c8d3c295d, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
 --- !u!65 &7679119561451544709
@@ -8631,7 +8631,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 2.5, z: 9}
+  m_Size: {x: 3.4, y: 2.5, z: 10}
   m_Center: {x: 0, y: 0, z: -0.7}
 --- !u!1 &8080286000397262156
 GameObject:
