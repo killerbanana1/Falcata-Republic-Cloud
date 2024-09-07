@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 8973960189711798866}
   - component: {fileID: 3904998089780585954}
   m_Layer: 0
-  m_Name: MLS-3-S Launcher
+  m_Name: RLS-3 Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,9 +217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ZbLvKxdSr0--ozYKs4ZnOA
-  _maxHealth: 250
-  _functioningThreshold: 10
-  _damageThreshold: 20
+  _maxHealth: 350
+  _functioningThreshold: 15
+  _damageThreshold: 30
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10

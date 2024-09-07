@@ -115,7 +115,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 50
+  _pointCost: 45
   _type: 2
   _size: {x: 3, y: 3, z: 3}
   _interiorOverhang: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxError: 2
+  _maxError: 1.75
   _maxVelocityError: 0.01
   _cueingOnly: 0
   _canLock: 0

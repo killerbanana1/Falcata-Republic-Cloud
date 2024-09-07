@@ -318,7 +318,7 @@ MonoBehaviour:
   _partKey: NEMfl9wgqtdkajJsnED155s
   _maxHealth: 200
   _functioningThreshold: 20
-  _damageThreshold: 30
+  _damageThreshold: 20
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10

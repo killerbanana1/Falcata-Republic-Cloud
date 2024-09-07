@@ -26,7 +26,7 @@
 	<Entry Name="RHI-S1700 Kinetic Artillery" Address="weapons/RHI-S1700 Kinetic Artillery.prefab"/>
 	<Entry Name="RHI-1620 Recoilless Rifle" Address="weapons/RHI-1620 Recoilless Rifle.prefab"/>
 	<Entry Name="RHI-S820 Recoilless Rifle" Address="weapons/RHI-S820 Recoilless Rifle.prefab"/>
-	<Entry Name="MLS-3-S Launcher" Address="weapons/MLS-3-S Launcher.prefab"/>
+	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
 	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/UC-SA82 'Sauron' Radar.prefab"/>
 	<Entry Name="UC-RM36 'Repechage' Radar" Address="weapons/Radars/UC-RM36 'Repechage' Radar.prefab"/>
@@ -40,8 +40,8 @@
 	<Entry Name="Hydraulic Actuator" Address="components/Hydraulic Actuator.prefab"/>
 	<Entry Name="Missile Programming Cache" Address="components/Missile Programming Cache.prefab"/>
 	<Entry Name="Gun Plotting Center" Address="components/Gun Plotting Center.prefab"/>
-	<Entry Name="FM200 Drive" Address="components/FM200 Drive.prefab"/>
 	<Entry Name="Plant Control Center" Address="components/Plant Control Center.prefab"/>
+	<Entry Name="FM200 Drive" Address="components/FM200 Drive.prefab"/>
 	<Entry Name="FM200R Drive" Address="components/FM200R Drive.prefab"/>
 	<Entry Name="FM250 'Hussar' Drive" Address="components/FM250 'Hussar' Drive.prefab"/>
 	<Entry Name="FM270 'Hummingbird' Drive" Address="components/FM270 'Hummingbird' Drive.prefab"/>

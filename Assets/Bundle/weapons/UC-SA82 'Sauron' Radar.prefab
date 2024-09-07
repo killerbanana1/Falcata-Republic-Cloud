@@ -50,9 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 0uP_7rKTmkuGbmZ9WLx4aw
-  _maxHealth: 400
+  _maxHealth: 175
   _functioningThreshold: 30
-  _damageThreshold: 35
+  _damageThreshold: 15
   _reinforced: 0
   _bindTag: 
   _dcPriority: 100
@@ -97,7 +97,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 4800
+    _amount: 4900
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -132,7 +132,7 @@ MonoBehaviour:
   _elintCategory: 1
   _stackingSensorID: SA82
   _maxRange: 1350
-  _radiatedPower: 4800
+  _radiatedPower: 4900
   _gain: 40
   _sensitivity: -38.5
   _apertureSize: 40
