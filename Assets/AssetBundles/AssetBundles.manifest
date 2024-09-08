@@ -1,11 +1,11 @@
 ManifestFileVersion: 0
-CRC: 1688871682
+CRC: 2474418765
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
+      Name: prism
+      Dependencies: {}
+    Info_1:
       Name: falcata republic
       Dependencies:
         Dependency_0: prism
-    Info_1:
-      Name: prism
-      Dependencies: {}

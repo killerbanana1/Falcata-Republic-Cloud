@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: txWhlzj00EmIO2Ow_jMH1A
-  _maxHealth: 100
+  _maxHealth: 200
   _functioningThreshold: 15
   _damageThreshold: 15
   _reinforced: 0

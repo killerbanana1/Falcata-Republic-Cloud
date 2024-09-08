@@ -78,13 +78,9 @@ MonoBehaviour:
   _rotateToFit: 2
   _canTile: 0
   Modifiers:
-  - _statName: hull-linearmotor
-    _literal: 0
-    _modifier: -0.1
-    _permanent: 0
   - _statName: hull-flankdamageprob
     _literal: 0
-    _modifier: -0.5
+    _modifier: -0.25
     _permanent: 0
   - _statName: hull-turnrate
     _literal: 0

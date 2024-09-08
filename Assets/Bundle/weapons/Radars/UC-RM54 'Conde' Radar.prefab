@@ -133,7 +133,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 35
+  _pointCost: 30
   _type: 2
   _size: {x: 3, y: 3, z: 3}
   _interiorOverhang: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 3200
+    _amount: 3000
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
