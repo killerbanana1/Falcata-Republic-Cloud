@@ -781,7 +781,13 @@ MonoBehaviour:
   _reloadStatSubtype: ETC
   _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
-  _temporaryFiringEffects: []
+  _temporaryFiringEffects:
+  - Modifier:
+      _statName: hull-sigmult-radar
+      _literal: 0
+      _modifier: 0.15
+      _permanent: 0
+    Duration: 8
   _turretControl: {fileID: 5681126309429315179}
   _traverseRate: 15
   _elevationRate: 20

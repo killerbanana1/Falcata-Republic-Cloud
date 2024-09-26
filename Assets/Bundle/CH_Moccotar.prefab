@@ -11899,7 +11899,7 @@ GameObject:
   - component: {fileID: 4523854635895447801}
   - component: {fileID: 4523854635895447800}
   m_Layer: 11
-  m_Name: CR80 Antenna
+  m_Name: CR70 Antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11932,7 +11932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: CR80
-  _maxHealth: 400
+  _maxHealth: 700
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 1
@@ -11941,9 +11941,9 @@ MonoBehaviour:
   _casualtyClass: 1
   _dcVoiceDisabledOnly: 0
   _disabledParticles: {fileID: 4523854635895447800}
-  _transmitPower: 1750
-  _bandwidth: 1180
-  _gain: 25
+  _transmitPower: 1250
+  _bandwidth: 1000
+  _gain: 10
 --- !u!65 &4523854635895447803
 BoxCollider:
   m_ObjectHideFlags: 0
