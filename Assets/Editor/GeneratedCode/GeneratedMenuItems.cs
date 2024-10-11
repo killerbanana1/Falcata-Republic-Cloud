@@ -319,12 +319,12 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock/Common/Components/Magazine Sprinklers.prefab")]
+    [MenuItem("Load Asset/Stock/Common/Components/CR10 Antenna.prefab")]
     private static void MenuItem25() {
-        Debug.Log("Selected item: Magazine Sprinklers");
+        Debug.Log("Selected item: CR10 Antenna");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
-        GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Magazine Sprinklers"));
+        GameObject goh = Instantiate(stock.LoadAsset<GameObject>("CR10 Antenna"));
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
@@ -343,20 +343,8 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock/Common/Components/CR10 Antenna.prefab")]
-    private static void MenuItem27() {
-        Debug.Log("Selected item: CR10 Antenna");
-        if (stock == null)
-            stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
-        GameObject goh = Instantiate(stock.LoadAsset<GameObject>("CR10 Antenna"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
     [MenuItem("Load Asset/Stock/Munitions/SGM-206 Thunderhead.prefab")]
-    private static void MenuItem28() {
+    private static void MenuItem27() {
         Debug.Log("Selected item: SGM-206 Thunderhead");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -368,7 +356,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Center Flag.asset")]
-    private static void MenuItem29() {
+    private static void MenuItem28() {
         Debug.Log("Selected item: Center Flag");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -378,7 +366,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Fixed Anti-Radiation Seeker.asset")]
-    private static void MenuItem30() {
+    private static void MenuItem29() {
         Debug.Log("Selected item: Fixed Anti-Radiation Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -388,7 +376,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Missile Programming Bus Array.prefab")]
-    private static void MenuItem31() {
+    private static void MenuItem30() {
         Debug.Log("Selected item: Missile Programming Bus Array");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -396,6 +384,16 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        
+    }
+
+    [MenuItem("Load Asset/Stock/HUD Themes/Aegis/_NTDS Marker Theme.asset")]
+    private static void MenuItem31() {
+        Debug.Log("Selected item: _NTDS Marker Theme");
+        if (stock == null)
+            stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
+        GameObject goh = new GameObject("_NTDS Marker Theme holder");
+        goh.AddComponent<Holder>().a = stock.LoadAsset<ScriptableObject>("_NTDS Marker Theme"); 
         
     }
 
@@ -467,8 +465,18 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock/Common/Components/Redundant Reactor Failsafes.prefab")]
+    [MenuItem("Load Asset/Stock/HUD Themes/Aegis/_Aegis Marker Theme.asset")]
     private static void MenuItem38() {
+        Debug.Log("Selected item: _Aegis Marker Theme");
+        if (stock == null)
+            stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
+        GameObject goh = new GameObject("_Aegis Marker Theme holder");
+        goh.AddComponent<Holder>().a = stock.LoadAsset<ScriptableObject>("_Aegis Marker Theme"); 
+        
+    }
+
+    [MenuItem("Load Asset/Stock/Common/Components/Redundant Reactor Failsafes.prefab")]
+    private static void MenuItem39() {
         Debug.Log("Selected item: Redundant Reactor Failsafes");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -480,7 +488,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Atmosphere Leak.asset")]
-    private static void MenuItem39() {
+    private static void MenuItem40() {
         Debug.Log("Selected item: Atmosphere Leak");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -490,7 +498,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Fixed Active Radar Seeker.asset")]
-    private static void MenuItem40() {
+    private static void MenuItem41() {
         Debug.Log("Selected item: Fixed Active Radar Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -500,7 +508,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Plant Control Center.prefab")]
-    private static void MenuItem41() {
+    private static void MenuItem42() {
         Debug.Log("Selected item: Plant Control Center");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -512,7 +520,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Berthing.prefab")]
-    private static void MenuItem42() {
+    private static void MenuItem43() {
         Debug.Log("Selected item: Berthing");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -524,7 +532,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/SGM-2/SGM-2 Body.prefab")]
-    private static void MenuItem43() {
+    private static void MenuItem44() {
         Debug.Log("Selected item: SGM-2 Body");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -536,7 +544,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Station Capture.asset")]
-    private static void MenuItem44() {
+    private static void MenuItem45() {
         Debug.Log("Selected item: Station Capture");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -546,7 +554,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Heatsink Ruptured.asset")]
-    private static void MenuItem45() {
+    private static void MenuItem46() {
         Debug.Log("Selected item: Heatsink Ruptured");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -556,7 +564,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Analysis Annex.prefab")]
-    private static void MenuItem46() {
+    private static void MenuItem47() {
         Debug.Log("Selected item: Analysis Annex");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -568,7 +576,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Missile Parallel Interface.prefab")]
-    private static void MenuItem47() {
+    private static void MenuItem48() {
         Debug.Log("Selected item: Missile Parallel Interface");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -580,7 +588,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Intelligence Center.prefab")]
-    private static void MenuItem48() {
+    private static void MenuItem49() {
         Debug.Log("Selected item: Intelligence Center");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -592,7 +600,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/HE Impact.asset")]
-    private static void MenuItem49() {
+    private static void MenuItem50() {
         Debug.Log("Selected item: HE Impact");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -602,7 +610,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Steerable Active Radar Seeker.asset")]
-    private static void MenuItem50() {
+    private static void MenuItem51() {
         Debug.Log("Selected item: Steerable Active Radar Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -612,7 +620,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Boosted Self-Screening Jammer.asset")]
-    private static void MenuItem51() {
+    private static void MenuItem52() {
         Debug.Log("Selected item: Boosted Self-Screening Jammer");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -622,7 +630,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Fixed Semi-Active Radar Seeker.asset")]
-    private static void MenuItem52() {
+    private static void MenuItem53() {
         Debug.Log("Selected item: Fixed Semi-Active Radar Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -632,7 +640,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Munitions/SGM-225 Hurricane.prefab")]
-    private static void MenuItem53() {
+    private static void MenuItem54() {
         Debug.Log("Selected item: SGM-225 Hurricane");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -644,7 +652,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Ammunition Loader Jammed.asset")]
-    private static void MenuItem54() {
+    private static void MenuItem55() {
         Debug.Log("Selected item: Ammunition Loader Jammed");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -654,7 +662,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Citadel CIC.prefab")]
-    private static void MenuItem55() {
+    private static void MenuItem56() {
         Debug.Log("Selected item: Citadel CIC");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -666,7 +674,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Small DC Locker.prefab")]
-    private static void MenuItem56() {
+    private static void MenuItem57() {
         Debug.Log("Selected item: Small DC Locker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -678,7 +686,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Turret Bearing Surface Bent.asset")]
-    private static void MenuItem57() {
+    private static void MenuItem58() {
         Debug.Log("Selected item: Turret Bearing Surface Bent");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -688,7 +696,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Kinetic Kill Mass.asset")]
-    private static void MenuItem58() {
+    private static void MenuItem59() {
         Debug.Log("Selected item: Kinetic Kill Mass");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -698,7 +706,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Cold Gas Bottle.asset")]
-    private static void MenuItem59() {
+    private static void MenuItem60() {
         Debug.Log("Selected item: Cold Gas Bottle");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -708,7 +716,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/SH12-25 REDACTED.prefab")]
-    private static void MenuItem60() {
+    private static void MenuItem61() {
         Debug.Log("Selected item: SH12-25 REDACTED");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -720,7 +728,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Deathmatch.asset")]
-    private static void MenuItem61() {
+    private static void MenuItem62() {
         Debug.Log("Selected item: Deathmatch");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -730,7 +738,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Command Receiver.asset")]
-    private static void MenuItem62() {
+    private static void MenuItem63() {
         Debug.Log("Selected item: Command Receiver");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -740,7 +748,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Munitions/SGT-350 Mace.prefab")]
-    private static void MenuItem63() {
+    private static void MenuItem64() {
         Debug.Log("Selected item: SGT-350 Mace");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -752,7 +760,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Tug Of War.asset")]
-    private static void MenuItem64() {
+    private static void MenuItem65() {
         Debug.Log("Selected item: Tug Of War");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -762,7 +770,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Wake-Homing Seeker.asset")]
-    private static void MenuItem65() {
+    private static void MenuItem66() {
         Debug.Log("Selected item: Wake-Homing Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -772,7 +780,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Radar Absorbent Coating.asset")]
-    private static void MenuItem66() {
+    private static void MenuItem67() {
         Debug.Log("Selected item: Radar Absorbent Coating");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -782,7 +790,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Basic CIC.prefab")]
-    private static void MenuItem67() {
+    private static void MenuItem68() {
         Debug.Log("Selected item: Basic CIC");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -794,7 +802,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Fire.asset")]
-    private static void MenuItem68() {
+    private static void MenuItem69() {
         Debug.Log("Selected item: Fire");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -804,7 +812,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Reinforced Magazine.prefab")]
-    private static void MenuItem69() {
+    private static void MenuItem70() {
         Debug.Log("Selected item: Reinforced Magazine");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -815,8 +823,18 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
+    [MenuItem("Load Asset/Stock/HUD Themes/Classic/_Classic Marker Theme.asset")]
+    private static void MenuItem71() {
+        Debug.Log("Selected item: _Classic Marker Theme");
+        if (stock == null)
+            stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
+        GameObject goh = new GameObject("_Classic Marker Theme holder");
+        goh.AddComponent<Holder>().a = stock.LoadAsset<ScriptableObject>("_Classic Marker Theme"); 
+        
+    }
+
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Blast Fragmentation EL.asset")]
-    private static void MenuItem70() {
+    private static void MenuItem72() {
         Debug.Log("Selected item: Blast Fragmentation EL");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -826,7 +844,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Sensor Oscillator Drift.asset")]
-    private static void MenuItem71() {
+    private static void MenuItem73() {
         Debug.Log("Selected item: Sensor Oscillator Drift");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -836,7 +854,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Munitions/Sensor Buoy.prefab")]
-    private static void MenuItem72() {
+    private static void MenuItem74() {
         Debug.Log("Selected item: Sensor Buoy");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -848,7 +866,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Fuel Line Explosion Event.asset")]
-    private static void MenuItem73() {
+    private static void MenuItem75() {
         Debug.Log("Selected item: Fuel Line Explosion Event");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -858,7 +876,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Mount Gyros.prefab")]
-    private static void MenuItem74() {
+    private static void MenuItem76() {
         Debug.Log("Selected item: Mount Gyros");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -870,7 +888,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Magazine Cookoff.asset")]
-    private static void MenuItem75() {
+    private static void MenuItem77() {
         Debug.Log("Selected item: Magazine Cookoff");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -880,7 +898,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Hardened Skin.asset")]
-    private static void MenuItem76() {
+    private static void MenuItem78() {
         Debug.Log("Selected item: Hardened Skin");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -890,7 +908,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Control.asset")]
-    private static void MenuItem77() {
+    private static void MenuItem79() {
         Debug.Log("Selected item: Control");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -900,7 +918,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Rapid DC Locker.prefab")]
-    private static void MenuItem78() {
+    private static void MenuItem80() {
         Debug.Log("Selected item: Rapid DC Locker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -912,7 +930,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Ammunition Elevators.prefab")]
-    private static void MenuItem79() {
+    private static void MenuItem81() {
         Debug.Log("Selected item: Ammunition Elevators");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -924,7 +942,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Sensor Antenna Bent.asset")]
-    private static void MenuItem80() {
+    private static void MenuItem82() {
         Debug.Log("Selected item: Sensor Antenna Bent");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -934,7 +952,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Fuel Line Fire.asset")]
-    private static void MenuItem81() {
+    private static void MenuItem83() {
         Debug.Log("Selected item: Fuel Line Fire");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -943,12 +961,12 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock/Common/Components/Launcher Deluge System.prefab")]
-    private static void MenuItem82() {
-        Debug.Log("Selected item: Launcher Deluge System");
+    [MenuItem("Load Asset/Stock/Common/Components/Fire Suppression System.prefab")]
+    private static void MenuItem84() {
+        Debug.Log("Selected item: Fire Suppression System");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
-        GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Launcher Deluge System"));
+        GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Fire Suppression System"));
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
@@ -956,7 +974,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Bulk Magazine.prefab")]
-    private static void MenuItem83() {
+    private static void MenuItem85() {
         Debug.Log("Selected item: Bulk Magazine");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -968,7 +986,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Scenarios/Two Flags.asset")]
-    private static void MenuItem84() {
+    private static void MenuItem86() {
         Debug.Log("Selected item: Two Flags");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -978,7 +996,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Gyro Drift.asset")]
-    private static void MenuItem85() {
+    private static void MenuItem87() {
         Debug.Log("Selected item: Gyro Drift");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -988,7 +1006,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Self-Screening Jammer.asset")]
-    private static void MenuItem86() {
+    private static void MenuItem88() {
         Debug.Log("Selected item: Self-Screening Jammer");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -998,7 +1016,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/SGM-1/SGM-1 Body.prefab")]
-    private static void MenuItem87() {
+    private static void MenuItem89() {
         Debug.Log("Selected item: SGM-1 Body");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1010,7 +1028,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Munitions/SGM-233 Gale.prefab")]
-    private static void MenuItem88() {
+    private static void MenuItem90() {
         Debug.Log("Selected item: SGM-233 Gale");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1022,7 +1040,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Debuffs/Container Bank Explosion.asset")]
-    private static void MenuItem89() {
+    private static void MenuItem91() {
         Debug.Log("Selected item: Container Bank Explosion");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1032,7 +1050,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Auxiliary Steering.prefab")]
-    private static void MenuItem90() {
+    private static void MenuItem92() {
         Debug.Log("Selected item: Auxiliary Steering");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1044,7 +1062,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Battle Dressing Station.prefab")]
-    private static void MenuItem91() {
+    private static void MenuItem93() {
         Debug.Log("Selected item: Battle Dressing Station");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1056,7 +1074,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Actively Cooled Amplifiers.prefab")]
-    private static void MenuItem92() {
+    private static void MenuItem94() {
         Debug.Log("Selected item: Actively Cooled Amplifiers");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1068,7 +1086,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Rapid-Cycle Cradle.prefab")]
-    private static void MenuItem93() {
+    private static void MenuItem95() {
         Debug.Log("Selected item: Rapid-Cycle Cradle");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1080,7 +1098,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Missions/Harsh Winds Blow.asset")]
-    private static void MenuItem94() {
+    private static void MenuItem96() {
         Debug.Log("Selected item: Harsh Winds Blow");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1090,7 +1108,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Electro-Optical Seeker.asset")]
-    private static void MenuItem95() {
+    private static void MenuItem97() {
         Debug.Log("Selected item: Electro-Optical Seeker");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1100,7 +1118,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Components/Damage Control Central.prefab")]
-    private static void MenuItem96() {
+    private static void MenuItem98() {
         Debug.Log("Selected item: Damage Control Central");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1112,7 +1130,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock/Common/Munitions/Missile Components/Direct Guidance.asset")]
-    private static void MenuItem97() {
+    private static void MenuItem99() {
         Debug.Log("Selected item: Direct Guidance");
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
@@ -1122,7 +1140,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk95 'Sarissa' PDT.prefab")]
-    private static void MenuItem98() {
+    private static void MenuItem100() {
         Debug.Log("Selected item: Mk95 'Sarissa' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1134,7 +1152,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/VLS-1-23 Launcher.prefab")]
-    private static void MenuItem99() {
+    private static void MenuItem101() {
         Debug.Log("Selected item: VLS-1-23 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1146,7 +1164,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk65 Cannon.prefab")]
-    private static void MenuItem100() {
+    private static void MenuItem102() {
         Debug.Log("Selected item: Mk65 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1158,7 +1176,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/ES32 'Scryer' Missile ID System.prefab")]
-    private static void MenuItem101() {
+    private static void MenuItem103() {
         Debug.Log("Selected item: ES32 'Scryer' Missile ID System");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1170,7 +1188,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM580 'Raider' Drive.prefab")]
-    private static void MenuItem102() {
+    private static void MenuItem104() {
         Debug.Log("Selected item: FM580 'Raider' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1182,7 +1200,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/SGM-H-3/SGM-H-3 Body.prefab")]
-    private static void MenuItem103() {
+    private static void MenuItem105() {
         Debug.Log("Selected item: SGM-H-3 Body");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1194,7 +1212,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/250mm HE-RPF Shell.asset")]
-    private static void MenuItem104() {
+    private static void MenuItem106() {
         Debug.Log("Selected item: 250mm HE-RPF Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1204,7 +1222,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/Flak Round.asset")]
-    private static void MenuItem105() {
+    private static void MenuItem107() {
         Debug.Log("Selected item: Flak Round");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1214,7 +1232,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/VLS-1-46 Launcher.prefab")]
-    private static void MenuItem106() {
+    private static void MenuItem108() {
         Debug.Log("Selected item: VLS-1-46 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1226,7 +1244,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/VLS-2 Launcher.prefab")]
-    private static void MenuItem107() {
+    private static void MenuItem109() {
         Debug.Log("Selected item: VLS-2 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1238,7 +1256,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E70 'Interruption' Jammer.prefab")]
-    private static void MenuItem108() {
+    private static void MenuItem110() {
         Debug.Log("Selected item: E70 'Interruption' Jammer");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1250,7 +1268,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM230 'Whiplash' Drive.prefab")]
-    private static void MenuItem109() {
+    private static void MenuItem111() {
         Debug.Log("Selected item: FM230 'Whiplash' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1262,7 +1280,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Keystone Destroyer.prefab")]
-    private static void MenuItem110() {
+    private static void MenuItem112() {
         Debug.Log("Selected item: Keystone Destroyer");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1274,7 +1292,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk66 Cannon.prefab")]
-    private static void MenuItem111() {
+    private static void MenuItem113() {
         Debug.Log("Selected item: Mk66 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1286,7 +1304,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E15 'Masquerade' Deception Module.prefab")]
-    private static void MenuItem112() {
+    private static void MenuItem114() {
         Debug.Log("Selected item: E15 'Masquerade' Deception Module");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1298,7 +1316,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E71 'Hangup' Jammer.prefab")]
-    private static void MenuItem113() {
+    private static void MenuItem115() {
         Debug.Log("Selected item: E71 'Hangup' Jammer");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1310,7 +1328,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk90 'Aurora' PDT.prefab")]
-    private static void MenuItem114() {
+    private static void MenuItem116() {
         Debug.Log("Selected item: Mk90 'Aurora' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1322,7 +1340,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/15mm Sandshot.asset")]
-    private static void MenuItem115() {
+    private static void MenuItem117() {
         Debug.Log("Selected item: 15mm Sandshot");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1332,7 +1350,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk61 Cannon.prefab")]
-    private static void MenuItem116() {
+    private static void MenuItem118() {
         Debug.Log("Selected item: Mk61 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1344,7 +1362,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk25 'Rebound' PDT.prefab")]
-    private static void MenuItem117() {
+    private static void MenuItem119() {
         Debug.Log("Selected item: Mk25 'Rebound' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1356,7 +1374,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM200 Drive.prefab")]
-    private static void MenuItem118() {
+    private static void MenuItem120() {
         Debug.Log("Selected item: FM200 Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1368,7 +1386,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM500 Drive.prefab")]
-    private static void MenuItem119() {
+    private static void MenuItem121() {
         Debug.Log("Selected item: FM500 Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1380,7 +1398,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Vauxhall Light Cruiser.prefab")]
-    private static void MenuItem120() {
+    private static void MenuItem122() {
         Debug.Log("Selected item: Vauxhall Light Cruiser");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1392,7 +1410,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/CLS-3 Launcher.prefab")]
-    private static void MenuItem121() {
+    private static void MenuItem123() {
         Debug.Log("Selected item: CLS-3 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1404,7 +1422,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/RS41 'Spyglass' Radar.prefab")]
-    private static void MenuItem122() {
+    private static void MenuItem124() {
         Debug.Log("Selected item: RS41 'Spyglass' Radar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1416,7 +1434,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/FR4800 Reactor.prefab")]
-    private static void MenuItem123() {
+    private static void MenuItem125() {
         Debug.Log("Selected item: FR4800 Reactor");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1428,7 +1446,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/Strike Planning Center.prefab")]
-    private static void MenuItem124() {
+    private static void MenuItem126() {
         Debug.Log("Selected item: Strike Planning Center");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1440,7 +1458,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM500R Drive.prefab")]
-    private static void MenuItem125() {
+    private static void MenuItem127() {
         Debug.Log("Selected item: FM500R Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1452,7 +1470,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/RF101 'Bullseye' Radar.prefab")]
-    private static void MenuItem126() {
+    private static void MenuItem128() {
         Debug.Log("Selected item: RF101 'Bullseye' Radar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1464,7 +1482,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E55 'Spotlight' Illuminator.prefab")]
-    private static void MenuItem127() {
+    private static void MenuItem129() {
         Debug.Log("Selected item: E55 'Spotlight' Illuminator");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1476,7 +1494,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Sprinter Corvette.prefab")]
-    private static void MenuItem128() {
+    private static void MenuItem130() {
         Debug.Log("Selected item: Sprinter Corvette");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1488,7 +1506,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/FR3300 Micro Reactor.prefab")]
-    private static void MenuItem129() {
+    private static void MenuItem131() {
         Debug.Log("Selected item: FR3300 Micro Reactor");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1500,7 +1518,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Axford Heavy Cruiser.prefab")]
-    private static void MenuItem130() {
+    private static void MenuItem132() {
         Debug.Log("Selected item: Axford Heavy Cruiser");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1512,7 +1530,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/450mm HE Shell.asset")]
-    private static void MenuItem131() {
+    private static void MenuItem133() {
         Debug.Log("Selected item: 450mm HE Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1522,7 +1540,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk81 Railgun.prefab")]
-    private static void MenuItem132() {
+    private static void MenuItem134() {
         Debug.Log("Selected item: Mk81 Railgun");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1534,7 +1552,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM240 'Dragonfly' Drive.prefab")]
-    private static void MenuItem133() {
+    private static void MenuItem135() {
         Debug.Log("Selected item: FM240 'Dragonfly' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1546,7 +1564,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/CR70 Antenna.prefab")]
-    private static void MenuItem134() {
+    private static void MenuItem136() {
         Debug.Log("Selected item: CR70 Antenna");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1558,7 +1576,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Raines Frigate.prefab")]
-    private static void MenuItem135() {
+    private static void MenuItem137() {
         Debug.Log("Selected item: Raines Frigate");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1570,7 +1588,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/20mm Slug.asset")]
-    private static void MenuItem136() {
+    private static void MenuItem138() {
         Debug.Log("Selected item: 20mm Slug");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1580,7 +1598,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/Signature Scrambler.prefab")]
-    private static void MenuItem137() {
+    private static void MenuItem139() {
         Debug.Log("Selected item: Signature Scrambler");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1592,7 +1610,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM540 'Dragonfly' Drive.prefab")]
-    private static void MenuItem138() {
+    private static void MenuItem140() {
         Debug.Log("Selected item: FM540 'Dragonfly' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1604,7 +1622,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM530 'Whiplash' Drive.prefab")]
-    private static void MenuItem139() {
+    private static void MenuItem141() {
         Debug.Log("Selected item: FM530 'Whiplash' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1616,7 +1634,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Solomon Battleship.prefab")]
-    private static void MenuItem140() {
+    private static void MenuItem142() {
         Debug.Log("Selected item: Solomon Battleship");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1628,7 +1646,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/RM50 'Parallax' Radar.prefab")]
-    private static void MenuItem141() {
+    private static void MenuItem143() {
         Debug.Log("Selected item: RM50 'Parallax' Radar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1640,7 +1658,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/120mm HE Shell.asset")]
-    private static void MenuItem142() {
+    private static void MenuItem144() {
         Debug.Log("Selected item: 120mm HE Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1650,7 +1668,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/TLS-3 Launcher.prefab")]
-    private static void MenuItem143() {
+    private static void MenuItem145() {
         Debug.Log("Selected item: TLS-3 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1662,7 +1680,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/VLS-3 Launcher.prefab")]
-    private static void MenuItem144() {
+    private static void MenuItem146() {
         Debug.Log("Selected item: VLS-3 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1674,7 +1692,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM30X 'Prowler' Drive.prefab")]
-    private static void MenuItem145() {
+    private static void MenuItem147() {
         Debug.Log("Selected item: FM30X 'Prowler' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1686,7 +1704,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/EA99 Active Decoy.prefab")]
-    private static void MenuItem146() {
+    private static void MenuItem148() {
         Debug.Log("Selected item: EA99 Active Decoy");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1698,7 +1716,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab")]
-    private static void MenuItem147() {
+    private static void MenuItem149() {
         Debug.Log("Selected item: SGM-H-2 Body");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1710,7 +1728,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/300mm AP Rail Sabot.asset")]
-    private static void MenuItem148() {
+    private static void MenuItem150() {
         Debug.Log("Selected item: 300mm AP Rail Sabot");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1720,7 +1738,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/450mm AP Shell.asset")]
-    private static void MenuItem149() {
+    private static void MenuItem151() {
         Debug.Log("Selected item: 450mm AP Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1730,7 +1748,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk29 'Stonewall' PDT.prefab")]
-    private static void MenuItem150() {
+    private static void MenuItem152() {
         Debug.Log("Selected item: Mk29 'Stonewall' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1742,7 +1760,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/RS35 'Frontline' Radar.prefab")]
-    private static void MenuItem151() {
+    private static void MenuItem153() {
         Debug.Log("Selected item: RS35 'Frontline' Radar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1754,7 +1772,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk600 Beam Cannon.prefab")]
-    private static void MenuItem152() {
+    private static void MenuItem154() {
         Debug.Log("Selected item: Mk600 Beam Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1766,7 +1784,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM200R Drive.prefab")]
-    private static void MenuItem153() {
+    private static void MenuItem155() {
         Debug.Log("Selected item: FM200R Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1778,7 +1796,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk82 Railgun.prefab")]
-    private static void MenuItem154() {
+    private static void MenuItem156() {
         Debug.Log("Selected item: Mk82 Railgun");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1790,7 +1808,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk20 'Defender' PDT.prefab")]
-    private static void MenuItem155() {
+    private static void MenuItem157() {
         Debug.Log("Selected item: Mk20 'Defender' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1802,7 +1820,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk610 Beam Turret.prefab")]
-    private static void MenuItem156() {
+    private static void MenuItem158() {
         Debug.Log("Selected item: Mk610 Beam Turret");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1814,7 +1832,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/250mm AP Shell.asset")]
-    private static void MenuItem157() {
+    private static void MenuItem159() {
         Debug.Log("Selected item: 250mm AP Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1824,7 +1842,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Faction Alliance.asset")]
-    private static void MenuItem158() {
+    private static void MenuItem160() {
         Debug.Log("Selected item: Faction Alliance");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1834,7 +1852,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk64 Cannon.prefab")]
-    private static void MenuItem159() {
+    private static void MenuItem161() {
         Debug.Log("Selected item: Mk64 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1846,7 +1864,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E90 'Blanket' Jammer.prefab")]
-    private static void MenuItem160() {
+    private static void MenuItem162() {
         Debug.Log("Selected item: E90 'Blanket' Jammer");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1858,7 +1876,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/250mm HE Shell.asset")]
-    private static void MenuItem161() {
+    private static void MenuItem163() {
         Debug.Log("Selected item: 250mm HE Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1868,7 +1886,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/120mm AP Shell.asset")]
-    private static void MenuItem162() {
+    private static void MenuItem164() {
         Debug.Log("Selected item: 120mm AP Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1878,7 +1896,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/ES22 'Pinard' Electronic Support Module.prefab")]
-    private static void MenuItem163() {
+    private static void MenuItem165() {
         Debug.Log("Selected item: ES22 'Pinard' Electronic Support Module");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1890,7 +1908,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM280 'Raider' Drive.prefab")]
-    private static void MenuItem164() {
+    private static void MenuItem166() {
         Debug.Log("Selected item: FM280 'Raider' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1902,7 +1920,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk62 Cannon.prefab")]
-    private static void MenuItem165() {
+    private static void MenuItem167() {
         Debug.Log("Selected item: Mk62 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1914,7 +1932,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk550 Railgun.prefab")]
-    private static void MenuItem166() {
+    private static void MenuItem168() {
         Debug.Log("Selected item: Mk550 Railgun");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1926,7 +1944,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/EA20 Flare Decoy.prefab")]
-    private static void MenuItem167() {
+    private static void MenuItem169() {
         Debug.Log("Selected item: EA20 Flare Decoy");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1938,7 +1956,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/120mm HE-RPF Shell.asset")]
-    private static void MenuItem168() {
+    private static void MenuItem170() {
         Debug.Log("Selected item: 120mm HE-RPF Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1948,7 +1966,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/EA12 Chaff Decoy.prefab")]
-    private static void MenuItem169() {
+    private static void MenuItem171() {
         Debug.Log("Selected item: EA12 Chaff Decoy");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1960,7 +1978,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk68 Cannon.prefab")]
-    private static void MenuItem170() {
+    private static void MenuItem172() {
         Debug.Log("Selected item: Mk68 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1972,7 +1990,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E57 'Floodlight' Illuminator.prefab")]
-    private static void MenuItem171() {
+    private static void MenuItem173() {
         Debug.Log("Selected item: E57 'Floodlight' Illuminator");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1984,7 +2002,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW2000 Drive.prefab")]
-    private static void MenuItem172() {
+    private static void MenuItem174() {
         Debug.Log("Selected item: BW2000 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -1996,7 +2014,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C53 Cannon.prefab")]
-    private static void MenuItem173() {
+    private static void MenuItem175() {
         Debug.Log("Selected item: C53 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2008,7 +2026,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P11 'Pavise' PDT.prefab")]
-    private static void MenuItem174() {
+    private static void MenuItem176() {
         Debug.Log("Selected item: P11 'Pavise' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2020,7 +2038,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4D1 Decoy Container (Clipper).prefab")]
-    private static void MenuItem175() {
+    private static void MenuItem177() {
         Debug.Log("Selected item: CM-4D1 Decoy Container (Clipper)");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2032,7 +2050,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm HE-SH Shell.asset")]
-    private static void MenuItem176() {
+    private static void MenuItem178() {
         Debug.Log("Selected item: 600mm HE-SH Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2042,7 +2060,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/500mm Fracturing Block.asset")]
-    private static void MenuItem177() {
+    private static void MenuItem179() {
         Debug.Log("Selected item: 500mm Fracturing Block");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2052,7 +2070,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C81 Plasma Cannon.prefab")]
-    private static void MenuItem178() {
+    private static void MenuItem180() {
         Debug.Log("Selected item: C81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2064,7 +2082,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500 Drive.prefab")]
-    private static void MenuItem179() {
+    private static void MenuItem181() {
         Debug.Log("Selected item: BW1500 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2076,7 +2094,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL18 Launcher.prefab")]
-    private static void MenuItem180() {
+    private static void MenuItem182() {
         Debug.Log("Selected item: RL18 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2088,7 +2106,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm Bomb Shell.asset")]
-    private static void MenuItem181() {
+    private static void MenuItem183() {
         Debug.Log("Selected item: 600mm Bomb Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2098,7 +2116,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800-R Drive.prefab")]
-    private static void MenuItem182() {
+    private static void MenuItem184() {
         Debug.Log("Selected item: BW800-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2110,7 +2128,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E30 Illuminator.prefab")]
-    private static void MenuItem183() {
+    private static void MenuItem185() {
         Debug.Log("Selected item: E30 Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2122,7 +2140,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm HE Shell.asset")]
-    private static void MenuItem184() {
+    private static void MenuItem186() {
         Debug.Log("Selected item: 100mm HE Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2132,7 +2150,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Shuttle Clipper.prefab")]
-    private static void MenuItem185() {
+    private static void MenuItem187() {
         Debug.Log("Selected item: Shuttle Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2144,7 +2162,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500-R Drive.prefab")]
-    private static void MenuItem186() {
+    private static void MenuItem188() {
         Debug.Log("Selected item: BW1500-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2156,7 +2174,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J17 Jammer.prefab")]
-    private static void MenuItem187() {
+    private static void MenuItem189() {
         Debug.Log("Selected item: J17 Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2168,7 +2186,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Citadel Magazine.prefab")]
-    private static void MenuItem188() {
+    private static void MenuItem190() {
         Debug.Log("Selected item: Citadel Magazine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2180,7 +2198,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4D2 Decoy Container (Line Ship).prefab")]
-    private static void MenuItem189() {
+    private static void MenuItem191() {
         Debug.Log("Selected item: CM-4D2 Decoy Container (Line Ship)");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2192,7 +2210,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Tug Clipper.prefab")]
-    private static void MenuItem190() {
+    private static void MenuItem192() {
         Debug.Log("Selected item: Tug Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2204,7 +2222,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm HE-HC Shell.asset")]
-    private static void MenuItem191() {
+    private static void MenuItem193() {
         Debug.Log("Selected item: 100mm HE-HC Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2214,7 +2232,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/R400 'Bloodhound' LRT Radar.prefab")]
-    private static void MenuItem192() {
+    private static void MenuItem194() {
         Debug.Log("Selected item: R400 'Bloodhound' LRT Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2226,7 +2244,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T20 Cannon.prefab")]
-    private static void MenuItem193() {
+    private static void MenuItem195() {
         Debug.Log("Selected item: T20 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2238,7 +2256,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/L50 'Blackjack' Laser Dazzler.prefab")]
-    private static void MenuItem194() {
+    private static void MenuItem196() {
         Debug.Log("Selected item: L50 'Blackjack' Laser Dazzler");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2250,7 +2268,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E20 'Lighthouse' Illuminator.prefab")]
-    private static void MenuItem195() {
+    private static void MenuItem197() {
         Debug.Log("Selected item: E20 'Lighthouse' Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2262,7 +2280,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30 'Mattock' Mine.prefab")]
-    private static void MenuItem196() {
+    private static void MenuItem198() {
         Debug.Log("Selected item: M-30 'Mattock' Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2274,7 +2292,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4R12 Rocket Container.prefab")]
-    private static void MenuItem197() {
+    private static void MenuItem199() {
         Debug.Log("Selected item: CM-4R12 Rocket Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2286,7 +2304,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Bulker Line Ship.prefab")]
-    private static void MenuItem198() {
+    private static void MenuItem200() {
         Debug.Log("Selected item: Bulker Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2298,7 +2316,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P20 'Bastion' PDT.prefab")]
-    private static void MenuItem199() {
+    private static void MenuItem201() {
         Debug.Log("Selected item: P20 'Bastion' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2310,7 +2328,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-50 'Auger' Sprint Mine.prefab")]
-    private static void MenuItem200() {
+    private static void MenuItem202() {
         Debug.Log("Selected item: M-50 'Auger' Sprint Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2322,7 +2340,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Civilian Reactor.prefab")]
-    private static void MenuItem201() {
+    private static void MenuItem203() {
         Debug.Log("Selected item: Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2334,7 +2352,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Ocello Cruiser.prefab")]
-    private static void MenuItem202() {
+    private static void MenuItem204() {
         Debug.Log("Selected item: Ocello Cruiser");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2346,7 +2364,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Damage Control Complex.prefab")]
-    private static void MenuItem203() {
+    private static void MenuItem205() {
         Debug.Log("Selected item: Damage Control Complex");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2358,7 +2376,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/Sundrive Racing Pro.prefab")]
-    private static void MenuItem204() {
+    private static void MenuItem206() {
         Debug.Log("Selected item: Sundrive Racing Pro");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2370,7 +2388,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T81 Plasma Cannon.prefab")]
-    private static void MenuItem205() {
+    private static void MenuItem207() {
         Debug.Log("Selected item: T81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2382,7 +2400,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Large DC Storage.prefab")]
-    private static void MenuItem206() {
+    private static void MenuItem208() {
         Debug.Log("Selected item: Large DC Storage");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2394,7 +2412,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C90 Cannon.prefab")]
-    private static void MenuItem207() {
+    private static void MenuItem209() {
         Debug.Log("Selected item: C90 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2406,7 +2424,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm AP Shell.asset")]
-    private static void MenuItem208() {
+    private static void MenuItem210() {
         Debug.Log("Selected item: 100mm AP Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2416,7 +2434,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL36 Launcher.prefab")]
-    private static void MenuItem209() {
+    private static void MenuItem211() {
         Debug.Log("Selected item: RL36 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2428,7 +2446,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Ithaca Bridgemaster.prefab")]
-    private static void MenuItem210() {
+    private static void MenuItem212() {
         Debug.Log("Selected item: Ithaca Bridgemaster");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2440,7 +2458,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C60 Cannon.prefab")]
-    private static void MenuItem211() {
+    private static void MenuItem213() {
         Debug.Log("Selected item: C60 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2452,7 +2470,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Light Civilian Reactor.prefab")]
-    private static void MenuItem212() {
+    private static void MenuItem214() {
         Debug.Log("Selected item: Light Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2464,7 +2482,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C65 Cannon.prefab")]
-    private static void MenuItem213() {
+    private static void MenuItem215() {
         Debug.Log("Selected item: C65 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2476,7 +2494,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4M Mine Container.prefab")]
-    private static void MenuItem214() {
+    private static void MenuItem216() {
         Debug.Log("Selected item: CM-4M Mine Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2488,7 +2506,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-3 Launcher.prefab")]
-    private static void MenuItem215() {
+    private static void MenuItem217() {
         Debug.Log("Selected item: MLS-3 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2500,7 +2518,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Faction Protectorate.asset")]
-    private static void MenuItem216() {
+    private static void MenuItem218() {
         Debug.Log("Selected item: Faction Protectorate");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2510,7 +2528,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4R6 Rocket Container.prefab")]
-    private static void MenuItem217() {
+    private static void MenuItem219() {
         Debug.Log("Selected item: CM-4R6 Rocket Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2522,7 +2540,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J360 'Lyrebird' Jammer.prefab")]
-    private static void MenuItem218() {
+    private static void MenuItem220() {
         Debug.Log("Selected item: J360 'Lyrebird' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2534,7 +2552,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Jury-Rigged Reactor.prefab")]
-    private static void MenuItem219() {
+    private static void MenuItem221() {
         Debug.Log("Selected item: Jury-Rigged Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2546,7 +2564,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Boosted Reactor.prefab")]
-    private static void MenuItem220() {
+    private static void MenuItem222() {
         Debug.Log("Selected item: Boosted Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2558,7 +2576,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30-N 'Mattock' Cooperative Mine.prefab")]
-    private static void MenuItem221() {
+    private static void MenuItem223() {
         Debug.Log("Selected item: M-30-N 'Mattock' Cooperative Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2570,7 +2588,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Bulwark Huntress.prefab")]
-    private static void MenuItem222() {
+    private static void MenuItem224() {
         Debug.Log("Selected item: Bulwark Huntress");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2582,7 +2600,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C56 Cannon.prefab")]
-    private static void MenuItem223() {
+    private static void MenuItem225() {
         Debug.Log("Selected item: C56 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2594,7 +2612,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/400mm Plasma Ampoule.asset")]
-    private static void MenuItem224() {
+    private static void MenuItem226() {
         Debug.Log("Selected item: 400mm Plasma Ampoule");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2604,7 +2622,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J15 'Bellbird' Jammer.prefab")]
-    private static void MenuItem225() {
+    private static void MenuItem227() {
         Debug.Log("Selected item: J15 'Bellbird' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2616,7 +2634,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C30 Cannon.prefab")]
-    private static void MenuItem226() {
+    private static void MenuItem228() {
         Debug.Log("Selected item: C30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2628,7 +2646,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-S-4 Body.prefab")]
-    private static void MenuItem227() {
+    private static void MenuItem229() {
         Debug.Log("Selected item: CM-S-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2640,7 +2658,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RF44 'Pinpoint' Radar.prefab")]
-    private static void MenuItem228() {
+    private static void MenuItem230() {
         Debug.Log("Selected item: RF44 'Pinpoint' Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2652,7 +2670,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Stack Launcher.prefab")]
-    private static void MenuItem229() {
+    private static void MenuItem231() {
         Debug.Log("Selected item: Container Stack Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2664,7 +2682,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-777 Yard Drive.prefab")]
-    private static void MenuItem230() {
+    private static void MenuItem232() {
         Debug.Log("Selected item: CHI-777 Yard Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2676,7 +2694,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-4 Body.prefab")]
-    private static void MenuItem231() {
+    private static void MenuItem233() {
         Debug.Log("Selected item: CM-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2687,8 +2705,20 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
+    [MenuItem("Load Asset/Stock-F2/F2/Components/Container Datalink Array.prefab")]
+    private static void MenuItem234() {
+        Debug.Log("Selected item: Container Datalink Array");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Datalink Array"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        
+    }
+
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-7700 Drive.prefab")]
-    private static void MenuItem232() {
+    private static void MenuItem235() {
         Debug.Log("Selected item: CHI-7700 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2700,7 +2730,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/ML-9 Mine Launcher.prefab")]
-    private static void MenuItem233() {
+    private static void MenuItem236() {
         Debug.Log("Selected item: ML-9 Mine Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2711,20 +2741,8 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-2 Launcher.prefab")]
-    private static void MenuItem234() {
-        Debug.Log("Selected item: MLS-2 Launcher");
-        if (stockf2 == null)
-            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
-        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("MLS-2 Launcher"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T30 Cannon.prefab")]
-    private static void MenuItem235() {
+    private static void MenuItem237() {
         Debug.Log("Selected item: T30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2736,7 +2754,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800 Drive.prefab")]
-    private static void MenuItem236() {
+    private static void MenuItem238() {
         Debug.Log("Selected item: BW800 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2748,7 +2766,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm HE Shell.asset")]
-    private static void MenuItem237() {
+    private static void MenuItem239() {
         Debug.Log("Selected item: 600mm HE Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2758,7 +2776,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm Grape.asset")]
-    private static void MenuItem238() {
+    private static void MenuItem240() {
         Debug.Log("Selected item: 100mm Grape");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2767,8 +2785,20 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
+    [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-2 Launcher.prefab")]
+    private static void MenuItem241() {
+        Debug.Log("Selected item: MLS-2 Launcher");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("MLS-2 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        
+    }
+
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-2 'Piranha' Rocket.prefab")]
-    private static void MenuItem239() {
+    private static void MenuItem242() {
         Debug.Log("Selected item: R-2 'Piranha' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2780,7 +2810,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Bulk Clipper.prefab")]
-    private static void MenuItem240() {
+    private static void MenuItem243() {
         Debug.Log("Selected item: Bulk Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2792,7 +2822,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/R550 Early Warning Radar.prefab")]
-    private static void MenuItem241() {
+    private static void MenuItem244() {
         Debug.Log("Selected item: R550 Early Warning Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2804,7 +2834,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Bank Launcher.prefab")]
-    private static void MenuItem242() {
+    private static void MenuItem245() {
         Debug.Log("Selected item: Container Bank Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2815,8 +2845,20 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
+    [MenuItem("Load Asset/Stock-F2/F2/Munitions/EA14 Chaff Decoy.prefab")]
+    private static void MenuItem246() {
+        Debug.Log("Selected item: EA14 Chaff Decoy");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("EA14 Chaff Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        
+    }
+
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-9100 Long Haul Drive.prefab")]
-    private static void MenuItem243() {
+    private static void MenuItem247() {
         Debug.Log("Selected item: CHI-9100 Long Haul Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2828,7 +2870,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/250mm HE-HC Shell.asset")]
-    private static void MenuItem244() {
+    private static void MenuItem248() {
         Debug.Log("Selected item: 250mm HE-HC Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2838,7 +2880,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Container Line Ship.prefab")]
-    private static void MenuItem245() {
+    private static void MenuItem249() {
         Debug.Log("Selected item: Container Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2850,7 +2892,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P60 'Grazer' PDT.prefab")]
-    private static void MenuItem246() {
+    private static void MenuItem250() {
         Debug.Log("Selected item: P60 'Grazer' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2862,119 +2904,11 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/TE45 Mass Driver.prefab")]
-    private static void MenuItem247() {
+    private static void MenuItem251() {
         Debug.Log("Selected item: TE45 Mass Driver");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("TE45 Mass Driver"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Maze.prefab")]
-    private static void MenuItem248() {
-        Debug.Log("Selected item: Maze");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Maze"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Caltrop.prefab")]
-    private static void MenuItem249() {
-        Debug.Log("Selected item: Caltrop");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Caltrop"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Tumbleweed.prefab")]
-    private static void MenuItem250() {
-        Debug.Log("Selected item: Tumbleweed");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Tumbleweed"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Pillars.prefab")]
-    private static void MenuItem251() {
-        Debug.Log("Selected item: Pillars");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Pillars"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Shooting Gallery.prefab")]
-    private static void MenuItem252() {
-        Debug.Log("Selected item: Shooting Gallery");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Shooting Gallery"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Cliff.prefab")]
-    private static void MenuItem253() {
-        Debug.Log("Selected item: Cliff");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Cliff"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Canyon.prefab")]
-    private static void MenuItem254() {
-        Debug.Log("Selected item: Canyon");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Canyon"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Eye.prefab")]
-    private static void MenuItem255() {
-        Debug.Log("Selected item: Eye");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Eye"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-Maps/Maps/Abyssal.prefab")]
-    private static void MenuItem256() {
-        Debug.Log("Selected item: Abyssal");
-        if (stockmaps == null)
-            stockmaps = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-maps"));
-        GameObject goh = Instantiate(stockmaps.LoadAsset<GameObject>("Abyssal"));
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);

@@ -1,6 +1,9 @@
-
 using Ships;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
 class StatDrive : DriveComponent
@@ -32,20 +35,19 @@ class StatDrive : DriveComponent
 		}
 	}
 
-	public override string GetFormattedStats(bool full, int groupSize = 1)
-	{
-		var stats = base.GetFormattedStats(full, groupSize);
-
-		stats += "\n<b>Speed Modifiers:</b>\n";
-		for (int i = 0; i < this._speedModifiers.Length; i++)
-		{
-			var effect = this._speedModifiers[i];
-			var threshold = this._underSpeedThresholds[i];
-			var positiveBad = StatTable.GetStatInfo(effect.Modifier.StatName, out string subtype).PositiveBad;
-			stats += $"{StatModifier.FormatModifierColoredLinked(effect.Modifier.StatName, effect.Modifier.Modifier, positiveBad)} when under {(int)(threshold * 100)}% Max Speed\n";
-		}
-		return stats;
-	}
+    public override void GetFormattedStats(List<(string, string)> rows, bool full, IEnumerable<IHullComponent> group)
+    {
+        base.GetFormattedStats(rows, full, group);
+        var text = "\n";
+        for (int i = 0; i < this._speedModifiers.Length; i++)
+        {
+            var effect = this._speedModifiers[i];
+            var threshold = this._underSpeedThresholds[i];
+            var statinfo = StatTable.GetStatInfo(effect.Modifier.StatName, out string subtype);
+            text += $"{StatModifier.FormatModifierColored(effect.Modifier.Modifier, statinfo.PositiveBad)} {statinfo.DisplayName} when under {(int)(threshold * 100)}% Max Speed\n";
+            rows.Add(("<b>Speed Modifiers:</b>", text));
+        }
+    }
 
 	protected override void Awake()
 	{

@@ -253,7 +253,7 @@ MonoBehaviour:
   _partKey: KIPC2EMXIUKJaasWE_33LE
   _maxHealth: 400
   _functioningThreshold: 15
-  _damageThreshold: 40
+  _damageThreshold: 30
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -366,7 +366,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 24
-  _reloadTime: 60
+  _reloadTime: 70
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1

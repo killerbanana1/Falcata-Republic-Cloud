@@ -33,7 +33,7 @@ class Patch_HullComponent_UseableByFaction
         if (faction != null && faction.SaveKey == "Falcata Republic/Falcata Republic")
         {
             UnityEngine.Debug.Log("\tSaveKey matched");
-            List<string> _lockedComponents = new List<string>() { "Stock/Gun Plotting Center", "Stock/Energy Regulator", "Stock/Small Energy Regulator", "Stock/Focused Particle Accelerator", "Stock/Plant Control Center", "Stock/Small Reactor Booster", "Stock/Rapid-Cycle Cradle", "Stock/Mount Gyros" }; // Add your component keys here
+            List<string> _lockedComponents = new List<string>() { "Stock/Gun Plotting Center", "Stock/Energy Regulator", "Stock/Small Energy Regulator", "Stock/Focused Particle Accelerator", "Stock/Plant Control Center", "Stock/Small Reactor Booster", "Stock/Rapid-Cycle Cradle", "Stock/Mount Gyros", "Stock/Fire Suppression System" }; // Add your component keys here
 
             // Check if the component is in the locked list
             if (_lockedComponents.Contains(__instance.SaveKey))

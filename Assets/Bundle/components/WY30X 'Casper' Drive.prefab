@@ -60,11 +60,15 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Decreases radar sig based on speed.
+  _longDescription: "The WY30X 'Casper' is an experimental small drive that decreases
+    the host warships radar signature based on speed. Although it takes a bit more
+    effort to use effectively compared to Shelters 'Prowler', our attempt gives a
+    greater maximum bonus and really shines when multiple are used in tandem.\n\nFLANK
+    = 0% \nFULL = 10%\n2/3 = 20%\n1/3 = 30%"
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
-  _compoundingCost: 1
+  _compoundingCost: 0
   _compoundingCostClass: Stealth
   _firstInstanceFree: 0
   _compoundingMultiplier: 2
@@ -85,7 +89,7 @@ MonoBehaviour:
   _resourceDemandPriority: 1000
   ResourcesProvided:
   - _resourceName: Power
-    _amount: 350
+    _amount: 500
     _perUnit: 0
     _onlyWhenOperating: 0
   ResourcesRequired: []

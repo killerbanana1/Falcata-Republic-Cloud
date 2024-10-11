@@ -60,7 +60,10 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Increases power output based on speed.
+  _longDescription: "The WY50X 'Ripley' is an experimental medium-sized drive that
+    both provides power and increases powerplant efficiency when it's not in use.
+    You do not need to be static to receive it's maximum benefits if set to 1/3 speed.\n\nFLANK
+    = 5% \nFULL = 20%\n2/3 = 30%\n1/3 = 40%"
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

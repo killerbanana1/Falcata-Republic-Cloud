@@ -85,11 +85,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
-  Modifiers:
-  - _statName: hull-identificationwork
-    _literal: -100
-    _modifier: 0
-    _permanent: 0
+  Modifiers: []
   _resourceDemandPriority: 10
   ResourcesProvided: []
   ResourcesRequired:

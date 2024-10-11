@@ -13,6 +13,7 @@ namespace Assets.Scripts
 	{
 
 		private bool doDamageOnFire = false;
+		private bool didAddMods = false;
 
 		protected override float _cycleLength
 		{
@@ -38,17 +39,52 @@ namespace Assets.Scripts
 			base.RunTimers(deltaTime);
 		}
 
-		public override string GetFormattedStats(bool full, int groupSize = 1)
+		protected override void Update()
 		{
-			var stats = base.GetFormattedStats(full, groupSize);
-
-			var reloadValue = this._statReloadTime.Value * (1 - this._bshortReloadReductionPercent);
-			var reloadModifier = 1 - (reloadValue / this._statReloadTime.BaseValue);
-			var text = StatValue.FormatStatTextWithLink(this._statReloadTime.StatID, this._statReloadTime.DisplayName, this._statReloadTime.Unit, reloadValue, this._statReloadTime.LiteralModifier, reloadModifier * -1, this._statReloadTime.Attribute);
-			stats = stats + "Battle-Short: Available\n   " + text + "\n   " + this._statOverheatDamage.FullTextWithLink + "\n";
-
-			return stats;
+			base.Update();
+			if (this._myHull?.MyShip?.Controller)
+			{
+				if (base._battleShortEnabled)
+				{
+					if (!didAddMods)
+					{
+						foreach (var mod in _bshortEffects)
+						{
+							this._myHull.MyShip.AddStatModifier(this, mod);
+						}
+						didAddMods = true;
+					}
+				}
+				else
+				{
+					foreach (var mod in _bshortEffects)
+					{
+						this._myHull.MyShip.RemoveStatModifier(this, mod.StatName);
+					}
+					didAddMods = false;
+				}
+			}
 		}
+
+        public override void GetFormattedStats(List<(string, string)> rows, bool full, IEnumerable<IHullComponent> group)
+        {
+            base.GetFormattedStats(rows, full, group);
+
+            var reloadValue = this._statReloadTime.Value * (1 - this._bshortReloadReductionPercent);
+            var reloadModifier = 1 - (reloadValue / this._statReloadTime.BaseValue);
+            var text = StatValue.FormatStatTextWithLinkRow(this._statReloadTime.StatID, this._statReloadTime.DisplayName, this._statReloadTime.Unit, reloadValue, this._statReloadTime.LiteralModifier, reloadModifier * -1, this._statReloadTime.Attribute);
+            rows.Add(("Battleshort", "Available"));
+            rows.Add(("  " + text.Item1, text.Item2));
+            if (this._bshortEffects.Length > 0)
+            {
+                var bshortStats = "\n";
+                foreach (var mod in this._bshortEffects)
+                {
+                    bshortStats = bshortStats + "  " + mod.ToString() + "\n";
+                }
+                rows.Add(("Effects While Battle-Shorting", bshortStats));
+            }
+        }
 
 		protected override void OnTarget(Vector3 aimPoint, bool changed)
 		{
@@ -67,6 +103,9 @@ namespace Assets.Scripts
 
 		[ShipStat("discreteweapon-overheatdamage", "Overheat Damage", "hp", InitializeFrom = "_overheatDamage", MinValue = 0.01f, PositiveBad = true, StackingPenalty = true, TextValueMultiplier = 1f, NameSubtypeFrom = "_overheatDamageSubtype", LimitSubtypeModifiersOnly = true)]
 		protected StatValue _statOverheatDamage;
+
+		[SerializeField]
+		private StatModifier[] _bshortEffects;
 
 		[SerializeField]
 		private float _overheatDamage = 10f;
