@@ -215,6 +215,7 @@ MonoBehaviour:
   _crossSectionSampler: {fileID: 11400000, guid: 58aab1c7c8795db408d6e5438d1aea67, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
+  _cornerOcclusionTest: 0
 --- !u!65 &536427653535396971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1316,7 +1317,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP8
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -3879,7 +3880,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP2
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -3962,7 +3963,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP1
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -4099,7 +4100,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP3
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -4287,7 +4288,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP4
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -6101,7 +6102,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD7
   _defaultComponent: Falcata Republic/UC-RS44 'Redoubt' Radar
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -6368,7 +6369,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD2
   _defaultComponent: Stock/FR4800 Reactor
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -6635,7 +6636,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD5
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -6909,7 +6910,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD3
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8774,7 +8775,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD4
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -9774,7 +9775,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD6
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -10941,7 +10942,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP5
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -11024,7 +11025,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP7
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -11379,7 +11380,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP6
   _defaultComponent: Stock/Basic CIC
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -11462,7 +11463,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD1
   _defaultComponent: Falcata Republic/FM400 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}

@@ -62,7 +62,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD8
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -145,7 +145,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD6
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -1622,7 +1622,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD4
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -2880,7 +2880,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD3
   _defaultComponent: Falcata Republic/FM600 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD5
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -4938,7 +4938,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD2
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -5205,7 +5205,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD7
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -7680,7 +7680,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD1
   _defaultComponent: Stock/FR4800 Reactor
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -7763,7 +7763,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP6
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8090,7 +8090,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP7
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8173,7 +8173,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP5
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8531,7 +8531,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP13
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8668,7 +8668,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP3
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8832,7 +8832,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP4
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -9178,7 +9178,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP1
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -9397,7 +9397,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP2
   _defaultComponent: Stock/Basic CIC
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -10515,7 +10515,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD10
   _defaultComponent: Falcata Republic/UC-RS64 'L'aigle' Radar
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -10598,7 +10598,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD9
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -10681,7 +10681,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD11
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -11423,7 +11423,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP12
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -12277,7 +12277,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD12
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -12706,7 +12706,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP10
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -14046,7 +14046,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP8
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -14129,7 +14129,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP9
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -15273,6 +15273,7 @@ MonoBehaviour:
   _crossSectionSampler: {fileID: 11400000, guid: 20bac6b715605294a89ad0b477932206, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
+  _cornerOcclusionTest: 0
 --- !u!65 &7679119561451544709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16074,7 +16075,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP11
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}

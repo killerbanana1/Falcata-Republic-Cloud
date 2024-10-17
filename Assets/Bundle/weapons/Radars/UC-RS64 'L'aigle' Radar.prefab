@@ -166,7 +166,7 @@ MonoBehaviour:
   _maxRange: 1050
   _radiatedPower: 4500
   _gain: 35
-  _sensitivity: -36
+  _sensitivity: -37
   _apertureSize: 70
   _noiseFiltering: 0
   _deviationCurve:

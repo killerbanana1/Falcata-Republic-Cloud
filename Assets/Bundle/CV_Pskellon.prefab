@@ -1263,7 +1263,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD4
   _defaultComponent: Falcata Republic/UC-RS44 'Redoubt' Radar
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -2058,7 +2058,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD3
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD5
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -4689,7 +4689,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD2
   _defaultComponent: Stock/FR3300 Micro Reactor
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -4950,7 +4950,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 2
-  _shortName: 
+  _shortName: MOD1
   _defaultComponent: Falcata Republic/FM200 Drive
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -5597,7 +5597,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP1
   _defaultComponent: Stock/Basic CIC
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP2
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -8620,6 +8620,7 @@ MonoBehaviour:
   _crossSectionSampler: {fileID: 11400000, guid: e2f4f8bcbd66aa248a6f5c4c8d3c295d, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
+  _cornerOcclusionTest: 0
 --- !u!65 &7679119561451544709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8999,7 +9000,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP4
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}
@@ -9082,7 +9083,7 @@ MonoBehaviour:
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
-  _shortName: 
+  _shortName: CMP3
   _defaultComponent: 
   _component: {fileID: 0}
   _cap: {fileID: 0}

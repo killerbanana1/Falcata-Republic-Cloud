@@ -77,12 +77,12 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 15
+  _pointCost: 20
   _type: 1
   _size: {x: 3, y: 1, z: 3}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 0
+  _mass: 7
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
@@ -90,6 +90,10 @@ MonoBehaviour:
   - _statName: damagecontrol-repairspeed:fire
     _literal: 0
     _modifier: 0.5
+    _permanent: 0
+  - _statName: hull-crewvuln
+    _literal: 0
+    _modifier: -0.5
     _permanent: 0
   _resourceDemandPriority: 10
   ResourcesProvided: []

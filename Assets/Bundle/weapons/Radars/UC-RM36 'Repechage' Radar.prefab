@@ -174,7 +174,7 @@ MonoBehaviour:
   _cueingOnly: 0
   _canLock: 1
   _lockErrorMultiplier: 0.1
-  _maintainLockSNR: 3
+  _maintainLockSNR: 2
   _canBurnthrough: 0
   _burnthroughPowerMultiplier: 0
   _burnthroughDamageProbability: 0
