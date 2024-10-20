@@ -1774,7 +1774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster2
-  _maxHealth: 150
+  _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -2411,7 +2411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster1
-  _maxHealth: 150
+  _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -2597,7 +2597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster3
-  _maxHealth: 150
+  _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -7127,7 +7127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster4
-  _maxHealth: 150
+  _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
@@ -8283,7 +8283,7 @@ MonoBehaviour:
   _angularMotorForce: 400
   _crewComplement: 165
   _crewVulnerability: 0.25
-  _interiorDensityArmorEquivalent: 1.2
+  _interiorDensityArmorEquivalent: 1.1
   _componentDR: 0.4
   _visionDistance: 5
   _identityWorkRequired: 200
@@ -8329,7 +8329,7 @@ MonoBehaviour:
   - {fileID: 7023900530527701806}
   - {fileID: 8893625196240785722}
   - {fileID: 8310715220314681063}
-  _armorThickness: 42
+  _armorThickness: 40
   _dynamicArmorZones:
   - HullSeg: {fileID: 7023900530527701806}
     Colliders:
