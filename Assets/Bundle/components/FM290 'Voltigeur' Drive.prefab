@@ -60,7 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Small drive for boosting linear thrust.
+  _longDescription: Gains liner thrust by sacrificing top speed, but retains normal
+    power generation.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -84,7 +85,7 @@ MonoBehaviour:
     _permanent: 0
   - _statName: hull-linearmotor
     _literal: 0
-    _modifier: 0.25
+    _modifier: 0.3
     _permanent: 0
   _resourceDemandPriority: 1000
   ResourcesProvided:

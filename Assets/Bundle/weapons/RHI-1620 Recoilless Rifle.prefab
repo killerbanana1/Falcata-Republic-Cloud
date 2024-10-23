@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 37996837688683934}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 37996837908288353}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 37996838606986230}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 37996838978207291}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 5435048586959062185}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 2483773477900940083}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 7100397626737357014}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 5795813715407105758}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 125
+  _pointCost: 120
   _type: 0
   _size: {x: 8, y: 5, z: 8}
   _interiorOverhang: 0
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 4370517282025953437}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 2705411916134434903}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2001,7 +2001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 6760379834337599759}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 7779381287059212985}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 3220842147122203241}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 6421135759541123251}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2517,7 +2517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 356312157083399492}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 0.5
+  _baseAccuracy: 0.6
   _flash: {fileID: 3028409833412355672}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

@@ -2845,7 +2845,7 @@ Transform:
   m_GameObject: {fileID: 1125871907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.02, z: -4.59}
-  m_LocalScale: {x: 0.85, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
   m_RootOrder: 25
@@ -8283,7 +8283,7 @@ MonoBehaviour:
   _angularMotorForce: 400
   _crewComplement: 165
   _crewVulnerability: 0.25
-  _interiorDensityArmorEquivalent: 1.1
+  _interiorDensityArmorEquivalent: 1.2
   _componentDR: 0.4
   _visionDistance: 5
   _identityWorkRequired: 200
@@ -13187,7 +13187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6099858673228362577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22, z: 0.56}
+  m_LocalPosition: {x: 0, y: 0.22, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2075078681327711195}
@@ -13204,7 +13204,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4, y: 2, z: 8.5}
+  m_Size: {x: 2.4, y: 2, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5093841161394707787
 MonoBehaviour:
