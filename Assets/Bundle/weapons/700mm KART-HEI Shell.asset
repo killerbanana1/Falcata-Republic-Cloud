@@ -33,7 +33,7 @@ MonoBehaviour:
   _armorDamageRadius: 4
   _heatPower: 5000
   _componentDamage: 300
-  _randomEffectMultiplier: 0.15
+  _randomEffectMultiplier: 0.1
   _neverCrit: 1
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 6
