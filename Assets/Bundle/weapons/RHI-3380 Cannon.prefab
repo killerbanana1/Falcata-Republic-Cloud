@@ -614,7 +614,7 @@ MonoBehaviour:
   _partKey: 1Zh5ndZlleF1DLvP37uOIR
   _maxHealth: 550
   _functioningThreshold: 30
-  _damageThreshold: 35
+  _damageThreshold: 40
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
