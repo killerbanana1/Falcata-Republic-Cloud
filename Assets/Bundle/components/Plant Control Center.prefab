@@ -63,7 +63,7 @@ MonoBehaviour:
   _longDescription: A centralized control center equipped with a suite of improved
     monitoring, management, and control systems for a ship's reactor plant, allowing
     crew to operate remotely from the localized controls, for more efficient operation
-    of the power plant.
+    of the power plant. This variant requires a bit more space but is less fragile.
   _flavorText: 'All reactor bays have a lightweight version of these, but the actual
     PCC is far more specialized. Some of them are hooked up to an AN-2500 Superbrain
     and typically left to run in maximum efficiency settings to keep the warship

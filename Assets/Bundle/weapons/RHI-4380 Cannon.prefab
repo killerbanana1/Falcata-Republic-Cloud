@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: fZw5ndXlpE2DLvO37cPIoQ
-  _maxHealth: 650
+  _maxHealth: 600
   _functioningThreshold: 30
   _damageThreshold: 40
   _reinforced: 0
@@ -760,9 +760,9 @@ MonoBehaviour:
   _longDescription: 380mm cannons are the mainstay of the Falcatan navy, they are
     ubiquitous weapons and are effective against all but the heaviest ship classes-
     and even still, their AP shells can chip away. The shells from these guns fly
-    especially fast, but the mounts are innaccurate by nature, and require significant
+    especially fast, but the mounts are inaccurate by nature, and require significant
     plotting effort on the part of the host ship to achieve their peak effectiveness.
-    This variant is a quad barelled mount.
+    This variant is a quad barrelled mount.
   _flavorText: 
   _category: Weapons - Projectile
   _costBreakdownClass: 2

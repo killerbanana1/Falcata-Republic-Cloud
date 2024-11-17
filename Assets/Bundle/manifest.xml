@@ -38,6 +38,7 @@
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>
+	<Entry Name="Recoilless Autoloader" Address="components/Recoilless Autoloader.prefab"/>
 	<Entry Name="Hydraulic Actuator" Address="components/Hydraulic Actuator.prefab"/>
 	<Entry Name="Missile Programming Cache" Address="components/Missile Programming Cache.prefab"/>
 	<Entry Name="Gun Plotting Center" Address="components/Gun Plotting Center.prefab"/>

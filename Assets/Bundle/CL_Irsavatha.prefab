@@ -6568,7 +6568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633714249209227962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -24.5}
+  m_LocalPosition: {x: 0, y: 0, z: -24.25}
   m_LocalScale: {x: 0.9, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
@@ -7234,10 +7234,9 @@ MonoBehaviour:
   _className: Irsavatha
   _hullClassification: Cruiser
   _hullSymbolOptions:
-  - C
-  - CL
-  - CC
   - CG
+  - C
+  - CC
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: f16379f4be5bcf644b3ea74f2c7a4448, type: 3}
@@ -9619,7 +9618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4903916548798894527}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: -0.96, z: -15.091}
+  m_LocalPosition: {x: 0, y: -0.96, z: -15.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
@@ -9651,7 +9650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Mount5
-  _size: {x: 3, y: 4, z: 3}
+  _size: {x: 3, y: 4, z: 5}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 3, z: 0}
   _type: 0

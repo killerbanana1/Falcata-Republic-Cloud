@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 2Z99iItqAHJ877za37w21q
-  _maxHealth: 175
+  _maxHealth: 150
   _functioningThreshold: 15
   _damageThreshold: 20
   _reinforced: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
     shells have low penetration but high damage, and the AP-S shells have low damage,
     but high fire and critical chance, intended to suppress large capital ships whilst
     allowing the 150mm armed ship to slip away. It also comes equipped with a proximity
-    flak shell for long range anti missile purposes. This is a double barelled variant.
+    flak shell for long range anti missile purposes. This is a double barrelled variant.
   _flavorText: 
   _category: Weapons - Projectile
   _costBreakdownClass: 2

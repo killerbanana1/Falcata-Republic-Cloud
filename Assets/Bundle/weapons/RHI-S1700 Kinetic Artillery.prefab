@@ -332,9 +332,13 @@ MonoBehaviour:
   _largeImage: {fileID: 21300000, guid: 3e91f05cb8476ab499a49deb1973e988, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Spinal Kinetic Artillery
-  _longDescription: Kinetic Artillery, or KART, is a long range support tool. Intended
-    primarily to suppress the enemy using KART shells, and to finish off crippled
-    capital ships with the HESH shells. This variant is in a single barelled spinal.
+  _longDescription: Kinetic Artillery, or KART, is a long range, slow moving bombardment
+    tool meant to the force the enemy to stay on their toes, else be hit with 700mms'
+    of hurt. You can take advantage of your range or move in closer to help mitigate
+    the travel time of the rounds, albeit at greater risk. In order to hit targets
+    accurately at great lengths, the maneuvering thrusters used to aim are reduced
+    in maximum output. A benefit of this system is further accuracy buffing such
+    as GPCs are unnecessary.
   _flavorText: 
   _category: Weapons - Spinal
   _costBreakdownClass: 2
@@ -352,10 +356,6 @@ MonoBehaviour:
   _rotateToFit: 0
   _canTile: 0
   Modifiers:
-  - _statName: hull-angularmotor
-    _literal: 0
-    _modifier: -0.25
-    _permanent: 0
   - _statName: hull-turnrate
     _literal: 0
     _modifier: -0.2

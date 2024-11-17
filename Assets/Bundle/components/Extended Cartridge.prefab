@@ -64,7 +64,7 @@ MonoBehaviour:
 
 
     Adds two additonal bullets
-    per recoiless salvo, at the expense of a slightly longer reload time.'
+    per recoiless salvo, at the expense of a longer reload time.'
   _flavorText: 
   _category: 
   _costBreakdownClass: 0

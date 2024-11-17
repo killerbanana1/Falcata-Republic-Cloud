@@ -1503,7 +1503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636653845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.95, z: -0.05}
+  m_LocalPosition: {x: 0, y: 1.925, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
@@ -8253,12 +8253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _className: Moccotar
-  _hullClassification: Heavy Cruiser
+  _hullClassification: Battle Cruiser
   _hullSymbolOptions:
+  - BC
   - CH
   - CA
-  - CG
-  - CC
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _silhouette: {fileID: 21300000, guid: d4bba682c6df89a49b4409bbe79ade94, type: 3}
@@ -8267,19 +8266,19 @@ MonoBehaviour:
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: dad656b836f3fcb4eb436f2ec507e297, type: 3}
   _screenshot: {fileID: 21300000, guid: 55b20407d36432642b307fc743d3a65d, type: 3}
   _longDescription: In Falcatan naval doctrine, heavy cruisers are meant to bear
-    the brunt of the enmies firepower, while dishing out a heavy beating in exchange.
+    the brunt of the enemies firepower, while dishing out a heavy beating in exchange.
     They function as the anchor of a fleet, and when adequately supported by smaller
     vessels, they will inflict defeat upon any ship at any weight class. The Moccotar's
-    are the epidimey of this doctrine. They sacrifice heavy point defense for outstanding
+    are the epidemy of this doctrine. They sacrifice heavy point defense for outstanding
     forward firepower and excellent survivability. When paired with escorts to compensate
     for the poor PD, they will steamroll anything that stands in their way.
   _flavorText: To Do.
   _pointCost: 750
   _mass: 14000
   _weightClass: 2
-  _maxSpeed: 1.8
+  _maxSpeed: 1.7
   _maxTurnSpeed: 0.08
-  _linearMotorForce: 1450
+  _linearMotorForce: 1500
   _angularMotorForce: 400
   _crewComplement: 165
   _crewVulnerability: 0.25

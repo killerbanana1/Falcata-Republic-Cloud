@@ -60,7 +60,10 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Missile Support
-  _longDescription: 
+  _longDescription: The Missile Programming Cache operates similarly to the Programming
+    Bus, except it takes a few lazy shortcuts that help cut down on costs at the
+    expense of programming speed. Not too noticeable with a single one, but tack
+    on multiple to a ship and the little inefficiencies become major ones.
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6

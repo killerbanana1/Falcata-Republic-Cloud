@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1534309516, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Recoilless Cookoff
+  m_EditorClassIdentifier: 
+  _modId: 0
+  Key: N1PbYB6vPkmJjLfhzEZR6w
+  DebuffName: Recoilless Cookoff
+  AffectedClasses:
+  - HullComponent
+  CheckValidMethodName: 
+  AppliedModifiers: []
+  IsRare: 0
+  AllowMultiple: 0
+  MultipleInstancesMultiply: 0
+  TriggeredByHitOnly: 0
+  IsFire: 0
+  ShowMountStatusBadge: 0
+  CasualtyClass: 0
+  RemoveOnDestruction: 0
+  ExternalEffectOnHitLocation: 0
+  ExternalEffects:
+  - {fileID: 0}
+  EffectsOnSocketLocation: 0
+  SocketLocationEffects: []
+  CausePeriodicDamage: 0
+  PeriodicDmgType: 0
+  PeriodicDamageAmount: 0
+  PeriodicDamagePeriod: 0
+  PeriodicDamageCrewVuln: 0.1
+  CanSpread: 0
+  SpreadPeriod: 0
+  SpreadProbability: 0
+  SpreadRange: 0
+  CatastrophicEvent: {fileID: 0}
+  RepairWork: 10
+  RepairWorkCategory: 0
+  EmergencyResolutionAction: 

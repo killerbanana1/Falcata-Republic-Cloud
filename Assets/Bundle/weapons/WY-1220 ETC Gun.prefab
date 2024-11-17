@@ -778,8 +778,8 @@ MonoBehaviour:
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
   _reloadTime: 16
-  _reloadStatSubtype: ETC
-  _recycleStatSubtype: ETC
+  _reloadStatSubtype: etc
+  _recycleStatSubtype: etc
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 5681126309429315179}

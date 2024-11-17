@@ -60,17 +60,19 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Damage Control
-  _longDescription: Fire Coordinator I hardly know her
+  _longDescription: The Fire Suppression Center is an all-encompassing upgrade package
+    for the standard Rapid DC Locker, improving the crews survivability and the ships
+    ability to fight fires. It requires more space than a Rapid DC locker for no
+    additional teams, but the compartment is noticeably more robust.
   _flavorText: 'A specialized DC locker that provides crews with the additional training
     and shiny equipment to extinguish fires faster than the average bear. If the
-    academy were lesser cheapskates'', these would be integrated into the normal
-    DC lockers. Still, I''d rather have one of these onboard than an additional locker
-    once Shelter starts punching sandwich-sized holes through the entire ship. Seriously,
-    who the hell makes a railgun 300mm? It''s simply ridiculous.
+    academy were lesser cheapskates, these would be integrated into every DC locker.
+    Still, the specialized equipment is a godsend once Shelter starts punching sandwich-sized
+    holes through the entire ship. Seriously, who the hell makes a railgun 300mm?
+    It''s ridiculous, absurd even.
 
 
-    - Helmsman
-    Carmen Ibanez, FRNS Moccotar'
+    - Helmsman Carmen Ibanez, FRNS Moccotar'
   _category: Damage Control
   _costBreakdownClass: 7
   _compoundingCost: 0
@@ -79,7 +81,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 20
   _type: 1
-  _size: {x: 3, y: 1, z: 3}
+  _size: {x: 3, y: 1, z: 6}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 7

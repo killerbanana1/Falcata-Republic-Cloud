@@ -62,7 +62,9 @@ MonoBehaviour:
   _shortDescription: Gunnery
   _longDescription: A workspace with an extensive suite of targeting arrays, computing
     systems, and calculators. Provides gunnery teams the means to lay in much more
-    accurate firing solutions, increasing overall ballistic weapon accuracy.
+    accurate firing solutions, increasing overall ballistic weapon accuracy. Additional
+    armor plates and structural reinforcements have been added in the hopes of remaining
+    combat operational for longer under heavy fire.
   _flavorText: 'Our guns are some of the best in the cluster, but without good targetting
     data they arent going to deliver their best punch. Thats what these systems are
     for, Sure, theyre expensive as hell- thats to be expected, our computers arent

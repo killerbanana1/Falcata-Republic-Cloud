@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 4259626861458480299}
   - component: {fileID: 7805625431121839287}
   m_Layer: 5
-  m_Name: Compartment 12
+  m_Name: Compartment 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,7 +792,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6284753137775277432}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5263474, y: 0.58589786}
   m_AnchorMax: {x: 0.60644805, y: 0.63885}
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graphic: {fileID: 4259626861458480299}
   _partKeys:
-  - Compartment12
+  - Compartment13
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 4250222119880929277}
   - component: {fileID: 4185139981786721208}
   m_Layer: 5
-  m_Name: Compartment 13
+  m_Name: Compartment 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1357,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6284753137775277432}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5263414, y: 0.50949454}
   m_AnchorMax: {x: 0.60644203, y: 0.56244665}
@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graphic: {fileID: 4250222119880929277}
   _partKeys:
-  - Compartment13
+  - Compartment12
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0
@@ -1664,8 +1664,8 @@ RectTransform:
   - {fileID: 8518966767545521521}
   - {fileID: 5673893911223861803}
   - {fileID: 7436948983958525371}
-  - {fileID: 337712008792598551}
   - {fileID: 2747463104178852140}
+  - {fileID: 337712008792598551}
   - {fileID: 2863440475090622024}
   - {fileID: 7522199055664333458}
   - {fileID: 9031701403250908809}
