@@ -20,13 +20,13 @@
 	<Entry Name="RHI-2150 Cannon" Address="weapons/RHI-2150 Cannon.prefab"/>
 	<Entry Name="RHI-S1150 Cannon" Address="weapons/RHI-S1150 Cannon.prefab"/>
 	<Entry Name="RHI-S4150 Cannon" Address="weapons/RHI-S4150 Cannon.prefab"/>
-	<Entry Name="MED-320 `Fleur` PDT" Address="weapons/MED-320 `Fleur` PDT.prefab"/>
+	<Entry Name="MED-320 'Fleur' PDT" Address="weapons/MED-320 'Fleur' PDT.prefab"/>
 	<Entry Name="WY-135 Railgun" Address="weapons/WY-135 Railgun.prefab"/>
 	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
 	<Entry Name="WY-1220 ETC Gun" Address="weapons/WY-1220 ETC Gun.prefab"/>
 	<Entry Name="RHI-S1700 Kinetic Artillery" Address="weapons/RHI-S1700 Kinetic Artillery.prefab"/>
-	<Entry Name="RHI-1620 Recoilless Rifle" Address="weapons/RHI-1620 Recoilless Rifle.prefab"/>
-	<Entry Name="RHI-S820 Recoilless Rifle" Address="weapons/RHI-S820 Recoilless Rifle.prefab"/>
+	<Entry Name="RHI-3220 Recoilless Rifle" Address="weapons/RHI-3220 Recoilless Rifle.prefab"/>
+	<Entry Name="RHI-S1620 Recoilless Rifle" Address="weapons/RHI-S1620 Recoilless Rifle.prefab"/>
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
 	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/UC-SA82 'Sauron' Radar.prefab"/>
@@ -38,7 +38,7 @@
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Capacitor Bank" Address="components/Capacitor Bank.prefab"/>
-	<Entry Name="Recoilless Autoloader" Address="components/Recoilless Autoloader.prefab"/>
+	<Entry Name="Electric Ignition Systems" Address="components/Electric Ignition Systems.prefab"/>
 	<Entry Name="Hydraulic Actuator" Address="components/Hydraulic Actuator.prefab"/>
 	<Entry Name="Missile Programming Cache" Address="components/Missile Programming Cache.prefab"/>
 	<Entry Name="Gun Plotting Center" Address="components/Gun Plotting Center.prefab"/>

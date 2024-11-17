@@ -5153,6 +5153,10 @@ MonoBehaviour:
   _visionDistance: 5
   _identityWorkRequired: 450
   BaseModifiers:
+  - _statName: discreteweapon-recycle:recoilless
+    _literal: 0
+    _modifier: -0.35
+    _permanent: 0
   - _statName: discreteweapon-reload:recoilless
     _literal: 0
     _modifier: -0.15

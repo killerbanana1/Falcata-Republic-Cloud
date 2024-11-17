@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5700598544935934047}
   - component: {fileID: 403473811824592387}
   m_Layer: 0
-  m_Name: Recoilless Autoloader
+  m_Name: Electric Ignition Systems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

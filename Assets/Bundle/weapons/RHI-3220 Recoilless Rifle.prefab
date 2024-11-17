@@ -1116,7 +1116,7 @@ GameObject:
   - component: {fileID: 6139132394565652088}
   - component: {fileID: 2395108531993448276}
   m_Layer: 0
-  m_Name: RHI-1620 Recoilless Rifle
+  m_Name: RHI-3220 Recoilless Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,7 +1222,7 @@ MonoBehaviour:
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
-  _rareDebuffSubtype: 
+  _rareDebuffSubtype: magazine
   _debuffProbability:
     serializedVersion: 2
     m_Curve:

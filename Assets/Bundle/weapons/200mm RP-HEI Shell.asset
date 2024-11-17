@@ -28,13 +28,13 @@ MonoBehaviour:
     Subclass: 200mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 12.5
+  _maxFlightTime: 12
   _flightSpeed: 40
   _repoolDelay: 5
   _armorPenetration: 180
   _armorDamageRadius: 2
   _heatPower: 900
-  _componentDamage: 70
+  _componentDamage: 105
   _randomEffectMultiplier: 0.05
   _neverCrit: 0
   _crewVulnerabilityMultiplier: 1
@@ -95,8 +95,8 @@ MonoBehaviour:
   _whine: {fileID: 8300000, guid: 3a3519090b043e04d8b1a7bedbd19371, type: 3}
   _castType: 3
   _spherecastRadius: 1
-  _rayAngle: 20
-  _rayCount: 2
+  _rayAngle: 25
+  _rayCount: 3
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0

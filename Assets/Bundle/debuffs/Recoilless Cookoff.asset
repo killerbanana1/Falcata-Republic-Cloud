@@ -15,11 +15,10 @@ MonoBehaviour:
   _modId: 0
   Key: N1PbYB6vPkmJjLfhzEZR6w
   DebuffName: Recoilless Cookoff
-  AffectedClasses:
-  - HullComponent
+  AffectedClasses: []
   CheckValidMethodName: 
   AppliedModifiers: []
-  IsRare: 0
+  IsRare: 1
   AllowMultiple: 0
   MultipleInstancesMultiply: 0
   TriggeredByHitOnly: 0
@@ -27,9 +26,8 @@ MonoBehaviour:
   ShowMountStatusBadge: 0
   CasualtyClass: 0
   RemoveOnDestruction: 0
-  ExternalEffectOnHitLocation: 0
-  ExternalEffects:
-  - {fileID: 0}
+  ExternalEffectOnHitLocation: 1
+  ExternalEffects: []
   EffectsOnSocketLocation: 0
   SocketLocationEffects: []
   CausePeriodicDamage: 0
@@ -41,7 +39,7 @@ MonoBehaviour:
   SpreadPeriod: 0
   SpreadProbability: 0
   SpreadRange: 0
-  CatastrophicEvent: {fileID: 0}
+  CatastrophicEvent: {fileID: 11400000, guid: 89bb964eddb98fb4ab6bdfda723bdd20, type: 2}
   RepairWork: 10
   RepairWorkCategory: 0
   EmergencyResolutionAction: 
