@@ -15,6 +15,9 @@ MonoBehaviour:
   _content: {fileID: 6342634874303385679}
   _sideBar: {fileID: 3374048141324551239}
   _highlight: {fileID: 6181190665609357933}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!1 &269918831120445111
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +108,9 @@ MonoBehaviour:
   _content: {fileID: 5603946291084978865}
   _sideBar: {fileID: 4256923428035034809}
   _highlight: {fileID: 6595491558280102414}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2940755190136980477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +126,9 @@ MonoBehaviour:
   _content: {fileID: 5493138018014139165}
   _sideBar: {fileID: 4246082820612622101}
   _highlight: {fileID: 4753016235618052415}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &5418877852354137322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +144,9 @@ MonoBehaviour:
   _content: {fileID: 5712081118584730750}
   _sideBar: {fileID: 4148929866204012662}
   _highlight: {fileID: 4794349510647467612}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &5082495552019138149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +162,9 @@ MonoBehaviour:
   _content: {fileID: 4723269863972875718}
   _sideBar: {fileID: 3988776203531401678}
   _highlight: {fileID: 5494950181355493348}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2082582829148281639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +180,9 @@ MonoBehaviour:
   _content: {fileID: 4658423201404346945}
   _sideBar: {fileID: 3922807899525019209}
   _highlight: {fileID: 6261367895092595454}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &9181639403950559757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +198,9 @@ MonoBehaviour:
   _content: {fileID: 4794422820149616728}
   _sideBar: {fileID: 3773911069415142480}
   _highlight: {fileID: 5711873700568750714}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &6017308326598993696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +216,9 @@ MonoBehaviour:
   _content: {fileID: 5018210952190329100}
   _sideBar: {fileID: 3707256880631616772}
   _highlight: {fileID: 5217935551415925550}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &7257489041396305709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +234,9 @@ MonoBehaviour:
   _content: {fileID: 8830343813509719042}
   _sideBar: {fileID: 890930773748396042}
   _highlight: {fileID: 7838934325330693309}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &5513173821967834660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +252,9 @@ MonoBehaviour:
   _content: {fileID: 8072361391679171738}
   _sideBar: {fileID: 490997718856071314}
   _highlight: {fileID: 9064436615968839352}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &1250116198243101344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +270,9 @@ MonoBehaviour:
   _content: {fileID: 8320336660479174859}
   _sideBar: {fileID: 405693558531128515}
   _highlight: {fileID: 9131706736359887593}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &262082080165875078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +288,9 @@ MonoBehaviour:
   _content: {fileID: 8390844694210619177}
   _sideBar: {fileID: 190509024226652961}
   _highlight: {fileID: 7075321177182719894}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2555648507680880426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +306,9 @@ MonoBehaviour:
   _content: {fileID: 8572120542148832571}
   _sideBar: {fileID: 9249156353767731}
   _highlight: {fileID: 8879931669811599129}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &4908439974171875996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +324,9 @@ MonoBehaviour:
   _content: {fileID: 7813866008085204622}
   _sideBar: {fileID: 1920498837051873926}
   _highlight: {fileID: 8805309581124724273}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!1 &4087337310496090401
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +396,9 @@ MonoBehaviour:
   _linesCompartment: {fileID: 312477880848921477}
   _linesModule: {fileID: 4611563598410050230}
   _linesOther: {fileID: 8536690270302930619}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!1 &4979402135906721307
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +489,9 @@ MonoBehaviour:
   _content: {fileID: 1177402568726205924}
   _sideBar: {fileID: 7386025836843024876}
   _highlight: {fileID: 2133414971198828486}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!1 &5674597886865866386
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +582,9 @@ MonoBehaviour:
   _content: {fileID: 865811444239853259}
   _sideBar: {fileID: 8851100298577343171}
   _highlight: {fileID: 1891838667257876084}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &5441605602497401502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +600,9 @@ MonoBehaviour:
   _content: {fileID: 21764352047873936}
   _sideBar: {fileID: 8546640945057655704}
   _highlight: {fileID: 972991276256642482}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &1468273301905684971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +618,9 @@ MonoBehaviour:
   _content: {fileID: 203445634629906257}
   _sideBar: {fileID: 8359910721941945177}
   _highlight: {fileID: 1481714442052519918}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2797867940123668232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +636,9 @@ MonoBehaviour:
   _content: {fileID: 184580613043177712}
   _sideBar: {fileID: 8383825840482344184}
   _highlight: {fileID: 1099533549131559634}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &9149616146997099075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +654,9 @@ MonoBehaviour:
   _content: {fileID: 344026753229523757}
   _sideBar: {fileID: 8219259235537919781}
   _highlight: {fileID: 1334447950240768914}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &5539551827069463366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +672,9 @@ MonoBehaviour:
   _content: {fileID: 3550282516093922500}
   _sideBar: {fileID: 5157665126515669196}
   _highlight: {fileID: 2812481432443520123}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2626969747812596465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +690,9 @@ MonoBehaviour:
   _content: {fileID: 3663240039588279362}
   _sideBar: {fileID: 4900170725610594378}
   _highlight: {fileID: 2635910614694157565}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &1087501843975209687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +708,9 @@ MonoBehaviour:
   _content: {fileID: 2914633934964994923}
   _sideBar: {fileID: 6819657268713170787}
   _highlight: {fileID: 4481098990997232596}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!114 &2392010741565366799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +726,9 @@ MonoBehaviour:
   _content: {fileID: 3082665778849504176}
   _sideBar: {fileID: 6634156333555765176}
   _highlight: {fileID: 4360900491013567247}
+  _litColor: 1
+  _mutedColor: 1
+  _mutedMultiplier: 0.25
 --- !u!1 &9042935783309212808
 GameObject:
   m_ObjectHideFlags: 0

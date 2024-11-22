@@ -10719,10 +10719,35 @@ MonoBehaviour:
     split the design team in two. One was assigned to carry the program forward to
     meet the navies need for a small utility vessel, the other, to make a long range
     support weapons platform. The Kaliare is a result of the latter. Its designation
-    as a light cruiser is perhaps flawed, as it will struggle to meet the demands
-    of a dedicated frontline asset. However, making use of long range firepower,
-    the Kaliare''s are some of the deadliest ships in the cluster. '
-  _flavorText: To Do.
+    as cruiser is perhaps flawed, as it will struggle to meet the demands of a dedicated
+    frontline asset. However, making use of long range firepower, the Kaliare''s
+    are some of the deadliest ships in service with the Falcatan Navy.
+
+
+    Balance
+    Info:
+
+    The Kaliare''s are excellent skirmish and support assets, capable
+    of mounting both devastating up close firepower with recoilless and 150mm, as
+    well as suppressive long range artillery using KART. They are generally used
+    best as a support asset, and while powerful in a group, can also be used to great
+    effect if dispersed around the battlefield. Their excellent PD arcs can make
+    them largely self sufficient.  '
+  _flavorText: "What a mess the creation of the Kaliare's was, the office rooms in
+    which its design began were relatively civil to start, but competing interests,
+    both political and personal rapidly turned them into massive yelling matches.
+    Reading the old meeting notes was amusing, I didn\u2019t think engineers ever
+    got that mad. The path from there was fraught with budget overruns and project
+    creep, but despite it all, they still managed to put out a pretty decent ship.
+    \r\n\r\nThe spinal mounts were initially meant to utilize older 150mm weapons
+    systems, but the project lead, Liare Daell, (of whom the class is named) fought
+    hard for concurrent development of a spinal artillery system from the suspended
+    large-caliber gun program previously meant for the Moccotars. This turned out
+    to be a stroke of genius, allowing the Kaliares to fulfil their support role
+    with deadly effectiveness. \r\n\r\nOverall these are one of the most versatile
+    and diverse ships in the fleet, any commodore is glad to have one. Alas the same
+    cannot be said for the crew, as accommodations are notoriously tight. But hey,
+    what else do you expect in the navy.\r\n- Cassandra Syretia, VADM, Naval Command"
   _pointCost: 275
   _mass: 9000
   _weightClass: 1

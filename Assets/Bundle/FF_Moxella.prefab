@@ -6758,32 +6758,34 @@ MonoBehaviour:
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: dd856362d6115f74b96353abee901702, type: 3}
   _screenshot: {fileID: 21300000, guid: 054ca24c02079644f9cbe6ff5afc76c8, type: 3}
   _longDescription: "The Moxella Class destroyer is a highly capable scout and escort
-    vessel in use with the Falcatan Navy. Initially developed in cooperation with
-    engineers from the Shelter Alliance, it incorporates many elements of their naval
-    design. When relations broke apart in 462 IY, the class, still in its early stages,
-    was completed by Falcata alone. \n\nDespite their utilitarian appearance, the
-    Moxella's are undoubtedly the fastest ships in FRN service. An oversized drive
-    section lends them both their speed, and a level of survivability astonishingly
-    high for a ship of such a meagre weight class."
-  _flavorText: '"These girls aren''t without their problems; the nature of their
-    electrical system necessitated an obstructive placement of the main comms antenna.
-    They sacrifice some serious firepower for those drives, and just because they
-    can take a beating doesnt mean that beating is fun to recieve. I needed new pants
-    after a skirmish with pirates a few years back, a big ass shell went right through
-    my computer monitor, straight over my head!
-
-
-    But ill be damned if anyone
-    takes me off of my baby, she FLIES. Their aint a lot of ships in space whre you
-    really *feel* the accelleration, but this is one of them. A good pilot will keep
-    you out of trouble thick or thin, I proved that myself dodging the missile rain
-    out at Sierra Natura- and i''ll do it again, Shelter be damned."
-
-
-    - A. Kamal,
-    Helmsman
-
-'
+    vessel in use with the Falcatan Navy. It was several decades ago in cooperation
+    with Alliance navy engineers, and as such incorperates many elements of Allaince
+    design. However, it is still doctrinally different from a typical alliance destroyer,
+    focusing much more on speed and lightweight firepower than the heavy spinal punch-up
+    of Shelter's Keystone class. \r\n\r\nBalance Info:\r\nMoxellas are a proper gunboat
+    destroyer, while their armor may be thin, the ability to place a drive in front
+    of their CIC means that for relatively cheap, they can function as a highly survivable
+    and highly capable skirmish asset. Capable of contesting cap points, squishing
+    enemy cappers, and running from enemy cruisers that they cant beat in a 1v1.
+    That said, if one Moxella is capable, two are deadly. Making use of Electro-thermal
+    cannons, these ships can easily outmaneuver a Vauxhaul, and pack a scary punch
+    against something like an Axford. The Moxella's are also capable missile ships,
+    with ample modules for large salvos, and plentiful slots for ammunition. "
+  _flavorText: "I've been told the Moxella's were named after senator Moxee Iselin,
+    for her diplomatic efforts with the Alliance in the aftermath of Venuma. Now
+    I figure that name was some sort of knuckleheaded joke, since Iselin was one
+    hell of a looker, and the Moxella's are anything but. Ugly as they may be though,
+    Ill be damned if anyone takes them from me. They are cramped, greasy, and dark,
+    but they're also far and away the best machined ships I've ever had to work.
+    That ugliness is only skin deep. If you're looking for a ship to survive a war
+    while serving on, and you aren\u2019t one of the pretty boys that gets to board
+    an Irsavatha, then the their isnt something better than the Moxella for you.
+    \r\n\r\nI've seen one of these babies limp back into port with nearly half its
+    plating missing- Im talking antenna gone, right mount shredded, thrusters turned
+    to slag\u2026 But limp back she did, and when we were done repainting her we
+    painted and scratched three pirate silhouettes on the side. Beautiful. Don't
+    let the brass lie to you, these are the workhorse of the fleet, and in my opinion
+    the best we've got to give.\r\n- Tommy Laurence, Chief Engineer, FRNS Centaur"
   _pointCost: 175
   _mass: 7000
   _weightClass: 1

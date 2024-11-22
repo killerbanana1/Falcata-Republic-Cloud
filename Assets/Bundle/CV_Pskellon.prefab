@@ -5130,15 +5130,35 @@ MonoBehaviour:
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 64ec06b825499ac4dae47cc589d3ec84, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: c4f6d5b41a1601e45beb79ca9fabac25, type: 3}
   _screenshot: {fileID: 21300000, guid: a562c3ba903bc4a49b98a9bdc824c4fe, type: 3}
-  _longDescription: "One of the naval offices newest additions, the Pskellon class
+  _longDescription: 'One of the naval offices newest additions, the Pskellon class
     corvette has been in use with the Falcatan navy for less than a decade. The class
-    was designed primarily to fill the role of point defense and sensor escort, something
-    that the naval asset pool had been sorely lacking for the better part of its
-    history. \n\nWhile a lone Pskellon might struggle, these ships thrive as escorts
-    or in groups, where their weaker firepower is negated, and their combination
-    of utility and solid maneuverability can be exercized to its greatest extent.\n\nIdentification
-    Work Required: +125%"
-  _flavorText: To Do.
+    was designed primarily to fill the role of point defense and sensor escort, however
+    it morphed into a more general purpose corvette, capable of fulfilling a variety
+    of additional roles given different loadouts for its versatile spinal mount.
+
+
+    Balance
+    Info:
+
+    The Pskellon is a flexible ship capable of executing a variety of
+    missions successfully, its spinal mount can bring excellent sensors or nasty
+    weaponry. Meaning that the enemy can never be quite sure about how worried they
+    should be when finding one of these. While the Pskellon is slower than its sprinter
+    counterpart, it still makes for a respectable cap warfare ship, especially if
+    it brings torpedoes. Its spinal 150mm as well is a cheap and capable weapon for
+    this purpose, and combining recoilless with jamming makes a deadly asset.'
+  _flavorText: "Though the name is in my opinion unnecessarily difficult to pronounce,
+    the Pskellon (pronounced Ske-lon) fulfils a variety of useful roles within the
+    navy. Particularly it is excellent in the roles of sensor reconnaissance and
+    point defense escort, something the naval asset pool has been sorely lacking
+    for the better part of its history. \r\n\r\nWhile its development was in part
+    shared with the Kaliare's, the vision for the Pskellon was solidified early,
+    and fewer bureaucratic issues were encountered. A surprise certainly, but a welcome
+    one. Though the design purpose focused on support, entrepreneurial engineers
+    came up with some unique offensive options for the ship, including a spinal variant
+    of the turreted recoilless rifle found on the Moccotar's. \r\n\r\nIn any case,
+    it\u2019s a respectable ship, and the men and women aboard have seen to them
+    serving our people well. \r\n- Cassandra Syretia, VADM, Naval Command"
   _pointCost: 100
   _mass: 4000
   _weightClass: 0

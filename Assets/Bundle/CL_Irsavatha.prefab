@@ -7245,15 +7245,36 @@ MonoBehaviour:
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: 5019ea00fd4091741a12ef8186ab7191, type: 3}
   _screenshot: {fileID: 21300000, guid: 28cdd9d427137b34c9a2637de7028880, type: 3}
   _longDescription: 'The Irsavatha class cruisers are the most modern and advanced
-    ships within the Falcatan navy, having entered service only five years ago. They
-    are fast, reasonably maneuverable, and pack a powerful punch. This package is
-    additionally sweetened by the classes advanced EWAR capabilities.
+    ships within the Falcatan navy, having entered service only fifteen years ago.
+    They are fast, outstandingly maneuverable for their size, and are able to mount
+    a respectable amount of capital grade weaponry. The class does not meet the traditional
+    definition of either a light or heavy cruiser, instead finding a middle ground
+    in which it can both hold a frontline or prove deadly in skirmishes on the flanks.
 
 
-    Suitable
-    for use independently or in a group, the Irsavatha can be expected to handily
-    defeat peer opponents, while retaining enough speed to flee from anything larger.'
-  _flavorText: To Do.
+    Balance
+    Info:
+
+    The Irsavatha is a versatile combatant for a team. 2-3 of them can
+    be reasonably brought in a fleet and they can be built out for both anti-large
+    and anti-small roles. A typical Irsavatha costs anywhere from 1100-1300 points,
+    and is capable of beating down a Vauxhaul and standing up to an Axford in a direct
+    fight. Its high maneuverability allows it to dodge 450 fire effectively at 7-8km
+    range, and given its thin side profile, it can be rather affective as a broadside
+    cruiser in a way that Vauxhauls and Axfords cannot.'
+  _flavorText: "Union-Calypso is proud of the Irsavatha's, and rightfully so. The
+    lead ship smashed through all of her performance shakedowns with plenty of room
+    to spare, and frankly there's no class I'd rather be aboard. they are far and
+    away the most gracious vessels ever constructed by the republic, and they hold
+    within themselves a tremendous bite. They are an engineering marvel in both form
+    and function. \r\n\r\nMy ship, the FRNS Lyana, performed her duty marvelously
+    during the Mazieres rebellion and was certainly enough to cajole the Indivisum
+    into cooperation when we showed up on the doorstep of Sonnen. The advanced EWAR
+    suite came in useful there, we blinded their missiles and shoved some of our
+    own right down their throat. I'm sure the Alliance twats will fall prey to much
+    of the same if this matter in Heron boils over. \r\n\r\nAs much as I'd love to
+    see it though, lets hope things stay calm, that war would be a bloody one, and
+    not easily won.\r\n- Cassandra Syretia, VADM, Naval Command"
   _pointCost: 400
   _mass: 11000
   _weightClass: 1

@@ -8265,14 +8265,34 @@ MonoBehaviour:
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 9475ec03ef3e5314e9d573c7d5ed1fba, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: dad656b836f3fcb4eb436f2ec507e297, type: 3}
   _screenshot: {fileID: 21300000, guid: 55b20407d36432642b307fc743d3a65d, type: 3}
-  _longDescription: In Falcatan naval doctrine, heavy cruisers are meant to bear
-    the brunt of the enemies firepower, while dishing out a heavy beating in exchange.
-    They function as the anchor of a fleet, and when adequately supported by smaller
-    vessels, they will inflict defeat upon any ship at any weight class. The Moccotar's
-    are the epidemy of this doctrine. They sacrifice heavy point defense for outstanding
-    forward firepower and excellent survivability. When paired with escorts to compensate
-    for the poor PD, they will steamroll anything that stands in their way.
-  _flavorText: To Do.
+  _longDescription: 'The Moccotar Class began life as a design project for the Falcatan
+    navies new generation of heavy cruisers. However as the design progressed it
+    became increasingly clear that the new warship was much more akin to the naval
+    battlecruisers of humanities first great wars. The Moccotars feature intense
+    forward firepower as well as respectable maneuverability and armor. However,
+    these ships are lacking in top speed and point defense. Nontheless, they are
+    a formidable opponent in the battlespace.
+
+
+    Balance Info:
+
+    Moccotars
+    are a phenomenal anchor for any team, they can take one hell of a beating, and
+    are comfortably able to stand up to battleships at range. They are vulnerable
+    to missile warfare, but this can be mitigated with softkill (jammers/chaff) and/or
+    escorts. A 3k fleet with two moccotars is possible and powerful, but much less
+    flexible and much more easily killed. '
+  _flavorText: "If you ask me, the Moccotar class is an apex predator in this sector.
+    There are very few problems that cannot be solved with judicious application
+    of three-hundred-eighty milimeter shells, and there aren't any ships that do
+    it better. The alliance likes to boast and show off that lumbering beast the
+    Solomon, but what good is all that armor and firepower if you cant hit anything,
+    and are too expensive to risk getting damaged? \r\n\r\nThe Moccotar doesn\u2019t
+    have such weaknesses, any beating it takes we can repair, well assured that the
+    punch it threw back greatly exceeded that which it received. No other ship Falcata
+    has can take the frontline roll in the same manner, its irreplaceable and doctrinally
+    supreme. I have no doubts my shipyards will continue building them for years
+    to come.\r\n- Waver Picard, CEO, Rhizo Heavy Industries"
   _pointCost: 750
   _mass: 14000
   _weightClass: 2
