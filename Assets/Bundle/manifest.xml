@@ -21,6 +21,7 @@
 	<Entry Name="RHI-S1150 Cannon" Address="weapons/RHI-S1150 Cannon.prefab"/>
 	<Entry Name="RHI-S4150 Cannon" Address="weapons/RHI-S4150 Cannon.prefab"/>
 	<Entry Name="MED-320 'Fleur' PDT" Address="weapons/MED-320 'Fleur' PDT.prefab"/>
+	<Entry Name="MED-250 'Merit' PDT" Address="weapons/MED-250 'Merit' PDT.prefab"/>
 	<Entry Name="WY-135 Railgun" Address="weapons/WY-135 Railgun.prefab"/>
 	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
 	<Entry Name="WY-1220 ETC Gun" Address="weapons/WY-1220 ETC Gun.prefab"/>

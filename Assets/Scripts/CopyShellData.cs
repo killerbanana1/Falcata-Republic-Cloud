@@ -47,6 +47,7 @@ public class CopyShellData : IModEntryPoint
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-135 Railgun");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-235 Railgun");
         updateTurret(componentDictionary, "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun");
+        updateTurret(componentDictionary, "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-250 'Merit' PDT");
     }
 
     public static void updateTurret(Dictionary<string, HullComponent> componentDictionary, string keySource, string keyDestination)
