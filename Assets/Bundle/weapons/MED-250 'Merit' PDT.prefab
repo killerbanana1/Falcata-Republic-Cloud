@@ -709,13 +709,13 @@ MonoBehaviour:
   _saveKey: 
   _modId: 0
   _shortUIName: MED-250 Merit
-  _smallImage: {fileID: 21300000, guid: c374f49f53f04264b8b7811fd4120b73, type: 3}
+  _smallImage: {fileID: 21300000, guid: be85d76c166be6b48920fa1fbbcb85f8, type: 3}
   _largeImage: {fileID: 21300000, guid: 0971bcdc1d9f98b468786102194ef702, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Flak
   _longDescription: 50mm Flak Cannon, Like Bastion or Stonewall
   _flavorText: 
-  _category: Weapons - Projectile
+  _category: Weapons - Point Defense
   _costBreakdownClass: 2
   _compoundingCost: 0
   _compoundingCostClass: 
@@ -799,11 +799,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.059, y: 0.163, z: 0.085}
-  _timeBetweenMuzzles: 5
+  _timeBetweenMuzzles: 0.22
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 2
-  _reloadTime: 0.25
+  _reloadTime: 0.22
   _reloadStatSubtype: belt
   _recycleStatSubtype: belt
   _randomlyDeviateReloadTime: 1
