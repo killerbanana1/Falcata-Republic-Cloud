@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2383628519899952497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5310202613627862509}
+  - component: {fileID: 8500582721384696513}
+  m_Layer: 18
+  m_Name: Jammable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5310202613627862509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2383628519899952497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3178781077163733097}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &8500582721384696513
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2383628519899952497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4958641902197157515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3178781077163733097}
+  - component: {fileID: 8833486761564504263}
+  m_Layer: 0
+  m_Name: RM54 'Conde' Radar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3178781077163733097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958641902197157515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5310202613627862509}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8833486761564504263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958641902197157515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -199203187, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _partKey: bAJIHILPEUiBAhs0556123
+  _maxHealth: 350
+  _functioningThreshold: 30
+  _damageThreshold: 40
+  _reinforced: 0
+  _bindTag: 
+  _dcPriority: 100
+  _casualtyClass: 0
+  _dcVoiceDisabledOnly: 0
+  _disabledParticles: {fileID: 0}
+  _saveKey: 
+  _modId: 0
+  _shortUIName: RM54 Conde
+  _smallImage: {fileID: 0}
+  _largeImage: {fileID: 0}
+  _factionKey: Falcata Republic/Falcata Republic
+  _shortDescription: Multi-Function Radar
+  _longDescription: The RM54 'Conde' is a failed attempt at replicating the highly
+    coveted 'Parallax' radar from Shelter. Key word being failed, as it has worse
+    range and takes up more space than its brethren, but it still retains multi-function
+    capabilities. It has some perks though, such as built in jamming resistance,
+    extra armor plates, and being slightly cheaper than it likely would have been
+    if the project succeeded.
+  _flavorText: 'In the Republics brief 80 year military partnership, the Alliance
+    denied every single request to share the RM50 ''Parallax'' with us, along with
+    most of their fancy toys, so we tasked our lab coats with making a version of
+    our own. The project quickly discovered how much of a miracle of engineering
+    the RM50 really is. Our attempts came close but they could never achieve all
+    three goals at once. Something had to be sacrificed, and given the infamous money-pit
+    it was for Shelter the academy elected to compromise with the most budget-friendly
+    option. As a result the RM64 is too big to fit in the standardized module slots,
+    which is half the point of the damned thing. Unfortunately the trouble with it
+    doesn''t end there, as according to our intel the RM50 still has an entire kilometer
+    over us. At least the extra size saved some cost and allowed us to add on some
+    thicker plates.
+
+
+
+    - S. Dice, CWO'
+  _category: Sensors
+  _costBreakdownClass: 4
+  _compoundingCost: 0
+  _compoundingCostClass: 
+  _firstInstanceFree: 0
+  _compoundingMultiplier: 1
+  _pointCost: 30
+  _type: 2
+  _size: {x: 3, y: 3, z: 3}
+  _interiorOverhang: 0
+  _removeSocketCap: 0
+  _mass: 10
+  _bindToTag: RadarPanel
+  _rotateToFit: 2
+  _canTile: 0
+  Modifiers: []
+  _resourceDemandPriority: 1000
+  ResourcesProvided: []
+  ResourcesRequired:
+  - _resourceName: Power
+    _amount: 3000
+    _perUnit: 0
+    _onlyWhenOperating: 1
+  _uniqueDebuffs: []
+  _rareDebuffChance: 0.05
+  _rareDebuffSubtype: 
+  _debuffProbability:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.5
+      inSlope: 1.0222374
+      outSlope: 1.0222374
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08536583
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _sigType: 1
+  _castType: 0
+  _elintCategory: 1
+  _stackingSensorID: RM54
+  _maxRange: 850
+  _radiatedPower: 4200
+  _gain: 40
+  _sensitivity: -38.5
+  _apertureSize: 60
+  _noiseFiltering: -0.7
+  _deviationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2000122
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.803159
+      value: 0.31518447
+      inSlope: 0.35464096
+      outSlope: 0.35464096
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.95947444
+      value: 0.5707991
+      inSlope: 3.6860085
+      outSlope: 3.6860085
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3.0169795
+      outSlope: 3.0169795
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040650427
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _maxError: 3
+  _maxVelocityError: 0.01
+  _cueingOnly: 0
+  _canLock: 1
+  _lockErrorMultiplier: 0.15
+  _maintainLockSNR: 3
+  _canBurnthrough: 1
+  _burnthroughPowerMultiplier: 12
+  _burnthroughDamageProbability: 0.2
+  _burnthroughDamage: 17.5
+  _showJammingLOB: 1
+  _jammingLOBAccuracy: 0.75
+  _collectsIntel: 1

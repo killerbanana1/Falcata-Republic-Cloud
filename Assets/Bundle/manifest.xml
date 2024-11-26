@@ -30,11 +30,11 @@
 	<Entry Name="RHI-S1620 Recoilless Rifle" Address="weapons/RHI-S1620 Recoilless Rifle.prefab"/>
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
-	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/UC-SA82 'Sauron' Radar.prefab"/>
-	<Entry Name="UC-RM36 'Repechage' Radar" Address="weapons/Radars/UC-RM36 'Repechage' Radar.prefab"/>
-	<Entry Name="UC-RS44 'Redoubt' Radar" Address="weapons/Radars/UC-RS44 'Redoubt' Radar.prefab"/>
-	<Entry Name="UC-RM54 'Conde' Radar" Address="weapons/Radars/UC-RM54 'Conde' Radar.prefab"/>
-	<Entry Name="UC-RS64 'L'aigle' Radar" Address="weapons/Radars/UC-RS64 'L'aigle' Radar.prefab"/>
+	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/SA82 'Sauron' Radar.prefab"/>
+	<Entry Name="UC-RM36 'Repechage' Radar" Address="weapons/Radars/RM36 'Repechage' Radar.prefab"/>
+	<Entry Name="UC-RS44 'Redoubt' Radar" Address="weapons/Radars/RS44 'Redoubt' Radar.prefab"/>
+	<Entry Name="UC-RM54 'Conde' Radar" Address="weapons/Radars/RM54 'Conde' Radar.prefab"/>
+	<Entry Name="UC-RS64 'L'aigle' Radar" Address="weapons/Radars/RS64 'L'aigle' Radar.prefab"/>
 	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
@@ -73,6 +73,9 @@
 	<Entry Name="150mm Flak Shell" Address="weapons/150mm Flak Shell.asset"/>
 	<Entry Name="35mm AP Rail Pinshot" Address="weapons/35mm AP Rail Pinshot.asset"/>
   </Munitions>
+  <Debuffs>
+	<Entry Name="Recoilless Cookoff" Address="debuffs/Recoilless Cookoff.asset"/>
+  </Debuffs>
   <Factions>
 	<Entry Name="Falcata Republic" Address="faction/Falcata Republic.asset"/>
   </Factions>

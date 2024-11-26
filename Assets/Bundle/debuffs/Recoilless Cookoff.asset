@@ -17,12 +17,14 @@ MonoBehaviour:
   DebuffName: Recoilless Cookoff
   AffectedClasses: []
   CheckValidMethodName: 
-  AppliedModifiers: []
+  AppliedModifiers:
+  - StatName: component-workspeed
+    Modifier: -0.15
   IsRare: 1
   AllowMultiple: 0
   MultipleInstancesMultiply: 0
-  TriggeredByHitOnly: 0
-  IsFire: 0
+  TriggeredByHitOnly: 1
+  IsFire: 1
   ShowMountStatusBadge: 0
   CasualtyClass: 0
   RemoveOnDestruction: 0
@@ -30,16 +32,16 @@ MonoBehaviour:
   ExternalEffects: []
   EffectsOnSocketLocation: 0
   SocketLocationEffects: []
-  CausePeriodicDamage: 0
-  PeriodicDmgType: 0
-  PeriodicDamageAmount: 0
-  PeriodicDamagePeriod: 0
+  CausePeriodicDamage: 1
+  PeriodicDmgType: 1
+  PeriodicDamageAmount: 5
+  PeriodicDamagePeriod: 30
   PeriodicDamageCrewVuln: 0.1
   CanSpread: 0
   SpreadPeriod: 0
   SpreadProbability: 0
   SpreadRange: 0
   CatastrophicEvent: {fileID: 11400000, guid: 89bb964eddb98fb4ab6bdfda723bdd20, type: 2}
-  RepairWork: 10
-  RepairWorkCategory: 0
+  RepairWork: 40
+  RepairWorkCategory: 1
   EmergencyResolutionAction: 

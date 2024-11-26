@@ -1131,7 +1131,7 @@ Transform:
   m_GameObject: {fileID: 2917259189153756960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1.4, y: 1.4, z: 1.4}
+  m_LocalScale: {x: -1.375, y: 1.375, z: 1.375}
   m_Children:
   - {fileID: 3412853158118219603}
   - {fileID: 4601921609290645157}
@@ -1220,9 +1220,10 @@ MonoBehaviour:
     _amount: 1600
     _perUnit: 0
     _onlyWhenOperating: 1
-  _uniqueDebuffs: []
-  _rareDebuffChance: 0.05
-  _rareDebuffSubtype: magazine
+  _uniqueDebuffs:
+  - {fileID: 11400000, guid: cc0edba806eff5b4c976363c68905f10, type: 2}
+  _rareDebuffChance: 0.1
+  _rareDebuffSubtype: 
   _debuffProbability:
     serializedVersion: 2
     m_Curve:

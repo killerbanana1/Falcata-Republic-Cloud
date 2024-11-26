@@ -2409,7 +2409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: ReverseThruster1
-  _maxHealth: 100
+  _maxHealth: 150
   _functioningThreshold: 10
   _damageThreshold: 25
   _reinforced: 0
