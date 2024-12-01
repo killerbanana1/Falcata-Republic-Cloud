@@ -60,7 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Small turning drive.
+  _longDescription: An overturned drive with oversized and reinforced gimbaling drive
+    bells. Sacrifices top speed for improvements to angular and positional control.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

@@ -60,8 +60,23 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Highly effective speed drive, nerfs linear thrust.
-  _flavorText: 
+  _longDescription: A high-power drive retrofit designed for assault operations.
+    Significantly increases the powerband of the ship without neglecting control
+    authority to close the gap without limiting firing arcs. Reduces a ship's overall
+    acceleration.
+  _flavorText: "Ah, these are a joy. I say that knowing I\u2019m not the poor bastard
+    who\u2019s stuck cleanin\u2019 out the variable nozzles, though the EVA specialists
+    should know better than to \u2018judge a book by its cover\u2019. That said I
+    reckon it's the better half of the thing, as there\u2019s more to appreciate
+    than the worst rate on a Pskellon. Besides a few radial pre-burners to amp the
+    dwell time, most bits are external, with the workin\u2019 end holdin\u2019 up
+    the chamber pressure until she\u2019s at a full clip letting her sputter quicker
+    than most. \r\n\r\nI hear highs and lows to these sorts of setups, pullin\u2019
+    a crew tight helpin\u2019 each other carry their grief lest they wind up on a
+    yard ship. \u2018You scratch my Inconel-reinforced ceramic matrix composite backside,
+    and I\u2019ll scratch yours keepin\u2019 the fuel mix just rich enough to keep
+    the lights on\u2019 kinda deal. Less fisticuffs that way.\r\n\r\n- M. Weaver,
+    CMC"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0

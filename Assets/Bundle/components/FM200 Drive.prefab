@@ -60,8 +60,20 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Default small drive (more power than vanilla version)
-  _flavorText: 
+  _longDescription: 'This small-sized drive system provides power to the main engines
+    of smaller warships, while also providing a decent amount of reactor power. With
+    an even balance of power and durability, the []200 can fit all manner of warships,
+    and even provide backup drives to larger warships. '
+  _flavorText: "A mainstay of Rhiso\u2019s shipwrights, these buckets had to square
+    an extra serial number stamped on \u2018em for how many \u2018200 series they\u2019ve
+    cradled, but each and every one of them has a soul if you listened to them banter
+    long enough. Pink in the face meandering \u2018First thing in, last thing out\u2019
+    while trading stories; color me thankful the revisions need not crack a hull
+    to install where I\u2019d be red more than the usual. For a machine, they were
+    right though. Each one\u2019s got a personality and its own \u2018unique\u2019
+    pain in the ass. \r\n\r\nThis variety\u2019s an unsung hero, without none of
+    the extra kit, they\u2019re a bit less of a tease. Extra power can go a long
+    \u2018ways too.\r\r\n\n- M. Weaver, CMC\r"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0

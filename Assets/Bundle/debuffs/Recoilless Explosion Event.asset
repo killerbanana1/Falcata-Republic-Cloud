@@ -18,16 +18,16 @@ MonoBehaviour:
   _achievementOnlyOnOwnedShips: 0
   _hullPlateBurnEffect: 0
   _postTriggerCallMethod: 
-  _spawnEffect: {fileID: 6902056333374743867, guid: 9713f0a59aeb0094888b17a7784d2e5a, type: 3}
-  _spawnOnHitPosition: 1
-  _attachToShip: 0
-  _rotation: 2
+  _spawnEffect: {fileID: 4990201725624875048, guid: 9713f0a59aeb0094888b17a7784d2e5a, type: 3}
+  _spawnOnHitPosition: 0
+  _attachToShip: 1
+  _rotation: 0
   _scaleToSocketSize: 0
   _vaporize: 0
   _explosionRadius: 5
-  _explosionDamage: 1000
-  _doExternalDamage: 1
-  _explosionBrushSize: 6
-  _explosionHeat: 800
-  _randomEffectMultiplier: 1
-  _crewVulnerabilityMultiplier: 1
+  _explosionDamage: 2500
+  _doExternalDamage: 0
+  _explosionBrushSize: 7.5
+  _explosionHeat: 1000
+  _randomEffectMultiplier: 0
+  _crewVulnerabilityMultiplier: 0

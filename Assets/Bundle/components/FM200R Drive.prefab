@@ -60,8 +60,26 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Default small reinforced drive
-  _flavorText: 
+  _longDescription: 'This small-sized drive system provides power for the main engines
+    of smaller warships, while also providing a small amount of reactor power.
+
+    
+
+    Accommodations
+    for additional bracing, as well as Integrated auxiliary power shunts and reactor
+    shutoff systems, provide a reliable drive module for all manner of ships across
+    the fleet. '
+  _flavorText: "\u2019Dog that caught the car \u2018these. Armor spanning all the
+    way to the radial, hell you\u2019d think they\u2019d nixed a blueprint and kept
+    going before nobody noticed. Downright minor miracle how the armor squeezes through
+    most bay gantries even if it's not unlike moving a sofa. \r\n\r\nDon\u2019t need
+    me to tell ya\u2019 they\u2019re a right pain, but I will, and they are. The
+    plate blocks most of her outlets, and the only way to get tools close enough
+    to the auxiliaries and delicate tokamak controls would be with her coils cold
+    on this variety. They keep plenty stable gettin\u2019 clobbered in the fight,
+    but ye\u2019 need only shake my hand and know why I don\u2019t dabble \u2018till
+    she\u2019s on ice. It\u2019d be a laugh to pull on Murphy though the way he keeps
+    his toolbox close. Think he\u2019d bite? \r\n\r\n- M. Weaver, CMC"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0

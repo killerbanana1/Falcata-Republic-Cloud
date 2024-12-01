@@ -60,9 +60,24 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Gains liner thrust by sacrificing top speed, but retains normal
-    power generation.
-  _flavorText: 
+  _longDescription: An under-tuned drive commonly found on nimble gunboats. re-specced
+    for acceleration, this drive sacrifices top speed to provide impressive translational
+    acceleration while providing a stable platform.
+  _flavorText: "The more productive offshoot of the dragoon fleetwide upgrade program,
+    the original goal aimed right up at reducing the vulnerability of large hulls
+    against early wake homers using ionization reduction, and drive control techniques.
+    While the concepts weren\u2019t completely off the mark, advancements in wake
+    seeker design \u2018cross the cluster, along with the unmistakeable heat drives
+    put out at the bells no matter what they tweaked, meant it didn't take long for
+    the design board to stop throwin\u2019 good money after bad. Some ideas from
+    the board are better than others, still, a clever bunch at Rhiso Heavy Industries
+    got something together for their trouble eventually.\r\n\r\nFor a bastard child,
+    they're downright docile. Linear chamber pressure and a diffused radial make
+    a mean piece of kit that can get up to speed quickly in her powerband. They'll
+    start to taper out at full tilt, with delicate rapid cycle valves and active
+    cooling loops getting overwhelmed, not to mention the racket from over-expansion
+    against the hull, but for when you need to get movin\u2019 there\u2019s not much
+    like it. \r\n\r\n- M. Weaver, CMC\r\n"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0
