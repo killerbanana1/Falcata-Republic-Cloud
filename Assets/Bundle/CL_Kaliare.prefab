@@ -10717,7 +10717,7 @@ MonoBehaviour:
   _longDescription: 'The Kaliare Class is an offshoot of the same program that created
     the Pskellon class corvette. Conflicting views on the naval acquisitions board
     split the design team in two. One was assigned to carry the program forward to
-    meet the navies need for a small utility vessel, the other, to make a long range
+    meet the navys need for a small utility vessel, the other, to make a long range
     support weapons platform. The Kaliare is a result of the latter. Its designation
     as cruiser is perhaps flawed, as it will struggle to meet the demands of a dedicated
     frontline asset. However, making use of long range firepower, the Kaliare''s
@@ -10747,7 +10747,7 @@ MonoBehaviour:
     with deadly effectiveness. \r\n\r\nOverall these are one of the most versatile
     and diverse ships in the fleet, any commodore is glad to have one. Alas the same
     cannot be said for the crew, as accommodations are notoriously tight. But hey,
-    what else do you expect in the navy.\r\n- Cassandra Syretia, VADM, Naval Command"
+    what else do you expect in the navy.\n\r\n- Cassandra Syretia, VADM, Naval Command"
   _pointCost: 275
   _mass: 9000
   _weightClass: 1

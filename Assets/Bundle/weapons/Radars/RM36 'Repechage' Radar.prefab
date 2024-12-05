@@ -61,12 +61,16 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Search Radar
-  _longDescription: The RM36 is a sister frontline equivalent with the ability to
-    lock targets instead of performing a burnthrough sweep. It can be combined with
-    the RS44 to compensate for it's weaknesses.
+  _longDescription: The RM36 'Repechage' is a short-range brawling radar, and not
+    much else. It'll see just about anything within it's reach, and it has the ability
+    to lock providing accurate track data. Something no other radar can do at such
+    a low cost. Those savings didn't come out of thin air, however. It can't burn-through
+    sweep and it can't see past 6.5km, leaving much to be desired in the situational
+    awareness department. Though, it can be combined with the RS44 to compensate
+    for it's weaknesses.
   _flavorText: "The RM36 'Repechage' originated as a side-project when developing
     the RM54 'Conde', not as useful by itself but there are times just a lock is
-    all you need.\n\n\n- \rS. Dice, CWO"
+    all you need.\n\n- \rS. Dice, CWO"
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0
@@ -87,7 +91,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1600
+    _amount: 1400
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []

@@ -80,7 +80,7 @@ MonoBehaviour:
   Modifiers:
   - _statName: hull-flankdamageprob
     _literal: 0
-    _modifier: -0.25
+    _modifier: -0.5
     _permanent: 0
   - _statName: hull-turnrate
     _literal: 0

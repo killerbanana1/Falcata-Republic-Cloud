@@ -105,10 +105,27 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Standoff Radar
-  _longDescription: A mid-long range radar intended for use aboard capital or heavy
-    support ships. It will pick up targets at long distances and, if supported by
-    2-3 track correlators, will allow medium accuracy fire to be sent their way.
-  _flavorText: Email about how to say the damn thing
+  _longDescription: The RS64 'L'aigle' is a long-range combat radar, designed to
+    provide an accurate and actionable sensor picture about the battlespace around
+    you. Boasting an impressive 10.5km range while being accurate enough to fire
+    upon right out of the box is no joke. Additional track correlator will help but
+    are certainly not required. It's only weakness is a lack of burn through capability.
+    That, and the power requirement. And maybe the size. And the strong buzzing noise
+    it makes.
+  _flavorText: 'I''ve been parroting ideas for a radar like this since I became a
+    spacer, and its the academy agreed. They were so kind as to install an experimental
+    version aboard our ship, the FRNS Moccotar. I assume they choose us for PR, being
+    the lead ship. It had its issues at first; it couldn''t even see a corvette 5km
+    away, but many of us saw the potential. Fast forward a couple years and now it''s
+    commonplace. I personally don''t mind being a guine pig if projects like this
+    are the result. It scratches just the right itch many captains have been lamenting
+    over for decades. Some of the enlisted are butchering the name though, calling
+    it absurdities like the "Legly" and "Eagle". It''s ''Leh-i-gale''. To think this
+    generation is the future. Where did we go wrong?
+
+
+    - Helmsman Carmen Ibanez,
+    FRNS Moccotar'
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0

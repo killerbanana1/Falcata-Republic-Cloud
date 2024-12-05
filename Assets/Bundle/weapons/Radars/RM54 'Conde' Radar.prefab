@@ -105,25 +105,25 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Multi-Function Radar
-  _longDescription: The RM54 'Conde' is a failed attempt at replicating the highly
-    coveted 'Parallax' radar from Shelter. Key word being failed, as it has worse
-    range and takes up more space than its brethren, but it still retains multi-function
-    capabilities. It has some perks though, such as built in jamming resistance,
-    extra armor plates, and being slightly cheaper than it likely would have been
-    if the project succeeded.
-  _flavorText: 'In the Republics brief 80 year military partnership, the Alliance
+  _longDescription: The RM54 'Conde' is our attempt at replicating the highly coveted
+    'Parallax' radar from Shelter. It succeeded in some areas, and fell short in
+    others. It's range is a bit worse and difficulties with the technology forced
+    it up in scale to a 3x3 module slot, but that does have it's perks. The extra
+    space simplifies the construction, and allows for some thicker plates. Plus,
+    our engineers found a way to build in a bit of jamming resistance. Overall, the
+    project was a success. It's affordable, tuff, and multi-function. What more could
+    you need?
+  _flavorText: 'In the Republics brief 80+ year military partnership, the Alliance
     denied every single request to share the RM50 ''Parallax'' with us, along with
     most of their fancy toys, so we tasked our lab coats with making a version of
     our own. The project quickly discovered how much of a miracle of engineering
     the RM50 really is. Our attempts came close but they could never achieve all
     three goals at once. Something had to be sacrificed, and given the infamous money-pit
     it was for Shelter the academy elected to compromise with the most budget-friendly
-    option. As a result the RM64 is too big to fit in the standardized module slots,
-    which is half the point of the damned thing. Unfortunately the trouble with it
-    doesn''t end there, as according to our intel the RM50 still has an entire kilometer
-    over us. At least the extra size saved some cost and allowed us to add on some
-    thicker plates.
-
+    option. As a result the RM54 is too big to fit in the standardized 2x2 module
+    slots, which was half the point of the damned thing. And to add insult to injury,
+    the RM50 still has an entire kilometer over us. At least the academy knew when
+    to call it quits. Probably saved the taxpayer billions.
 
 
     - S. Dice, CWO'

@@ -83,10 +83,6 @@ MonoBehaviour:
     _literal: 0
     _modifier: 0.15
     _permanent: 0
-  - _statName: hull-flankdamageprob
-    _literal: 0
-    _modifier: -0.25
-    _permanent: 0
   - _statName: hull-angularmotor
     _literal: 0
     _modifier: 0.15

@@ -6769,7 +6769,7 @@ MonoBehaviour:
     enemy cappers, and running from enemy cruisers that they cant beat in a 1v1.
     That said, if one Moxella is capable, two are deadly. Making use of Electro-thermal
     cannons, these ships can easily outmaneuver a Vauxhaul, and pack a scary punch
-    against something like an Axford. The Moxella's are also capable missile ships,
+    against something like an Axford. The Moxella is also a capable missile ship,
     with ample modules for large salvos, and plentiful slots for ammunition. "
   _flavorText: "I've been told the Moxella's were named after senator Moxee Iselin,
     for her diplomatic efforts with the Alliance in the aftermath of Venuma. Now
@@ -6785,7 +6785,7 @@ MonoBehaviour:
     to slag\u2026 But limp back she did, and when we were done repainting her we
     painted and scratched three pirate silhouettes on the side. Beautiful. Don't
     let the brass lie to you, these are the workhorse of the fleet, and in my opinion
-    the best we've got to give.\r\n- Tommy Laurence, Chief Engineer, FRNS Centaur"
+    the best we've got to give.\n\r\n- Tommy Laurence, Chief Engineer, FRNS Centaur"
   _pointCost: 175
   _mass: 7000
   _weightClass: 1

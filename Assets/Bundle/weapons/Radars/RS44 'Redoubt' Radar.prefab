@@ -61,9 +61,9 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Search Radar
-  _longDescription: The RS44 is a sister frontline equivalent with the ability to
-    burnthrough ping instead of lock targets.  It can be combined with the RM36 to
-    compensate for it's weaknesses.
+  _longDescription: The RS44 'Redoubt' is a medium range radar roughly equivalent
+    to the Alliances 'Frontline'. Relatively speaking, the RS44 has a higher sensitivity.
+    This gives it an easier time acquiring targets, albeit with less precision.
   _flavorText: 
   _category: Sensors
   _costBreakdownClass: 4

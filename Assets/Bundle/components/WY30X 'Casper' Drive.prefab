@@ -68,7 +68,7 @@ MonoBehaviour:
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
-  _compoundingCost: 0
+  _compoundingCost: 1
   _compoundingCostClass: Stealth
   _firstInstanceFree: 0
   _compoundingMultiplier: 2

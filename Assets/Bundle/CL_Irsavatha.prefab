@@ -7234,8 +7234,8 @@ MonoBehaviour:
   _className: Irsavatha
   _hullClassification: Cruiser
   _hullSymbolOptions:
-  - CG
   - C
+  - CG
   - CC
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
@@ -7274,7 +7274,7 @@ MonoBehaviour:
     own right down their throat. I'm sure the Alliance twats will fall prey to much
     of the same if this matter in Heron boils over. \r\n\r\nAs much as I'd love to
     see it though, lets hope things stay calm, that war would be a bloody one, and
-    not easily won.\r\n- Cassandra Syretia, VADM, Naval Command"
+    not easily won.\n\r\n- Cassandra Syretia, VADM, Naval Command"
   _pointCost: 400
   _mass: 11000
   _weightClass: 1

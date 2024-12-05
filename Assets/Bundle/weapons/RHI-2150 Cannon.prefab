@@ -212,7 +212,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 70
+    _amount: 50
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -281,8 +281,8 @@ MonoBehaviour:
   _timeBetweenMuzzles: 0.25
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 2
-  _reloadTime: 16
+  _magazineSize: 1
+  _reloadTime: 8
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.12
+  _baseAccuracy: 0.08
   _flash: {fileID: 2344855187917958753}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.12
+  _baseAccuracy: 0.08
   _flash: {fileID: 5858542445205052348}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

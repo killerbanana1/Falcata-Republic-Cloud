@@ -63,15 +63,14 @@ MonoBehaviour:
   _longDescription: A workspace with an extensive suite of targeting arrays, computing
     systems, and calculators. Provides gunnery teams the means to lay in much more
     accurate firing solutions, increasing overall ballistic weapon accuracy.
-  _flavorText: 'Our guns are some of the best in the cluster, but without good targetting
-    data they arent going to deliver their best punch. Thats what these systems are
-    for, Sure, theyre expensive as hell- thats to be expected, our computers arent
-    as good as Shelters, but that cost is worth it. Every shell counts, and we''re
-    trying to kill ships, not void faeries.
+  _flavorText: 'Our guns are some of the best in the cluster, but without good targeting
+    data they aren''t going to deliver their best punch. That''s what these systems
+    are for. Sure, they''re expensive; our computers aren''t as good as Shelters,
+    but that cost is worth it. Every shell counts, and we''re trying to kill ships,
+    not void fairies.
 
 
-    - Helmsman Carmen Ibanez, FRNS
-    Moccotar'
+    - Helmsman Carmen Ibanez, FRNS Moccotar'
   _category: Weapon Support
   _costBreakdownClass: 6
   _compoundingCost: 1

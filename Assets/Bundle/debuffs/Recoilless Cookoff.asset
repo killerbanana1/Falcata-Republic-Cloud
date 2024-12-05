@@ -28,11 +28,11 @@ MonoBehaviour:
   ShowMountStatusBadge: 0
   CasualtyClass: 0
   RemoveOnDestruction: 0
-  ExternalEffectOnHitLocation: 0
-  ExternalEffects: []
-  EffectsOnSocketLocation: 1
-  SocketLocationEffects:
+  ExternalEffectOnHitLocation: 1
+  ExternalEffects:
   - {fileID: 971565300208098969, guid: b0029f04e1326784f8ff65906c4ca7bd, type: 3}
+  EffectsOnSocketLocation: 0
+  SocketLocationEffects: []
   CausePeriodicDamage: 1
   PeriodicDmgType: 1
   PeriodicDamageAmount: 5

@@ -242,7 +242,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 20
+  _pointCost: 15
   _type: 0
   _size: {x: 2, y: 8, z: 2}
   _interiorOverhang: 0

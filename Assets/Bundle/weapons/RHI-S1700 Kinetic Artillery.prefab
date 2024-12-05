@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 5150210356733449665}
   - component: {fileID: 5150210356733449670}
   m_Layer: 0
-  m_Name: Muzzle 1
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.09
+  _baseAccuracy: 0.08
   _flash: {fileID: 5150210356733449665}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

@@ -16,12 +16,12 @@ MonoBehaviour:
   _pointDivision: 25
   _storageVolume: 0.2
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: 'A 200mm shell loaded into a barrel of a recoilless rifle or recoilless
+  _flavorText: A 200mm shell loaded into a barrel of a recoilless rifle or recoilless
     rifle array. These shells are self propelled by small rocket engines and loaded
-    with warheads akin to your typical heavyweight shell. Their low velocity lends
-    to a high effectiveness against small targets. The particular explosive used
-    also generates incredible heat, and is somewhat effective at stripping the armor
-    off of large targets. '
+    with warheads akin to your typical high explosive impact warhead. Their low velocity
+    and high spread means its best against larger targets. The particular explosive
+    used also generates incredible heat, and is somewhat effective at stripping the
+    armor off of targets. However, it struggles to break damage thresholds.
   _screenshot: {fileID: 0}
   _tags:
     Class: Recoilless/Chemical
