@@ -16,8 +16,13 @@ MonoBehaviour:
   _pointDivision: 50
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: "35mm Pinshot for use by Falcatan rail weaponry. High penetration,
-    middling damage. Good for finishing off components on enemy capital ships. \n"
+  _flavorText: '35mm Pinshot for use by Falcatan rail weaponry. High penetration,
+    middling to low damage.
+
+
+    Primarily effective at knocking out capital ships
+    thrusters to reduce their maneuverability, as well as counterbattery ANS rail
+    ships. Makes Vauxhauls sad.'
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Magnetic

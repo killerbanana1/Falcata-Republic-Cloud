@@ -16,12 +16,11 @@ MonoBehaviour:
   _pointDivision: 50
   _storageVolume: 0.35
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: High-explosive rounds utilized by medium-heavy cannon weapons, such
-    as the Mk6X series. Effective on light or medium-type warships.  This round features
-    a special timed fuze which will detonate the shell after a period of time has
-    passed. This makes it somewhat useful against smaller ships, however a timed
-    fuze instead of a proximity fuze makes it somewhat less effective than its AN
-    counterpart.
+  _flavorText: High-explosive rounds utilized by medium-heavy ballistic weapons.
+    Effective on light or medium-type warships.  This round features a special timed
+    fuze which will detonate the shell after a period of time has passed. This makes
+    it somewhat useful against smaller ships, however a timed fuze instead of a proximity
+    fuze makes it less effective than its AN counterpart HE-RPF.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical

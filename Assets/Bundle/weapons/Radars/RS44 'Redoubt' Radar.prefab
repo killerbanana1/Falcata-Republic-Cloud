@@ -62,7 +62,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Search Radar
   _longDescription: The RS44 'Redoubt' is a medium range radar roughly equivalent
-    to the Alliances 'Frontline'. Relatively speaking, the RS44 has a higher sensitivity.
+    to the Alliance's 'Frontline'. Relatively speaking, the RS44 has a higher sensitivity.
     This gives it an easier time acquiring targets, albeit with less precision.
   _flavorText: 
   _category: Sensors

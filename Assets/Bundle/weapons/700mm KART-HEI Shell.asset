@@ -17,7 +17,8 @@ MonoBehaviour:
   _storageVolume: 0.6
   _factionKey: Falcata Republic/Falcata Republic
   _flavorText: KART - High Explosive Impact Shell. Meant to degrade a ships components
-    over time at range. Will not kill a ship outright, that must be done by KARTs
+    over time at range. Will not kill a ship outright as its damage is spread thinly
+    over many compartments/damage rays. Compartment destruction must be done by KART's
     KP counterpart, or other high single component damage weapons such as railguns
     or 380mm AP.
   _screenshot: {fileID: 0}

@@ -711,7 +711,7 @@ MonoBehaviour:
   _shortUIName: MED-250 Merit
   _smallImage: {fileID: 21300000, guid: be85d76c166be6b48920fa1fbbcb85f8, type: 3}
   _largeImage: {fileID: 21300000, guid: 0971bcdc1d9f98b468786102194ef702, type: 3}
-  _factionKey: Falcata Republic/Falcata Republic
+  _factionKey: none
   _shortDescription: Class 1 Flak
   _longDescription: 50mm Flak Cannon, Like Bastion or Stonewall
   _flavorText: 

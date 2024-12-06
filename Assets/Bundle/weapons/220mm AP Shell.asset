@@ -20,14 +20,16 @@ MonoBehaviour:
     Effective on light or medium-type warships, with acceptable performance on heavy-type
     warships.  Has increased effectiveness against penetrating or destroying hull
     armor, but lacks a high-explosive payload. Good for quickly knocking out components
-    on highly armored targets if a penetrating angle can be achieved.
+    on highly armored targets if a penetrating angle can be achieved. Exceptionally
+    good at following up on Recoilless Rifle salvos, graying out the redded components
+    it leaves behind.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
     Subclass: 220mm
   _role: 1
   _weightClassDiscrepancy: 1
-  _maxFlightTime: 6.25
+  _maxFlightTime: 6
   _flightSpeed: 120
   _repoolDelay: 5
   _armorPenetration: 80

@@ -8253,7 +8253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _className: Moccotar
-  _hullClassification: Battle Cruiser
+  _hullClassification: Battlecruiser
   _hullSymbolOptions:
   - BC
   - CH

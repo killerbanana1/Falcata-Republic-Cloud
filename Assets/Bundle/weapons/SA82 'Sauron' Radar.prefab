@@ -66,13 +66,13 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Spinal Search Radar
-  _longDescription: 'The SA82 ''Sauron'' Radar is an advanced situational awareness
-    system that requires a deep suite of internal equipment, but in return provides
-    a very accurate sensor picture of the surrounding environment, at the cost of
-    being unable to fire upon its own tracks.
+  _longDescription: 'The SA82 ''Sauron'' Radar is an advanced radarsystem that requires
+    a deep suite of internal equipment, but in return provides a very accurate sensor
+    picture of the surrounding environment. However, it will never be able to provide
+    fireable tracks
 
 '
-  _flavorText: Manufactured by Union-Cassandra Corp, with love.
+  _flavorText: Manufactured by Union-Cassandra Corp.
   _category: Sensors
   _costBreakdownClass: 4
   _compoundingCost: 0

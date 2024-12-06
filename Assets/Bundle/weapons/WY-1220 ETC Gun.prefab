@@ -489,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5681126308224027853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.001, z: 1.588}
+  m_LocalPosition: {x: 0, y: 0.001, z: 1.455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5681126310087154591}
@@ -708,7 +708,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 650
+    _amount: 175
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []
@@ -766,7 +766,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 250
   - 500
-  - 750
+  - 720
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -778,8 +778,8 @@ MonoBehaviour:
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
   _reloadTime: 16
-  _reloadStatSubtype: etc
-  _recycleStatSubtype: etc
+  _reloadStatSubtype: ETC
+  _recycleStatSubtype: ETC
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 5681126309429315179}
