@@ -628,6 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _multipleMaterials: 0
 --- !u!1 &4577251894953923453
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +686,8 @@ MonoBehaviour:
   _fireAnimation: {fileID: 3604692784911744122}
   _zipSound: {fileID: 8202659746798247366}
   _placeKillSphere: 1
-  _roundsPerSecond: 40
+  _roundsPerSecond: 30
+  _splitMuzzles: []
   _glower: {fileID: 3604692784911744100}
 --- !u!82 &5775316488421629035
 AudioSource:
@@ -956,7 +958,6 @@ MonoBehaviour:
   _orderable: 0
   _allowFastAcquisition: 1
   _sigType: 1
-  _castType: 1
   _maxRange: 225
   _fov: 25
   _noiseFiltering: 0
@@ -1177,8 +1178,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6970985865579650275}
-  - component: {fileID: 6496620757460098998}
   - component: {fileID: 7240034596683890137}
+  - component: {fileID: 6496620757460098998}
   - component: {fileID: 2687166234547060541}
   - component: {fileID: 5322087268300719769}
   - component: {fileID: 1817060335225177222}
@@ -1210,26 +1211,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6496620757460098998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7240034596683890136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _body: {fileID: 8347603946593268829}
-  _barrel: {fileID: 8403528664591710119}
-  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
-  _traverseSource: {fileID: 5322087268300719769}
-  _minElevation: -5
-  _maxElevation: 89
-  _muzzleVerticalOffset: 0
-  _motorDecelAngle: 2.5
 --- !u!114 &7240034596683890137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,7 +1238,7 @@ MonoBehaviour:
   _shortUIName: MED-320 Fleur
   _smallImage: {fileID: 21300000, guid: 8e6804d1748b0ac4486fa29d91f1722a, type: 3}
   _largeImage: {fileID: 0}
-  _factionKey: none
+  _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Kinetic
   _longDescription: 
   _flavorText: 
@@ -1276,6 +1257,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided: []
@@ -1317,7 +1299,7 @@ MonoBehaviour:
   _muzzles:
   - {fileID: 4577251894953923454}
   _optimalTargetWeight: 0
-  _allowGrouping: 1
+  _allowGrouping: 0
   _groupingName: 
   _role: 2
   _ewType: 0
@@ -1359,6 +1341,27 @@ MonoBehaviour:
   _elevationRate: 100
   _limitRotationSpeedWhenFiring: 0
   _firingRotationSpeedModifier: 1
+--- !u!114 &6496620757460098998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240034596683890136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _body: {fileID: 8347603946593268829}
+  _barrel: {fileID: 8403528664591710119}
+  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
+  _traverseSource: {fileID: 5322087268300719769}
+  _minElevation: -5
+  _maxElevation: 89
+  _muzzleVerticalOffset: 0
+  _motorDecelAngle: 2.5
+  _forceHardTraversalLimits: 0
 --- !u!114 &2687166234547060541
 MonoBehaviour:
   m_ObjectHideFlags: 0

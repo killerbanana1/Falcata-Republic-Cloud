@@ -47,7 +47,8 @@ public class CopyShellData : IModEntryPoint
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-135 Railgun");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-235 Railgun");
         updateTurret(componentDictionary, "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun");
-        updateTurret(componentDictionary, "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-250 'Merit' PDT");
+        updateTurret(componentDictionary, "Stock/Mk20 'Defender' PDT", "Falcata Republic/MED-320 'Fleur' PDT");
+        updateTurret(componentDictionary, "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-240 'Merit' PDT");
     }
 
     public static void updateTurret(Dictionary<string, HullComponent> componentDictionary, string keySource, string keyDestination)
@@ -104,9 +105,11 @@ public class CopyShellData : IModEntryPoint
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/250mm AP Shell", "Falcata Republic/220mm AP Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm HE Shell", "Falcata Republic/700mm KART-HEI Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/700mm KART-KP Shell");
-        updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm AP Rail Pinshot");
+        updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm Pinshot");
+        updateMunition<LightweightClusterShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm Sandshot");
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/250mm HE Shell", "Falcata Republic/150mm HE Shell");
         updateMunition<LightweightProximityShell>(munitionDictionary, "Stock/250mm HE-RPF Shell", "Falcata Republic/150mm Flak Shell");
+        updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/50mm Flak Shell", "Falcata Republic/40mm Flak Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/250mm AP Shell", "Falcata Republic/150mm AP-S Shell");
     }
 

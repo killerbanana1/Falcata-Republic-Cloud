@@ -21,7 +21,7 @@
 	<Entry Name="RHI-S1150 Cannon" Address="weapons/RHI-S1150 Cannon.prefab"/>
 	<Entry Name="RHI-S4150 Cannon" Address="weapons/RHI-S4150 Cannon.prefab"/>
 	<Entry Name="MED-320 'Fleur' PDT" Address="weapons/MED-320 'Fleur' PDT.prefab"/>
-	<Entry Name="MED-250 'Merit' PDT" Address="weapons/MED-250 'Merit' PDT.prefab"/>
+	<Entry Name="MED-240 'Merit' PDT" Address="weapons/MED-240 'Merit' PDT.prefab"/>
 	<Entry Name="WY-135 Railgun" Address="weapons/WY-135 Railgun.prefab"/>
 	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
 	<Entry Name="WY-1220 ETC Gun" Address="weapons/WY-1220 ETC Gun.prefab"/>
@@ -71,7 +71,9 @@
 	<Entry Name="150mm AP-S Shell" Address="weapons/150mm AP-S Shell.asset"/>
 	<Entry Name="150mm HE Shell" Address="weapons/150mm HE Shell.asset"/>
 	<Entry Name="150mm Flak Shell" Address="weapons/150mm Flak Shell.asset"/>
-	<Entry Name="35mm AP Rail Pinshot" Address="weapons/35mm AP Rail Pinshot.asset"/>
+	<Entry Name="40mm Flak Shell" Address="weapons/40mm Flak Shell.asset"/>
+	<Entry Name="35mm Pinshot" Address="weapons/35mm Pinshot.asset"/>
+	<Entry Name="35mm Sandshot" Address="weapons/35mm Sandshot.asset"/>
   </Munitions>
   <Debuffs>
 	<Entry Name="Recoilless Cookoff" Address="debuffs/Recoilless Cookoff.asset"/>

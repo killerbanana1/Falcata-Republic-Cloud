@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Gunnery
-  _longDescription: Electric
+  _longDescription: Electric Ignition Systems help speed up both the loading and firing of recoilless weapon platforms. Better plasma ignitors and more precise electronics work to shorten the recycle time between shells, which is an important stat for recoilless given the quantity of shells it has to fire. Additional juice is pumped into the reload process as well.
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6

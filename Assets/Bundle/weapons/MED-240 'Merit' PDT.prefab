@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166387745100361330}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.014868244, z: 0}
+  m_LocalPosition: {x: 0, y: -0.015, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 6094881352134248222}
@@ -122,7 +122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724979689039048379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.005, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7588744606543785648}
@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _multipleMaterials: 0
 --- !u!1 &808705520999248827
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808705520999248827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0361, y: 0.0097, z: 0.574}
+  m_LocalPosition: {x: -0.0361, y: 0.005, z: 0.5725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4663442445507538010}
@@ -316,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841362382563297408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0361, y: 0.0097, z: 0.574}
+  m_LocalPosition: {x: 0.0361, y: 0.005, z: 0.5725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4663442445507538010}
@@ -445,7 +446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023805775210973365}
   m_LocalRotation: {x: 0.49999997, y: 0.5000001, z: -0.50000006, w: -0.49999988}
-  m_LocalPosition: {x: 0, y: 0.009, z: -0.004}
+  m_LocalPosition: {x: 0, y: 0.005, z: -0.005}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 4663442445507538010}
@@ -542,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2437984888221708015}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.061139952, z: -0.05230014}
+  m_LocalPosition: {x: 0, y: 0.05, z: -0.05}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 5183662369882943392}
@@ -632,8 +633,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6094881352134248222}
-  - component: {fileID: 7926360432199009355}
   - component: {fileID: 4606828287944212686}
+  - component: {fileID: 7926360432199009355}
   - component: {fileID: 1252580732625249472}
   - component: {fileID: 9075719537479392612}
   - component: {fileID: 3251539860711087995}
@@ -642,7 +643,7 @@ GameObject:
   - component: {fileID: 6417766501450964561}
   - component: {fileID: 4147281053750504618}
   m_Layer: 0
-  m_Name: MED-250 'Merit' PDT
+  m_Name: MED-240 'Merit' PDT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,26 +665,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7926360432199009355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5787532215698597413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _body: {fileID: 5183662369882943392}
-  _barrel: {fileID: 4663442445507538010}
-  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
-  _traverseSource: {fileID: 9075719537479392612}
-  _minElevation: -5
-  _maxElevation: 89
-  _muzzleVerticalOffset: 0
-  _motorDecelAngle: 2.5
 --- !u!114 &4606828287944212686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,8 +678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 2Z99iItqAHJ877za37w21q
-  _maxHealth: 150
-  _functioningThreshold: 15
+  _maxHealth: 100
+  _functioningThreshold: 10
   _damageThreshold: 15
   _reinforced: 0
   _bindTag: 
@@ -708,15 +689,16 @@ MonoBehaviour:
   _disabledParticles: {fileID: 1252580732625249472}
   _saveKey: 
   _modId: 0
-  _shortUIName: MED-250 Merit
+  _shortUIName: MED-240 Merit
   _smallImage: {fileID: 21300000, guid: be85d76c166be6b48920fa1fbbcb85f8, type: 3}
   _largeImage: {fileID: 21300000, guid: 0971bcdc1d9f98b468786102194ef702, type: 3}
-  _factionKey: none
+  _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Flak
-  _longDescription: 50mm Flak Cannon, Like Bastion or Stonewall
+  _longDescription: 40mm Flak Cannon, has a higher output and slightly smaller shells
+    compared to the ubiquitous Rebound.
   _flavorText: 
   _category: Weapons - Point Defense
-  _costBreakdownClass: 2
+  _costBreakdownClass: 3
   _compoundingCost: 0
   _compoundingCostClass: 
   _firstInstanceFree: 0
@@ -730,6 +712,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided: []
@@ -772,12 +755,12 @@ MonoBehaviour:
   - {fileID: 894317100925233012}
   - {fileID: 8916817677442311379}
   _optimalTargetWeight: 1
-  _allowGrouping: 1
-  _groupingName: 50mm Flak
+  _allowGrouping: 0
+  _groupingName: 40mm Flak
   _role: 2
   _ewType: 0
   _utilityType: 0
-  _pdtTargetMethod: 0
+  _pdtTargetMethod: 2
   _useGenericAckCallback: 0
   _checkFriendlyFire: 1
   _checkObstaclesInWay: 0
@@ -785,7 +768,7 @@ MonoBehaviour:
   _allowAmmoSelection: 0
   _compatibleAmmoTags:
   - Class: Ballistic/Chemical/Timed
-    Subclass: 50mm
+    Subclass: 40mm
   _detailType: Ballistic PDT
   _leadTargets: 1
   _leadIterations: 10
@@ -806,11 +789,32 @@ MonoBehaviour:
   _reloadTime: 0.22
   _reloadStatSubtype: belt
   _recycleStatSubtype: belt
-  _randomlyDeviateReloadTime: 1
+  _randomlyDeviateReloadTime: 0
   _temporaryFiringEffects: []
   _turretControl: {fileID: 7926360432199009355}
   _traverseRate: 35
   _elevationRate: 35
+--- !u!114 &7926360432199009355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5787532215698597413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _body: {fileID: 5183662369882943392}
+  _barrel: {fileID: 4663442445507538010}
+  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
+  _traverseSource: {fileID: 9075719537479392612}
+  _minElevation: -5
+  _maxElevation: 89
+  _muzzleVerticalOffset: 0
+  _motorDecelAngle: 2.5
+  _forceHardTraversalLimits: 0
 --- !u!114 &1252580732625249472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7216946728515392232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.206, z: -0.026}
+  m_LocalPosition: {x: 0, y: 0.175, z: -0.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7461569529523524617}

@@ -266,6 +266,7 @@ MonoBehaviour:
   _maxElevation: 18
   _muzzleVerticalOffset: 0
   _motorDecelAngle: 7.5
+  _forceHardTraversalLimits: 0
 --- !u!114 &8471294505575321096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +318,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 100
   ResourcesProvided: []
@@ -361,7 +363,7 @@ MonoBehaviour:
   _optimalTargetWeight: 2
   _allowGrouping: 1
   _groupingName: 35mm Railgun
-  _role: 1
+  _role: 3
   _ewType: 0
   _utilityType: 0
   _pdtTargetMethod: 0
@@ -1139,3 +1141,4 @@ MonoBehaviour:
   m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _multipleMaterials: 0

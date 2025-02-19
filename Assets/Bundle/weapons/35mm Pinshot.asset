@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1604615380, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 35mm AP Rail Pinshot
+  m_Name: 35mm Pinshot
   m_EditorClassIdentifier: 
   _pointCost: 1
   _pointDivision: 50
@@ -29,12 +29,13 @@ MonoBehaviour:
     Subclass: 35mm
   _role: 1
   _weightClassDiscrepancy: 1
+  _recommendedTargetTypes: 
   _maxFlightTime: 8
   _flightSpeed: 200
   _repoolDelay: 5
   _armorPenetration: 145
-  _armorDamageRadius: 0.2
-  _heatPower: 500
+  _armorDamageRadius: 0.5
+  _heatPower: 1000
   _componentDamage: 50
   _randomEffectMultiplier: 0.1
   _neverCrit: 0

@@ -1201,6 +1201,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 2
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &664362788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,6 +1287,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &733226169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,6 +1373,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 1
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &747012655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1637,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 2
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &761313760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,6 +2091,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &1191107674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2545,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &1387093897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,6 +3164,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 2
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &1617521667
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,6 +4731,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &1715787653503237318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +4995,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &1741366319630804266
 GameObject:
   m_ObjectHideFlags: 0
@@ -5125,6 +5152,7 @@ MonoBehaviour:
   - KE
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
+  _hideInFleetEditor: 0
   _silhouette: {fileID: 21300000, guid: e6fe1154777608441b316adf64da8ec3, type: 3}
   _smallSilhouette: {fileID: 21300000, guid: 0b01ea26608803743a7efdc47227feae, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 64ec06b825499ac4dae47cc589d3ec84, type: 3}
@@ -5162,6 +5190,15 @@ MonoBehaviour:
   _pointCost: 100
   _mass: 4000
   _weightClass: 0
+  _tankFacing: 1
+  _armorAspect:
+    FrontAngle: 30
+    RearAngle: 155
+    TopAngle: 45
+    FrontArmorMult: 2.5
+    RearArmorMult: 1
+    SideArmorMult: 1
+    TopArmorMult: 1
   _maxSpeed: 2.8
   _maxTurnSpeed: 0.1
   _linearMotorForce: 650
@@ -5189,9 +5226,16 @@ MonoBehaviour:
   _lifeboats:
   - {fileID: 143648256702752051}
   - {fileID: 2552292174790527655}
+  _simpleDesignTips: []
+  _parameterizedDesignTips: []
   _lifeboatPrefab: {fileID: 0}
   _driveFlareScaling: 0.5
+  _wakeSigStrength: 50
   _customMissileAnnouncement: {fileID: 0}
+  _baseCraftRepairSlots: 0
+  _offsetCraftLandingPattern: 0
+  _craftLandingPatternPosition: {x: 0, y: 0, z: -1}
+  _craftLandingPatternRadius: 25
   _saveKey: 
   _modId: 0
   _socketRoot: {fileID: 1058544557933740229}
@@ -5201,6 +5245,7 @@ MonoBehaviour:
   _armorThickness: 10
   _dynamicArmorZones:
   - HullSeg: {fileID: 4688509451188725681}
+    GetCollidersFromSegment: 0
     Colliders:
     - {fileID: 6724066120977006492}
     - {fileID: 101793176151690667}
@@ -5642,6 +5687,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &2668508193324606138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5725,6 +5773,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &2772885232903343487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,6 +7176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _baseIntegrity: 1250
+  _minDamageToCount: 20
 --- !u!1 &6172920087862325870
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,11 +8692,14 @@ MonoBehaviour:
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}
-  _randomPointInCollider: 0
+  _sigSize:
+    m_Center: {x: 0, y: 0, z: -0.7}
+    m_Extent: {x: 1.7, y: 1.25, z: 5}
+  _randomPointInBounds: 0
   _crossSectionSampler: {fileID: 11400000, guid: e2f4f8bcbd66aa248a6f5c4c8d3c295d, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
-  _cornerOcclusionTest: 0
+  _detailedOcclusionTest: 0
 --- !u!65 &7679119561451544709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9045,6 +9100,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &8619107177816711830
 GameObject:
   m_ObjectHideFlags: 0
@@ -9128,6 +9186,9 @@ MonoBehaviour:
     ElevationAngle: 0
   _unmaskAxis: 0
   _unmaskSide: 0
+  _useDefinedCraftReleasePoint: 0
+  _craftReleasePoint: {x: 0, y: 0, z: 0}
+  _craftApproachDir: {x: 0, y: 0, z: 1}
 --- !u!1 &8660909427230525831
 GameObject:
   m_ObjectHideFlags: 0
