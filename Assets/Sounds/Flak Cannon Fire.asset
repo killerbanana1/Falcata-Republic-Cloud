@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2127902120, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Flak Cannon Fire
+  m_EditorClassIdentifier: 
+  _loop: 0
+  _priority: 128
+  _volume: 0.5
+  _maxFalloffDistance: 50
+  _doppler: 0
+  _rolloffMode: 0
+  _vacuumEffect: 1
+  _clips:
+  - {fileID: 8300000, guid: 2e9a496f95e8fb543a59a91c992f147e, type: 3}
+  - {fileID: 8300000, guid: af8358fdd84a75348ad4856815b473bc, type: 3}
+  - {fileID: 8300000, guid: 80f22d28c57ff4a4abd8d9f6b196693e, type: 3}
+  - {fileID: 8300000, guid: 181c794c774c21b4b9ee9f2a184e289e, type: 3}
+  _randomizePitch: 1
+  _pitchVariationEnvelope: 0.1

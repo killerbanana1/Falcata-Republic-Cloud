@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2127902120, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Flak Round Burst
+  m_EditorClassIdentifier: 
+  _loop: 0
+  _priority: 128
+  _volume: 1
+  _maxFalloffDistance: 25
+  _doppler: 0
+  _rolloffMode: 0
+  _vacuumEffect: 1
+  _clips:
+  - {fileID: 8300000, guid: ba7d862a4e7828941ba05c15ef0e38c5, type: 3}
+  - {fileID: 8300000, guid: 146624f595d133f4a9570d8be4f6fd71, type: 3}
+  - {fileID: 8300000, guid: 78adb6772b22fc64aa993d1874cf21f4, type: 3}
+  - {fileID: 8300000, guid: e9489c54bd143754dad22d91f4d59fed, type: 3}
+  _randomizePitch: 1
+  _pitchVariationEnvelope: 0.1

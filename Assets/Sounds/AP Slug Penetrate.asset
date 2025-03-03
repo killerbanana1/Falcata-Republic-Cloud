@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2127902120, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: AP Slug Penetrate
+  m_EditorClassIdentifier: 
+  _loop: 0
+  _priority: 128
+  _volume: 0.4
+  _maxFalloffDistance: 50
+  _doppler: 0
+  _rolloffMode: 0
+  _vacuumEffect: 1
+  _clips:
+  - {fileID: 8300000, guid: aeab19cb740bb8649a7da4364a2d5306, type: 3}
+  - {fileID: 8300000, guid: 3ca8e6102fad9394aa242dabee7a38a0, type: 3}
+  - {fileID: 8300000, guid: 9e5c37724818cc64c97de50e3eef597c, type: 3}
+  - {fileID: 8300000, guid: e442ed1e7a32b8d4e8c3d73d89a3cac2, type: 3}
+  - {fileID: 8300000, guid: 43de9824dddd45a44bb375d0fa649d4a, type: 3}
+  - {fileID: 8300000, guid: d4935e05aeecc9d46a836b0ea95f068f, type: 3}
+  _randomizePitch: 1
+  _pitchVariationEnvelope: 0.1

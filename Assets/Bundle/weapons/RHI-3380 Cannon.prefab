@@ -613,7 +613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: 1Zh5ndZlleF1DLvP37uOIR
-  _maxHealth: 450
+  _maxHealth: 500
   _functioningThreshold: 30
   _damageThreshold: 40
   _reinforced: 0
@@ -728,7 +728,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
-  _reloadTime: 20
+  _reloadTime: 23
   _reloadStatSubtype: 
   _recycleStatSubtype: 
   _randomlyDeviateReloadTime: 1

@@ -399,8 +399,8 @@ MonoBehaviour:
       _permanent: 0
     Duration: 15
   _turretControl: {fileID: 1217864058674632658}
-  _traverseRate: 3
-  _elevationRate: 4
+  _traverseRate: 15
+  _elevationRate: 15
 --- !u!114 &8035725429002942297
 MonoBehaviour:
   m_ObjectHideFlags: 0

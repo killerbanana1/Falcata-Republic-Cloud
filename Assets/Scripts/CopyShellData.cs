@@ -47,8 +47,7 @@ public class CopyShellData : IModEntryPoint
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-135 Railgun");
         updateTurret(componentDictionary, "Stock/Mk81 Railgun", "Falcata Republic/WY-235 Railgun");
         updateTurret(componentDictionary, "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun");
-        updateTurret(componentDictionary, "Stock/Mk20 'Defender' PDT", "Falcata Republic/MED-320 'Fleur' PDT");
-        updateTurret(componentDictionary, "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-240 'Merit' PDT");
+        updateTurret(componentDictionary, "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-240 'Fleur' PDT");
     }
 
     public static void updateTurret(Dictionary<string, HullComponent> componentDictionary, string keySource, string keyDestination)
@@ -100,16 +99,16 @@ public class CopyShellData : IModEntryPoint
         }
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/380mm AP Shell");
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/450mm HE Shell", "Falcata Republic/380mm HE Shell");
-        updateMunition<LightweightAirburstFragShell>(munitionDictionary, "Stock/600mm Bomb Shell", "Falcata Republic/380mm HE-ABF Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/120mm AP Shell", "Falcata Republic/200mm RP-HEI Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/250mm AP Shell", "Falcata Republic/220mm AP Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm HE Shell", "Falcata Republic/700mm KART-HEI Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/450mm AP Shell", "Falcata Republic/700mm KART-KP Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm Pinshot");
-        updateMunition<LightweightClusterShell>(munitionDictionary, "Stock/300mm AP Rail Sabot", "Falcata Republic/35mm Sandshot");
+        updateMunition<LightweightClusterShell>(munitionDictionary, "Stock/15mm Sandshot", "Falcata Republic/35mm Sandshot");
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/250mm HE Shell", "Falcata Republic/150mm HE Shell");
-        updateMunition<LightweightProximityShell>(munitionDictionary, "Stock/250mm HE-RPF Shell", "Falcata Republic/150mm Flak Shell");
-        updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/50mm Flak Shell", "Falcata Republic/40mm Flak Shell");
+        updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/100mm Flak", "Falcata Republic/150mm Flak Shell");
+        updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/Flak Round", "Falcata Republic/40mm Flak Shell");
+        //updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/50mm Flak Shell", "Falcata Republic/65mm Flak Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/250mm AP Shell", "Falcata Republic/150mm AP-S Shell");
     }
 
@@ -157,19 +156,39 @@ public class CopyShellData : IModEntryPoint
 
     public static void SetPrivateField(object instance, string fieldName, object value)
     {
+        if (instance == null)
+        {
+            Debug.LogError($"SetPrivateField failed: instance is null. Field: {fieldName}, Value: {value}");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(fieldName))
+        {
+            Debug.LogError("SetPrivateField failed: fieldName is null or empty.");
+            return;
+        }
+
+        Debug.Log($"SetPrivateField called on instance of type {instance.GetType()} for field '{fieldName}' with value: {value}");
+
         static void SetPrivateFieldInternal(object instance, string fieldName, object value, Type type)
         {
+            if (type == null)
+            {
+                Debug.LogError($"SetPrivateField failed: Could not find field '{fieldName}' on type or any of its base types.");
+                return;
+            }
+
             FieldInfo field = type.GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (field != null)
             {
                 field.SetValue(instance, value);
-                return;
+                Debug.Log($"Successfully set field '{fieldName}' on {type}.");
             }
-            else if (type.BaseType != null)
+            else
             {
+                Debug.LogWarning($"Field '{fieldName}' not found on type {type}. Checking base type.");
                 SetPrivateFieldInternal(instance, fieldName, value, type.BaseType);
-                return;
             }
         }
 
