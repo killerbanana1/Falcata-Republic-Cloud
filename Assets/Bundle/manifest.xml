@@ -28,7 +28,7 @@
 	<Entry Name="RHI-S1620 Recoilless Rifle" Address="weapons/RHI-S1620 Recoilless Rifle.prefab"/>
 
 	<!-- Point Defense -->
-	<Entry Name="MED-320 'Merit' PDT" Address="weapons/MED-320 'Merit' PDT.prefab"/>
+	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
 	<!--Entry Name="Gas PDT" Address="weapons/Gas PDT.prefab"/>
 	<Entry Name="WY Big Smoke" Address="weapons/WY Big Smoke.prefab"/>
