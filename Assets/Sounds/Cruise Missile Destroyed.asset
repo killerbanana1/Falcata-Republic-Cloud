@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2127902120, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Cruise Missile Destroyed
+  m_EditorClassIdentifier: 
+  _loop: 0
+  _priority: 128
+  _volume: 1
+  _maxFalloffDistance: 50
+  _doppler: 0
+  _rolloffMode: 0
+  _vacuumEffect: 1
+  _clips:
+  - {fileID: 8300000, guid: 594f5a74a89e587409e3c082c84c17e7, type: 3}
+  - {fileID: 8300000, guid: 2067ceafb45361f43b555bb89928bf78, type: 3}
+  - {fileID: 8300000, guid: 771325eb68f0e0149b4f44ca79a266ac, type: 3}
+  - {fileID: 8300000, guid: a445cf386474c4440ab166cce9143c8a, type: 3}
+  _randomizePitch: 1
+  _pitchVariationEnvelope: 0.1

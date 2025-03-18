@@ -93,7 +93,7 @@
 	<Entry Name="35mm Sandshot" Address="munitions/35mm Sandshot.asset"/>
 
 	<!-- Missiles -->
-	<!--Entry Name="EA99 Active Decoy" Address="F1/Munitions/EA99 'Conure' Active Decoy.prefab"/-->
+	<Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/>
   </Munitions>
   
   <MissileBodies>
