@@ -25,10 +25,10 @@ MonoBehaviour:
   _role: 2
   _weightClassDiscrepancy: 2
   _recommendedTargetTypes: 0200000003000000
-  _maxFlightTime: 2.1875
-  _flightSpeed: 80
+  _maxFlightTime: 1.85
+  _flightSpeed: 95
   _repoolDelay: 1
-  _armorPenetration: 0.1
+  _armorPenetration: 0.176
   _armorDamageRadius: 0.2
   _heatPower: 0
   _componentDamage: 15

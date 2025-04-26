@@ -159,7 +159,6 @@ GameObject:
   - component: {fileID: 7629959807352023151}
   - component: {fileID: 5106288372465422262}
   - component: {fileID: 5405647335563646094}
-  - component: {fileID: 3906751446705779946}
   m_Layer: 19
   m_Name: SGT-4 Body
   m_TagString: Untagged
@@ -236,7 +235,7 @@ MonoBehaviour:
   _stoppedHitDamageReduction: 0.5
   _maxHealth: 200
   _visualModel: {fileID: 0}
-  _size: 4
+  _size: 3
   _missileType: 1
   _missileClass: Torpedo
   _costAsSubmunitionMult: 1
@@ -330,7 +329,7 @@ MonoBehaviour:
     StageIgnitionDelay: 0
     EngineSocketIndex: 4
     EngineComp: {fileID: 0}
-  _schematicPrefab: {fileID: 3906751446705779946}
+  _schematicPrefab: {fileID: 0}
   _defaultEffectSet:
     _surfaceGroups:
     - _surfaceType: 
@@ -606,32 +605,14 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   _clientSnapshotInterval: 0.1
-  _clientSnapshotHistoryLength: 3
+  _clientSnapshotHistoryLength: 4
   _serverSendInterval: 2
   _correctionFrames: 30
   _snapDistance: 10
-  _serverKinematicInterval: 0.05
+  _serverKinematicInterval: 0.1
   _kinematicBufferSizeLimit: 64
   _kinematicCatchupThreshold: 4
   _kinematicCatchupMulitiplier: 0.5
---- !u!114 &3906751446705779946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987832803705827276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1541183542, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sockets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &4762752445813931449
 GameObject:
   m_ObjectHideFlags: 0

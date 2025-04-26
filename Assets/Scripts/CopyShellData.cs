@@ -108,7 +108,7 @@ public class CopyShellData : IModEntryPoint
         updateMunition<LightweightExplosiveShell>(munitionDictionary, "Stock/250mm HE Shell", "Falcata Republic/150mm HE Shell");
         updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/100mm Flak", "Falcata Republic/150mm Flak Shell");
         updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/Flak Round", "Falcata Republic/40mm Flak Shell");
-        //updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/50mm Flak Shell", "Falcata Republic/65mm Flak Shell");
+        //updateMunition<LightweightAirburstShell>(munitionDictionary, "Stock/Flak Shell", "Falcata Republic/65mm Flak Shell");
         updateMunition<LightweightKineticShell>(munitionDictionary, "Stock/250mm AP Shell", "Falcata Republic/150mm AP-S Shell");
     }
 

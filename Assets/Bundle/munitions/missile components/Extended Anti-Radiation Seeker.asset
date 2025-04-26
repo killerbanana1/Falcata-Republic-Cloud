@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1798219528, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: Extended Anti-Radiation Seeker
+  m_EditorClassIdentifier: 
+  _componentSaveKey: 
+  _modId: 0
+  _factionKey: Falcata Republic/Falcata Republic
+  _settingsPanelName: Seeker - Arad
+  _pointCost: 4
+  _image: {fileID: 21300000, guid: 4adf8257b02941643aef93b67af98342, type: 2}
+  _description: The extended anti-radiation seeker is a long-range enhancement of
+    the standard anti-radiation seeker, designed to home in on radiated energy sources
+    across the vast expanse of space. However, it is incapable of discriminating
+    signal types or being used as a validator.
+  _validatorCost: 4
+  _validatorOnly: 0
+  _tooCloseDistance: 100
+  _validatorMemoryLength: 30
+  _limitedAspect: 1
+  _mode: 0
+  _rejectUnvalidated: 0
+  _maxRange: 600
+  _fov: 7.5
+  _steerable: 0
+  _maxSteerAngle: 0
+  _performConicalScan: 0
+  _conicalScanInitialCenterTime: 1
+  _conicalScanSpeed: 360
+  _lockCurrentTargetDistance: 250
+  _lockTargetTTGI: 3
+  _reacquisitionTime: 0.5
+  _currentTargetAffinity: 10
+  _validatorReliability: 0.93
+  _detectPDTargets: 0
+  _sigType: 4
+  _targetDirectionOnly: 1
+  _gain: 50
+  _intelDistinguishTargets: 0
+  _intelTargetWeightMult: 10
+  _allowAllAspectVal: 0
+  _allAspectValSigStrength: 1
+  _overrideSignatureAbbrev: 
+  _targetTypeCostMultipliers: []
+  _targetType: 0

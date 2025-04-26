@@ -30,9 +30,9 @@
 	<!-- Point Defense -->
 	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
-	<!--Entry Name="Gas PDT" Address="weapons/Gas PDT.prefab"/>
-	<Entry Name="WY Big Smoke" Address="weapons/WY Big Smoke.prefab"/>
-	<Entry Name="WY-165 ETC PDT" Address="weapons/WY-165 ETC PDT.prefab"/-->
+	<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
+	<Entry Name="XXX-200 Big Smoke" Address="weapons/XXX-200 Big Smoke.prefab"/>
+	<Entry Name="WY-165 ETC PDT" Address="weapons/WY-165 ETC PDT.prefab"/>
 
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
@@ -93,15 +93,17 @@
 	<Entry Name="35mm Sandshot" Address="munitions/35mm Sandshot.asset"/>
 
 	<!-- Missiles -->
-	<Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/>
+	<!--Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/-->
   </Munitions>
   
   <MissileBodies>
 	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/-->
+	<!--Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/-->
   </MissileBodies>
 
   <MissileComponents>
-	<!--Entry Name="Fixed Laser-Guided Seeker" Address="weapons/Fixed Laser-Guided Seeker.asset"/-->
+	<!--Entry Name="Fixed Laser-Guided Seeker" Address="munitions/missile components/Fixed Laser-Guided Seeker.asset"/-->
+	<Entry Name="Extended Anti-Radiation Seeker" Address="munitions/missile components/Extended Anti-Radiation Seeker.asset"/>
   </MissileComponents>
 
   <Spaceframes>
