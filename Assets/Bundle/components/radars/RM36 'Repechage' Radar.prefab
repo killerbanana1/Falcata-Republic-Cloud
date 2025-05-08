@@ -86,6 +86,7 @@ MonoBehaviour:
   _bindToTag: RadarPanel
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided: []
@@ -122,10 +123,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _sigType: 1
-  _castType: 0
   _elintCategory: 1
   _stackingSensorID: RM36
-  _maxRange: 650
+  _maxRange: 700
   _radiatedPower: 3500
   _gain: 40
   _sensitivity: -38.5

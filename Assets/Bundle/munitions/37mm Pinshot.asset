@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1604615380, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 35mm Pinshot
+  m_Name: 37mm Pinshot
   m_EditorClassIdentifier: 
   _pointCost: 1
   _pointDivision: 50
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: '35mm Pinshot for use by Falcatan rail weaponry. High penetration,
+  _flavorText: '37mm Pinshot for use by Falcatan rail weaponry. High penetration,
     middling to low damage.
 
 
@@ -26,7 +26,7 @@ MonoBehaviour:
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Magnetic
-    Subclass: 35mm
+    Subclass: 37mm
   _role: 1
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 

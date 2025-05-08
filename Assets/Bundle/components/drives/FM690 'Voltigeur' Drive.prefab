@@ -60,7 +60,7 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Highly effective linear thrust mobility drive for capital ships
+  _longDescription: Highly effective linear thrust mobility drive for capital ships.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -77,7 +77,12 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
+  - _statName: hull-maxspeed
+    _literal: 0
+    _modifier: -0.1
+    _permanent: 0
   - _statName: hull-linearmotor
     _literal: 0
     _modifier: 0.4

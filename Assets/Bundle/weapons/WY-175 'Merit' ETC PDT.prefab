@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6657707130032700841}
   - component: {fileID: 48471545366811941}
   m_Layer: 0
-  m_Name: WY-165 'Merit' ETC PDT
+  m_Name: WY-175 'Merit' ETC PDT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   _allowAmmoSelection: 0
   _compatibleAmmoTags:
   - Class: Ballistic/Chemical/Timed
-    Subclass: 65mm
+    Subclass: 75mm
   _detailType: Ballistic PDT
   _leadTargets: 1
   _leadIterations: 10
@@ -152,24 +152,25 @@ MonoBehaviour:
   _aimCheckRangeMultiplier: 1
   _accuracyMeasurementDistances:
   - 100
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.14, y: 0.2, z: 0.14}
-  _timeBetweenMuzzles: 0.25
+  _timeBetweenMuzzles: 0.5
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
-  _magazineSize: 12
-  _reloadTime: 3
+  _magazineSize: 100
+  _reloadTime: 0.5
   _reloadStatSubtype: 
   _recycleStatSubtype: belt
   _randomlyDeviateReloadTime: 1
   _temporaryFiringEffects: []
   _turretControl: {fileID: 3649582158708092205}
-  _traverseRate: 65
-  _elevationRate: 65
+  _traverseRate: 80
+  _elevationRate: 80
 --- !u!114 &3649582158708092205
 MonoBehaviour:
   m_ObjectHideFlags: 0

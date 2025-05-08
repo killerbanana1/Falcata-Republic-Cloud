@@ -142,6 +142,7 @@ MonoBehaviour:
   _bindToTag: RadarPanel
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided: []
@@ -178,7 +179,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _sigType: 1
-  _castType: 0
   _elintCategory: 1
   _stackingSensorID: RM54
   _maxRange: 850

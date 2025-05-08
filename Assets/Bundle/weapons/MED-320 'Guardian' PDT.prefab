@@ -469,7 +469,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4577251894953923453}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 06347b57e1836ac428d261d4d6a57d96, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 1e33da446e66ab8479d0928f1f7d69b7, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   _disabledParticles: {fileID: 2687166234547060541}
   _saveKey: 
   _modId: 0
-  _shortUIName: MED-320 'Merit'
+  _shortUIName: MED-320 'Guardian'
   _smallImage: {fileID: 21300000, guid: 8e6804d1748b0ac4486fa29d91f1722a, type: 3}
   _largeImage: {fileID: 21300000, guid: 55593695e145ec347b1a4b326ddb2b9b, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
@@ -1262,6 +1262,7 @@ MonoBehaviour:
   _aimCheckRangeMultiplier: 1.1
   _accuracyMeasurementDistances:
   - 100
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 5768840822353709334}
   _waitForFCLock: 0
   _allowVisualTargeting: 0

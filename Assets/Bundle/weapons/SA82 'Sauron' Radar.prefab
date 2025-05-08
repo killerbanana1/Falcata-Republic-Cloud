@@ -86,8 +86,9 @@ MonoBehaviour:
   _removeSocketCap: 0
   _mass: 5
   _bindToTag: RadarPanel
-  _rotateToFit: 2
+  _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-sigmult-radar
     _literal: 0
@@ -128,7 +129,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _sigType: 1
-  _castType: 0
   _elintCategory: 1
   _stackingSensorID: SA82
   _maxRange: 1350
@@ -224,7 +224,7 @@ VFXRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}

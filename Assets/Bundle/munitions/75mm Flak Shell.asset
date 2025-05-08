@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1814120666, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 65mm Flak Shell
+  m_Name: 75mm Flak Shell
   m_EditorClassIdentifier: 
   _pointCost: 1
   _pointDivision: 75
   _storageVolume: 0.01
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: 65mm . Larger and more damaging relative to other Flak rounds.
+  _flavorText: A long 75mm Flak shell. A bigger shell can go travel further and carry
+    more payload. Not much more to it than that.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical/Timed
-    Subclass: 65mm
+    Subclass: 75mm
   _role: 2
   _weightClassDiscrepancy: 2
   _recommendedTargetTypes: 0200000003000000
-  _maxFlightTime: 2.5
-  _flightSpeed: 120
+  _maxFlightTime: 4.2
+  _flightSpeed: 72.5
   _repoolDelay: 1
   _armorPenetration: 1
   _armorDamageRadius: 0.2

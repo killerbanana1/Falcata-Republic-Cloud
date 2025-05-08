@@ -833,7 +833,7 @@ MonoBehaviour:
   _timeBetweenMuzzles: 0.175
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
-  _magazineSize: 18
+  _magazineSize: 16
   _reloadTime: 1.5
   _reloadStatSubtype: 
   _recycleStatSubtype: belt

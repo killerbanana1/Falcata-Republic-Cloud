@@ -151,7 +151,7 @@ MonoBehaviour:
   _shortUIName: 
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
-  _factionKey: Falcata Republic/Falcata Republic
+  _factionKey: None
   _shortDescription: Class 2 Pulsed Laser
   _longDescription: 
   _flavorText: 
@@ -232,6 +232,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 150
   - 300
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 3248481202973346843}
   _waitForFCLock: 1
   _allowVisualTargeting: 0
@@ -966,7 +967,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e015feba34fc334397b7742333fa921, type: 2}
+  - {fileID: 2100000, guid: 2de83bbe16d5de64886d7f0ae7e143cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

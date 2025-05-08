@@ -36,7 +36,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955743610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.175, z: 0.025}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2279855771722213816}
@@ -74,7 +74,10 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,7 +227,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.3299313
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -238,7 +241,7 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 1, g: 1, b: 1, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -246,7 +249,7 @@ LineRenderer:
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 65535
-      ctime2: 65535
+      ctime2: 0
       ctime3: 0
       ctime4: 0
       ctime5: 0
@@ -269,7 +272,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 1
+  m_UseWorldSpace: 0
   m_Loop: 0
 --- !u!2083052967 &955743615
 VisualEffect:
@@ -279,7 +282,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955743610}
   m_Enabled: 1
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 8926484042661614526, guid: d103249feb2c4c74cad156092fd1a310, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -415,7 +418,7 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 3a55f9592290dc4488da80319e8740ce, type: 2}
+  - {fileID: 7400000, guid: 2cc74b9693ad44e478f8f3dcd50b1bfa, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -432,7 +435,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0, b: 0, a: 1}
-  m_Intensity: 1.193662
+  m_Intensity: 1.5915494
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -502,7 +505,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 15
+  m_Intensity: 20
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -634,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086590147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.175, z: 0.025}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2279855771722213816}
@@ -690,7 +693,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086590147}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 89922bec62c14f7418eba50a1c76ad28, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 877a77b34e7c9994c89f135e59642f5d, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -834,6 +837,7 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
@@ -1033,7 +1037,7 @@ MonoBehaviour:
   _baseAccuracy: 0.01
   _castType: 0
   _castWidth: 0.1
-  _raycastRange: 200
+  _raycastRange: 250
   _beamSpeed: 3.4028235e+38
   _effects: {fileID: 0}
   _spherecastComponents: 0
@@ -1067,7 +1071,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxPenetrationDistance: 5
+  _maxPenetrationDistance: 0
   _armorDamageEffectSize: 0.5
   _beamEffect: {fileID: 955743610}
   _hitEffect: {fileID: 1086590147}
@@ -1345,7 +1349,7 @@ MonoBehaviour:
   _shortUIName: Laser
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
-  _factionKey: Falcata Republic/Falcata Republic
+  _factionKey: None
   _shortDescription: Class 1 Gas Laser
   _longDescription: GAS MONKEY.
   _flavorText: THAT FUNKY MONKEY.
@@ -1433,11 +1437,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.291, y: 0.287, z: -0.052}
-  _timeBetweenMuzzles: 0.1
+  _timeBetweenMuzzles: 0.25
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
-  _reloadTime: 7
+  _reloadTime: 5
   _reloadStatSubtype: laser
   _recycleStatSubtype: laser
   _randomlyDeviateReloadTime: 0
@@ -1462,7 +1466,7 @@ MonoBehaviour:
   _traverseSound: {fileID: 11400000, guid: c97e16b66af91664787d2d1198a7fdf5, type: 2}
   _traverseSource: {fileID: 9075719537479392612}
   _minElevation: -5
-  _maxElevation: 85
+  _maxElevation: 89
   _muzzleVerticalOffset: 0
   _motorDecelAngle: 2.5
   _forceHardTraversalLimits: 0

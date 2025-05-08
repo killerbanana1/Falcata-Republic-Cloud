@@ -22,7 +22,7 @@ Sprite:
   m_AtlasName: 
   m_PackingTag: 
   m_RenderDataKey:
-    eac4beefbe6774e41b9c9e15d37ac22f: 21300000
+    82459f32f4e33fc42b513ec7c5a18836: 21300000
   m_AtlasTags: []
   m_SpriteAtlas: {fileID: 0}
   m_RD:
@@ -103,7 +103,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: ec51b8beec51b83e00000000ec51b83eec51b8be00000000ec51b83eec51b83e00000000ec51b8beec51b8be000000000000000000000000000000000000000000000000000000000000000000000000
+      _typelessdata: ec51b8beec51b83e00000000ec51b83eec51b8be00000000ec51b83eec51b83e00000000ec51b8beec51b8be00000000000000000000803f0000803f000000000000803f0000803f0000000000000000
     m_Bindpose: []
     textureRect:
       serializedVersion: 2

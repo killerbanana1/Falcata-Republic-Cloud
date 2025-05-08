@@ -20,8 +20,8 @@
 	<Entry Name="RHI-2150 Cannon" Address="weapons/RHI-2150 Cannon.prefab"/>
 	<Entry Name="RHI-S1150 Cannon" Address="weapons/RHI-S1150 Cannon.prefab"/>
 	<Entry Name="RHI-S4150 Cannon" Address="weapons/RHI-S4150 Cannon.prefab"/>
-	<Entry Name="WY-135 Railgun" Address="weapons/WY-135 Railgun.prefab"/>
-	<Entry Name="WY-235 Railgun" Address="weapons/WY-235 Railgun.prefab"/>
+	<Entry Name="WY-137 Railgun" Address="weapons/WY-137 Railgun.prefab"/>
+	<Entry Name="WY-237 Railgun" Address="weapons/WY-237 Railgun.prefab"/>
 	<Entry Name="WY-1220 ETC Gun" Address="weapons/WY-1220 ETC Gun.prefab"/>
 	<Entry Name="RHI-S1700 Kinetic Artillery" Address="weapons/RHI-S1700 Kinetic Artillery.prefab"/>
 	<Entry Name="RHI-3220 Recoilless Rifle" Address="weapons/RHI-3220 Recoilless Rifle.prefab"/>
@@ -32,7 +32,7 @@
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
 	<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
 	<Entry Name="XXX-200 Big Smoke" Address="weapons/XXX-200 Big Smoke.prefab"/>
-	<Entry Name="WY-165 ETC PDT" Address="weapons/WY-165 ETC PDT.prefab"/>
+	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>
 
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
@@ -47,6 +47,7 @@
 	<!-- Mounts -->
 	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
+	<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>
 
 	<!-- Compartments -->
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
@@ -80,6 +81,7 @@
   	<!-- Kinetic -->
     <Entry Name="380mm AP Shell" Address="munitions/380mm AP Shell.asset"/>
 	<Entry Name="380mm HE Shell" Address="munitions/380mm HE Shell.asset"/>
+	<Entry Name="380mm HE-ABF Shell" Address="munitions/380mm HE-ABF Shell.asset"/>
 	<Entry Name="200mm RP-HEI Shell" Address="munitions/200mm RP-HEI Shell.asset"/>
 	<Entry Name="220mm AP Shell" Address="munitions/220mm AP Shell.asset"/>
 	<Entry Name="700mm KART-HEI Shell" Address="munitions/700mm KART-HEI Shell.asset"/>
@@ -88,9 +90,10 @@
 	<Entry Name="150mm HE Shell" Address="munitions/150mm HE Shell.asset"/>
 	<Entry Name="150mm Flak Shell" Address="munitions/150mm Flak Shell.asset"/>
 	<Entry Name="40mm Flak Shell" Address="munitions/40mm Flak Shell.asset"/>
-	<Entry Name="65mm Flak Shell" Address="munitions/65mm Flak Shell.asset"/>
-	<Entry Name="35mm Pinshot" Address="munitions/35mm Pinshot.asset"/>
-	<Entry Name="35mm Sandshot" Address="munitions/35mm Sandshot.asset"/>
+	<Entry Name="75mm Flak Shell" Address="munitions/75mm Flak Shell.asset"/>
+	<Entry Name="37mm Pinshot" Address="munitions/37mm Pinshot.asset"/>
+	<Entry Name="37mm Sandshot" Address="munitions/37mm Sandshot.asset"/>
+	<!--<Entry Name="30mm Slug" Address="munitions/30mm Slug.asset"/>-->
 
 	<!-- Missiles -->
 	<!--Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/-->

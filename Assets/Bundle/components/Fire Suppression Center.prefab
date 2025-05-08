@@ -71,7 +71,8 @@ MonoBehaviour:
     holes through the entire ship. Seriously, who the hell makes a railgun 300mm?
     It''s ridiculous, absurd even.
 
-    \n\n- \rS. Dice, CWO"'
+
+    S. Dice, CWO"'
   _category: Damage Control
   _costBreakdownClass: 7
   _compoundingCost: 0
@@ -87,6 +88,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: damagecontrol-repairspeed:fire
     _literal: 0

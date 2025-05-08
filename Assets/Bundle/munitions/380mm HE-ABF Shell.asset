@@ -25,8 +25,9 @@ MonoBehaviour:
   _tags:
     Class: Ballistic/Chemical
     Subclass: 380mm
-  _role: 3
+  _role: 1
   _weightClassDiscrepancy: 2
+  _recommendedTargetTypes: 
   _maxFlightTime: 14.4
   _flightSpeed: 75
   _repoolDelay: 5
@@ -36,11 +37,11 @@ MonoBehaviour:
   _componentDamage: 25
   _randomEffectMultiplier: 0.05
   _neverCrit: 0
-  _crewVulnerabilityMultiplier: 0.1
-  _maxPenetrationDistance: 5
+  _crewVulnerabilityMultiplier: 1
+  _maxPenetrationDistance: 1
   _neverOverpen: 0
-  _overrideComponentSearchDistance: -1
-  _overpenDamageMultiplier: 0.2
+  _overrideComponentSearchDistance: 5
+  _overpenDamageMultiplier: 1
   _overpenDamageSpreadMethod: 0
   _ignoreDamageReduction: 0
   _alwaysSpreadDamage: 0
@@ -95,15 +96,15 @@ MonoBehaviour:
   _castType: 0
   _spherecastRadius: 1
   _rayAngle: 15
-  _rayCount: 3
+  _rayCount: 10
   _alwaysDoStructureDamage: 0
   _dedicatedStructureDamage: 0
   _alwaysSpreadThroughStructure: 0
-  _playDestructionEffectOnTimeout: 1
+  _playDestructionEffectOnTimeout: 0
   _fuzeMargin: 0.35
   _minFuzeTime: 0.75
   _fuzeAdvanceRetard: -0.2
-  _blastRadius: 25
+  _blastRadius: 15
   _fragmentCountPerTarget: 4
   _fragmentSearchDistance: 5
   _damagePotentialMaxHits: 5

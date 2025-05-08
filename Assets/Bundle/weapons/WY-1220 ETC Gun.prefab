@@ -749,6 +749,7 @@ MonoBehaviour:
   - 250
   - 500
   - 720
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -772,6 +773,10 @@ MonoBehaviour:
   - _statName: hull-sigmult-radar
     _literal: 0
     _modifier: 0.15
+    _permanent: 0
+  - _statName: muzzle-accuracy
+    _literal: 0
+    _modifier: -0.25
     _permanent: 0
   _overheatDamage: 18
   _overheatDamageSubtype: 
