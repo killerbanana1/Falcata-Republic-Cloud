@@ -1349,7 +1349,7 @@ MonoBehaviour:
   _shortUIName: Laser
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
-  _factionKey: None
+  _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Gas Laser
   _longDescription: GAS MONKEY.
   _flavorText: THAT FUNKY MONKEY.

@@ -70,7 +70,7 @@ MonoBehaviour:
   _shortUIName: RF
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
-  _factionKey: None
+  _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fire Control Radar
   _longDescription: 'The RF101 is a high-power turreted fire control system that
     allows the equipped warship to lock onto tracks, providing extreme accuracy for

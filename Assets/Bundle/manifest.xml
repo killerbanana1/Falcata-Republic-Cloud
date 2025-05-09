@@ -30,9 +30,9 @@
 	<!-- Point Defense -->
 	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
-	<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
+	<!--<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
 	<Entry Name="XXX-200 Big Smoke" Address="weapons/XXX-200 Big Smoke.prefab"/>
-	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>
+	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>-->
 
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
@@ -47,7 +47,7 @@
 	<!-- Mounts -->
 	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
 	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
-	<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>
+	<!--<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>-->
 
 	<!-- Compartments -->
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
@@ -81,7 +81,7 @@
   	<!-- Kinetic -->
     <Entry Name="380mm AP Shell" Address="munitions/380mm AP Shell.asset"/>
 	<Entry Name="380mm HE Shell" Address="munitions/380mm HE Shell.asset"/>
-	<Entry Name="380mm HE-ABF Shell" Address="munitions/380mm HE-ABF Shell.asset"/>
+	<!--<Entry Name="380mm HE-ABF Shell" Address="munitions/380mm HE-ABF Shell.asset"/>-->
 	<Entry Name="200mm RP-HEI Shell" Address="munitions/200mm RP-HEI Shell.asset"/>
 	<Entry Name="220mm AP Shell" Address="munitions/220mm AP Shell.asset"/>
 	<Entry Name="700mm KART-HEI Shell" Address="munitions/700mm KART-HEI Shell.asset"/>

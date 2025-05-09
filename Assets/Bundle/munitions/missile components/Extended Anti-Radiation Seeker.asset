@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _componentSaveKey: 
   _modId: 0
-  _factionKey: None
+  _factionKey: Falcata Republic/Falcata Republic
   _settingsPanelName: Seeker - Arad
   _pointCost: 4
   _image: {fileID: 21300000, guid: f9830f201bcaf0a4b8db33c295312f86, type: 3}
@@ -52,5 +52,6 @@ MonoBehaviour:
   _overrideSignatureAbbrev: 
   _targetTypeCostMultipliers:
   - 1
-  - 1
+  - -1
+  - -1
   _targetType: 0

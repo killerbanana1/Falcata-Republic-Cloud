@@ -16,9 +16,11 @@ MonoBehaviour:
   _pointDivision: 100
   _storageVolume: 0.05
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: AP-Sabot Round, high crit chance and high volume of fire, good for
-    suppressing systems on enemy ships. However it has low damage, innefectual for
-    actually killing enemy vessels. Makes Vauxhauls sad.
+  _flavorText: Armor piercing sabot rounds have largely fallen out of fashion over
+    the years, however they still use in the Falcatan navy with their lower pressure
+    cannons. It's a lot easier to accelerate a small rock than a big one. Excels
+    at creating a million and one problems for damage control teams to fix, although
+    struggles with dealing the damage a traditional AP shell would.
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
@@ -33,7 +35,7 @@ MonoBehaviour:
   _armorDamageRadius: 0.5
   _heatPower: 0
   _componentDamage: 25
-  _randomEffectMultiplier: 8
+  _randomEffectMultiplier: 9
   _neverCrit: 1
   _crewVulnerabilityMultiplier: 1
   _maxPenetrationDistance: 5
