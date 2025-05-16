@@ -30,9 +30,9 @@
 	<!-- Point Defense -->
 	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
-	<!--<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
+	<Entry Name="XXX-100 'Glance' Gas PDT" Address="weapons/XXX-100 'Glance' Gas PDT.prefab"/>
 	<Entry Name="XXX-200 Big Smoke" Address="weapons/XXX-200 Big Smoke.prefab"/>
-	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>-->
+	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>
 
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>

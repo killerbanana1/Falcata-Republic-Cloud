@@ -293,7 +293,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: cbe6220742545c94c8a4e9056ec42b89, type: 3}
-  _largeImage: {fileID: 21300000, guid: ae9b043c1913dab48b543840a48b3e19, type: 3}
+  _largeImage: {fileID: 21300000, guid: 90a8bc18f8053f9418c0bb6e6d2b3a4f, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 4 Railgun
   _longDescription: Falcatan railguns are not as heavy hitting or visually spectacular

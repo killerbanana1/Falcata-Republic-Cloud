@@ -170,6 +170,7 @@ MonoBehaviour:
   _maxElevation: 75
   _muzzleVerticalOffset: 0.03
   _motorDecelAngle: 7.5
+  _forceHardTraversalLimits: 0
 --- !u!114 &8543603947188820462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +197,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: 2355fcf8f7874ca4383c2c75659c5a49, type: 3}
-  _largeImage: {fileID: 21300000, guid: 48f1eb7fefdedee4f871b1ce289c83d1, type: 3}
+  _largeImage: {fileID: 21300000, guid: d47585d836db4284c98e63b0440a31de, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 3 Cannon
   _longDescription: 150mm shells are short range small craft devastators. the HE
@@ -220,6 +221,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 100
   ResourcesProvided: []
@@ -287,6 +289,7 @@ MonoBehaviour:
   - 250
   - 500
   - 680
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -1296,6 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _multipleMaterials: 0
 --- !u!1 &6938547857652335515
 GameObject:
   m_ObjectHideFlags: 0

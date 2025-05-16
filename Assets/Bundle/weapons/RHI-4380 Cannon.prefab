@@ -755,7 +755,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: 5982f7a3799fe4a43bba17916346fb48, type: 3}
-  _largeImage: {fileID: 21300000, guid: a3056422cb282e54fa2967e3fd07d641, type: 3}
+  _largeImage: {fileID: 21300000, guid: 8fe158a328b751e49b0982304a0c08a5, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 5 Cannon
   _longDescription: 380mm cannons are the mainstay of the Falcatan navy, they are
@@ -848,6 +848,7 @@ MonoBehaviour:
   - 500
   - 750
   - 1000
+  _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

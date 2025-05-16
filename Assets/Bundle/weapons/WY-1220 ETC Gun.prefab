@@ -658,7 +658,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: 917042b83f356244e944a4b4b72fccbe, type: 3}
-  _largeImage: {fileID: 21300000, guid: 52ffe3ea488e374429aa383c517be512, type: 3}
+  _largeImage: {fileID: 21300000, guid: 583377391995add49ab800c86f3fb1f6, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 3 Cannon
   _longDescription: Affectionately known as the Woodpecker for its long pointed barrel,
@@ -776,7 +776,7 @@ MonoBehaviour:
     _permanent: 0
   - _statName: muzzle-accuracy
     _literal: 0
-    _modifier: -0.2
+    _modifier: -10
     _permanent: 0
   _overheatDamage: 18
   _overheatDamageSubtype: 

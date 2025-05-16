@@ -168,6 +168,7 @@ MonoBehaviour:
   _launchDelay: 1
   _ignitionDelay: 1
   _pathDeviation: 1
+  _forceHotLaunch: 0
 --- !u!1 &8724373213424424007
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +231,7 @@ MonoBehaviour:
   _modId: 0
   _shortUIName: 
   _smallImage: {fileID: 21300000, guid: 57637debfef43a8429f32f0e3f652c00, type: 3}
-  _largeImage: {fileID: 21300000, guid: 5fe34107ba6acf14cb47fee6f247ed66, type: 3}
+  _largeImage: {fileID: 21300000, guid: 01f96ebd4ce72c240838b0b419c5885d, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Size 3 Torpedo Launcher
   _longDescription: A simple tube launcher designed to eject three torpedoes from
@@ -251,6 +252,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 100
   ResourcesProvided: []
@@ -292,7 +294,8 @@ MonoBehaviour:
   _allowGrouping: 1
   _groupingName: 
   _detailType: Torpedo Launcher
-  _missileClass: Missile
+  _missileClasses:
+  - Missile
   _missileSize: 3
   _loadTime: 50
   _launchesPerLoad: 3
@@ -371,7 +374,7 @@ VFXRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}

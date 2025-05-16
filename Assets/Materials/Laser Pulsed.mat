@@ -83,7 +83,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_1964cb066f06432fb77d522c51e50fed_Texture_1:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Texture: {fileID: 2800000, guid: 6de1f3bdc65b2b946871ffe0866eb792, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_407e29b0f2b741609fcb0922c24187b4_Texture_1:
@@ -111,7 +111,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_d8488035033e49f3809b9a90363ecc97_Texture_1:
-        m_Texture: {fileID: 2800000, guid: b4660af528a72834e93c315dee0bee48, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3b73846f972bd874986b20c5ae7769f3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -151,6 +151,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Alpha: 0
     - Intensity: 0
     - Vector1_b3a15905a40747879fcbf29093438f58: 3
     - Vector1_c91e75a6bbc74d98a50327aab9c06667: 0
@@ -171,6 +172,7 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
+    - _Color_a: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
