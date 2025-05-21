@@ -92,7 +92,7 @@ MonoBehaviour:
   Modifiers:
   - _statName: muzzle-accuracy
     _literal: 0
-    _modifier: -0.3
+    _modifier: -0.25
     _permanent: 0
   _resourceDemandPriority: 0
   ResourcesProvided: []

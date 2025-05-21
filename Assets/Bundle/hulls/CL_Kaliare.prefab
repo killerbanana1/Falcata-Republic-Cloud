@@ -2055,8 +2055,8 @@ MonoBehaviour:
   _hasTraverseLimits: 1
   _traverseLimits:
     LimitFiringOnly: 1
-    LeftAngle: 165
-    RightAngle: 165
+    LeftAngle: 0
+    RightAngle: 0
     UseElevationLimit: 1
     ElevationAngle: 9
   _hasForwardLimits: 0

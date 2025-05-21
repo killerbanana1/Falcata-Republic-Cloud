@@ -62,7 +62,7 @@ MonoBehaviour:
   _shortDescription: Gunnery
   _longDescription: An array of electrical capacitors that assist in the recharge
     rate of Falcata rail weaponry. These capacitors can also be used to regulate
-    heat from Electrothermalchemical weapons.
+    heat from Electrothermal-chemical weapons.
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6
@@ -70,7 +70,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 25
+  _pointCost: 20
   _type: 2
   _size: {x: 3, y: 3, z: 3}
   _interiorOverhang: 0
@@ -79,6 +79,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: discreteweapon-reload:energy
     _literal: 0
@@ -86,7 +87,7 @@ MonoBehaviour:
     _permanent: 0
   - _statName: discreteweapon-reload:ETC
     _literal: 0
-    _modifier: -0.15
+    _modifier: -0.2
     _permanent: 0
   _resourceDemandPriority: 0
   ResourcesProvided: []

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2089276316, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: SGT-4 Engine
+  m_Name: VGT-4 Engine
   m_EditorClassIdentifier: 
   _componentSaveKey: 
   _modId: 0
@@ -19,18 +19,18 @@ MonoBehaviour:
   _pointCost: 0
   _image: {fileID: 0}
   _description: 
-  _speed: {x: 18, y: 35}
+  _speed: {x: 17.5, y: 30}
   _speedCost: {x: 0, y: 0}
-  _thrust: {x: 7, y: 15}
-  _thrustCost: {x: 0, y: 0}
-  _flightTimePerIncrement: {x: 4, y: 20}
+  _thrust: {x: 30, y: 50}
+  _thrustCost: {x: 0, y: 3}
+  _flightTimePerIncrement: {x: 1, y: 4.5}
   _flightTimeCost: {x: 0, y: 0}
-  _maxThrustAngle: {x: 12, y: 30}
-  _turnRate: {x: 1.25, y: 3}
+  _maxThrustAngle: {x: 8, y: 30}
+  _turnRate: {x: 0.4, y: 3}
   _singleSpeed: 0
-  _maxStrafeSpeed: {x: 3, y: 4}
-  _strafeThrust: {x: 0.4, y: 0.8}
-  _preIgnitionTurnRateMultiplier: 1
+  _maxStrafeSpeed: {x: 2, y: 4}
+  _strafeThrust: {x: 1, y: 3}
+  _preIgnitionTurnRateMultiplier: 1.5
   _appliesModifiers: 0
   _modifiers: []
   _balanceValues:

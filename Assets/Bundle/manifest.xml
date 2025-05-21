@@ -95,13 +95,12 @@
 	<Entry Name="37mm Sandshot" Address="munitions/37mm Sandshot.asset"/>
 	<!--<Entry Name="30mm Slug" Address="munitions/30mm Slug.asset"/>-->
 
-	<!-- Missiles -->
-	<!--Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/-->
+	<!-- Utility Missiles -->
   </Munitions>
   
   <MissileBodies>
 	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/-->
-	<!--Entry Name="SGT-4 Body" Address="munitions/sgt-4/SGT-4 Body.prefab"/-->
+	<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
   </MissileBodies>
 
   <MissileComponents>

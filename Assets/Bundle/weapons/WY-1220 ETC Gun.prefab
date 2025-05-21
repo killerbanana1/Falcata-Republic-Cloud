@@ -776,7 +776,7 @@ MonoBehaviour:
     _permanent: 0
   - _statName: muzzle-accuracy
     _literal: 0
-    _modifier: -10
+    _modifier: 0.5
     _permanent: 0
   _overheatDamage: 18
   _overheatDamageSubtype: 

@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Reflection;
+using Munitions;
+using Munitions.ModularMissiles;
+using FleetEditor.MissileEditor;
 
 public class Holder : MonoBehaviour
 {
@@ -64,6 +67,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Skiff Frame - Base"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -73,6 +79,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Energy Regulator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -82,6 +91,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Small Reactor Booster"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -101,6 +113,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Reinforced CIC"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -110,6 +125,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Small Workshop"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -119,6 +137,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Small Energy Regulator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -128,6 +149,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Strobe Correlator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -137,6 +161,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGT-3 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -206,6 +233,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Gun Plotting Center"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -225,6 +255,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Adaptive Radar Receiver"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -234,6 +267,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Focused Particle Accelerator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -243,6 +279,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Large DC Locker"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -262,6 +301,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-210 Squall"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -271,6 +313,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Supplementary Radio Amplifiers"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -280,6 +325,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Reinforced DC Locker"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -289,6 +337,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("CR10 Antenna"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -298,6 +349,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SDM-112 Riposte"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -307,6 +361,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-206 Thunderhead"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -336,6 +393,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Missile Programming Bus Array"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -345,6 +405,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Skiff Frame - AN Variant"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -364,6 +427,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Reinforced Thruster Nozzles"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -393,6 +459,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Track Correlator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -412,6 +481,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Submunition Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -421,6 +493,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Missile Programming Bus"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -440,6 +515,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SDM-1 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -459,6 +537,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Redundant Reactor Failsafes"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -488,6 +569,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Spacecraft Strikedown Station"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -497,6 +581,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Plant Control Center"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -506,6 +593,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Berthing"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -515,6 +605,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-2 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -544,6 +637,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Analysis Annex"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -553,6 +649,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Missile Parallel Interface"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -562,6 +661,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Spacecraft Repair Station"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -571,6 +673,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Intelligence Center"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -620,6 +725,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-225 Hurricane"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -639,6 +747,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Citadel CIC"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -648,6 +759,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Small DC Locker"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -677,6 +791,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Flight Deck Traversal System"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -686,6 +803,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SH12-25 REDACTED"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -715,6 +835,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGT-350 Mace"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -754,6 +877,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Basic CIC"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -783,6 +909,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Reinforced Magazine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -822,6 +951,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Sensor Buoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -831,6 +963,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Deck Gear Locker"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -850,6 +985,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Mount Gyros"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -899,6 +1037,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Rapid DC Locker"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -908,6 +1049,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Bulk Internal Hangar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -917,6 +1061,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Ammunition Elevators"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -946,6 +1093,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Fire Suppression System"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -955,6 +1105,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Bulk Magazine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -994,6 +1147,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-1 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1003,6 +1159,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SGM-233 Gale"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1022,6 +1181,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Auxiliary Steering"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1031,6 +1193,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("SDM-2 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1040,6 +1205,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Battle Dressing Station"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1049,6 +1217,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Actively Cooled Amplifiers"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1058,6 +1229,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Rapid-Cycle Cradle"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1087,6 +1261,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Damage Control Central"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1096,6 +1273,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stock == null)
             stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock"));
         GameObject goh = Instantiate(stock.LoadAsset<GameObject>("Skiff Frame - OSP Variant"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1115,6 +1295,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("AN Interceptor Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1124,6 +1307,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk65 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1133,6 +1319,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E57 'Floodlight' Illuminator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1142,6 +1331,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("ES32 'Scryer' Missile ID System"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1151,6 +1343,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM580 'Raider' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1170,6 +1365,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("VLS-1-46 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1179,6 +1377,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("VLS-2 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1188,6 +1389,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E70 'Interruption' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1197,6 +1401,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM230 'Whiplash' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1206,6 +1413,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Keystone Destroyer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1215,6 +1425,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E15 'Masquerade' Deception Module"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1224,6 +1437,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Vauxhall Light Cruiser"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1243,6 +1459,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM200 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1252,6 +1471,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM500 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1261,6 +1483,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("CLS-3 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1270,6 +1495,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Strike Planning Center"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1279,6 +1507,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Sprinter Corvette"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1288,6 +1519,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FR3300 Micro Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1297,6 +1531,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("CR70 Antenna"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1306,6 +1543,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM540 'Dragonfly' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1315,6 +1555,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("AN SEWAC Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1324,6 +1567,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("KBU-22 Bomb"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1333,6 +1579,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM530 'Whiplash' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1342,6 +1591,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM30X 'Prowler' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1351,6 +1603,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("EA99 'Conure' Active Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1380,6 +1635,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk29 'Stonewall' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1389,6 +1647,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("RS35 'Frontline' Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1398,6 +1659,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk82 Railgun"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1407,6 +1671,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk20 'Defender' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1416,6 +1683,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk610 Beam Turret"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1455,6 +1725,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("EA12 Chaff Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1464,6 +1737,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("EA20 Flare Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1483,6 +1759,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("VLS-1-23 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1492,6 +1771,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Medium Mounted Hangar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1501,6 +1783,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("SGM-H-3 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1510,6 +1795,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E71 'Hangup' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1529,6 +1817,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk66 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1538,6 +1829,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk90 'Aurora' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1547,6 +1841,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk61 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1556,6 +1853,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk25 'Rebound' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1565,6 +1865,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM500R Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1574,6 +1877,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("RS41 'Spyglass' Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1583,6 +1889,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FR4800 Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1592,6 +1901,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Levy Escort Carrier"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1601,6 +1913,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("RF101 'Bullseye' Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1610,6 +1925,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E55 'Spotlight' Illuminator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1619,6 +1937,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Axford Heavy Cruiser"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1638,6 +1959,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk81 Railgun"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1647,6 +1971,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM240 'Dragonfly' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1656,6 +1983,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("AN Bomber Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1665,6 +1995,9 @@ public class GeneratedMenuItems : MonoBehaviour {
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Raines Frigate"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -1678,26 +2011,44 @@ public class GeneratedMenuItems : MonoBehaviour {
         
     }
 
-    [MenuItem("Load Asset/Stock-F1/F1/Components/Signature Scrambler.prefab")]
+    [MenuItem("Load Asset/Stock-F1/F1/Munitions/FBU-15 Fragmentation Bomb.prefab")]
     private static void MenuItem175() {
+        Debug.Log("Selected item: FBU-15 Fragmentation Bomb");
+        if (stockf1 == null)
+            stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
+        GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FBU-15 Fragmentation Bomb"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F1/F1/Components/Signature Scrambler.prefab")]
+    private static void MenuItem176() {
         Debug.Log("Selected item: Signature Scrambler");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Signature Scrambler"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Hulls/Solomon Battleship.prefab")]
-    private static void MenuItem176() {
+    private static void MenuItem177() {
         Debug.Log("Selected item: Solomon Battleship");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Solomon Battleship"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/35mm Slug.asset")]
-    private static void MenuItem177() {
+    private static void MenuItem178() {
         Debug.Log("Selected item: 35mm Slug");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1707,16 +2058,19 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/RM50 'Parallax' Radar.prefab")]
-    private static void MenuItem178() {
+    private static void MenuItem179() {
         Debug.Log("Selected item: RM50 'Parallax' Radar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("RM50 'Parallax' Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/120mm HE Shell.asset")]
-    private static void MenuItem179() {
+    private static void MenuItem180() {
         Debug.Log("Selected item: 120mm HE Shell");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1726,79 +2080,103 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/TLS-3 Launcher.prefab")]
-    private static void MenuItem180() {
+    private static void MenuItem181() {
         Debug.Log("Selected item: TLS-3 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("TLS-3 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/CBU-40 Cluster Bomb.prefab")]
-    private static void MenuItem181() {
+    private static void MenuItem182() {
         Debug.Log("Selected item: CBU-40 Cluster Bomb");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("CBU-40 Cluster Bomb"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/KBU-15 Bomb.prefab")]
-    private static void MenuItem182() {
+    private static void MenuItem183() {
         Debug.Log("Selected item: KBU-15 Bomb");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("KBU-15 Bomb"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/VLS-3 Launcher.prefab")]
-    private static void MenuItem183() {
+    private static void MenuItem184() {
         Debug.Log("Selected item: VLS-3 Launcher");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("VLS-3 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab")]
-    private static void MenuItem184() {
+    private static void MenuItem185() {
         Debug.Log("Selected item: SGM-H-2 Body");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("SGM-H-2 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk600 Beam Cannon.prefab")]
-    private static void MenuItem185() {
+    private static void MenuItem186() {
         Debug.Log("Selected item: Mk600 Beam Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk600 Beam Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM200R Drive.prefab")]
-    private static void MenuItem186() {
+    private static void MenuItem187() {
         Debug.Log("Selected item: FM200R Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM200R Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Components/Large Mounted Hangar.prefab")]
-    private static void MenuItem187() {
+    private static void MenuItem188() {
         Debug.Log("Selected item: Large Mounted Hangar");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Large Mounted Hangar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Faction Alliance.asset")]
-    private static void MenuItem188() {
+    private static void MenuItem189() {
         Debug.Log("Selected item: Faction Alliance");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
@@ -1808,88 +2186,115 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk64 Cannon.prefab")]
-    private static void MenuItem189() {
+    private static void MenuItem190() {
         Debug.Log("Selected item: Mk64 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk64 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/E90 'Blanket' Jammer.prefab")]
-    private static void MenuItem190() {
+    private static void MenuItem191() {
         Debug.Log("Selected item: E90 'Blanket' Jammer");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("E90 'Blanket' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/ES22 'Pinard' Electronic Support Module.prefab")]
-    private static void MenuItem191() {
+    private static void MenuItem192() {
         Debug.Log("Selected item: ES22 'Pinard' Electronic Support Module");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("ES22 'Pinard' Electronic Support Module"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Munitions/RBU-15 Boosted Bomb.prefab")]
-    private static void MenuItem192() {
+    private static void MenuItem193() {
         Debug.Log("Selected item: RBU-15 Boosted Bomb");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("RBU-15 Boosted Bomb"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Drives/FM280 'Raider' Drive.prefab")]
-    private static void MenuItem193() {
+    private static void MenuItem194() {
         Debug.Log("Selected item: FM280 'Raider' Drive");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("FM280 'Raider' Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk62 Cannon.prefab")]
-    private static void MenuItem194() {
+    private static void MenuItem195() {
         Debug.Log("Selected item: Mk62 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk62 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk550 Railgun.prefab")]
-    private static void MenuItem195() {
+    private static void MenuItem196() {
         Debug.Log("Selected item: Mk550 Railgun");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk550 Railgun"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk68 Cannon.prefab")]
-    private static void MenuItem196() {
+    private static void MenuItem197() {
         Debug.Log("Selected item: Mk68 Cannon");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk68 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F1/F1/Weapons/Mk95 'Sarissa' PDT.prefab")]
-    private static void MenuItem197() {
+    private static void MenuItem198() {
         Debug.Log("Selected item: Mk95 'Sarissa' PDT");
         if (stockf1 == null)
             stockf1 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f1"));
         GameObject goh = Instantiate(stockf1.LoadAsset<GameObject>("Mk95 'Sarissa' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm HE-HC Shell.asset")]
-    private static void MenuItem198() {
+    private static void MenuItem199() {
         Debug.Log("Selected item: 100mm HE-HC Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -1899,16 +2304,19 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4D1 Decoy Container (Clipper).prefab")]
-    private static void MenuItem199() {
+    private static void MenuItem200() {
         Debug.Log("Selected item: CM-4D1 Decoy Container (Clipper)");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4D1 Decoy Container (Clipper)"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm HE-SH Shell.asset")]
-    private static void MenuItem200() {
+    private static void MenuItem201() {
         Debug.Log("Selected item: 600mm HE-SH Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -1918,7 +2326,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm Bomb Shell.asset")]
-    private static void MenuItem201() {
+    private static void MenuItem202() {
         Debug.Log("Selected item: 600mm Bomb Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -1928,151 +2336,199 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800-R Drive.prefab")]
-    private static void MenuItem202() {
+    private static void MenuItem203() {
         Debug.Log("Selected item: BW800-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("BW800-R Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E30 Illuminator.prefab")]
-    private static void MenuItem203() {
+    private static void MenuItem204() {
         Debug.Log("Selected item: E30 Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("E30 Illuminator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Small Mounted Hangar.prefab")]
-    private static void MenuItem204() {
+    private static void MenuItem205() {
         Debug.Log("Selected item: Small Mounted Hangar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Small Mounted Hangar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500-R Drive.prefab")]
-    private static void MenuItem205() {
+    private static void MenuItem206() {
         Debug.Log("Selected item: BW1500-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("BW1500-R Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/TALS-2 'Talisman' Launcher.prefab")]
-    private static void MenuItem206() {
+    private static void MenuItem207() {
         Debug.Log("Selected item: TALS-2 'Talisman' Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("TALS-2 'Talisman' Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4D2 Decoy Container (Line Ship).prefab")]
-    private static void MenuItem207() {
+    private static void MenuItem208() {
         Debug.Log("Selected item: CM-4D2 Decoy Container (Line Ship)");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4D2 Decoy Container (Line Ship)"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/R400 'Bloodhound' LRT Radar.prefab")]
-    private static void MenuItem208() {
+    private static void MenuItem209() {
         Debug.Log("Selected item: R400 'Bloodhound' LRT Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R400 'Bloodhound' LRT Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T20 Cannon.prefab")]
-    private static void MenuItem209() {
+    private static void MenuItem210() {
         Debug.Log("Selected item: T20 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("T20 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/L50 'Blackjack' Laser Dazzler.prefab")]
-    private static void MenuItem210() {
+    private static void MenuItem211() {
         Debug.Log("Selected item: L50 'Blackjack' Laser Dazzler");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("L50 'Blackjack' Laser Dazzler"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30 'Mattock' Mine.prefab")]
-    private static void MenuItem211() {
+    private static void MenuItem212() {
         Debug.Log("Selected item: M-30 'Mattock' Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("M-30 'Mattock' Mine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-1 'Perch' Rocket.prefab")]
-    private static void MenuItem212() {
+    private static void MenuItem213() {
         Debug.Log("Selected item: R-1 'Perch' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R-1 'Perch' Rocket"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Container Bank Hangar.prefab")]
-    private static void MenuItem213() {
+    private static void MenuItem214() {
         Debug.Log("Selected item: Container Bank Hangar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Bank Hangar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P20 'Bastion' PDT.prefab")]
-    private static void MenuItem214() {
+    private static void MenuItem215() {
         Debug.Log("Selected item: P20 'Bastion' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("P20 'Bastion' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Damage Control Complex.prefab")]
-    private static void MenuItem215() {
+    private static void MenuItem216() {
         Debug.Log("Selected item: Damage Control Complex");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Damage Control Complex"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J75 'Warbler' Jammer.prefab")]
-    private static void MenuItem216() {
+    private static void MenuItem217() {
         Debug.Log("Selected item: J75 'Warbler' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("J75 'Warbler' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Large DC Storage.prefab")]
-    private static void MenuItem217() {
+    private static void MenuItem218() {
         Debug.Log("Selected item: Large DC Storage");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Large DC Storage"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm Flak Shell.asset")]
-    private static void MenuItem218() {
+    private static void MenuItem219() {
         Debug.Log("Selected item: 100mm Flak Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2082,25 +2538,31 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL36 Launcher.prefab")]
-    private static void MenuItem219() {
+    private static void MenuItem220() {
         Debug.Log("Selected item: RL36 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("RL36 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Ithaca Bridgemaster.prefab")]
-    private static void MenuItem220() {
+    private static void MenuItem221() {
         Debug.Log("Selected item: Ithaca Bridgemaster");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Ithaca Bridgemaster"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm AP Shell.asset")]
-    private static void MenuItem221() {
+    private static void MenuItem222() {
         Debug.Log("Selected item: 100mm AP Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2110,34 +2572,43 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C60 Cannon.prefab")]
-    private static void MenuItem222() {
+    private static void MenuItem223() {
         Debug.Log("Selected item: C60 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C60 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4M Mine Container.prefab")]
-    private static void MenuItem223() {
+    private static void MenuItem224() {
         Debug.Log("Selected item: CM-4M Mine Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4M Mine Container"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-3 Launcher.prefab")]
-    private static void MenuItem224() {
+    private static void MenuItem225() {
         Debug.Log("Selected item: MLS-3 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("MLS-3 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Faction Protectorate.asset")]
-    private static void MenuItem225() {
+    private static void MenuItem226() {
         Debug.Log("Selected item: Faction Protectorate");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2147,52 +2618,67 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4R6 Rocket Container.prefab")]
-    private static void MenuItem226() {
+    private static void MenuItem227() {
         Debug.Log("Selected item: CM-4R6 Rocket Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4R6 Rocket Container"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Container Line Ship Refit.prefab")]
-    private static void MenuItem227() {
+    private static void MenuItem228() {
         Debug.Log("Selected item: Container Line Ship Refit");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Line Ship Refit"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J360 'Lyrebird' Jammer.prefab")]
-    private static void MenuItem228() {
+    private static void MenuItem229() {
         Debug.Log("Selected item: J360 'Lyrebird' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("J360 'Lyrebird' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J15 'Bellbird' Jammer.prefab")]
-    private static void MenuItem229() {
+    private static void MenuItem230() {
         Debug.Log("Selected item: J15 'Bellbird' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("J15 'Bellbird' Jammer"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Boosted Reactor.prefab")]
-    private static void MenuItem230() {
+    private static void MenuItem231() {
         Debug.Log("Selected item: Boosted Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Boosted Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/35mm Flechette.asset")]
-    private static void MenuItem231() {
+    private static void MenuItem232() {
         Debug.Log("Selected item: 35mm Flechette");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2202,34 +2688,43 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C56 Cannon.prefab")]
-    private static void MenuItem232() {
+    private static void MenuItem233() {
         Debug.Log("Selected item: C56 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C56 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RF44 'Pinpoint' Radar.prefab")]
-    private static void MenuItem233() {
+    private static void MenuItem234() {
         Debug.Log("Selected item: RF44 'Pinpoint' Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("RF44 'Pinpoint' Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-777 Yard Drive.prefab")]
-    private static void MenuItem234() {
+    private static void MenuItem235() {
         Debug.Log("Selected item: CHI-777 Yard Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CHI-777 Yard Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm HE Shell.asset")]
-    private static void MenuItem235() {
+    private static void MenuItem236() {
         Debug.Log("Selected item: 600mm HE Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2239,7 +2734,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm Grape.asset")]
-    private static void MenuItem236() {
+    private static void MenuItem237() {
         Debug.Log("Selected item: 100mm Grape");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2249,88 +2744,115 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Bulk Clipper.prefab")]
-    private static void MenuItem237() {
+    private static void MenuItem238() {
         Debug.Log("Selected item: Bulk Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Bulk Clipper"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Bomber/OSP Bomber Frame.prefab")]
-    private static void MenuItem238() {
+    private static void MenuItem239() {
         Debug.Log("Selected item: OSP Bomber Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("OSP Bomber Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/EA14 Chaff Decoy.prefab")]
-    private static void MenuItem239() {
+    private static void MenuItem240() {
         Debug.Log("Selected item: EA14 Chaff Decoy");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("EA14 Chaff Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-9100 Long Haul Drive.prefab")]
-    private static void MenuItem240() {
+    private static void MenuItem241() {
         Debug.Log("Selected item: CHI-9100 Long Haul Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CHI-9100 Long Haul Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW2000 Drive.prefab")]
-    private static void MenuItem241() {
+    private static void MenuItem242() {
         Debug.Log("Selected item: BW2000 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("BW2000 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P60 'Grazer' PDT.prefab")]
-    private static void MenuItem242() {
+    private static void MenuItem243() {
         Debug.Log("Selected item: P60 'Grazer' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("P60 'Grazer' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/TE45 Mass Driver.prefab")]
-    private static void MenuItem243() {
+    private static void MenuItem244() {
         Debug.Log("Selected item: TE45 Mass Driver");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("TE45 Mass Driver"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C53 Cannon.prefab")]
-    private static void MenuItem244() {
+    private static void MenuItem245() {
         Debug.Log("Selected item: C53 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C53 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P11 'Pavise' PDT.prefab")]
-    private static void MenuItem245() {
+    private static void MenuItem246() {
         Debug.Log("Selected item: P11 'Pavise' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("P11 'Pavise' PDT"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/500mm Fracturing Block.asset")]
-    private static void MenuItem246() {
+    private static void MenuItem247() {
         Debug.Log("Selected item: 500mm Fracturing Block");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2340,34 +2862,43 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C81 Plasma Cannon.prefab")]
-    private static void MenuItem247() {
+    private static void MenuItem248() {
         Debug.Log("Selected item: C81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C81 Plasma Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500 Drive.prefab")]
-    private static void MenuItem248() {
+    private static void MenuItem249() {
         Debug.Log("Selected item: BW1500 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("BW1500 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL18 Launcher.prefab")]
-    private static void MenuItem249() {
+    private static void MenuItem250() {
         Debug.Log("Selected item: RL18 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("RL18 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm HE Shell.asset")]
-    private static void MenuItem250() {
+    private static void MenuItem251() {
         Debug.Log("Selected item: 100mm HE Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2377,205 +2908,271 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Shuttle Clipper.prefab")]
-    private static void MenuItem251() {
+    private static void MenuItem252() {
         Debug.Log("Selected item: Shuttle Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Shuttle Clipper"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Citadel Magazine.prefab")]
-    private static void MenuItem252() {
+    private static void MenuItem253() {
         Debug.Log("Selected item: Citadel Magazine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Citadel Magazine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Tug Clipper.prefab")]
-    private static void MenuItem253() {
+    private static void MenuItem254() {
         Debug.Log("Selected item: Tug Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Tug Clipper"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-3 'Spearfish' Rocket.prefab")]
-    private static void MenuItem254() {
+    private static void MenuItem255() {
         Debug.Log("Selected item: R-3 'Spearfish' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R-3 'Spearfish' Rocket"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Interceptor/OSP Interceptor Frame.prefab")]
-    private static void MenuItem255() {
+    private static void MenuItem256() {
         Debug.Log("Selected item: OSP Interceptor Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("OSP Interceptor Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E20 'Lighthouse' Illuminator.prefab")]
-    private static void MenuItem256() {
+    private static void MenuItem257() {
         Debug.Log("Selected item: E20 'Lighthouse' Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("E20 'Lighthouse' Illuminator"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4R12 Rocket Container.prefab")]
-    private static void MenuItem257() {
+    private static void MenuItem258() {
         Debug.Log("Selected item: CM-4R12 Rocket Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4R12 Rocket Container"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Bulker Line Ship.prefab")]
-    private static void MenuItem258() {
+    private static void MenuItem259() {
         Debug.Log("Selected item: Bulker Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Bulker Line Ship"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-50 'Auger' Sprint Mine.prefab")]
-    private static void MenuItem259() {
+    private static void MenuItem260() {
         Debug.Log("Selected item: M-50 'Auger' Sprint Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("M-50 'Auger' Sprint Mine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Civilian Reactor.prefab")]
-    private static void MenuItem260() {
+    private static void MenuItem261() {
         Debug.Log("Selected item: Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Civilian Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Ocello Cruiser.prefab")]
-    private static void MenuItem261() {
+    private static void MenuItem262() {
         Debug.Log("Selected item: Ocello Cruiser");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Ocello Cruiser"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/Sundrive Racing Pro.prefab")]
-    private static void MenuItem262() {
+    private static void MenuItem263() {
         Debug.Log("Selected item: Sundrive Racing Pro");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Sundrive Racing Pro"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Scout/OSP Scout Frame.prefab")]
-    private static void MenuItem263() {
+    private static void MenuItem264() {
         Debug.Log("Selected item: OSP Scout Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("OSP Scout Frame"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T81 Plasma Cannon.prefab")]
-    private static void MenuItem264() {
+    private static void MenuItem265() {
         Debug.Log("Selected item: T81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("T81 Plasma Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Ore Carrier.prefab")]
-    private static void MenuItem265() {
+    private static void MenuItem266() {
         Debug.Log("Selected item: Ore Carrier");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Ore Carrier"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C90 Cannon.prefab")]
-    private static void MenuItem266() {
+    private static void MenuItem267() {
         Debug.Log("Selected item: C90 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C90 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Light Civilian Reactor.prefab")]
-    private static void MenuItem267() {
+    private static void MenuItem268() {
         Debug.Log("Selected item: Light Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Light Civilian Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C65 Cannon.prefab")]
-    private static void MenuItem268() {
+    private static void MenuItem269() {
         Debug.Log("Selected item: C65 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C65 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C30 Cannon.prefab")]
-    private static void MenuItem269() {
+    private static void MenuItem270() {
         Debug.Log("Selected item: C30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C30 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Jury-Rigged Reactor.prefab")]
-    private static void MenuItem270() {
+    private static void MenuItem271() {
         Debug.Log("Selected item: Jury-Rigged Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Jury-Rigged Reactor"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Bulwark Huntress.prefab")]
-    private static void MenuItem271() {
+    private static void MenuItem272() {
         Debug.Log("Selected item: Bulwark Huntress");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Bulwark Huntress"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30-N 'Mattock' Cooperative Mine.prefab")]
-    private static void MenuItem272() {
+    private static void MenuItem273() {
         Debug.Log("Selected item: M-30-N 'Mattock' Cooperative Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("M-30-N 'Mattock' Cooperative Mine"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/400mm Plasma Ampoule.asset")]
-    private static void MenuItem273() {
+    private static void MenuItem274() {
         Debug.Log("Selected item: 400mm Plasma Ampoule");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2585,124 +3182,163 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-S-4 Body.prefab")]
-    private static void MenuItem274() {
+    private static void MenuItem275() {
         Debug.Log("Selected item: CM-S-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-S-4 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Stack Launcher.prefab")]
-    private static void MenuItem275() {
+    private static void MenuItem276() {
         Debug.Log("Selected item: Container Stack Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Stack Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-4 Body.prefab")]
-    private static void MenuItem276() {
+    private static void MenuItem277() {
         Debug.Log("Selected item: CM-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CM-4 Body"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Container Datalink Array.prefab")]
-    private static void MenuItem277() {
+    private static void MenuItem278() {
         Debug.Log("Selected item: Container Datalink Array");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Datalink Array"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-7700 Drive.prefab")]
-    private static void MenuItem278() {
+    private static void MenuItem279() {
         Debug.Log("Selected item: CHI-7700 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("CHI-7700 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/ML-9 Mine Launcher.prefab")]
-    private static void MenuItem279() {
+    private static void MenuItem280() {
         Debug.Log("Selected item: ML-9 Mine Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("ML-9 Mine Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T30 Cannon.prefab")]
-    private static void MenuItem280() {
+    private static void MenuItem281() {
         Debug.Log("Selected item: T30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("T30 Cannon"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800 Drive.prefab")]
-    private static void MenuItem281() {
+    private static void MenuItem282() {
         Debug.Log("Selected item: BW800 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("BW800 Drive"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-2 Launcher.prefab")]
-    private static void MenuItem282() {
+    private static void MenuItem283() {
         Debug.Log("Selected item: MLS-2 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("MLS-2 Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-2 'Piranha' Rocket.prefab")]
-    private static void MenuItem283() {
+    private static void MenuItem284() {
         Debug.Log("Selected item: R-2 'Piranha' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R-2 'Piranha' Rocket"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/R550 Early Warning Radar.prefab")]
-    private static void MenuItem284() {
+    private static void MenuItem285() {
         Debug.Log("Selected item: R550 Early Warning Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R550 Early Warning Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/SALS-2 'Ward' Launcher.prefab")]
-    private static void MenuItem285() {
+    private static void MenuItem286() {
         Debug.Log("Selected item: SALS-2 'Ward' Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("SALS-2 'Ward' Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Bank Launcher.prefab")]
-    private static void MenuItem286() {
+    private static void MenuItem287() {
         Debug.Log("Selected item: Container Bank Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Bank Launcher"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/250mm HE-HC Shell.asset")]
-    private static void MenuItem287() {
+    private static void MenuItem288() {
         Debug.Log("Selected item: 250mm HE-HC Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2712,11 +3348,14 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Container Line Ship.prefab")]
-    private static void MenuItem288() {
+    private static void MenuItem289() {
         Debug.Log("Selected item: Container Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("Container Line Ship"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 

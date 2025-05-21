@@ -1,145 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1085878466416414127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7920179409257305366}
-  - component: {fileID: 8801607291209664316}
-  - component: {fileID: 1751033560256972195}
-  - component: {fileID: 5262679593349783459}
-  - component: {fileID: 6152941696484209282}
-  m_Layer: 0
-  m_Name: Missile Schematic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7920179409257305366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085878466416414127}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2634063459292316615}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8801607291209664316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085878466416414127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1541183542, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sockets:
-  - {fileID: 1751033560256972195}
-  - {fileID: 5262679593349783459}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &1751033560256972195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085878466416414127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -340499808, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _button: {fileID: 6152941696484209282}
-  _fillColor: {fileID: 0}
-  _icon: {fileID: 0}
-  _selectMarkerAttachTransform: {fileID: 0}
---- !u!114 &5262679593349783459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085878466416414127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -340499808, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _fillColor: {fileID: 0}
-  _icon: {fileID: 0}
-  _selectMarkerAttachTransform: {fileID: 0}
---- !u!114 &6152941696484209282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085878466416414127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751033560256972195}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1987832803705827276
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +20,7 @@ GameObject:
   - component: {fileID: 5106288372465422262}
   - component: {fileID: 5405647335563646094}
   m_Layer: 19
-  m_Name: SGT-4 Body
+  m_Name: VGT-4 Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +43,6 @@ Transform:
   - {fileID: 4762752446888833826}
   - {fileID: 4762752445829077797}
   - {fileID: 4762752446715718701}
-  - {fileID: 7920179409257305366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -212,7 +71,7 @@ MonoBehaviour:
   _pointCost: 1
   _pointDivision: 1
   _storageVolume: 30
-  _munitionName: SGT-400 Flashbang
+  _munitionName: VGT-400 Flashbang
   _descriptionText: Torpedos focus on dealing incredible damage at short ranges,
     and the SGT-3 is no exception.  They are usually launched inside a target's point
     defense range, and thus must dedicate significant weight to protection in order
@@ -226,7 +85,13 @@ MonoBehaviour:
   _applyImpulseOnImpact: 0
   _impulseMagnitude: 0
   _effectsGroups:
-    _surfaceGroups: []
+    _surfaceGroups:
+    - _surfaceType: 
+      _ricochetEffects: []
+      _impactEffects: []
+      _penetratingEffects: []
+      _penetrationExitEffects: []
+      _destructionEffects: []
   _saveKey: 
   _selectVolume: {fileID: 4762752446888833827}
   _overrideMarker: 0
@@ -237,11 +102,11 @@ MonoBehaviour:
   _visualModel: {fileID: 0}
   _size: 3
   _missileType: 1
-  _missileClass: Torpedo
+  _missileClass: Missile
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
   _overriddenThreatSize: 4
-  _missileIcon: {fileID: 0}
+  _missileIcon: {fileID: 21300000, guid: 8a1587cf2e7428f40bf7f136f0671c9e, type: 2}
   _hotLaunchReleaseDistance: 1.5
   _programmingTimeRequired: 5
   _rackMountingRadius: 0.0643
@@ -251,14 +116,14 @@ MonoBehaviour:
   _rackMeshMaterialSource: {fileID: 4762752447295675533}
   _skinSelector: {fileID: 0}
   _showSalvoInList: 1
-  _designationBase: SGT-4
-  _missileDesignation: SGT-400
+  _designationBase: VGT-4
+  _missileDesignation: VGT-400
   _missileNickname: Flashbang
   _bodySubtitle: Size 4 Torpedo
   _bodyFunctionalDescription: heavy anti-ship torpedo
   _allowColorSelection: 1
-  _baseColor: {r: 1, g: 1, b: 1, a: 1}
-  _stripeColor: {r: 1, g: 1, b: 1, a: 1}
+  _baseColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
+  _stripeColor: {r: 0.32812956, g: 0.22694907, b: 0.9433962, a: 1}
   _socketWeight: 3
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
@@ -304,7 +169,7 @@ MonoBehaviour:
     _missile: {fileID: 0}
     _currentSize: 0
   - SocketType: 1
-    Fixed: 0
+    Fixed: 1
     Resizable: 1
     MinSize: 4
     MaxSize: 18
@@ -329,7 +194,7 @@ MonoBehaviour:
     StageIgnitionDelay: 0
     EngineSocketIndex: 4
     EngineComp: {fileID: 0}
-  _schematicPrefab: {fileID: 0}
+  _schematicPrefab: {fileID: 529990580293898102, guid: de138b9f6271ca945885216e8f8a5430, type: 3}
   _defaultEffectSet:
     _surfaceGroups:
     - _surfaceType: 
@@ -1002,7 +867,7 @@ VisualEffect:
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
-  m_ResetSeedOnPlay: 1
+  m_ResetSeedOnPlay: 0
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
@@ -1109,15 +974,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762752447515537893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4762752447295675534}
   - {fileID: 405793843529351616}
   m_Father: {fileID: 2634063459292316615}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!136 &4762752447515537891
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1131,7 +996,7 @@ CapsuleCollider:
   m_Radius: 0.09
   m_Height: 1.087418
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.003705025}
 --- !u!205 &4762752447515537888
 LODGroup:
   m_ObjectHideFlags: 0
