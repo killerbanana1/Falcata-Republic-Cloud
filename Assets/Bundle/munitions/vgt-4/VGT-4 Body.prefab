@@ -78,7 +78,7 @@ MonoBehaviour:
     to minimize their chance of being immediately destroyed.  This makes torpedos
     extremely heavy and slow.
   _optionalFlavorText: 
-  _screenshot: {fileID: 0}
+  _screenshot: {fileID: 21300000, guid: 7a6be1431b61a934fa7581aa11139f5f, type: 2}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   _missileClass: Missile
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
-  _overriddenThreatSize: 4
+  _overriddenThreatSize: 3
   _missileIcon: {fileID: 21300000, guid: 8a1587cf2e7428f40bf7f136f0671c9e, type: 2}
   _hotLaunchReleaseDistance: 1.5
   _programmingTimeRequired: 5
@@ -161,7 +161,7 @@ MonoBehaviour:
   - SocketType: 10
     Fixed: 0
     Resizable: 1
-    MinSize: 1
+    MinSize: 2
     MaxSize: 18
     DefaultSize: 9
     ResizeLinkedTo: 4
@@ -799,8 +799,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1109,8 +1108,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -100,7 +100,7 @@
   
   <MissileBodies>
 	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/-->
-	<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
+	<!--<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/-->
   </MissileBodies>
 
   <MissileComponents>
