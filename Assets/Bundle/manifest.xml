@@ -31,8 +31,8 @@
 	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
 	<Entry Name="BAE-39 'Glance' PDT" Address="weapons/BAE-39 'Glance' PDT.prefab"/>
-	<Entry Name="BAE-47 'Estoc' PDT" Address="weapons/BAE-47 'Estoc' PDT.prefab"/>
-	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>
+	<!--<Entry Name="BAE-47 'Estoc' PDT" Address="weapons/BAE-47 'Estoc' PDT.prefab"/>
+	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>-->
 
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>

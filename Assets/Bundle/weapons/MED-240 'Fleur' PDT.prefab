@@ -803,7 +803,7 @@ MonoBehaviour:
   - {fileID: 8916817677442311379}
   _optimalTargetWeight: 1
   _allowGrouping: 0
-  _groupingName: 40mm Flak
+  _groupingName: 
   _role: 2
   _ewType: 0
   _utilityType: 0

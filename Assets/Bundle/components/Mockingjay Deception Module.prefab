@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: -477184845, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: 5QIKyLeZZ0-Yz2N7S2QkHs
+  _partKey: 5QIKyLeZZ0-Yz2N7S2QkH
   _maxHealth: 100
   _functioningThreshold: 10
   _damageThreshold: 15
