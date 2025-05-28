@@ -21,11 +21,11 @@ MonoBehaviour:
   _description: The extended anti-radiation seeker is a long-range enhancement of
     the standard anti-radiation seeker, designed to home in on radiated energy sources
     across the vast expanse of space. However, it is incapable of discriminating
-    signal types or being used as a validator.
+    signal types.
   _validatorCost: 4
   _validatorOnly: 0
   _tooCloseDistance: 100
-  _validatorMemoryLength: 30
+  _validatorMemoryLength: 0
   _limitedAspect: 1
   _mode: 0
   _rejectUnvalidated: 0
@@ -52,6 +52,6 @@ MonoBehaviour:
   _overrideSignatureAbbrev: 
   _targetTypeCostMultipliers:
   - 1
-  - 1
-  - 1
+  - 50
+  - 100
   _targetType: 0

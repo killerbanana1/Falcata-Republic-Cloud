@@ -366,6 +366,10 @@ PrefabInstance:
       propertyPath: _interiorGroup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1089598322578968396, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
+      propertyPath: m_Name
+      value: Module 8,9
+      objectReference: {fileID: 0}
     - target: {fileID: 1357093984543738077, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
       propertyPath: _detailGroup
       value: 
@@ -373,6 +377,14 @@ PrefabInstance:
     - target: {fileID: 1357093984543738077, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
       propertyPath: _interiorGroup
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357093984543738077, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
+      propertyPath: _partKeys.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357093984543738077, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
+      propertyPath: _partKeys.Array.data[1]
+      value: Module9
       objectReference: {fileID: 0}
     - target: {fileID: 1724430715895503701, guid: 55cec9c3349d51c4ab5b899c0514f0da, type: 3}
       propertyPath: _detailGroup
@@ -2933,7 +2945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8132097565934283965, guid: dc3a923fb6c87494898d0584c440c6db, type: 3}
       propertyPath: m_Name
-      value: Module 8
+      value: Module 8,9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc3a923fb6c87494898d0584c440c6db, type: 3}

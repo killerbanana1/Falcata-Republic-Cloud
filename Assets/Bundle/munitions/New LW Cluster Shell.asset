@@ -16,7 +16,7 @@ MonoBehaviour:
   _pointDivision: 1
   _storageVolume: 1
   _factionKey: 
-  _flavorText: 
+  _flavorText: DEPREC
   _screenshot: {fileID: 0}
   _tags:
     Class: 

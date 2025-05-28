@@ -1219,7 +1219,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 800
+    _amount: 1600
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs:

@@ -87,13 +87,13 @@ MonoBehaviour:
     _permanent: 0
   - _statName: discreteweapon-reload:ETC
     _literal: 0
-    _modifier: -0.2
+    _modifier: -0.15
     _permanent: 0
   _resourceDemandPriority: 0
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 650
+    _amount: 250
     _perUnit: 0
     _onlyWhenOperating: 0
   _uniqueDebuffs: []

@@ -16,8 +16,11 @@ MonoBehaviour:
   _pointDivision: 1000
   _storageVolume: 0.005
   _factionKey: 
-  _flavorText: A 30mm high-velocity hardened metal slug designed for use against
+  _flavorText: 'A 30mm high-velocity hardened metal slug designed for use against
     missiles, spacecraft, and lightly armored warships.
+
+
+    DEPREC'
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
