@@ -887,7 +887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166387745100361330}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.025, z: 0}
   m_LocalScale: {x: 27.5, y: 27.5, z: 27.5}
   m_Children: []
   m_Father: {fileID: 6094881352134248222}
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   _baseAccuracy: 0.01
   _castType: 0
   _castWidth: 0.1
-  _raycastRange: 250
+  _raycastRange: 150
   _beamSpeed: 3.4028235e+38
   _effects: {fileID: 0}
   _spherecastComponents: 0
@@ -1102,7 +1102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023805775210973365}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.11, y: 0, z: 0}
+  m_LocalPosition: {x: 0.11, y: 0.025, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 4663442445507538010}
@@ -1199,7 +1199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2437984888221708015}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.025, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 5183662369882943392}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 4147281053750504618}
   - component: {fileID: 1212823652}
   m_Layer: 0
-  m_Name: BIS-39 'Glance' PDT
+  m_Name: BAE-39 'Glance' PDT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1351,8 +1351,23 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Gas Laser
-  _longDescription: GAS MONKEY.
-  _flavorText: THAT FUNKY MONKEY.
+  _longDescription: "An old dog in the Falcatan Navy's arsenal, the BAE-39 'Glance'
+    employs an increasingly uncommon active medium that gives the PDT its signature
+    3 round burst. It's affordability and compact size make it ideal for low investment
+    and on smaller ships, providing a cheap way to stave off Alliance hybrids. However,
+    the system isn't without its quirks. When deployed in numbers, Glance PDTs may
+    inadvertently overkill targets, as multiple units often converge fire on the
+    same missile\u2014leading to inefficient shot usage."
+  _flavorText: "The Glance? That things been around a while now, but recently it's
+    been a troublesome piece of kit. It does its job well, as long as you've spit-shinned
+    the mirrors. When it was first being built it had to charge up before firing,
+    and would discharge all its built up energy in one single shot. Although that
+    amount of energy fluctuation wore it faster than a derby cars tires in a drag
+    race, so it was shifted over to the current model. Much better for heat dispersion
+    and practically removes the charge time. As of late though, the Naval Office
+    has been trying to juice this thing a bit harder. We're practically overclocking
+    a museum piece here, it's no surprise it's been finicky. At least the repairs
+    for it are more of an annoyance than anything else. \n\nS. Dice, CWO\""
   _category: Weapons - Point Defense
   _costBreakdownClass: 3
   _compoundingCost: 0
@@ -1754,7 +1769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7216946728515392232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.285, z: -0.02}
+  m_LocalPosition: {x: 0, y: 0.29, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7461569529523524617}
@@ -1778,7 +1793,7 @@ MonoBehaviour:
   _orderable: 0
   _allowFastAcquisition: 1
   _sigType: 1
-  _maxRange: 300
+  _maxRange: 200
   _fov: 20
   _noiseFiltering: 0
   _deviationCurve:

@@ -30,8 +30,8 @@
 	<!-- Point Defense -->
 	<Entry Name="MED-320 'Guardian' PDT" Address="weapons/MED-320 'Guardian' PDT.prefab"/>
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
-	<Entry Name="BIS-39 'Glance' PDT" Address="weapons/BIS-39 'Glance' PDT.prefab"/>
-	<Entry Name="BIS-47 'Estoc' PDT" Address="weapons/BIS-47 'Estoc' PDT.prefab"/>
+	<Entry Name="BAE-39 'Glance' PDT" Address="weapons/BAE-39 'Glance' PDT.prefab"/>
+	<Entry Name="BAE-47 'Estoc' PDT" Address="weapons/BAE-47 'Estoc' PDT.prefab"/>
 	<Entry Name="WY-175 'Merit' ETC PDT" Address="weapons/WY-175 'Merit' ETC PDT.prefab"/>
 
 	<!-- Missile Launchers -->
