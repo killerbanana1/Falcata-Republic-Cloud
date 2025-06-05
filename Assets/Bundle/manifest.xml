@@ -66,12 +66,12 @@
 	<Entry Name="FM200 Drive" Address="components/drives/FM200 Drive.prefab"/>
 	<Entry Name="FM200R Drive" Address="components/drives/FM200R Drive.prefab"/>
 	<Entry Name="FM250 'Hussar' Drive" Address="components/drives/FM250 'Hussar' Drive.prefab"/>
-	<Entry Name="FM270 'Cuirassier' Drive" Address="components/drives/FM270 'Hummingbird' Drive.prefab"/>
+	<Entry Name="FM270 'Cuirassier' Drive" Address="components/drives/FM270 'Cuirassier' Drive.prefab"/>
 	<Entry Name="FM290 'Voltigeur' Drive" Address="components/drives/FM290 'Voltigeur' Drive.prefab"/>
 	<Entry Name="FM400 Drive" Address="components/drives/FM400 Drive.prefab"/>
 	<Entry Name="FM400R Drive" Address="components/drives/FM400R Drive.prefab"/>
 	<Entry Name="FM460 'Cavalier' Drive" Address="components/drives/FM460 'Cavalier' Drive.prefab"/>
-	<Entry Name="FM470 'Cuirassier' Drive" Address="components/drives/FM470 'Hummingbird' Drive.prefab"/>
+	<Entry Name="FM470 'Cuirassier' Drive" Address="components/drives/FM470 'Cuirassier' Drive.prefab"/>
 	<Entry Name="FM600 Drive" Address="components/drives/FM600 Drive.prefab"/>
 	<Entry Name="FM660 'Cavalier' Drive" Address="components/drives/FM660 'Cavalier' Drive.prefab"/>
 	<Entry Name="FM690 'Voltigeur' Drive" Address="components/drives/FM690 'Voltigeur' Drive.prefab"/>

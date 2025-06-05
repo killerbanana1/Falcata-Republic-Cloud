@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: Mount3
   _size: {x: 3, y: 4, z: 3}
-  _interiorOverhangSpace: 63
+  _interiorOverhangSpace: 62
   _attachPoint: {x: 0, y: 4, z: 0}
   _type: 0
   _shortName: MT3
@@ -4116,7 +4116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600759344}
-  m_LocalRotation: {x: -0.00000008940697, y: 0.000000091111396, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.95, y: -0.21199998, z: 0.283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4150,7 +4150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: Mount4
   _size: {x: 3, y: 4, z: 3}
-  _interiorOverhangSpace: 63
+  _interiorOverhangSpace: 61
   _attachPoint: {x: 0, y: 4, z: 0}
   _type: 0
   _shortName: MT4
