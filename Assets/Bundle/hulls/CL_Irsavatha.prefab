@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41817067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.725, z: -18.25}
+  m_LocalPosition: {x: 0, y: -0.725, z: -19.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
@@ -7346,7 +7346,7 @@ MonoBehaviour:
   _crewComplement: 95
   _crewVulnerability: 0.35
   _interiorDensityArmorEquivalent: 1
-  _componentDR: 0.3
+  _componentDR: 0.4
   _visionDistance: 5
   _identityWorkRequired: 200
   BaseModifiers:
@@ -12707,7 +12707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8737541162359005171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.725, z: -19.25}
+  m_LocalPosition: {x: 0, y: 0.15, z: -19.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}

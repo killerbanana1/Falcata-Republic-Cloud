@@ -60,7 +60,8 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Basic drive for medium ships.
+  _longDescription: The standard drive for medium-weight ships. Does the job well,
+    not much more to say.
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -77,6 +78,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided:

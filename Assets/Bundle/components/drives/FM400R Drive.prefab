@@ -60,7 +60,9 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Basic reinforced drive for medium ships
+  _longDescription: "A reinforced version of the FM400, it\u2019s exactly what it
+    sounds like. These are fitted with classified composite materials in the reactor
+    core that reduce the likelihood of any critical events."
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8
@@ -77,6 +79,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided:

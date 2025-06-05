@@ -60,10 +60,11 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: A high-power drive retrofit designed for assault operations.
-    Significantly increases the powerband of the ship without neglecting control
-    authority to close the gap without limiting firing arcs. Reduces a ship's overall
-    acceleration.
+  _longDescription: "The FM250 \u2018Hussar\u2019 is a commonly sought after modification
+    of the standard FM200, given it services the desires of many a hotshot Lieutenant
+    Commander; that being more speed. It provides a hefty boost alright, but like
+    all things, it comes at a cost. The FM250 might not be nimble\u2014but it's undoubtedly
+    relentless."
   _flavorText: "Ah, these are a joy. I say that knowing I\u2019m not the poor bastard
     who\u2019s stuck cleanin\u2019 out the variable nozzles, though the EVA specialists
     should know better than to \u2018judge a book by its cover\u2019. That said I
@@ -92,6 +93,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-maxspeed
     _literal: 0

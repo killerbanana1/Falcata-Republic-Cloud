@@ -60,9 +60,18 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: 'Long term speed drive for medium ships. Reroutes some power
-    generation to the engines. '
-  _flavorText: 
+  _longDescription: "The \u2018Cavalier\u2019 series of drives were built for modern
+    fleet warfare\u2014where positioning is power, and the first ship to the battlespace
+    writes the terms of engagement. Whether you're closing the distance for a broadsides
+    engagement or repositioning ahead of a flanking maneuver, the Cavalier grants
+    capital ships the strategic mobility associated with lighter vessels."
+  _flavorText: "There\u2019s a kind of respect that comes from watching 10,000 tons
+    of warship move like it\u2019s got somewhere to be. You don\u2019t out-maneuver
+    your enemies with a drive like this. You outpace them. You out-think them. For
+    being exactly where the enemy didn\u2019t want you to be. Speed is the most important
+    factor in determining how an engagement will play out, and the Cavalier provides
+    a decisive leg up that you\u2019d be foolish not to take advantage of.\r\n\n-
+    J. Trenero, ADM\r"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0
@@ -78,6 +87,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-maxspeed
     _literal: 0

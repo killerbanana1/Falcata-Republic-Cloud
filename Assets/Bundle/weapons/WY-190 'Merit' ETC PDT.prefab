@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6657707130032700841}
   - component: {fileID: 48471545366811941}
   m_Layer: 0
-  m_Name: WY-175 'Merit' ETC PDT
+  m_Name: WY-190 'Merit' ETC PDT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   _allowAmmoSelection: 0
   _compatibleAmmoTags:
   - Class: Ballistic/Chemical/Timed
-    Subclass: 75mm
+    Subclass: 90mm
   _detailType: Ballistic PDT
   _leadTargets: 1
   _leadIterations: 10

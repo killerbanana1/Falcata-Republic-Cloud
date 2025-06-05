@@ -60,8 +60,19 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Highly effective turn drive for medium ships.
-  _flavorText: 
+  _longDescription: "The FM270 and FM470 \u2018Cuirassier\u2019 series of drives
+    is all about maximizing control. They prioritize maneuverability and gain a dash
+    of lateral thrust at the cost of speed. It\u2019s rapid response time and exceptional
+    turning rate make it ideal for close-quarters engagements. The extra room in
+    the housing on this variant allows it to focus even harder on what its\u2019
+    good at."
+  _flavorText: "This beauty is for those who dare to favor finesse over the current
+    hullabaloo over speed at the naval office. Once the shells start flying, your
+    fancy warships kitted for 50m/s+ on Flank will be little more than a hunk of
+    junk if it can\u2019t get the nose around. The Cuirassiers do just that, providing
+    control in an environment where milliseconds and micro-adjustments are the difference
+    between leaving the battlespace as victor or in a lifeboat. Honestly, to me it\u2019s
+    a no-brainer.\r\n\n- M. Weaver, CMC"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0
@@ -77,6 +88,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-flankdamageprob
     _literal: 0

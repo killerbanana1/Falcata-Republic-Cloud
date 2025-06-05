@@ -60,9 +60,11 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: An under-tuned drive commonly found on nimble gunboats. re-specced
-    for acceleration, this drive sacrifices top speed to provide impressive translational
-    acceleration while providing a stable platform.
+  _longDescription: An over-tuned drive commonly found on the most nimble of lighter
+    assets. Re-specced for acceleration, this drive sacrifices top speed to provide
+    impressive acceleration while maintaining solid characteristics everywhere else.
+    Along short distances, a Voltigeur drive can outpace even a Hussar due to its
+    excellent acceleration.
   _flavorText: "The more productive offshoot of the dragoon fleetwide upgrade program,
     the original goal aimed right up at reducing the vulnerability of large hulls
     against early wake homers using ionization reduction, and drive control techniques.
@@ -93,6 +95,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-maxspeed
     _literal: 0

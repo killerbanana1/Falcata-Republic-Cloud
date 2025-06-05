@@ -62,7 +62,7 @@ MonoBehaviour:
   _shortDescription: Fusion Drive
   _longDescription: 'This small-sized drive system provides power to the main engines
     of smaller warships, while also providing a decent amount of reactor power. With
-    an even balance of power and durability, the []200 can fit all manner of warships,
+    an even balance of power and durability, the FM200 can fit all manner of warships,
     and even provide backup drives to larger warships. '
   _flavorText: "A mainstay of Rhiso\u2019s shipwrights, these buckets had to square
     an extra serial number stamped on \u2018em for how many \u2018200 series they\u2019ve
@@ -89,6 +89,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided:

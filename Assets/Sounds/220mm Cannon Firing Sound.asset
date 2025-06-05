@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2127902120, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 300mm Cannon Firing Sound
+  m_Name: 220mm Cannon Firing Sound
   m_EditorClassIdentifier: 
   _loop: 0
   _priority: 128
-  _volume: 500
-  _maxFalloffDistance: 150
+  _volume: 2
+  _maxFalloffDistance: 100
   _doppler: 0
   _rolloffMode: 0
   _vacuumEffect: 1
   _clips:
-  - {fileID: 8300000, guid: e293d2d78e67ed646af3ce85c83ea1c0, type: 3}
-  _randomizePitch: 0
+  - {fileID: 8300000, guid: 0e13bc9173290384eb59f1a8cb145a12, type: 3}
+  - {fileID: 8300000, guid: a09bd65b6d1a221419dd23e76a005ab7, type: 3}
+  - {fileID: 8300000, guid: 32ee92bb3f4c776459b3f0370b3e0593, type: 3}
+  - {fileID: 8300000, guid: 667c4a1f620cb094c84acf7faac5ac0b, type: 3}
+  - {fileID: 8300000, guid: 55f14e5826067034bb991c3e84249df3, type: 3}
+  _randomizePitch: 1
   _pitchVariationEnvelope: 0.1

@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 5681126308224027854}
   - component: {fileID: 5681126308224027855}
   m_Layer: 0
-  m_Name: Muzzle 1
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5681126308224027853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.001, z: 1.455}
+  m_LocalPosition: {x: 0, y: 0, z: 1.425}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5681126310087154591}
@@ -509,11 +509,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.14
+  _baseAccuracy: 0.25
   _flash: {fileID: 5681126308224027854}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
-  _fireSound: {fileID: 11400000, guid: 0960bca7ce8a387459e291b7228defbd, type: 2}
+  _fireSound: {fileID: 11400000, guid: 81ddf2a1daf567141bf1de635686d26d, type: 2}
   _fireWithReload: {fileID: 0}
   _glower: {fileID: 5681126310087154590}
 --- !u!2083052967 &5681126308224027854
@@ -748,7 +748,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 250
   - 500
-  - 720
+  - 750
   _randomOffsetSquish: 1
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0

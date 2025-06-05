@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2537205064291719375}
-  - component: {fileID: 8250609883204484861}
   - component: {fileID: 8513823372058806262}
   - component: {fileID: -5355687820798452052}
   - component: {fileID: 293864566692877783}
@@ -20,7 +19,7 @@ GameObject:
   - component: {fileID: 4638538033476575396}
   - component: {fileID: -511312039907717837}
   m_Layer: 0
-  m_Name: RF99 'Quintain' Radar
+  m_Name: LRJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,99 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8250609883204484861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2917811650572468853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1458164330, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _partKey: 471QXOhHO0ezVrV14RNNoL
-  _maxHealth: 70
-  _functioningThreshold: 10
-  _damageThreshold: 10
-  _reinforced: 0
-  _bindTag: 
-  _dcPriority: 10
-  _casualtyClass: 0
-  _dcVoiceDisabledOnly: 0
-  _disabledParticles: {fileID: 0}
-  _saveKey: 
-  _modId: 0
-  _shortUIName: RF99
-  _smallImage: {fileID: 0}
-  _largeImage: {fileID: 0}
-  _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: Fire Control Radar
-  _longDescription: 'The RF101 is a high-power turreted fire control system that
-    allows the equipped warship to lock onto tracks, providing extreme accuracy for
-    weapons. Highly effective with precision and command-guided weapons.
-
-
-    The
-    RF101 cannot lock onto targets obscured by the host warship''s hull or targets
-    outside of its field of view.'
-  _flavorText: 
-  _category: Sensors
-  _costBreakdownClass: 4
-  _compoundingCost: 0
-  _compoundingCostClass: 
-  _firstInstanceFree: 0
-  _compoundingMultiplier: 1
-  _pointCost: 25
-  _type: 0
-  _size: {x: 2, y: 1, z: 2}
-  _interiorOverhang: 0
-  _removeSocketCap: 0
-  _mass: 2
-  _bindToTag: 
-  _rotateToFit: 0
-  _canTile: 0
-  _consistentCostForTiled: 0
-  Modifiers: []
-  _resourceDemandPriority: 10
-  ResourcesProvided: []
-  ResourcesRequired:
-  - _resourceName: Power
-    _amount: 250
-    _perUnit: 0
-    _onlyWhenOperating: 1
-  _uniqueDebuffs: []
-  _rareDebuffChance: 0.05
-  _rareDebuffSubtype: 
-  _debuffProbability:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0.25
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0.5
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _turretControl: {fileID: 8513823372058806262}
-  _traverseRate: 120
-  _elevationRate: 120
-  _sensorPanel: {fileID: 7727446334210578126}
 --- !u!114 &8513823372058806262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 1330125532, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainComponent: {fileID: 8250609883204484861}
+  _mainComponent: {fileID: 0}
   _orderable: 1
   _allowFastAcquisition: 0
   _sigType: 1

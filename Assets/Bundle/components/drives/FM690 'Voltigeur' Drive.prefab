@@ -60,7 +60,11 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
-  _longDescription: Highly effective linear thrust mobility drive for capital ships.
+  _longDescription: "The FM690 'Voltigeur\u2019 is a real treat to behold when fitted
+    to your own warship, and a nightmare for everybody else. This isn\u2019t a drive
+    for pursuit or retreat. It\u2019s a drive for dominance\u2014for anchoring a
+    battlefield, dodging high-caliber weaponry, and forcing the enemy to come to
+    you."
   _flavorText: 
   _category: Propulsion
   _costBreakdownClass: 8

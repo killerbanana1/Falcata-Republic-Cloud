@@ -61,11 +61,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Fusion Drive
   _longDescription: 'This small-sized drive system provides power for the main engines
-    of smaller warships, while also providing a small amount of reactor power.
-
-    
-
-    Accommodations
+    of smaller warships, while also providing a small amount of reactor power. Accommodations
     for additional bracing, as well as Integrated auxiliary power shunts and reactor
     shutoff systems, provide a reliable drive module for all manner of ships across
     the fleet. '
@@ -95,6 +91,7 @@ MonoBehaviour:
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers: []
   _resourceDemandPriority: 1000
   ResourcesProvided:
