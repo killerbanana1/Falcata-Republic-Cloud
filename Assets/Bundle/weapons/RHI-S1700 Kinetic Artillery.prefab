@@ -316,9 +316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partKey: NEMfl9wgqtdkajJsnED155s
-  _maxHealth: 200
+  _maxHealth: 150
   _functioningThreshold: 20
-  _damageThreshold: 20
+  _damageThreshold: 30
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -346,7 +346,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 40
+  _pointCost: 50
   _type: 0
   _size: {x: 2, y: 12, z: 2}
   _interiorOverhang: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 200
+    _amount: 1800
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -430,6 +430,7 @@ MonoBehaviour:
   - 1000
   - 1300
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

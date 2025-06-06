@@ -7346,7 +7346,7 @@ MonoBehaviour:
   _crewComplement: 95
   _crewVulnerability: 0.35
   _interiorDensityArmorEquivalent: 1
-  _componentDR: 0.4
+  _componentDR: 0.35
   _visionDistance: 5
   _identityWorkRequired: 200
   BaseModifiers:
@@ -12308,6 +12308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sigType: 1
   _returnMultiplier: 1
+  _includeSimpleMultiplierWithStat: 0
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}

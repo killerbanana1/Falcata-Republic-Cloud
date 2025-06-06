@@ -75,7 +75,7 @@ MonoBehaviour:
   _size: {x: 9, y: 7, z: 9}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 40
+  _mass: 60
   _bindToTag: Thruster
   _rotateToFit: 2
   _canTile: 0

@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2645157992027193283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3023494, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7962348498998596204}
@@ -253,7 +253,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 50
+  _pointCost: 40
   _type: 0
   _size: {x: 2, y: 1, z: 2}
   _interiorOverhang: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1200
+    _amount: 900
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -328,6 +328,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 500
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -337,7 +338,7 @@ MonoBehaviour:
   _statGroupSubtype: emitters
   _burstDuration: 60
   _cooldownStyle: 3
-  _cooldownTime: 60
+  _cooldownTime: 45
   _gradualCooldownSpeed: 0.5
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 1
@@ -351,7 +352,7 @@ MonoBehaviour:
   _firingRotationSpeedModifier: 1
   _sigType: 1
   _coneFov: 20
-  _maxRange: 9000
+  _maxRange: 900
   _effectAreaRatio: 0.4
   _radiatedPower: 1.125
   _gain: 20

@@ -46,10 +46,14 @@
 
 	<!-- Mounts -->
 	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
-	<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
+	<!--<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
+	<Entry Name="RCJ-40 'Siren' Jammer" Address="weapons/RCJ-40 'Siren' Jammer.prefab"/>-->
 	<Entry Name="Jammer" Address="weapons/Jammer.prefab"/>
 	<Entry Name="Illuminator" Address="weapons/Illuminator.prefab"/>
 	<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>
+	<Entry Name="ICJ-3500 'Lantern' Illuminator" Address="weapons/ICJ-3500 'Lantern' Illuminator.prefab"/>
+	<Entry Name="Ball Jammer (Command)" Address="weapons/Ball Jammer (Command).prefab"/>
+	<Entry Name="Ball Jammer (Optical)" Address="weapons/Ball Jammer (Optical).prefab"/>
 
 	<!-- Compartments -->
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
@@ -61,6 +65,7 @@
 	<Entry Name="Plant Control Center" Address="components/Plant Control Center.prefab"/>
 	<Entry Name="Fire Suppression Center" Address="components/Fire Suppression Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
+	<Entry Name="Identification Deception Suite" Address="components/Identification Deception Suite.prefab"/>
 
 	<!-- Drives -->
 	<Entry Name="FM200 Drive" Address="components/drives/FM200 Drive.prefab"/>

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 196330636196349377}
   - component: {fileID: 196330636196349378}
   m_Layer: 0
-  m_Name: Mockingjay Deception Module
+  m_Name: Identification Deception Suite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,11 +60,13 @@ MonoBehaviour:
   _largeImage: {fileID: 21300000, guid: 15dab327665d8b649bc2693915d98e77, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Electronic Deception Module
-  _longDescription: 'The ADM-50 ''Mockingjay'' is the product of no small amount
-    of espionage targeted at the Alliance Navy. It is a domestic Falcatan version
-    of the Alliance''s own Masquerade deception module, and functions not dissimilarly.
+  _longDescription: The IDS, sometimes referred to as the 'Mockingjay' is the product
+    of no small amount of espionage targeted at the Alliance Navy. It is a domestic
+    version of the Alliances own 'Masquerade' deception module, but in a different
+    form factor. Copying your peers work decades later certainly has its perks, as
+    advances in technology no longer mandate the equipment be externally mounted.
     A complex set of emissions can fool even the most advanced sensors into thinking
-    a ship is something else entirely. '
+    a ship is something else entirely.
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 0
@@ -72,7 +74,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 20
+  _pointCost: 25
   _type: 2
   _size: {x: 2, y: 2, z: 2}
   _interiorOverhang: 0
@@ -124,7 +126,7 @@ MonoBehaviour:
   - Class: Cruiser
     ClassName: Irsavatha
     MaxRCS: 1360
-  - Class: Light Cruiser
+  - Class: Ancillary Cruiser
     ClassName: Kaliare
     MaxRCS: 900
   - Class: Destroyer

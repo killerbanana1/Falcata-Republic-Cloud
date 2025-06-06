@@ -401,9 +401,9 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 750
+    _amount: 1250
     _perUnit: 0
-    _onlyWhenOperating: 0
+    _onlyWhenOperating: 1
   _uniqueDebuffs: []
   _rareDebuffChance: 0.05
   _rareDebuffSubtype: 
@@ -457,6 +457,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 500
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 0
@@ -479,7 +480,7 @@ MonoBehaviour:
   _limitRotationSpeedWhenFiring: 0
   _firingRotationSpeedModifier: 1
   _sigType: 1
-  _coneFov: 10
+  _coneFov: 12.5
   _maxRange: 1000
   _effectAreaRatio: 0.4
   _radiatedPower: 2500

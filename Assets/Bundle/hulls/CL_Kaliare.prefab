@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sigType: 1
   _returnMultiplier: 1
+  _includeSimpleMultiplierWithStat: 0
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 536427653535396971}
@@ -8045,7 +8046,7 @@ MonoBehaviour:
     RightAngle: 0
     UseElevationLimit: 0
     ElevationAngle: 0
-  _unmaskAxis: 2
+  _unmaskAxis: 0
   _unmaskSide: 0
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
@@ -8766,7 +8767,7 @@ MonoBehaviour:
     RightAngle: 13
     UseElevationLimit: 0
     ElevationAngle: 180
-  _unmaskAxis: 2
+  _unmaskAxis: 0
   _unmaskSide: 0
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
@@ -10813,7 +10814,7 @@ MonoBehaviour:
     and diverse ships in the fleet, any commodore is glad to have one. Alas the same
     cannot be said for the crew, as accommodations are notoriously tight. But hey,
     what else do you expect in the navy.\n\r\n- Cassandra Syretia, VADM, Naval Command"
-  _pointCost: 275
+  _pointCost: 250
   _mass: 9000
   _weightClass: 1
   _tankFacing: 1

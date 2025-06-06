@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: Mount3
   _size: {x: 3, y: 4, z: 3}
-  _interiorOverhangSpace: 62
+  _interiorOverhangSpace: 61
   _attachPoint: {x: 0, y: 4, z: 0}
   _type: 0
   _shortName: MT3

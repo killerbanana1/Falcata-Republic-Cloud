@@ -712,7 +712,7 @@ MonoBehaviour:
   _partKey: 2Zh5ndZlTHJ87LvP37551q
   _maxHealth: 300
   _functioningThreshold: 30
-  _damageThreshold: 30
+  _damageThreshold: 35
   _reinforced: 0
   _bindTag: 
   _dcPriority: 10
@@ -815,6 +815,7 @@ MonoBehaviour:
   - 750
   - 1000
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

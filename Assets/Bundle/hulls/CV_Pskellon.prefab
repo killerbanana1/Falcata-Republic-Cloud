@@ -1199,7 +1199,7 @@ MonoBehaviour:
     RightAngle: 2
     UseElevationLimit: 0
     ElevationAngle: 0
-  _unmaskAxis: 2
+  _unmaskAxis: 0
   _unmaskSide: 0
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
@@ -8689,6 +8689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sigType: 1
   _returnMultiplier: 1
+  _includeSimpleMultiplierWithStat: 0
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}

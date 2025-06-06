@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8372480388929586040}
   - component: {fileID: 7584819304004828789}
   m_Layer: 0
-  m_Name: RCJ-40 Panel
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1617546259488078632}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 116.794334, y: 116.794334, z: 116.794334}
+  m_LocalScale: {x: 125, y: 125, z: 125}
   m_Children: []
   m_Father: {fileID: 8922927132949526017}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 450afa854ec8fb541ba6f19b77c5a453, type: 2}
@@ -103,8 +103,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8922927132949526017}
+  - component: {fileID: 9099710046144545410}
   m_Layer: 0
-  m_Name: Emitter Barrel
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,15 +118,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2645157992027193283}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3023494, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7962348498998596204}
-  - {fileID: 4778501098130696532}
   m_Father: {fileID: 8771097539651102055}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &9099710046144545410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645157992027193283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 695973416, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _matchRotation: 1
+  _updateEveryFrame: 1
+  _updateInterval: 1
+  _type: 0
 --- !u!1 &4645590924410533319
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,14 +183,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4778501097452949708}
-  - component: {fileID: 4778501097452949709}
   - component: {fileID: 4778501097452949710}
+  - component: {fileID: 4778501097452949709}
   - component: {fileID: 5102464683155207510}
-  - component: {fileID: 575733819236520924}
-  - component: {fileID: 2066130650563863189}
   - component: {fileID: 7745419541301718641}
-  - component: {fileID: 2653767724655742111}
   - component: {fileID: 3837549219330053822}
+  - component: {fileID: 575733819236520924}
+  - component: {fileID: 2653767724655742111}
+  - component: {fileID: 2066130650563863189}
+  - component: {fileID: 3549007265682827360}
+  - component: {fileID: 2755126292076170054}
   m_Layer: 0
   m_Name: RCJ-40 'Siren' Jammer
   m_TagString: Untagged
@@ -191,33 +209,13 @@ Transform:
   m_GameObject: {fileID: 4778501097452949711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 2975276026091823275}
   - {fileID: 8771097539651102055}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4778501097452949709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501097452949711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _body: {fileID: 8771097539651102055}
-  _barrel: {fileID: 8922927132949526017}
-  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
-  _traverseSource: {fileID: 5102464683155207510}
-  _minElevation: -5
-  _maxElevation: 89
-  _muzzleVerticalOffset: 0.276
-  _motorDecelAngle: 2.5
 --- !u!114 &4778501097452949710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,8 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 825537496, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: YmeUkqoT7kOZ4kVQ0InoRQ
-  _maxHealth: 100
+  _partKey: YmeUkqoT7kOZ4kVQ0InoR2
+  _maxHealth: 200
   _functioningThreshold: 10
   _damageThreshold: 15
   _reinforced: 0
@@ -246,8 +244,9 @@ MonoBehaviour:
   _smallImage: {fileID: 21300000, guid: e88577fcdbbed7149ac41b6b68ee4d52, type: 3}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: Radar Jammer
-  _longDescription: 
+  _shortDescription: Jammer (Radar)
+  _longDescription: Note, is not a true spinal and requires assitance getting on
+    target
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 5
@@ -255,20 +254,21 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 60
+  _pointCost: 50
   _type: 0
-  _size: {x: 2, y: 1, z: 2}
+  _size: {x: 2, y: 8, z: 2}
   _interiorOverhang: 0
   _removeSocketCap: 0
-  _mass: 3
+  _mass: 2
   _bindToTag: 
   _rotateToFit: 0
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-sigmult-radar
     _literal: 0
-    _modifier: 0.125
-    _permanent: 0
+    _modifier: 0.1
+    _permanent: 1
   _resourceDemandPriority: 100
   ResourcesProvided: []
   ResourcesRequired:
@@ -303,11 +303,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _crewRequired: 10
+  _crewRequired: 0
   _reinforceCrewAt: -1
-  _jobName: Ewar Specialists
+  _jobName: 
   _muzzles:
-  - {fileID: 4778501098130696533}
+  - {fileID: 9099710046144545410}
   _optimalTargetWeight: 0
   _allowGrouping: 1
   _groupingName: Jammers
@@ -328,6 +328,8 @@ MonoBehaviour:
   _aimCheckRangeMultiplier: 1
   _accuracyMeasurementDistances:
   - 500
+  _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -337,7 +339,7 @@ MonoBehaviour:
   _statGroupSubtype: emitters
   _burstDuration: 90
   _cooldownStyle: 3
-  _cooldownTime: 60
+  _cooldownTime: 90
   _gradualCooldownSpeed: 0.5
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 1
@@ -345,18 +347,39 @@ MonoBehaviour:
   _overheatDamagePerSecond: 10
   _singleCycleOrder: 1
   _turretControl: {fileID: 4778501097452949709}
-  _traverseRate: 80
-  _elevationRate: 80
+  _traverseRate: 20
+  _elevationRate: 20
   _limitRotationSpeedWhenFiring: 0
   _firingRotationSpeedModifier: 1
   _sigType: 1
-  _coneFov: 35
-  _maxRange: 900
+  _coneFov: 2.5
+  _maxRange: 1200
   _effectAreaRatio: 0.4
-  _radiatedPower: 1.5
+  _radiatedPower: 1
   _gain: 20
   _edgeFalloff: 0
   _showLOB: 1
+--- !u!114 &4778501097452949709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778501097452949711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 976580525, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _body: {fileID: 8771097539651102055}
+  _barrel: {fileID: 8922927132949526017}
+  _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
+  _traverseSource: {fileID: 5102464683155207510}
+  _minElevation: 75
+  _maxElevation: 90
+  _muzzleVerticalOffset: 0
+  _motorDecelAngle: 2.5
+  _forceHardTraversalLimits: 0
 --- !u!82 &5102464683155207510
 AudioSource:
   m_ObjectHideFlags: 0
@@ -368,7 +391,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -376,9 +399,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -453,47 +476,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!205 &575733819236520924
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501097452949711}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.19571266, z: 0.004075758}
-  m_Size: 0.5123156
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5710535830357032414}
-    - renderer: {fileID: 3139087602990782812}
-    - renderer: {fileID: 8372480388929586040}
-  - screenRelativeHeight: 0
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
---- !u!114 &2066130650563863189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501097452949711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 651954334, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _lods: {fileID: 575733819236520924}
-  _culledIndex: 3
 --- !u!2083052967 &7745419541301718641
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -531,6 +513,49 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
+--- !u!114 &3837549219330053822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778501097452949711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1594382245, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particles: {fileID: 7745419541301718641}
+  _fullDisableDelay: 0
+  _disableWhenNotPlaying: 1
+  _playBools: []
+--- !u!205 &575733819236520924
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778501097452949711}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.19571266, z: 0.004075758}
+  m_Size: 0.5123156
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5710535830357032414}
+    - renderer: {fileID: 3139087602990782812}
+    - renderer: {fileID: 8372480388929586040}
+  - screenRelativeHeight: 0
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!73398921 &2653767724655742111
 VFXRenderer:
   m_ObjectHideFlags: 0
@@ -572,7 +597,7 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3837549219330053822
+--- !u!114 &2066130650563863189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,78 +606,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 4778501097452949711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1594382245, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Script: {fileID: 651954334, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particles: {fileID: 7745419541301718641}
-  _fullDisableDelay: 0
-  _disableWhenNotPlaying: 1
-  _playBools: []
---- !u!1 &4778501098130696534
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4778501098130696532}
-  - component: {fileID: 4778501098130696533}
-  - component: {fileID: 6217759119328490403}
-  m_Layer: 0
-  m_Name: Radar Jam Muzzle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4778501098130696532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501098130696534}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8922927132949526017}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4778501098130696533
+  _lods: {fileID: 575733819236520924}
+  _culledIndex: 2
+--- !u!114 &3549007265682827360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501098130696534}
+  m_GameObject: {fileID: 4778501097452949711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1604195283, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Script: {fileID: -1466729778, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _followingPrefab: {fileID: 7230954150746422414, guid: a15d5585bac9cd84d9f4dbee5015ecdd, type: 3}
-  _matchRotation: 1
-  _updateEveryFrame: 1
-  _updateInterval: 0.5
---- !u!114 &6217759119328490403
+  _originalMaterials:
+  - {fileID: 2100000, guid: 450afa854ec8fb541ba6f19b77c5a453, type: 2}
+  _applyOnAwake: 1
+  _fullDepth: 1
+  _createMaterialInstances: 1
+  _useSharedMatTable: 1
+--- !u!114 &2755126292076170054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778501098130696534}
+  m_GameObject: {fileID: 4778501097452949711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 860895539, guid: a7a25bc0619be8e46a78e5bc64c08bd5, type: 3}
+  m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneId: 0
-  serverOnly: 0
-  visible: 0
-  m_AssetId: 
-  hasSpawned: 0
+  _multipleMaterials: 0
 --- !u!1 &6218069133618044749
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +654,7 @@ GameObject:
   - component: {fileID: 5817725685802834663}
   - component: {fileID: 5710535830357032414}
   m_Layer: 0
-  m_Name: RCJ-40 Base
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -680,7 +669,7 @@ Transform:
   m_GameObject: {fileID: 6218069133618044749}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 102.94373, y: 102.94374, z: 90.859085}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4778501097452949708}
   m_RootOrder: 0
@@ -709,7 +698,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 450afa854ec8fb541ba6f19b77c5a453, type: 2}
@@ -747,7 +736,7 @@ GameObject:
   - component: {fileID: 3139087602990782812}
   - component: {fileID: 2644678564072380159}
   m_Layer: 0
-  m_Name: RCJ-40 Body
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -791,7 +780,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 450afa854ec8fb541ba6f19b77c5a453, type: 2}
