@@ -339,7 +339,22 @@ MonoBehaviour:
     accurately at great lengths, the maneuvering thrusters used to aim are reduced
     in maximum output. A benefit of this system is further accuracy buffing such
     as GPCs are unnecessary.
-  _flavorText: 
+  _flavorText: "People upstairs love drawing big guns. Pretty sketches, clean lines.
+    But they don\u2019t think about how the hell you're supposed to feed the damn
+    things. \r\n700 millimeters.  That\u2019s not a shell\u2014that\u2019s an affront
+    to the very idea of reason. Six and a half metric tons of hate. And they want
+    it autoloaded every thirty seconds. \r\nLateral movement alone needed a custom
+    cradle system: magnetic clamps, inertial dampers, and active gyro-stabilization
+    just to keep things steady during maneuvering. From there it rides a pressure-damped
+    conveyor down a track towards the breach at walking speed. Any faster, and you
+    run into thermal degradation. Even then, one misalignment and you get a torque
+    spike that\u2019ll twist steel like wet clay. We had one jam during drills\u2014blew
+    out two fuses and tossed a tech across the bay. Survived, but now he flinches
+    every time a crate clanks.\r\nThis isn\u2019t just ballistics. Its logistics,
+    materials science, structural dynamics, thermal regulation, and a razor-thin
+    fault tolerance all synchronized to a thirty-second loop. Every round fired is
+    a miracle of modern engineering. And we have to make sure they keep doing that,
+    without exception.\r\n\nS. Dice, CWO\""
   _category: Weapons - Spinal
   _costBreakdownClass: 2
   _compoundingCost: 0
@@ -369,7 +384,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1800
+    _amount: 1200
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []

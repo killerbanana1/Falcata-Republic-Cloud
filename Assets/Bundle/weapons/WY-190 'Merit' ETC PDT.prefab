@@ -153,6 +153,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 100
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -667,7 +668,7 @@ GameObject:
   - component: {fileID: 7791300519175763168}
   - component: {fileID: 2879444422235830922}
   m_Layer: 0
-  m_Name: 1x220mm ETC Turret
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,7 +712,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
@@ -819,7 +820,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
@@ -915,7 +916,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
@@ -1211,7 +1212,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}

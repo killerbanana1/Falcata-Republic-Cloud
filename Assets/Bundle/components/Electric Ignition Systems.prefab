@@ -64,7 +64,7 @@ MonoBehaviour:
     firing of recoilless weapon platforms. Better plasma ignitors and more precise
     electronics work to shorten the recycle time between shells, which is an important
     stat for recoilless given the quantity of shells it has to fire. Additional juice
-    is pumped into the reload process as well.
+    is poured into the reload process as well.
   _flavorText: 
   _category: Weapon Support
   _costBreakdownClass: 6

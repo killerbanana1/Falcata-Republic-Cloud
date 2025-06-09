@@ -97,11 +97,7 @@ MonoBehaviour:
     _amount: 500
     _perUnit: 0
     _onlyWhenOperating: 0
-  ResourcesRequired:
-  - _resourceName: Power
-    _amount: 500
-    _perUnit: 0
-    _onlyWhenOperating: 1
+  ResourcesRequired: []
   _uniqueDebuffs: []
   _rareDebuffChance: 0.075
   _rareDebuffSubtype: drive

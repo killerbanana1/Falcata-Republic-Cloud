@@ -67,12 +67,12 @@ MonoBehaviour:
     the housing on this variant allows it to focus even harder on what its\u2019
     good at."
   _flavorText: "This beauty is for those who dare to favor finesse over the current
-    hullabaloo over speed at the naval office. Once the shells start flying, your
-    fancy warships kitted for 50m/s+ on Flank will be little more than a hunk of
-    junk if it can\u2019t get the nose around. The Cuirassiers do just that, providing
+    swiftness hullabaloo at the naval office. Once the shells start flying, your
+    fancy warships kitted for 50m/s+ on Flank speed will be little more than a hunk
+    of junk if it can\u2019t get the nose around. The Cuirassiers do just that, providing
     control in an environment where milliseconds and micro-adjustments are the difference
-    between leaving the battlespace as victor or in a lifeboat. Honestly, to me it\u2019s
-    a no-brainer.\r\n\n- M. Weaver, CMC"
+    between leaving the battlespace as victors or in a lifeboat. Honestly, to me
+    it\u2019s a no-brainer.\r\n\n- M. Weaver, CMC"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3253288254031527667}
   - component: {fileID: 6508750405198752453}
   m_Layer: 0
-  m_Name: SA82 'Sauron' Radar
+  m_Name: SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: -199203187, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _partKey: 0uP_7rKTmkuGbmZ9WLx4aw
+  _partKey: 0uP_7rKTmkuGbmZ9WLx4aw2
   _maxHealth: 175
   _functioningThreshold: 30
   _damageThreshold: 15
@@ -80,7 +80,7 @@ MonoBehaviour:
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
   _pointCost: 30
-  _type: 0
+  _type: 2
   _size: {x: 2, y: 10, z: 2}
   _interiorOverhang: 0
   _removeSocketCap: 0
@@ -355,7 +355,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 33029a6266eae4d40810aff2ebfd554b, type: 2}
@@ -420,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 7679044690765751775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 2537205064291719375}
   m_RootOrder: 0

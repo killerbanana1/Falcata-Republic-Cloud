@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 8023896960089790296}
   _fillColor: {fileID: 4534670103300918534}
-  _icon: {fileID: 5221036362941726709}
+  _icon: {fileID: 554188365290889662}
   _selectMarkerAttachTransform: {fileID: 2352049514548221280}
 --- !u!222 &1850561798844919205
 CanvasRenderer:
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 4810013318883182985}
   _fillColor: {fileID: 1692425427012345872}
-  _icon: {fileID: 5221036362941726709}
+  _icon: {fileID: 9040954020618004413}
   _selectMarkerAttachTransform: {fileID: 4649765761129142403}
 --- !u!222 &606729278944312542
 CanvasRenderer:

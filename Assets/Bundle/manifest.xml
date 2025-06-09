@@ -66,6 +66,7 @@
 	<Entry Name="Fire Suppression Center" Address="components/Fire Suppression Center.prefab"/>
 	<Entry Name="Damage Control Facility" Address="components/Damage Control Facility.prefab"/>
 	<Entry Name="Identification Deception Suite" Address="components/Identification Deception Suite.prefab"/>
+	<Entry Name="Intelligence CIC" Address="components/Intelligence CIC.prefab"/>
 
 	<!-- Drives -->
 	<Entry Name="FM200 Drive" Address="components/drives/FM200 Drive.prefab"/>
@@ -106,8 +107,11 @@
   </Munitions>
   
   <MissileBodies>
-	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/-->
-	<!--<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/-->
+	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/>
+	<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
+	<Entry Name="VCM-3 Body" Address="munitions/vcm-3/VCM-3 Body.prefab"/>
+	<Entry Name="VCM-2 Body" Address="munitions/vcm-2/VCM-2 Body.prefab"/>
+	<Entry Name="VCM-1 Body" Address="munitions/vcm-1/VCM-1 Body.prefab"/-->
   </MissileBodies>
 
   <MissileComponents>

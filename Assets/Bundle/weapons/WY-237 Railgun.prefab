@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7245623276224306773}
   - component: {fileID: 924783069595359077}
   m_Layer: 0
-  m_Name: 237mm Railgun Base
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ccdd6ae1c3bf0741b2c7cfaa23e8157, type: 2}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4033291106702376477}
   - component: {fileID: 529221831470207014}
   m_Layer: 0
-  m_Name: 237mm Railgun Turret
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ccdd6ae1c3bf0741b2c7cfaa23e8157, type: 2}
@@ -381,12 +381,13 @@ MonoBehaviour:
   _onTargetAngle: 0.5
   _aimCheckRangeMultiplier: 1
   _accuracyMeasurementDistances:
-  - 500
   - 750
   - 1000
   - 1250
-  - 1600
+  - 1500
+  - 1750
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -397,7 +398,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 6
-  _reloadTime: 32
+  _reloadTime: 28
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
@@ -701,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.2
+  _baseAccuracy: 0.175
   _flash: {fileID: 1164939665728588165}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -800,7 +801,7 @@ GameObject:
   - component: {fileID: 1371587526735354883}
   - component: {fileID: 6244588085710568281}
   m_Layer: 0
-  m_Name: 237mm Railgun Barrels
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -844,7 +845,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ccdd6ae1c3bf0741b2c7cfaa23e8157, type: 2}
@@ -998,7 +999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.2
+  _baseAccuracy: 0.175
   _flash: {fileID: 3662846357687837176}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

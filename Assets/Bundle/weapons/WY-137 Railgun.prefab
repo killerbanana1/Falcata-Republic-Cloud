@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454034469738888362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.001, z: 1.026}
+  m_LocalPosition: {x: 0, y: 0, z: 1.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4490456116142014403}
@@ -371,12 +371,13 @@ MonoBehaviour:
   _onTargetAngle: 0.5
   _aimCheckRangeMultiplier: 1
   _accuracyMeasurementDistances:
-  - 500
   - 750
   - 1000
   - 1250
-  - 1600
+  - 1500
+  - 1750
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -387,7 +388,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 3
-  _reloadTime: 24
+  _reloadTime: 21
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
@@ -658,7 +659,7 @@ GameObject:
   - component: {fileID: 9122033237834123511}
   - component: {fileID: 6394594971629088788}
   m_Layer: 0
-  m_Name: 137mm Railgun Turret
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,7 +703,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 08fba617088a561438e1f484d5aa081f, type: 2}
@@ -754,7 +755,7 @@ GameObject:
   - component: {fileID: 4725618880645228287}
   - component: {fileID: 6956234351667155143}
   m_Layer: 0
-  m_Name: 137mm Railgun Barrel
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,7 +799,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 08fba617088a561438e1f484d5aa081f, type: 2}
@@ -850,7 +851,7 @@ GameObject:
   - component: {fileID: 628613813457757698}
   - component: {fileID: 1302252974914798310}
   m_Layer: 0
-  m_Name: 137mm Railgun Base
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,7 +895,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 08fba617088a561438e1f484d5aa081f, type: 2}

@@ -64,8 +64,15 @@ MonoBehaviour:
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: 
-  _longDescription: 
+  _shortDescription: Jammer (Comms)
+  _longDescription: 'The E is a jamming suite that saturates a 360-degree radius
+    around a host warship, disrupting communications and preventing affected warships
+    from receiving the shared track picture from other warships.
+
+
+    While an effective
+    screening tool, the E70 lacks the high-power, extended range of directional communications
+    jammers seen on dedicated EWar configurations.'
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 5
@@ -75,7 +82,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 45
   _type: 0
-  _size: {x: 2, y: 1, z: 2}
+  _size: {x: 3, y: 1, z: 3}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 5
@@ -88,7 +95,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1000
+    _amount: 850
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -151,7 +158,7 @@ MonoBehaviour:
   _shoulderCamEnabled: 0
   _shoulderCamOffset: {x: 0, y: 0, z: 0}
   _statGroupSubtype: emitters
-  _burstDuration: 120
+  _burstDuration: 30
   _cooldownStyle: 3
   _cooldownTime: 60
   _gradualCooldownSpeed: 0.5
@@ -159,11 +166,11 @@ MonoBehaviour:
   _battleShortIgnoreCooldown: 1
   _overheatDamageProbability: 0.05
   _overheatDamagePerSecond: 10
-  _singleCycleOrder: 1
-  _sigType: 1
+  _singleCycleOrder: 0
+  _sigType: 3
   _maxRange: 300
   _effectAreaRatio: 0.4
-  _radiatedPower: 750
+  _radiatedPower: 1000
   _gain: 1
   _showLOB: 1
 --- !u!114 &6217799362283649067

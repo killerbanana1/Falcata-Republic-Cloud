@@ -734,16 +734,8 @@ MonoBehaviour:
     everybody in a bad mood and that effort got dropped pretty quick.
 
 
-    Rebounds
-    got a nice spot in the Alliance roster after the Deshima Blitz revealed the first
-    ammunition troubles for the AN, depots were getting drained of Defender rounds
-    at an eye-watering speed, but the ANMD had plenty of 50mm sitting around in Badnarik
-    for the sponson guns on the NAV-10. Naval Office took a shipment, fixed on some
-    prox-fuze, and called it a day. Surprised everybody when it turned out to be
-    just the solution we needed.
-
-
-    - T. Meadows, LT'
+    - T.
+    Meadows, LT'
   _category: Weapons - Point Defense
   _costBreakdownClass: 3
   _compoundingCost: 0
@@ -824,6 +816,7 @@ MonoBehaviour:
   _accuracyMeasurementDistances:
   - 100
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
