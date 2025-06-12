@@ -68,6 +68,7 @@ public class CopyShellData : IModEntryPoint
             { "Stock/Mk81 Railgun", "Falcata Republic/WY-137 Railgun" },
             { "Stock/Mk81 Railgun", "Falcata Republic/WY-237 Railgun" },
             { "Stock/Mk64 Cannon", "Falcata Republic/WY-1220 ETC Gun" },
+            { "Stock/T20 Cannon", "Falcata Republic/WY-190 'Merit' PDT" },
             { "Stock/Mk29 'Stonewall' PDT", "Falcata Republic/MED-240 'Fleur' PDT" }
         };
 
@@ -170,6 +171,7 @@ public class CopyShellData : IModEntryPoint
         Map<LightweightExplosiveShell>("Stock/250mm HE Shell", "Falcata Republic/150mm HE Shell");
         Map<LightweightKineticShell>("Stock/250mm AP Shell", "Falcata Republic/150mm AP-S Shell");
         Map<LightweightAirburstShell>("Stock/100mm Flak", "Falcata Republic/150mm Flak Shell");
+        Map<LightweightAirburstShell>("Stock/100mm Flak", "Falcata Republic/90mm Flak Shell");
         Map<LightweightAirburstShell>("Stock/Flak Round", "Falcata Republic/40mm Flak Shell");
         //Map<NonphysicalMunition>("Stock/20mm Slug", "Falcata Republic/30mm Slug");
 

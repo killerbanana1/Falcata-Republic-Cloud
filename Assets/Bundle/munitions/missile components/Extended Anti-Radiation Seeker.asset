@@ -52,6 +52,6 @@ MonoBehaviour:
   _overrideSignatureAbbrev: 
   _targetTypeCostMultipliers:
   - 1
-  - 50
-  - 100
+  - 999
+  - 999
   _targetType: 0

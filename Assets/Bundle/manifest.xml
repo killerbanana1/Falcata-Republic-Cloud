@@ -32,11 +32,11 @@
 	<Entry Name="MED-240 'Fleur' PDT" Address="weapons/MED-240 'Fleur' PDT.prefab"/>
 	<Entry Name="BAE-39 'Glance' PDT" Address="weapons/BAE-39 'Glance' PDT.prefab"/>
 	<Entry Name="BAE-47 'Estoc' PDT" Address="weapons/BAE-47 'Estoc' PDT.prefab"/>
-	<Entry Name="WY-190 'Merit' ETC PDT" Address="weapons/WY-190 'Merit' ETC PDT.prefab"/>
+	<Entry Name="WY-190 'Merit' PDT" Address="weapons/WY-190 'Merit' PDT.prefab"/>
 	
 	<!-- Missile Launchers -->
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
-
+	
 	<!-- Sensors -->
 	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/SA82 'Sauron' Radar.prefab"/>
 	<Entry Name="UC-RM36 'Repechage' Radar" Address="components/radars/RM36 'Repechage' Radar.prefab"/>
@@ -45,15 +45,12 @@
 	<Entry Name="UC-RS64 'L'aigle' Radar" Address="components/radars/RS64 'L'aigle' Radar.prefab"/>
 
 	<!-- Mounts -->
-	<Entry Name="WY-LD17 'Traveller' Laser Designator" Address="weapons/WY-LD17 'Traveller' Laser Designator.prefab"/>
-	<!--<Entry Name="ADM-50 'Mockingjay' Deception Module" Address="weapons/ADM-50 'Mockingjay' Deception Module.prefab"/>
-	<Entry Name="RCJ-40 'Siren' Jammer" Address="weapons/RCJ-40 'Siren' Jammer.prefab"/>-->
-	<Entry Name="Jammer" Address="weapons/Jammer.prefab"/>
-	<Entry Name="Illuminator" Address="weapons/Illuminator.prefab"/>
+	<Entry Name="E80 'Miasma'  Jammer" Address="weapons/E80 'Miasma'  Jammer.prefab"/>
+	<Entry Name="E67 'Fugue' Illuminator" Address="weapons/E67 'Fugue' Illuminator.prefab"/>
 	<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>
-	<Entry Name="ICJ-3500 'Lantern' Illuminator" Address="weapons/ICJ-3500 'Lantern' Illuminator.prefab"/>
-	<Entry Name="Ball Jammer (Command)" Address="weapons/Ball Jammer (Command).prefab"/>
-	<Entry Name="Ball Jammer (Optical)" Address="weapons/Ball Jammer (Optical).prefab"/>
+	<Entry Name="E44 'Lysandre' Illuminator" Address="weapons/E44 'Lysandre' Illuminator.prefab"/>
+	<Entry Name="E71 'Mecure' Jammer" Address="weapons/E71 'Mecure' Jammer.prefab"/>
+	<Entry Name="E32 'Stiletto' Dazzler" Address="weapons/E32 'Stiletto' Dazzler.prefab"/>
 
 	<!-- Compartments -->
 	<Entry Name="Reinforced Gun Plotting Center" Address="components/Reinforced Gun Plotting Center.prefab"/>
@@ -101,17 +98,15 @@
 	<Entry Name="90mm Flak Shell" Address="munitions/90mm Flak Shell.asset"/>
 	<Entry Name="37mm Pinshot" Address="munitions/37mm Pinshot.asset"/>
 	<Entry Name="37mm Sandshot" Address="munitions/37mm Sandshot.asset"/>
-	<!--<Entry Name="30mm Slug" Address="munitions/30mm Slug.asset"/>-->
 
 	<!-- Utility Missiles -->
   </Munitions>
   
   <MissileBodies>
-	<!--Entry Name="SGM-H-2 Body" Address="F1/Munitions/SGM-H-2/SGM-H-2 Body.prefab"/>
-	<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
+	<!--<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
 	<Entry Name="VCM-3 Body" Address="munitions/vcm-3/VCM-3 Body.prefab"/>
 	<Entry Name="VCM-2 Body" Address="munitions/vcm-2/VCM-2 Body.prefab"/>
-	<Entry Name="VCM-1 Body" Address="munitions/vcm-1/VCM-1 Body.prefab"/-->
+	<Entry Name="VCM-1 Body" Address="munitions/vcm-1/VCM-1 Body.prefab"/>-->
   </MissileBodies>
 
   <MissileComponents>

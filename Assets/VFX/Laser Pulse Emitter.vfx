@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: glance_muzzle
+  m_Name: Laser Pulse Emitter
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -65,7 +65,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glance_muzzle
+  m_Name: Laser Pulse Emitter
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -1196,7 +1196,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":11.475643157958985,"g":3.3833889961242677,"b":23.138015747070314,"a":1.0},"time":0.0},{"color":{"r":0.9411764740943909,"g":0.8313725590705872,"b":2.9960784912109377,"a":1.0},"time":0.06471351534128189},{"color":{"r":0.23201662302017213,"g":0.331452339887619,"b":1.5412533283233643,"a":1.0},"time":0.38823530077934267},{"color":{"r":0.15352439880371095,"g":0.24960258603096009,"b":0.43396228551864626,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":1.4461263418197632,"g":0.21199756860733033,"b":0.3060781955718994,"a":1.0},"time":0.0},{"color":{"r":0.9411764740943909,"g":0.8313725590705872,"b":2.9960784912109377,"a":1.0},"time":0.06471351534128189},{"color":{"r":1.572389006614685,"g":0.3158120810985565,"b":0.022250747308135034,"a":1.0},"time":0.3943236470222473},{"color":{"r":0.15352439880371095,"g":0.24960258603096009,"b":0.43396228551864626,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -6019,7 +6019,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":11.475643157958985,"g":3.3833889961242677,"b":23.138015747070314,"a":1.0},"time":0.0},{"color":{"r":0.9411764740943909,"g":0.8313725590705872,"b":2.9960784912109377,"a":1.0},"time":0.0470588244497776},{"color":{"r":0.23201662302017213,"g":0.331452339887619,"b":1.5412533283233643,"a":1.0},"time":0.1411764770746231},{"color":{"r":0.15352439880371095,"g":0.24960258603096009,"b":0.43396228551864626,"a":1.0},"time":0.5411764979362488},{"color":{"r":0.03448735922574997,"g":0.0432155579328537,"b":0.04716980457305908,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.5264667868614197},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":28.468246459960939,"g":3.997668743133545,"b":4.845658779144287,"a":1.0},"time":0.0},{"color":{"r":2.9960784912109377,"g":0.8313724398612976,"b":0.8942300081253052,"a":1.0},"time":0.0470588244497776},{"color":{"r":1.5412533283233643,"g":0.260707288980484,"b":0.23401227593421937,"a":1.0},"time":0.1411764770746231},{"color":{"r":0.15352439880371095,"g":0.24960258603096009,"b":0.43396228551864626,"a":1.0},"time":0.5411764979362488},{"color":{"r":0.03448735922574997,"g":0.0432155579328537,"b":0.04716980457305908,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":0.5264667868614197},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color

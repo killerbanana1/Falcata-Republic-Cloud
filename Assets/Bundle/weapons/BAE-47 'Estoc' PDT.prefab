@@ -120,7 +120,6 @@ Transform:
   m_Children:
   - {fileID: 9010947885496093760}
   - {fileID: 1063768529678889296}
-  - {fileID: 954839862275177267}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -148,12 +147,17 @@ MonoBehaviour:
   _disabledParticles: {fileID: 6363970189099350576}
   _saveKey: 
   _modId: 0
-  _shortUIName: 
+  _shortUIName: BAE-47 'Estoc' PDT
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 2 Pulsed Laser
-  _longDescription: 
+  _longDescription: "The BAE-47 \u2018Estoc\u2019 is a perfect example of simplicity
+    done right. Like other continuous lasers, it points at things, and within seconds
+    they\u2019ll die. Unlike others, the BAE-47 is a class 2 mount. This limits its
+    usage but allows increased performance comparable to the Alliance's very own
+    \u2018Aurora\u2019 even when it\u2019s on battle-short. It also features a powerful
+    built-in FCR."
   _flavorText: 
   _category: Weapons - Point Defense
   _costBreakdownClass: 3
@@ -233,6 +237,7 @@ MonoBehaviour:
   - 150
   - 300
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 3248481202973346843}
   _waitForFCLock: 1
   _allowVisualTargeting: 0
@@ -240,9 +245,9 @@ MonoBehaviour:
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.291, y: 0.287, z: -0.052}
   _statGroupSubtype: 
-  _burstDuration: 3
+  _burstDuration: 4
   _cooldownStyle: 3
-  _cooldownTime: 4
+  _cooldownTime: 2.5
   _gradualCooldownSpeed: 0.2
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 0
@@ -888,7 +893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4718776656128508600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9015052348443236506}
@@ -918,7 +923,7 @@ MonoBehaviour:
   _spherecastRadius: 1
   _armorPenetration: 0.275
   _heatPower: 0
-  _componentDamage: 10
+  _componentDamage: 8
   _randomEffectMultiplier: 0.2
   _crewVulnerabilityMultiplier: 1
   _powerFalloff:
@@ -967,7 +972,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2de83bbe16d5de64886d7f0ae7e143cc, type: 2}
+  - {fileID: 2100000, guid: bcfcf863f0a2627489058397b146b55f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1011,9 +1016,9 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 766.9961, g: 0, b: 36.14118, a: 1}
-      key1: {r: 766.9961, g: 0, b: 36.14118, a: 1}
-      key2: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 0}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 1}
       key3: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 0}
       key4: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1274,50 +1279,6 @@ Transform:
   m_Father: {fileID: 2136409286636214766}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5328226124341250881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 954839862275177267}
-  - component: {fileID: 8986105731432716377}
-  m_Layer: 0
-  m_Name: Jammable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &954839862275177267
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328226124341250881}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38200003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2136409286636214766}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8986105731432716377
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328226124341250881}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9015052348443236507
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6217799362283649064}
   - component: {fileID: 6217799362283649065}
   m_Layer: 0
-  m_Name: Ball Jammer (Command)
+  m_Name: E71 'Mecure' Jammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,18 +60,18 @@ MonoBehaviour:
   _disabledParticles: {fileID: 6217799362283649067}
   _saveKey: 
   _modId: 0
-  _shortUIName: 
+  _shortUIName: E71 'Mecure' Jammer
   _smallImage: {fileID: 0}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Jammer (Comms)
-  _longDescription: 'The E is a jamming suite that saturates a 360-degree radius
+  _longDescription: 'The E71 is a jamming suite that saturates a 360-degree radius
     around a host warship, disrupting communications and preventing affected warships
     from receiving the shared track picture from other warships.
 
 
     While an effective
-    screening tool, the E70 lacks the high-power, extended range of directional communications
+    screening tool, the E71 lacks the high-power, extended range of directional communications
     jammers seen on dedicated EWar configurations.'
   _flavorText: 
   _category: EWar

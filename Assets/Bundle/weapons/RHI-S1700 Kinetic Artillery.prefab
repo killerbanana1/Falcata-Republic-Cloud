@@ -350,7 +350,7 @@ MonoBehaviour:
     run into thermal degradation. Even then, one misalignment and you get a torque
     spike that\u2019ll twist steel like wet clay. We had one jam during drills\u2014blew
     out two fuses and tossed a tech across the bay. Survived, but now he flinches
-    every time a crate clanks.\r\nThis isn\u2019t just ballistics. Its logistics,
+    every time a crate clanks.\r\n\nThis isn\u2019t just ballistics. Its logistics,
     materials science, structural dynamics, thermal regulation, and a razor-thin
     fault tolerance all synchronized to a thirty-second loop. Every round fired is
     a miracle of modern engineering. And we have to make sure they keep doing that,

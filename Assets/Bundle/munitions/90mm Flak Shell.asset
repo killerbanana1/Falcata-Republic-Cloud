@@ -16,7 +16,7 @@ MonoBehaviour:
   _pointDivision: 75
   _storageVolume: 0.01
   _factionKey: Falcata Republic/Falcata Republic
-  _flavorText: A long 75mm Flak shell. A bigger shell can go travel further and carry
+  _flavorText: A long 90mm Flak shell. A bigger shell can go travel further and carry
     more payload. Not much more to it than that.
   _screenshot: {fileID: 0}
   _tags:

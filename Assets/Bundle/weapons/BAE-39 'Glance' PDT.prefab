@@ -1446,6 +1446,7 @@ MonoBehaviour:
   - 50
   - 100
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 1212823653}
   _waitForFCLock: 1
   _allowVisualTargeting: 1
@@ -1456,7 +1457,7 @@ MonoBehaviour:
   _resetMuzzleIndexOnReload: 0
   _randomlyDeviateMuzzleTime: 1
   _magazineSize: 3
-  _reloadTime: 4
+  _reloadTime: 5
   _reloadStatSubtype: laser
   _recycleStatSubtype: laser
   _randomlyDeviateReloadTime: 0

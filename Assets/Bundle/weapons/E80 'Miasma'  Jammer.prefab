@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 3549007265682827360}
   - component: {fileID: 2755126292076170054}
   m_Layer: 0
-  m_Name: Jammer
+  m_Name: E80 'Miasma'  Jammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,12 +240,12 @@ MonoBehaviour:
   _disabledParticles: {fileID: 3837549219330053822}
   _saveKey: 
   _modId: 0
-  _shortUIName: RCJ40 Siren
+  _shortUIName: E80 'Miasma'  Jammer
   _smallImage: {fileID: 21300000, guid: e88577fcdbbed7149ac41b6b68ee4d52, type: 3}
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Jammer (Radar)
-  _longDescription: 
+  _longDescription: The E80 is one mean piece of kit.
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 5
@@ -253,7 +253,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 40
+  _pointCost: 50
   _type: 0
   _size: {x: 2, y: 1, z: 2}
   _interiorOverhang: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 900
+    _amount: 1000
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []

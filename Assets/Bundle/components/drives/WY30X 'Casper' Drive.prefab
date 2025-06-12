@@ -71,7 +71,7 @@ MonoBehaviour:
   _compoundingCost: 1
   _compoundingCostClass: Stealth
   _firstInstanceFree: 0
-  _compoundingMultiplier: 2
+  _compoundingMultiplier: 3
   _pointCost: 25
   _type: 2
   _size: {x: 5, y: 5, z: 5}
