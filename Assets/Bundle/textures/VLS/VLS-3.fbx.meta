@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 655868f870a4e104686842ff993ad33f
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -6982370474497060304
+    second: Door 1|Door 1Action
+  - first:
+      74: -8877661960635172264
+    second: Door 1|Door 1Action.001
+  - first:
+      74: -6601288094408102413
+    second: Door 1|Door 1Action.002
+  - first:
+      74: 778981810772326301
+    second: Door 1|Door 1Action.003
+  - first:
+      74: -2426240690735683376
+    second: Door 1|Door 1Action.004
+  - first:
+      74: -1678852880307067023
+    second: Door 1|Door 1Action.005
+  - first:
+      74: -3020411928325949699
+    second: Door 1|Door 2Action
+  - first:
+      74: -3149539217531229876
+    second: Door 1|Door|Missile Cell Door|Animation Base Layer
+  - first:
+      74: 5813540867094546169
+    second: Door 2|Door 1Action
+  - first:
+      74: -1375588205387959890
+    second: Door 2|Door 1Action.001
+  - first:
+      74: 9119616446747306267
+    second: Door 2|Door 1Action.002
+  - first:
+      74: 1227830522314473370
+    second: Door 2|Door 1Action.003
+  - first:
+      74: 5420311484697046775
+    second: Door 2|Door 1Action.004
+  - first:
+      74: 1332387654228364130
+    second: Door 2|Door 1Action.005
+  - first:
+      74: -4331229955564549876
+    second: Door 2|Door 2Action
+  - first:
+      74: -3678819215335474380
+    second: Door 2|Door|Missile Cell Door|Animation Base Layer
+  - first:
+      74: -4561628274695895923
+    second: Door 3|Door 1Action
+  - first:
+      74: 5831410484881966471
+    second: Door 3|Door 1Action.001
+  - first:
+      74: 3326491568539448752
+    second: Door 3|Door 1Action.002
+  - first:
+      74: 3973812102313982930
+    second: Door 3|Door 1Action.003
+  - first:
+      74: 7667133984426718292
+    second: Door 3|Door 1Action.004
+  - first:
+      74: 7948794066518046610
+    second: Door 3|Door 1Action.005
+  - first:
+      74: 4431035099753297118
+    second: Door 3|Door 2Action
+  - first:
+      74: -199655647669173205
+    second: Door 3|Door|Missile Cell Door|Animation Base Layer
+  - first:
+      74: 8927249152183365317
+    second: Door 4|Door 1Action
+  - first:
+      74: 1050090266855569435
+    second: Door 4|Door 1Action.001
+  - first:
+      74: -9096454834483099990
+    second: Door 4|Door 1Action.002
+  - first:
+      74: 6841857209457493388
+    second: Door 4|Door 1Action.003
+  - first:
+      74: 455370268809216130
+    second: Door 4|Door 1Action.004
+  - first:
+      74: -2240941438203715528
+    second: Door 4|Door 1Action.005
+  - first:
+      74: -4273265213541343034
+    second: Door 4|Door 2Action
+  - first:
+      74: 1998221198916186244
+    second: Door 4|Door|Missile Cell Door|Animation Base Layer
+  - first:
+      74: 5490149676682758718
+    second: Door 1|Door 1 Open
+  - first:
+      74: -8471994760801664791
+    second: Door 1|Door 2 Open
+  - first:
+      74: 1763408536517537985
+    second: Door 1|Door 3 Open
+  - first:
+      74: 7573040003078255990
+    second: Door 1|Door 4 Open
+  - first:
+      74: 7875812052532685088
+    second: Door 2|Door 1 Open
+  - first:
+      74: 344915243393793100
+    second: Door 2|Door 2 Open
+  - first:
+      74: -6677135241035120037
+    second: Door 2|Door 3 Open
+  - first:
+      74: 3188785153697041098
+    second: Door 2|Door 4 Open
+  - first:
+      74: -7108519830248110176
+    second: Door 3|Door 1 Open
+  - first:
+      74: 2634648794463186422
+    second: Door 3|Door 2 Open
+  - first:
+      74: -4627393666807606505
+    second: Door 3|Door 3 Open
+  - first:
+      74: -1972962726092811854
+    second: Door 3|Door 4 Open
+  - first:
+      74: 2058827223133770217
+    second: Door 4|Door 1 Open
+  - first:
+      74: -3150724381857577927
+    second: Door 4|Door 2 Open
+  - first:
+      74: -9140044491045633768
+    second: Door 4|Door 3 Open
+  - first:
+      74: -6049124895827005357
+    second: Door 4|Door 4 Open
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

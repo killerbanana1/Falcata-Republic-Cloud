@@ -35,10 +35,11 @@
 	<Entry Name="WY-190 'Merit' PDT" Address="weapons/WY-190 'Merit' PDT.prefab"/>
 	
 	<!-- Missile Launchers -->
+	<Entry Name="VLS-3 Launcher" Address="weapons/VLS-3 Launcher.prefab"/>
 	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
-	
+
 	<!-- Sensors -->
-	<Entry Name="UC-SA82 'Sauron' Radar" Address="weapons/SA82 'Sauron' Radar.prefab"/>
+	<Entry Name="SA82 'Sauron' Radar" Address="weapons/SA82 'Sauron' Radar.prefab"/>
 	<Entry Name="UC-RM36 'Repechage' Radar" Address="components/radars/RM36 'Repechage' Radar.prefab"/>
 	<Entry Name="UC-RS44 'Redoubt' Radar" Address="components/radars/RS44 'Redoubt' Radar.prefab"/>
 	<Entry Name="UC-RM54 'Conde' Radar" Address="components/radars/RM54 'Conde' Radar.prefab"/>
@@ -100,13 +101,14 @@
 	<Entry Name="37mm Sandshot" Address="munitions/37mm Sandshot.asset"/>
 
 	<!-- Utility Missiles -->
+	<Entry Name="DEC VGT-4 Body" Address="munitions/VGT-4/DEC VGT-4 Body.prefab"/>
   </Munitions>
-  
+	
   <MissileBodies>
-	<!--<Entry Name="VGT-4 Body" Address="munitions/vgt-4/VGT-4 Body.prefab"/>
-	<Entry Name="VCM-3 Body" Address="munitions/vcm-3/VCM-3 Body.prefab"/>
-	<Entry Name="VCM-2 Body" Address="munitions/vcm-2/VCM-2 Body.prefab"/>
-	<Entry Name="VCM-1 Body" Address="munitions/vcm-1/VCM-1 Body.prefab"/>-->
+	<Entry Name="VGT-4 Body" Address="munitions/VGT-4/VGT-4 Body.prefab"/>
+	<Entry Name="VGM-3 Body" Address="munitions/VGm-3/VGM-3 Body.prefab"/>
+	<Entry Name="VGM-2 Body" Address="munitions/VGm-2/VGM-2 Body.prefab"/>
+	<Entry Name="VGM-1 Body" Address="munitions/VGm-1/VGM-1 Body.prefab"/>
   </MissileBodies>
 
   <MissileComponents>

@@ -59,13 +59,9 @@ MonoBehaviour:
   NewFleetFirstShip: Falcata Republic/FF_Moxella
   _sharedFactionAll: []
   _sharedEquipmentList:
-  - Stock/L50 Laser Dazzler
-  - Stock/J360 Jammer
   - Stock/Basic CIC
   - Stock/Reinforced CIC
-  - Stock/Citadel CIC
   - Stock/Auxiliary Steering
-  - Stock/Berthing
   - Stock/Small DC Locker
   - Stock/Reinforced DC Locker
   - Stock/Large DC Locker
@@ -81,15 +77,12 @@ MonoBehaviour:
   - Stock/Adaptive Radar Receiver
   - Stock/Track Correlator
   - Stock/Strobe Correlator
-  - Stock/Mount Gyros
   - Stock/Supplementary Radio Amplifiers
   - Stock/Launcher Deluge System
   - Stock/Magazine Sprinklers
   - Stock/Redundant Reactor Failsafes
   - Stock/Reinforced Thruster Nozzles
-  - Stock/Focused Particle Accelerator
   - Stock/Ammunition Elevators
-  - Stock/Rapid-Cycle Cradle
   - Stock/Actively Cooled Amplifiers
   - Stock/Missile Programming Bus
   - Stock/Missile Programming Bus Array
@@ -101,39 +94,15 @@ MonoBehaviour:
   - Stock/FR3300 Micro Reactor
   - Stock/FR4800 Reactor
   - Stock/VLS-2 Launcher
-  - Stock/VLS-3 Launcher
-  - Stock/CLS-3 Launcher
-  - Stock/Torpedo Turret
-  - Stock/Mk20 'Defender' PDT
-  - Stock/Mk25 'Rebound' PDT
-  - Stock/Mk29 'Stonewall' PDT
-  - Stock/Mk90 'Aurora' PDT
-  - Stock/Mk95 'Sarissa' PDT
   - Stock/ES22 'Pinard' Electronic Support Module
   - Stock/ES32 'Scryer' Missile ID System
-  - Stock/E55 'Spotlight' Illuminator
-  - Stock/E57 'Floodlight' Illuminator
-  - Stock/E71 'Hangup' Jammer
-  - Stock/E70 'Interruption' Jammer
-  - Stock/E90 'Blanket' Jammer
-  - Stock/RF101 'Bullseye' Radar
   - Stock/Signature Scrambler
   - Stock/CR70 Antenna
   - Stock/20mm Slug
-  - Stock/Flak Round
-  - Stock/15mm Sandshot
+  - Stock/HE Kinetic Penetrator
   - Stock/EA12 Chaff Decoy
   - Stock/EA20 Flare Decoy
   - Stock/EA99 Active Decoy
-  - Stock/SGM-H-2 Body
-  - Stock/SGM-100 Body
-  - Stock/SGM-200 Body
-  - Stock/SGT-300 Body
-  - $MODMIS$/SGM-H-200 Cyclone
-  - $MODMIS$/SGM-100 Balestra
-  - $MODMIS$/SGM-200 Tempest
-  - $MODMIS$/SGT-300 Pilum
-  - Stock/HE Kinetic Penetrator
   _sharedEquipmentPatterns: []
   _saveKey: 
   _modId: 0

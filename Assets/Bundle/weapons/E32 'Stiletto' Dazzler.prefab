@@ -66,8 +66,8 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Jammer (EO)
   _longDescription: The E32 is essentially just an ultra strong flashlight, pulsing
-    millions of beams of light in a spherical pattern hoping to blind any approaching
-    Electro-Optical seekers. The immense heat this generates limits it's potential
+    millions of beams of light in a spherical pattern hoping to daze any approaching
+    Electro-optical seekers. The immense heat this generates limits it's potential
     up-time to just a few seconds.
   _flavorText: 'Note: Known to cause blindness.'
   _category: EWar

@@ -236,7 +236,7 @@ MonoBehaviour:
   _shortDescription: Size 3 Torpedo Launcher
   _longDescription: A simple tube launcher designed to eject three torpedoes from
     a vertical spinal mount. Good for ambush or cap ships.
-  _flavorText: 
+  _flavorText: was load time 50
   _category: Weapons - Missile
   _costBreakdownClass: 2
   _compoundingCost: 0
@@ -296,8 +296,8 @@ MonoBehaviour:
   _detailType: Torpedo Launcher
   _missileClasses:
   - Missile
-  _missileSize: 3
-  _loadTime: 50
+  _missileSize: 4
+  _loadTime: 1
   _launchesPerLoad: 3
   _timeBetweenLaunches: 0.75
   _requireProgrammingChannels: 0

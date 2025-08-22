@@ -6870,7 +6870,7 @@ MonoBehaviour:
     _modifier: -0.15
     _permanent: 0
   - _statName: hull-missilechannels
-    _literal: 1
+    _literal: 2
     _modifier: 0
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}
@@ -10534,6 +10534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sigType: 1
   _returnMultiplier: 1
+  _includeSimpleMultiplierWithStat: 0
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
   _collider: {fileID: 7679119561451544709}

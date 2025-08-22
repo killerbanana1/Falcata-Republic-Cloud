@@ -71,7 +71,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 3 Flak
   _longDescription: "Long range flak cannon. \nNot Battle-shortable\n"
-  _flavorText: Used ETC for lore.
+  _flavorText: 
   _category: Weapons - Point Defense
   _costBreakdownClass: 3
   _compoundingCost: 0

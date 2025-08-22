@@ -100,7 +100,7 @@ MonoBehaviour:
   _stoppedHitDamageReduction: 0.5
   _maxHealth: 200
   _visualModel: {fileID: 4762752447515537889}
-  _size: 3
+  _size: 4
   _missileType: 1
   _missileClass: Missile
   _costAsSubmunitionMult: 1
@@ -337,7 +337,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b7ad505872199f49bf185199814829a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b64a89aa5a7f5a646855a553dd5d27fa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
@@ -383,7 +383,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -504,8 +504,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762752445813931449}
   m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.475}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 2634063459292316615}
   m_RootOrder: 1
@@ -566,6 +566,8 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
