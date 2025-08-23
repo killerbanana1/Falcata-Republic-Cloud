@@ -1,5 +1,60 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &211295133557484842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6495894320860356546}
+  - component: {fileID: 3509127140855433789}
+  m_Layer: 13
+  m_Name: Passive Radar Signature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6495894320860356546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211295133557484842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2634063459292316615}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3509127140855433789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211295133557484842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1310750176, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sigType: 4
+  _returnMultiplier: 1
+  _includeSimpleMultiplierWithStat: 0
+  _hideInSignatureSummary: 0
+  _preferSignatureRandomPoints: 1
+  _collider: {fileID: 0}
+  _sigSize:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 1, y: 1, z: 1}
+  _randomPointInBounds: 1
+  _strength: 100
+  _elintType: 1
 --- !u!1 &1987832803705827276
 GameObject:
   m_ObjectHideFlags: 0
@@ -19,7 +74,7 @@ GameObject:
   - component: {fileID: 5998270896599870453}
   - component: {fileID: 2843027651893782380}
   - component: {fileID: 7629959807352023151}
-  - component: {fileID: 5106288372465422262}
+  - component: {fileID: 1676584597699231563}
   m_Layer: 19
   m_Name: DEC VGT-4 Body
   m_TagString: Untagged
@@ -44,6 +99,7 @@ Transform:
   - {fileID: 4762752446888833826}
   - {fileID: 4762752445829077797}
   - {fileID: 4762752446715718701}
+  - {fileID: 6495894320860356546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  __copiedAssetId: 
+  __copiedAssetId: cbc500a4f76238d48b87be2f796c0021
   _body: {fileID: 5896167389421405188}
   _collider: {fileID: 4762752447515537891}
   _modId: 0
@@ -222,8 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  _isPointDefenseTarget: 1
-  _isDecoy: 0
+  _isPointDefenseTarget: 0
+  _isDecoy: 1
 --- !u!114 &6537002241148506286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +459,7 @@ MonoBehaviour:
   _revealIdentityOnVisible: 1
   _reportWorkRequired: 400
   _reportClassMismatchPenalty: 0.1
---- !u!114 &5106288372465422262
+--- !u!114 &1676584597699231563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
