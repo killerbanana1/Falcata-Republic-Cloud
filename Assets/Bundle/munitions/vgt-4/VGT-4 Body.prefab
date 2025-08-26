@@ -124,7 +124,7 @@ MonoBehaviour:
   _allowColorSelection: 1
   _baseColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
   _stripeColor: {r: 0.32812956, g: 0.22694907, b: 0.9433962, a: 1}
-  _socketWeight: 3
+  _socketWeight: 4
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
   _sockets:
@@ -162,7 +162,7 @@ MonoBehaviour:
     Fixed: 0
     Resizable: 1
     MinSize: 2
-    MaxSize: 16
+    MaxSize: 18
     DefaultSize: 9
     ResizeLinkedTo: 4
     _installed: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
     Fixed: 1
     Resizable: 1
     MinSize: 4
-    MaxSize: 16
+    MaxSize: 18
     DefaultSize: 9
     ResizeLinkedTo: 3
     _installed: {fileID: 11400000, guid: b5e57f48ac72d684898664de10f71744, type: 2}

@@ -180,7 +180,7 @@ MonoBehaviour:
     Fixed: 0
     Resizable: 1
     MinSize: 1
-    MaxSize: 10
+    MaxSize: 8
     DefaultSize: 5
     ResizeLinkedTo: 4
     _installed: {fileID: 0}
@@ -190,7 +190,7 @@ MonoBehaviour:
     Fixed: 1
     Resizable: 1
     MinSize: 4
-    MaxSize: 10
+    MaxSize: 12
     DefaultSize: 5
     ResizeLinkedTo: 3
     _installed: {fileID: 11400000, guid: 72d1d2f77b46a234b8393ae46446bf2f, type: 2}

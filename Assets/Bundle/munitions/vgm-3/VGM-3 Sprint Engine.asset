@@ -20,15 +20,15 @@ MonoBehaviour:
   _image: {fileID: 0}
   _description: 
   _speed: {x: 25, y: 50}
-  _speedCost: {x: 0, y: 0}
-  _thrust: {x: 25, y: 100}
-  _thrustCost: {x: 0, y: 3}
-  _flightTimePerIncrement: {x: 0.85, y: 2.75}
+  _speedCost: {x: 0, y: 2}
+  _thrust: {x: 50, y: 175}
+  _thrustCost: {x: 0, y: 2}
+  _flightTimePerIncrement: {x: 1, y: 3}
   _flightTimeCost: {x: 0, y: 0}
   _maxThrustAngle: {x: 15, y: 50}
   _turnRate: {x: 1, y: 3}
   _singleSpeed: 0
-  _maxStrafeSpeed: {x: 2, y: 4}
+  _maxStrafeSpeed: {x: 3, y: 4}
   _strafeThrust: {x: 0.4, y: 0.8}
   _preIgnitionTurnRateMultiplier: 1.6
   _appliesModifiers: 0
