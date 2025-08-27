@@ -68,10 +68,10 @@ MonoBehaviour:
   _maxFlightTime: 30
   _flightSpeed: 25
   _repoolDelay: 12
-  _pointCost: 1
+  _pointCost: 2
   _pointDivision: 1
   _storageVolume: 30
-  _munitionName: VGT-400 Flashbang
+  _munitionName: VGT-400 Plover
   _descriptionText: Torpedos focus on dealing incredible damage at short ranges,
     and the SGT-3 is no exception.  They are usually launched inside a target's point
     defense range, and thus must dedicate significant weight to protection in order
@@ -118,15 +118,15 @@ MonoBehaviour:
   _showSalvoInList: 1
   _designationBase: VGT-4
   _missileDesignation: VGT-400
-  _missileNickname: Flashbang
+  _missileNickname: Plover
   _bodySubtitle: Size 4 Torpedo
   _bodyFunctionalDescription: heavy anti-ship torpedo
   _allowColorSelection: 1
   _baseColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
   _stripeColor: {r: 0.32812956, g: 0.22694907, b: 0.9433962, a: 1}
-  _socketWeight: 4
+  _socketWeight: 3
   _socketWeightCostScaling: 1
-  _uniformSocketCostScaling: 1
+  _uniformSocketCostScaling: 0.75
   _sockets:
   - SocketType: 16
     Fixed: 0
@@ -138,7 +138,27 @@ MonoBehaviour:
     _installed: {fileID: 0}
     _missile: {fileID: 0}
     _currentSize: 0
-  - SocketType: 24
+  - SocketType: 16
+    Fixed: 0
+    Resizable: 0
+    MinSize: 1
+    MaxSize: 1
+    DefaultSize: 1
+    ResizeLinkedTo: -1
+    _installed: {fileID: 0}
+    _missile: {fileID: 0}
+    _currentSize: 0
+  - SocketType: 8
+    Fixed: 0
+    Resizable: 0
+    MinSize: 1
+    MaxSize: 1
+    DefaultSize: 1
+    ResizeLinkedTo: -1
+    _installed: {fileID: 0}
+    _missile: {fileID: 0}
+    _currentSize: 0
+  - SocketType: 8
     Fixed: 0
     Resizable: 0
     MinSize: 1
@@ -158,23 +178,23 @@ MonoBehaviour:
     _installed: {fileID: 0}
     _missile: {fileID: 0}
     _currentSize: 0
-  - SocketType: 10
+  - SocketType: 2
     Fixed: 0
     Resizable: 1
-    MinSize: 2
+    MinSize: 1
     MaxSize: 18
     DefaultSize: 9
-    ResizeLinkedTo: 4
+    ResizeLinkedTo: 6
     _installed: {fileID: 0}
     _missile: {fileID: 0}
     _currentSize: 0
   - SocketType: 1
     Fixed: 1
     Resizable: 1
-    MinSize: 4
+    MinSize: 6
     MaxSize: 18
     DefaultSize: 9
-    ResizeLinkedTo: 3
+    ResizeLinkedTo: 5
     _installed: {fileID: 11400000, guid: b5e57f48ac72d684898664de10f71744, type: 2}
     _missile: {fileID: 0}
     _currentSize: 0
@@ -192,7 +212,7 @@ MonoBehaviour:
     EngineSoundLoop: {fileID: 2843027651893782380}
     EngineStartSound: {fileID: 11400000, guid: 96a7faed88f7a864d9d918162bdde60b, type: 2}
     StageIgnitionDelay: 0
-    EngineSocketIndex: 4
+    EngineSocketIndex: 6
     EngineComp: {fileID: 0}
   _schematicPrefab: {fileID: 529990580293898102, guid: de138b9f6271ca945885216e8f8a5430, type: 3}
   _defaultEffectSet:
