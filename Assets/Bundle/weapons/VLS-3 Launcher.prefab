@@ -48,17 +48,17 @@ MonoBehaviour:
   _coldLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: 395c946c3fce3cf44bdc5028c46ceefd, type: 3}
     Sound: {fileID: 11400000, guid: de868185c0c49aa4f8ed78d043408bb5, type: 2}
-    Delay: 0
+    Delay: 4
   _hotLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: a7ef0d1ef15538549a1c5c0c6914d4c6, type: 3}
     Sound: {fileID: 11400000, guid: 6f1decafe7f423d45972d2674d15d55c, type: 2}
-    Delay: 0.01
+    Delay: 4
   _doorAnimation: {fileID: 7299238853374040325}
   _visibility: {fileID: 8458640429120303296}
   _ejectionVelocity: 1
   _ejectionDirection: {x: 0, y: 0, z: 1}
   _addRotation: {x: 0, y: 0, z: 0}
-  _launchDelay: 4.2
+  _launchDelay: 4
   _ignitionDelay: 1
   _pathDeviation: 4
   _forceHotLaunch: 0
@@ -354,17 +354,17 @@ MonoBehaviour:
   _coldLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: 395c946c3fce3cf44bdc5028c46ceefd, type: 3}
     Sound: {fileID: 11400000, guid: de868185c0c49aa4f8ed78d043408bb5, type: 2}
-    Delay: 0
+    Delay: 4
   _hotLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: a7ef0d1ef15538549a1c5c0c6914d4c6, type: 3}
     Sound: {fileID: 11400000, guid: 6f1decafe7f423d45972d2674d15d55c, type: 2}
-    Delay: 0.01
+    Delay: 4
   _doorAnimation: {fileID: 4560480883139871702}
   _visibility: {fileID: 8449587837668084713}
   _ejectionVelocity: 1
   _ejectionDirection: {x: 0, y: 0, z: 1}
   _addRotation: {x: 0, y: 0, z: 0}
-  _launchDelay: 4.2
+  _launchDelay: 4
   _ignitionDelay: 1
   _pathDeviation: 4
   _forceHotLaunch: 0
@@ -528,17 +528,17 @@ MonoBehaviour:
   _coldLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: 395c946c3fce3cf44bdc5028c46ceefd, type: 3}
     Sound: {fileID: 11400000, guid: de868185c0c49aa4f8ed78d043408bb5, type: 2}
-    Delay: 0
+    Delay: 4
   _hotLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: a7ef0d1ef15538549a1c5c0c6914d4c6, type: 3}
     Sound: {fileID: 11400000, guid: 6f1decafe7f423d45972d2674d15d55c, type: 2}
-    Delay: 0.01
+    Delay: 4
   _doorAnimation: {fileID: 4653261965982460795}
   _visibility: {fileID: 6004828406679800390}
   _ejectionVelocity: 1
   _ejectionDirection: {x: 0, y: 0, z: 1}
   _addRotation: {x: 0, y: 0, z: 0}
-  _launchDelay: 4.2
+  _launchDelay: 4
   _ignitionDelay: 1
   _pathDeviation: 4
   _forceHotLaunch: 0
@@ -1301,17 +1301,17 @@ MonoBehaviour:
   _coldLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: 395c946c3fce3cf44bdc5028c46ceefd, type: 3}
     Sound: {fileID: 11400000, guid: de868185c0c49aa4f8ed78d043408bb5, type: 2}
-    Delay: 0
+    Delay: 4
   _hotLaunchEffect:
     ParticleEffect: {fileID: 2357699483268532098, guid: a7ef0d1ef15538549a1c5c0c6914d4c6, type: 3}
     Sound: {fileID: 11400000, guid: 6f1decafe7f423d45972d2674d15d55c, type: 2}
-    Delay: 0.01
+    Delay: 4
   _doorAnimation: {fileID: 2657724596561559262}
   _visibility: {fileID: 6660878529720934108}
   _ejectionVelocity: 1
   _ejectionDirection: {x: 0, y: 0, z: 1}
   _addRotation: {x: 0, y: 0, z: 0}
-  _launchDelay: 4.2
+  _launchDelay: 4
   _ignitionDelay: 1
   _pathDeviation: 4
   _forceHotLaunch: 0

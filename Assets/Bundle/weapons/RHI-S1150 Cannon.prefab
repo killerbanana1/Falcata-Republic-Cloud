@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.04
+  _baseAccuracy: 0.05
   _flash: {fileID: 4177314325100348988}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -413,6 +413,7 @@ MonoBehaviour:
   - 500
   - 680
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1

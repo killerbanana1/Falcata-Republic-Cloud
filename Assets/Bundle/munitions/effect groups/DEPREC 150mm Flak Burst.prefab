@@ -97,8 +97,8 @@ MonoBehaviour:
   _lingerFrames: 5
   _armorPenetration: 0.5
   _heatPower: 2
-  _componentDamage: 80
-  _blastRadius: 15
+  _componentDamage: 40
+  _blastRadius: 7.5
   _scaleDamageOverArea: 1
   _armorDamageScaling:
     serializedVersion: 2

@@ -144,7 +144,7 @@ MonoBehaviour:
   _stripeColor: {r: 1, g: 0.7776269, b: 0, a: 1}
   _socketWeight: 1
   _socketWeightCostScaling: 1
-  _uniformSocketCostScaling: 0.75
+  _uniformSocketCostScaling: 1
   _sockets:
   - SocketType: 16
     Fixed: 0
@@ -1107,7 +1107,7 @@ CapsuleCollider:
   m_Radius: 0.03
   m_Height: 0.64
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.01}
 --- !u!205 &4762752447515537888
 LODGroup:
   m_ObjectHideFlags: 0

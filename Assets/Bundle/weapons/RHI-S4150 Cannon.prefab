@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.05
+  _baseAccuracy: 0.075
   _flash: {fileID: 189159901471150667}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 45
+  _pointCost: 40
   _type: 0
   _size: {x: 3, y: 8, z: 2}
   _interiorOverhang: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.05
+  _baseAccuracy: 0.075
   _flash: {fileID: 7973608392806615788}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.05
+  _baseAccuracy: 0.075
   _flash: {fileID: 7724636788227491501}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.05
+  _baseAccuracy: 0.075
   _flash: {fileID: 4214987019211179704}
   _fireAnimation: {fileID: 0}
   _bulletLook: 0

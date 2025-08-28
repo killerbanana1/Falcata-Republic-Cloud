@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1078026204
+CRC: 1462028379
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2549a152b75d7c9867798f0971f45735
+    Hash: 7f84c7d7681cafebb1173ae2a051f80c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6a0f7d8196988be5c0d312f8c0a1168c
@@ -21,6 +21,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Bundle/resources/FXs/trail_base.png
-- Assets/Bundle/resources/FXs/Thruster.vfx
+- Assets/VFX/trail_base.png
+- Assets/VFX/Thruster.vfx
 Dependencies: []
