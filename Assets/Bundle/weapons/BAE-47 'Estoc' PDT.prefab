@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originalMaterials:
-  - {fileID: 2100000, guid: f526f84af39fc2248b1526ab8b1c9a43, type: 2}
+  - {fileID: 2100000, guid: f6e5589cbcc83134da195f866c5ee585, type: 2}
   _applyOnAwake: 1
   _fullDepth: 1
   _createMaterialInstances: 1
