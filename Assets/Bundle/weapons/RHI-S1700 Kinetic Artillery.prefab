@@ -376,10 +376,6 @@ MonoBehaviour:
     _literal: 0
     _modifier: -0.1
     _permanent: 0
-  - _statName: hull-turnrate
-    _literal: 0
-    _modifier: -0.2
-    _permanent: 0
   _resourceDemandPriority: 10
   ResourcesProvided: []
   ResourcesRequired:

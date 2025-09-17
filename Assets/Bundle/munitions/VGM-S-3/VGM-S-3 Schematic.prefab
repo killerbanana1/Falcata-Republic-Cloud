@@ -2544,7 +2544,7 @@ GameObject:
   - component: {fileID: 8873861137192490772}
   - component: {fileID: 9024382640165619257}
   m_Layer: 5
-  m_Name: VGM-3 Schematic
+  m_Name: VGM-S-3 Schematic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

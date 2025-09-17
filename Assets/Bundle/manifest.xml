@@ -106,9 +106,9 @@
 	
   <MissileBodies>
 	<Entry Name="VGT-4 Body" Address="munitions/VGT-4/VGT-4 Body.prefab"/>
-	<Entry Name="VGM-3 Body" Address="munitions/VGm-3/VGM-3 Body.prefab"/>
-	<Entry Name="VGM-2 Body" Address="munitions/VGm-2/VGM-2 Body.prefab"/>
-	<Entry Name="VGM-1 Body" Address="munitions/VGm-1/VGM-1 Body.prefab"/>
+	<Entry Name="VGM-S-3 Body" Address="munitions/VGM-S-3/VGM-S-3 Body.prefab"/>
+	<Entry Name="VGM-2 Body" Address="munitions/VGM-2/VGM-2 Body.prefab"/>
+	<Entry Name="VGM-1 Body" Address="munitions/VGM-1/VGM-1 Body.prefab"/>
   </MissileBodies>
 
   <MissileComponents>

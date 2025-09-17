@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 932835277935694823}
   - component: {fileID: 7191204337733167618}
   m_Layer: 0
-  m_Name: VGM-3 Staging Effect
+  m_Name: VGM-S-3 Staging Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -603318275, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: HEI+
+  m_EditorClassIdentifier: 
+  _componentSaveKey: 
+  _modId: 0
+  _factionKey: 
+  _settingsPanelName: 
+  _pointCost: 1
+  _image: {fileID: 21300000, guid: c13c263aa1ce4e648a63de7ed24a2125, type: 2}
+  _description: 'Super HEI
+
+    A high-explosive warhead that detonates on contact
+    with a target.  This type of warhead is a good all-around choice for targets
+    large and small.  It will create a large hole in the armor, opening that area
+    up for cannon fire, and doing catastrophic damage to internal components.'
+  _optimalTargetWeight: 1
+  _recommendedTargetTypes: 01000000
+  _applyImpulseOnImpact: 1
+  _impulseMagnitude:
+    _amountPerIncrement: 20
+    _falloff: 3
+    _falloffFactor: 5
+  _armorDamage:
+    _amountPerIncrement: 30
+    _falloff: 3
+    _falloffFactor: 0.8
+  _armorBrushRadius:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 5
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _heatPower: 1500
+  _componentDamage:
+    _amountPerIncrement: 360
+    _falloff: 0
+    _falloffFactor: 0
+  _maxDamagePerRay: 50
+  _maxRayCount: -1
+  _rayConeAngle: 35
+  _rayLength: 7
+  _missedRayRetries: 0
+  _randomEffectMultiplier: 0.66
+  _crewVulnerabilityMultiplier: 1.5
+  _effects:
+    _surfaceGroups:
+    - _surfaceType: 
+      _ricochetEffects: []
+      _impactEffects:
+      - {fileID: 0}
+      _penetratingEffects:
+      - {fileID: 0}
+      - {fileID: 0}
+      _penetrationExitEffects: []
+      _destructionEffects:
+      - {fileID: 0}
+    - _surfaceType: Surface-Rock
+      _ricochetEffects:
+      - {fileID: 0}
+      _impactEffects:
+      - {fileID: 0}
+      _penetratingEffects:
+      - {fileID: 0}
+      _penetrationExitEffects: []
+      _destructionEffects: []

@@ -64,13 +64,13 @@ MonoBehaviour:
     is all about maximizing control. They prioritize maneuverability and gain a dash
     of lateral thrust at the cost of speed. It\u2019s rapid response time and exceptional
     turning rate make it ideal for close-quarters engagements."
-  _flavorText: "This beauty is for those who dare to favor finesse over the current
+  _flavorText: "\rThis beauty is for those who dare to favor finesse over the current
     swiftness hullabaloo at the naval office. Once the shells start flying, your
-    fancy warships kitted for 50m/s+ on Flank speed will be little more than a hunk
-    of junk if it can\u2019t get the nose around. The Cuirassiers do just that, providing
-    control in an environment where milliseconds and micro-adjustments are the difference
-    between leaving the battlespace as victors or in a lifeboat. Honestly, to me
-    it\u2019s a no-brainer.\r\n\n- M. Weaver, CMC"
+    fancy warship kitted for speed will be little more than a hunk of junk if it
+    can\u2019t get the nose around. The Cuirassiers do just that, providing control
+    in an environment where milliseconds and micro-adjustments are the difference
+    between leaving the battlespace as a victor or in a lifeboat. Honestly, I\u2019d
+    say it\u2019s a no-brainer.\r\n\r\n- M. Weaver, CMC\r\n"
   _category: Propulsion
   _costBreakdownClass: 8
   _compoundingCost: 0
