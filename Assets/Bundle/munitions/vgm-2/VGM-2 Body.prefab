@@ -124,7 +124,7 @@ MonoBehaviour:
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
   _overriddenThreatSize: 3
-  _missileIcon: {fileID: 21300000, guid: 83503365e18c5d14ea425e75e7b80525, type: 3}
+  _missileIcon: {fileID: 21300000, guid: eecdaefbb5c0e9545a668d0c2d0694b4, type: 3}
   _hotLaunchReleaseDistance: 1
   _programmingTimeRequired: 8
   _rackMountingRadius: 0.0292
@@ -140,8 +140,8 @@ MonoBehaviour:
   _bodySubtitle: Size 2 Missile
   _bodyFunctionalDescription: flexible mainstay anti-ship missile
   _allowColorSelection: 1
-  _baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  _stripeColor: {r: 1, g: 0.7776269, b: 0, a: 1}
+  _baseColor: {r: 0, g: 0, b: 0, a: 1}
+  _stripeColor: {r: 0.81960785, g: 0.5529412, b: 0, a: 1}
   _socketWeight: 0.9
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1

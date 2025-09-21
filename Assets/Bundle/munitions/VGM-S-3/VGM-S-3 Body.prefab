@@ -396,7 +396,7 @@ MonoBehaviour:
   _pointCost: 4
   _pointDivision: 1
   _storageVolume: 30
-  _munitionName: VGM-300 Fuchs
+  _munitionName: VGM-S-300 Fuchs
   _descriptionText: Hybrid missiles combine the characteristics found in two other
     classes of missiles.  The SGM-H-3 is a Size 3 missiles built from a long-range
     cruise bus which offers moderate speed and long range to deliver a Size 2 sprint
@@ -432,7 +432,7 @@ MonoBehaviour:
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
   _overriddenThreatSize: 3
-  _missileIcon: {fileID: 21300000, guid: 9b728b7e9997ab943bbfad641b65079b, type: 3}
+  _missileIcon: {fileID: 21300000, guid: 7674fae8c42d4604e8e2de3da5e6b4f1, type: 3}
   _hotLaunchReleaseDistance: 1.5
   _programmingTimeRequired: 12
   _rackMountingRadius: 0.0569
@@ -442,15 +442,15 @@ MonoBehaviour:
   _rackMeshMaterialSource: {fileID: 4762752447295675533}
   _skinSelector: {fileID: 0}
   _showSalvoInList: 1
-  _designationBase: VGM-3
-  _missileDesignation: VGM-300
+  _designationBase: VGM-S-3
+  _missileDesignation: VGM-S-300
   _missileNickname: Fuchs
   _bodySubtitle: Size 3 Hybrid Missile
   _bodyFunctionalDescription: dual-stage conventional missile designed to strike
     heavy targets
   _allowColorSelection: 1
-  _baseColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
-  _stripeColor: {r: 0.94509804, g: 0.22745097, b: 0.26527444, a: 1}
+  _baseColor: {r: 1, g: 0.18431373, b: 0.18431373, a: 1}
+  _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
   _socketWeight: 2
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
