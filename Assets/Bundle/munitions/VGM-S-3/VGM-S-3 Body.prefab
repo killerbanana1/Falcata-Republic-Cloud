@@ -71,6 +71,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &6313248053183630256
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87,14 +88,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -174,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
+  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -930,18 +923,20 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4641197944301093212}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: -0.000000011175871, y: 0, z: 0.1747537}
+  m_Size: 0.6837067
   m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.05788711
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 8175140257204715097}
   - screenRelativeHeight: 0.01276711
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 3241019079822885677}
   m_Enabled: 1
 --- !u!114 &203186854652918748
 MonoBehaviour:
@@ -1046,6 +1041,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &4762752445813931399
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1062,14 +1058,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1305,7 +1293,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
+  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
   - {fileID: -1245136380628285778, guid: 38e8ca46540deee47afca3554f49c6e1, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1400,6 +1388,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &4762752447470795840
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1416,9 +1405,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1498,18 +1484,20 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762752447515537893}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: -0.000000029802322, y: 0, z: -0.18526465}
+  m_Size: 0.5438961
   m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.05788711
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 4762752447295675533}
   - screenRelativeHeight: 0.01276711
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 2334813481109938093}
   m_Enabled: 1
 --- !u!114 &4762752447515537889
 MonoBehaviour:
@@ -1602,8 +1590,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
-  - {fileID: -1245136380628285778, guid: 38e8ca46540deee47afca3554f49c6e1, type: 3}
+  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
+  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1697,6 +1685,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &8932387743339233195
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1713,9 +1702,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1811,7 +1797,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
+  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
