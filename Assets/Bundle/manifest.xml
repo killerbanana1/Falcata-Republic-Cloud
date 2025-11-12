@@ -36,7 +36,7 @@
 	
 	<!-- Missile Launchers -->
 	<Entry Name="VLS-3 Launcher" Address="weapons/VLS-3 Launcher.prefab"/>
-	<Entry Name="RLS-3 Launcher" Address="weapons/RLS-3 Launcher.prefab"/>
+	<Entry Name="RLS-4 Launcher" Address="weapons/RLS-4 Launcher.prefab"/>
 
 	<!-- Sensors -->
 	<Entry Name="SA82 'Sauron' Radar" Address="weapons/SA82 'Sauron' Radar.prefab"/>
@@ -101,7 +101,8 @@
 	<Entry Name="37mm Sandshot" Address="munitions/37mm Sandshot.asset"/>
 
 	<!-- Utility Missiles -->
-	<Entry Name="DEC VGT-4 Body" Address="munitions/VGT-4/DEC VGT-4 Body.prefab"/>
+	<Entry Name="VGT-4D1 Decoy Torpedo (Corvette)" Address="munitions/VGT-4/VGT-4D1 Decoy Torpedo (Corvette).prefab"/>
+	<Entry Name="VGT-4D2 Decoy Torpedo (Cruiser)" Address="munitions/VGT-4/VGT-4D2 Decoy Torpedo (Cruiser).prefab"/>
   </Munitions>
 	
   <MissileBodies>

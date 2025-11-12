@@ -105,7 +105,7 @@ MonoBehaviour:
   _missileClass: Missile
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
-  _overriddenThreatSize: 3
+  _overriddenThreatSize: 4
   _missileIcon: {fileID: 21300000, guid: 9b97f252b3908824c97e21cfb86f867e, type: 3}
   _hotLaunchReleaseDistance: 1.5
   _programmingTimeRequired: 5
@@ -216,14 +216,7 @@ MonoBehaviour:
     EngineComp: {fileID: 0}
   _schematicPrefab: {fileID: 529990580293898102, guid: de138b9f6271ca945885216e8f8a5430, type: 3}
   _defaultEffectSet:
-    _surfaceGroups:
-    - _surfaceType: 
-      _ricochetEffects: []
-      _impactEffects: []
-      _penetratingEffects: []
-      _penetrationExitEffects: []
-      _destructionEffects:
-      - {fileID: 2357699483268532098, guid: 940c13befb8263d42816c7d2df3f1a90, type: 3}
+    _surfaceGroups: []
   _avoider: {fileID: 7406145458793151339}
   _radarSignature: {fileID: 4762752445829077798}
   _boostPhaseDuration: 3

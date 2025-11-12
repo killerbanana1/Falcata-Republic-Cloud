@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188115997573201752}
   m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0725}
   m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
   m_Children: []
   m_Father: {fileID: 3948554681876014125}
@@ -167,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
+  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -550,14 +550,7 @@ MonoBehaviour:
     EngineComp: {fileID: 0}
   _schematicPrefab: {fileID: 529990580293898102, guid: a89225b93c235c6408d1b42665c570fd, type: 3}
   _defaultEffectSet:
-    _surfaceGroups:
-    - _surfaceType: 
-      _ricochetEffects: []
-      _impactEffects: []
-      _penetratingEffects: []
-      _penetrationExitEffects: []
-      _destructionEffects:
-      - {fileID: 2357699483268532098, guid: 940c13befb8263d42816c7d2df3f1a90, type: 3}
+    _surfaceGroups: []
   _avoider: {fileID: 7406145458793151339}
   _radarSignature: {fileID: 4762752445829077798}
   _boostPhaseDuration: 3
@@ -965,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originalMaterials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
   _applyOnAwake: 0
   _fullDepth: 0
   _createMaterialInstances: 1
@@ -1293,7 +1286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
+  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
   - {fileID: -1245136380628285778, guid: 38e8ca46540deee47afca3554f49c6e1, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1590,8 +1583,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
-  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
+  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
+  - {fileID: -1245136380628285778, guid: 38e8ca46540deee47afca3554f49c6e1, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1797,7 +1790,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 81f06cd49a32d8a428e0667308ba6f31, type: 2}
+  - {fileID: 2100000, guid: e939f5db6ecca7842a261f29c612c771, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
