@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 8973960189711798866}
   - component: {fileID: 3904998089780585954}
   m_Layer: 0
-  m_Name: RLS-3 Launcher
+  m_Name: RLS-4 Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   _smallImage: {fileID: 21300000, guid: 57637debfef43a8429f32f0e3f652c00, type: 3}
   _largeImage: {fileID: 21300000, guid: 01f96ebd4ce72c240838b0b419c5885d, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
-  _shortDescription: Size 3 Torpedo Launcher
+  _shortDescription: Size 4 Torpedo Launcher
   _longDescription: A simple tube launcher designed to eject three torpedoes from
     a vertical spinal mount. Good for ambush or cap ships.
   _flavorText: was load time 50
@@ -360,6 +360,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &3904998089780585954
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -376,9 +377,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
