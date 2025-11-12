@@ -63,12 +63,12 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   __copiedAssetId: c7229f213bd94c12821ef1dba7fc9ba5
-  _body: {fileID: 5896167389421405188, guid: cbc500a4f76238d48b87be2f796c0021, type: 3}
-  _collider: {fileID: 4762752447515537891, guid: cbc500a4f76238d48b87be2f796c0021, type: 3}
+  _body: {fileID: 5896167389421405188}
+  _collider: {fileID: 4762752447515537891}
   _modId: 0
   _factionKey: Falcata Republic/Falcata Republic
-  _maxFlightTime: 30
-  _flightSpeed: 25
+  _maxFlightTime: 400
+  _flightSpeed: 4.2
   _repoolDelay: 12
   _pointCost: 4
   _pointDivision: 1
@@ -97,7 +97,7 @@ MonoBehaviour:
       _destructionEffects:
       - {fileID: 2357699483268532098, guid: 940c13befb8263d42816c7d2df3f1a90, type: 3}
   _saveKey: 
-  _selectVolume: {fileID: 4762752446888833827, guid: cbc500a4f76238d48b87be2f796c0021, type: 3}
+  _selectVolume: {fileID: 4762752446888833827}
   _overrideMarker: 1
   _overrideMarkerType: 12
   _wallThickness: 0.25
@@ -139,9 +139,9 @@ MonoBehaviour:
     Mimics: 0100000004000000
     FireTimeToGo: 30
     MinTimeBetween: 30
-  _thrusterParticles: {fileID: 4762752447470795841, guid: cbc500a4f76238d48b87be2f796c0021, type: 3}
+  _thrusterParticles: {fileID: 4762752447470795841}
   _seeker: {fileID: 0}
-  _avoider: {fileID: 7406145458793151339, guid: cbc500a4f76238d48b87be2f796c0021, type: 3}
+  _avoider: {fileID: 7406145458793151339}
   _thrusterForce: 2
   _thrusterMaxSpeed: 1
   _P: 1
