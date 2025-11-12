@@ -81,7 +81,7 @@ MonoBehaviour:
     these decoys can disguise offensive fronts, cover retreats, or perform a feint.\r\n\r\nThis
     decoy mimics the signature of a Kaliare cruiser.\r"
   _optionalFlavorText: 
-  _screenshot: {fileID: 21300000, guid: 3e91f05cb8476ab499a49deb1973e988, type: 3}
+  _screenshot: {fileID: 21300000, guid: a2cff298e60e7744d90c270bfcea7215, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
