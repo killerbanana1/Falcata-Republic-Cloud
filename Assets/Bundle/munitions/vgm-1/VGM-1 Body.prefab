@@ -96,7 +96,7 @@ MonoBehaviour:
 
     -
     T. Meadows, LT'
-  _screenshot: {fileID: 21300000, guid: d2f874d527073b648b42ac9be5138c70, type: 3}
+  _screenshot: {fileID: 21300000, guid: f010c77abd25e5546b637e852ee7d0b6, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   _bodySubtitle: Size 1 Missile
   _bodyFunctionalDescription: nimble general-purpose missile
   _allowColorSelection: 1
-  _baseColor: {r: 0.4339623, g: 0.26815593, b: 0.26815593, a: 1}
-  _stripeColor: {r: 0, g: 0.34117648, b: 0.5058824, a: 1}
+  _baseColor: {r: 1, g: 0.78431374, b: 0, a: 1}
+  _stripeColor: {r: 0.49019608, g: 0.19607843, b: 0, a: 1}
   _socketWeight: 0.33
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1

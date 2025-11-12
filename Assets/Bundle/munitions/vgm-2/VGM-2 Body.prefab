@@ -96,7 +96,7 @@ MonoBehaviour:
 
     -
     T. Meadows, LT'
-  _screenshot: {fileID: 21300000, guid: dfae4faa94d01d049844b5ba1c03ff9c, type: 3}
+  _screenshot: {fileID: 21300000, guid: 6897a9ae232eb3a46b91e42642c8e1f4, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
@@ -140,8 +140,8 @@ MonoBehaviour:
   _bodySubtitle: Size 2 Missile
   _bodyFunctionalDescription: flexible mainstay anti-ship missile
   _allowColorSelection: 1
-  _baseColor: {r: 0, g: 0, b: 0, a: 1}
-  _stripeColor: {r: 1, g: 0.7776269, b: 0, a: 1}
+  _baseColor: {r: 1, g: 0.18431373, b: 0.18431373, a: 0}
+  _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
   _socketWeight: 0.9
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1

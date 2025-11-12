@@ -397,7 +397,7 @@ MonoBehaviour:
     missiles that can be found, and only two or three are required to destroy a heavy
     target.
   _optionalFlavorText: 
-  _screenshot: {fileID: 21300000, guid: f2a7f0b1999fc984695abebe802fd3c5, type: 3}
+  _screenshot: {fileID: 21300000, guid: 7a69b6c6b2c013c4a943558332423646, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
@@ -442,8 +442,8 @@ MonoBehaviour:
   _bodyFunctionalDescription: dual-stage conventional missile designed to strike
     heavy targets
   _allowColorSelection: 1
-  _baseColor: {r: 1, g: 0.18431373, b: 0.18431373, a: 1}
-  _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
+  _baseColor: {r: 0.21176471, g: 0.29411766, b: 0.43529412, a: 1}
+  _stripeColor: {r: 0.7647059, g: 0.5803922, b: 0.21176471, a: 1}
   _socketWeight: 2
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1

@@ -78,7 +78,7 @@ MonoBehaviour:
     to minimize their chance of being immediately destroyed.  This makes torpedos
     extremely heavy and slow.
   _optionalFlavorText: 
-  _screenshot: {fileID: 21300000, guid: 7a6be1431b61a934fa7581aa11139f5f, type: 2}
+  _screenshot: {fileID: 21300000, guid: fdb62c5d133bfbb40abed2037a649de9, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
   _forceBodyWakeup: 0
