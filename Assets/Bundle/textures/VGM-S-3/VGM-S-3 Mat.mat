@@ -263,7 +263,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _BasePaintTint: {r: 1, g: 0.18431373, b: 0.18431373, a: 0}
+    - _BasePaintTint: {r: 0.21084018, g: 0.293478, b: 0.4339623, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
@@ -274,7 +274,7 @@ Material:
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _PlateBurnPos: {r: 0, g: 0, b: -100, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _StripePaintTint: {r: 1, g: 0.9529412, b: 0.8745098, a: 0}
+    - _StripePaintTint: {r: 0.7647059, g: 0.57894415, b: 0.2117647, a: 0}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
