@@ -235,8 +235,8 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Size 4 Torpedo Launcher
   _longDescription: A simple tube launcher designed to eject three torpedoes from
-    a vertical spinal mount. Good for ambush or cap ships.
-  _flavorText: was load time 50
+    a vertical spinal mount. Excellent for ambushing or skirmish warfare.
+  _flavorText: 
   _category: Weapons - Missile
   _costBreakdownClass: 2
   _compoundingCost: 0

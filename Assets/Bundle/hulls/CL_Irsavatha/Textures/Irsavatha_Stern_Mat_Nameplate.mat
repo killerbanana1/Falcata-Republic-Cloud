@@ -292,8 +292,8 @@ Material:
     - _decal1SrcUV: {r: 0, g: 0, b: 1, a: 1}
     - _decal2DestUV: {r: 0.06813, g: 0.607924, b: 0.110062, a: 0.650072}
     - _decal2SrcUV: {r: 0, g: 0, b: 1, a: 1}
-    - _decal3DestUV: {r: 0.23391, g: 0.416148, b: 0.375458, a: 0.433893}
+    - _decal3DestUV: {r: 0.234767, g: 0.410071, b: 0.376461, a: 0.427196}
     - _decal3SrcUV: {r: 0, g: 0, b: 1, a: 1}
-    - _decal4DestUV_1: {r: 0.233834, g: 0.565573, b: 0.37569, a: 0.583356}
+    - _decal4DestUV_1: {r: 0.237461, g: 0.547791, b: 0.379931, a: 0.56565}
     - _decal4SrcUV: {r: 0, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []

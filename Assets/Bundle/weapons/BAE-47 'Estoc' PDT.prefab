@@ -229,8 +229,8 @@ MonoBehaviour:
   _saveKey: 
   _modId: 0
   _shortUIName: BAE-47 'Estoc' PDT
-  _smallImage: {fileID: 0}
-  _largeImage: {fileID: 0}
+  _smallImage: {fileID: 21300000, guid: c5cfae6e4ce0dcc4884669d1b56d73f4, type: 3}
+  _largeImage: {fileID: 21300000, guid: 1e0876ff2acd13c4b892e24c9e7d9c16, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 2 Pulsed Laser
   _longDescription: "The BAE-47 \u2018Estoc\u2019 is a perfect example of simplicity
@@ -537,6 +537,7 @@ LODGroup:
   m_Enabled: 1
 --- !u!73398921 &7218312423967834509
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -553,9 +554,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1172,6 +1170,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &9015052347644626187
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1188,9 +1187,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1433,6 +1429,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &9015052348443236484
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1449,12 +1446,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

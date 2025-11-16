@@ -245,7 +245,10 @@ MonoBehaviour:
   _largeImage: {fileID: 0}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Jammer (Radar)
-  _longDescription: The E80 is one mean piece of kit.
+  _longDescription: The E80 'Miasma' Jammer is a sweep noise jammer intended to break
+    enemy target locks at range. Its sensor warfare and obfuscation functionality
+    is reasonably capable but the shorter burst time make it less capable than its
+    AN counterparts in that regard.
   _flavorText: 
   _category: EWar
   _costBreakdownClass: 5
@@ -557,6 +560,7 @@ LODGroup:
   m_Enabled: 1
 --- !u!73398921 &2653767724655742111
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -573,9 +577,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
