@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originalMaterials:
-  - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
+  - {fileID: 2100000, guid: 6bae5a0ca84f39d4f920091b9092a8fb, type: 2}
   _applyOnAwake: 1
   _fullDepth: 0
   _createMaterialInstances: 1
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originalMaterials:
-  - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
+  - {fileID: 2100000, guid: 6bae5a0ca84f39d4f920091b9092a8fb, type: 2}
   _applyOnAwake: 1
   _fullDepth: 0
   _createMaterialInstances: 1
@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originalMaterials:
-  - {fileID: 2100000, guid: a216a6f1b94d204489eda79a1c6dca1e, type: 2}
+  - {fileID: 2100000, guid: 6bae5a0ca84f39d4f920091b9092a8fb, type: 2}
   _applyOnAwake: 1
   _fullDepth: 0
   _createMaterialInstances: 1
