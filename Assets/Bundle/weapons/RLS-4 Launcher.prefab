@@ -297,8 +297,8 @@ MonoBehaviour:
   _missileClasses:
   - Missile
   _missileSize: 4
-  _loadTime: 1
-  _launchesPerLoad: 3
+  _loadTime: 60
+  _launchesPerLoad: 2
   _timeBetweenLaunches: 0.75
   _requireProgrammingChannels: 0
   _checkLauncherBlocked: 1
