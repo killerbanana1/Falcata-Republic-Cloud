@@ -1190,21 +1190,36 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6660878529596428554}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: 0, y: 0.07512255, z: 0}
+  m_Size: 0.710915
   m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.19764686
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 6660878528496834214}
+    - renderer: {fileID: 8101093811196286897}
+    - renderer: {fileID: 5767123857597687821}
+    - renderer: {fileID: 1117140475546162117}
+    - renderer: {fileID: 2038551488262143337}
   - screenRelativeHeight: 0.010574269
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 6660878529730069660}
+    - renderer: {fileID: 8101093811196286897}
+    - renderer: {fileID: 5767123857597687821}
+    - renderer: {fileID: 2038551488262143337}
+    - renderer: {fileID: 1117140475546162117}
   - screenRelativeHeight: 0.0039733327
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 4516022908384276797}
+    - renderer: {fileID: 8101093811196286897}
+    - renderer: {fileID: 5767123857597687821}
+    - renderer: {fileID: 2038551488262143337}
+    - renderer: {fileID: 1117140475546162117}
   m_Enabled: 1
 --- !u!114 &5392592523582304922
 MonoBehaviour:

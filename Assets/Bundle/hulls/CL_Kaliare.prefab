@@ -2046,8 +2046,8 @@ MonoBehaviour:
   _hasTraverseLimits: 1
   _traverseLimits:
     LimitFiringOnly: 1
-    LeftAngle: 0
-    RightAngle: 0
+    LeftAngle: 150
+    RightAngle: 150
     UseElevationLimit: 1
     ElevationAngle: 9
   _hasForwardLimits: 0
@@ -10706,7 +10706,7 @@ MonoBehaviour:
   _overrideEquipmentFactionKey: 
   _hideInFleetEditor: 0
   _normalSilhouette: {fileID: 21300000, guid: a5830f8bad05bba41b56d234f799b2bc, type: 3}
-  _hudSilhouette: {fileID: 21300000, guid: a5830f8bad05bba41b56d234f799b2bc, type: 3}
+  _hudSilhouette: {fileID: 21300000, guid: 0088f63981af37f49a92f4427e319410, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: ef5a26a67f675514d902c43a0f9582be, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: c012184030879b542927cc861e251f5b, type: 3}
   _screenshot: {fileID: 21300000, guid: 53852100d301b4640a21e896a98230ea, type: 3}

@@ -5114,7 +5114,7 @@ MonoBehaviour:
   _overrideEquipmentFactionKey: 
   _hideInFleetEditor: 0
   _normalSilhouette: {fileID: 21300000, guid: 0b01ea26608803743a7efdc47227feae, type: 3}
-  _hudSilhouette: {fileID: 21300000, guid: 0b01ea26608803743a7efdc47227feae, type: 3}
+  _hudSilhouette: {fileID: 21300000, guid: 5d44d082876efb64084dbda071d502f7, type: 3}
   _statusDisplayPrefab: {fileID: 4915532643607095751, guid: 64ec06b825499ac4dae47cc589d3ec84, type: 3}
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: c4f6d5b41a1601e45beb79ca9fabac25, type: 3}
   _screenshot: {fileID: 21300000, guid: a562c3ba903bc4a49b98a9bdc824c4fe, type: 3}

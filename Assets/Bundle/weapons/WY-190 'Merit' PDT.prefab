@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6381628608944929638}
   - component: {fileID: 6657707130032700841}
   - component: {fileID: 48471545366811941}
+  - component: {fileID: 2114943796495646774}
   m_Layer: 0
   m_Name: WY-190 'Merit' PDT
   m_TagString: Untagged
@@ -388,8 +389,8 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486848135288581990}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.2051381, z: 0.6370242}
-  m_Size: 2.7418356
+  m_LocalReferencePoint: {x: 0, y: 0.32293668, z: 0.25634468}
+  m_Size: 2.3240573
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
@@ -397,11 +398,9 @@ LODGroup:
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
+    - renderer: {fileID: 6093869719823929862}
+    - renderer: {fileID: 1867542899204941791}
+    - renderer: {fileID: 8759174563865653006}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers: []
@@ -441,6 +440,19 @@ MonoBehaviour:
   _fullDepth: 0
   _createMaterialInstances: 1
   _useSharedMatTable: 1
+--- !u!114 &2114943796495646774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486848135288581990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _multipleMaterials: 0
 --- !u!1 &4003026455849086014
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +579,7 @@ GameObject:
   - component: {fileID: 6637056726015654551}
   - component: {fileID: 1867542899204941791}
   - component: {fileID: 3346618692711569538}
+  - component: {fileID: 3796788854253989119}
   m_Layer: 0
   m_Name: C3 Flak Turret
   m_TagString: Untagged
@@ -651,6 +664,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mesh: {fileID: 1867542899204941791}
   _fade: 0
+--- !u!114 &3796788854253989119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5772246167169785961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 379092634, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6449981186861006134
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +784,7 @@ GameObject:
   - component: {fileID: 1171080994808204766}
   - component: {fileID: 8759174563865653006}
   - component: {fileID: 1848313183799473364}
+  - component: {fileID: 8781612809338718954}
   m_Layer: 0
   m_Name: C3 Flak Barrel
   m_TagString: Untagged
@@ -843,6 +869,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mesh: {fileID: 8759174563865653006}
   _fade: 0
+--- !u!114 &8781612809338718954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6760146563600290923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 379092634, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6914101168421882729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1149,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6423854277083481890}
   - component: {fileID: 465906947546790798}
-  - component: {fileID: 1426819544759076828}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1153,16 +1190,3 @@ MonoBehaviour:
   _fullDepth: 0
   _createMaterialInstances: 1
   _useSharedMatTable: 1
---- !u!114 &1426819544759076828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7917093379839644244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 781962617, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _multipleMaterials: 0
