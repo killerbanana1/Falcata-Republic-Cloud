@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2086493498612695662
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 11
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -21,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: d5ce1ebfe83b78c4c96f2e78219a305f, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 100a5a0b22430d6408d79f7191b9c293, type: 3}
   m_ShaderKeywords: _DEPTHOFFSET_ON _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,11 +26,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_5b64ef259dc0433aafa441b5cb9a742c:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ed5870f9eb280ec46bef49ffe5e9148e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6f624fd18aa84e4b8f4f25ca9137cf19:
-        m_Texture: {fileID: 2800000, guid: bfabeb50b64d1e945b8deed2c1e519d9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 433281f9f54b895458fcc22875bc66a8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -59,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 528405f29ce26cc439d2e1268d9869e0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 660528b7a8014b1449c3a5e476033fc4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -95,11 +82,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 528405f29ce26cc439d2e1268d9869e0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 660528b7a8014b1449c3a5e476033fc4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: a9bad8a9db01edc4d8ee1797578e370f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 988f3c5077e8c454f9e532c92a60b06e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -111,7 +98,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PaintMask:
-        m_Texture: {fileID: 2800000, guid: 5f8e9b954dde3b841aaa223fd9a072ec, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -152,14 +139,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_1: 0.5
-    - Vector1_13be335fda9447a9b88cc9e969947c57: 0.447
+    - Vector1_13be335fda9447a9b88cc9e969947c57: 0.096
     - Vector1_213112fefea8448c85195a73918c714e: 50
-    - Vector1_24c37825a799441b98deb1108abc0269: 5
+    - Vector1_24c37825a799441b98deb1108abc0269: 1.02
     - Vector1_35B280CD: 0
     - Vector1_379781a58bc244149afb686c52fae205: 0.5
-    - Vector1_3839e92c0f6140bcac5c9449287ccf51: 2
+    - Vector1_3839e92c0f6140bcac5c9449287ccf51: 1
     - Vector1_5EAA30E3: 0
-    - Vector1_864fdcbe11194666aa329ffd01033cdc: 5
+    - Vector1_864fdcbe11194666aa329ffd01033cdc: 2.2
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -294,3 +281,16 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &1657692049623399156
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 11
