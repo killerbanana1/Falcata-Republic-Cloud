@@ -68,7 +68,7 @@ MonoBehaviour:
   _maxFlightTime: 30
   _flightSpeed: 25
   _repoolDelay: 12
-  _pointCost: 2
+  _pointCost: 1
   _pointDivision: 1
   _storageVolume: 20
   _munitionName: VGM-200 Scimitar
@@ -142,7 +142,7 @@ MonoBehaviour:
   _allowColorSelection: 1
   _baseColor: {r: 1, g: 0.18431373, b: 0.18431373, a: 0}
   _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
-  _socketWeight: 0.9
+  _socketWeight: 0.825
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
   _sockets:

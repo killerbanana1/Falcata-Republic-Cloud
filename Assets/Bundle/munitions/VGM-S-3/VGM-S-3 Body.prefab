@@ -134,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416599596464551233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0127}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0985}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 1919675507388249494}
@@ -427,7 +427,7 @@ MonoBehaviour:
   _overriddenThreatSize: 3
   _missileIcon: {fileID: 21300000, guid: 7674fae8c42d4604e8e2de3da5e6b4f1, type: 3}
   _hotLaunchReleaseDistance: 1.5
-  _programmingTimeRequired: 12
+  _programmingTimeRequired: 18
   _rackMountingRadius: 0.0569
   _rackMeshLods:
   - {fileID: 5419826387672780117}
@@ -1550,7 +1550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6942267917595572078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.012699999}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0985}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 1919675507388249494}
