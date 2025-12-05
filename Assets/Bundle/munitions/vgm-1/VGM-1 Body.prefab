@@ -71,7 +71,7 @@ MonoBehaviour:
   _pointCost: 0
   _pointDivision: 1
   _storageVolume: 4
-  _munitionName: VGM-100 Stiletto
+  _munitionName: VGM-100 Vecteur
   _descriptionText: Missiles based on the SGM-1 body are fast and agile, able to
     maneuver in tight spaces and face their target only a split second after firing. 
     Their nimble maneuvering characteristics make them excellent for intercepting
@@ -135,7 +135,7 @@ MonoBehaviour:
   _showSalvoInList: 1
   _designationBase: VGM-1
   _missileDesignation: VGM-100
-  _missileNickname: Stiletto
+  _missileNickname: Vecteur
   _bodySubtitle: Size 1 Missile
   _bodyFunctionalDescription: nimble general-purpose missile
   _allowColorSelection: 1
@@ -968,7 +968,7 @@ GameObject:
   - component: {fileID: 4762752447515537888}
   - component: {fileID: 4762752447515537889}
   - component: {fileID: 4762752447515537890}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

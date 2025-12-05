@@ -71,7 +71,7 @@ MonoBehaviour:
   _pointCost: 1
   _pointDivision: 1
   _storageVolume: 20
-  _munitionName: VGM-200 Scimitar
+  _munitionName: VGM-200 Phrike
   _descriptionText: Missiles based on the SGM-1 body are fast and agile, able to
     maneuver in tight spaces and face their target only a split second after firing. 
     Their nimble maneuvering characteristics make them excellent for intercepting
@@ -136,7 +136,7 @@ MonoBehaviour:
   _showSalvoInList: 1
   _designationBase: VGM-2
   _missileDesignation: VGM-200
-  _missileNickname: Scimitar
+  _missileNickname: Phrike
   _bodySubtitle: Size 2 Missile
   _bodyFunctionalDescription: flexible mainstay anti-ship missile
   _allowColorSelection: 1
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 4762752447515537888}
   - component: {fileID: 4762752447515537889}
   - component: {fileID: 4762752447515537890}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
