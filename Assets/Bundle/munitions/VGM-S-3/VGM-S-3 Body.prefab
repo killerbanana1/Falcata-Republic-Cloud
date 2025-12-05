@@ -389,7 +389,7 @@ MonoBehaviour:
   _pointCost: 4
   _pointDivision: 1
   _storageVolume: 30
-  _munitionName: VGM-S-300 Fuchs
+  _munitionName: VGM-S-300 Arquebus
   _descriptionText: Hybrid missiles combine the characteristics found in two other
     classes of missiles.  The SGM-H-3 is a Size 3 missiles built from a long-range
     cruise bus which offers moderate speed and long range to deliver a Size 2 sprint
@@ -437,7 +437,7 @@ MonoBehaviour:
   _showSalvoInList: 1
   _designationBase: VGM-S-3
   _missileDesignation: VGM-S-300
-  _missileNickname: Fuchs
+  _missileNickname: Arquebus
   _bodySubtitle: Size 3 Hybrid Missile
   _bodyFunctionalDescription: dual-stage conventional missile designed to strike
     heavy targets
