@@ -129,6 +129,9 @@ MonoBehaviour:
   - Class: Ancillary Cruiser
     ClassName: Kaliare
     MaxRCS: 900
+  - Class: Assault Ship
+    ClassName: Acheron
+    MaxRCS: 720
   - Class: Destroyer
     ClassName: Moxella
     MaxRCS: 520

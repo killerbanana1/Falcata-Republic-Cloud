@@ -68,9 +68,9 @@ MonoBehaviour:
   _maxFlightTime: 30
   _flightSpeed: 25
   _repoolDelay: 12
-  _pointCost: 2
+  _pointCost: 3
   _pointDivision: 1
-  _storageVolume: 30
+  _storageVolume: 40
   _munitionName: VGT-400 Plover
   _descriptionText: Torpedos focus on dealing incredible damage at short ranges,
     and the SGT-3 is no exception.  They are usually launched inside a target's point
@@ -98,7 +98,7 @@ MonoBehaviour:
   _overrideMarkerType: 3
   _wallThickness: 0.25
   _stoppedHitDamageReduction: 0.5
-  _maxHealth: 200
+  _maxHealth: 180
   _visualModel: {fileID: 4762752447515537889}
   _size: 4
   _missileType: 1
@@ -123,8 +123,8 @@ MonoBehaviour:
   _bodyFunctionalDescription: heavy anti-ship torpedo
   _allowColorSelection: 1
   _baseColor: {r: 0.3647059, g: 0.32156864, b: 0.62352943, a: 1}
-  _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 0}
-  _socketWeight: 3
+  _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
+  _socketWeight: 2.5
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 0.75
   _sockets:

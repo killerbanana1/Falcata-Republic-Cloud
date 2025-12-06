@@ -417,7 +417,7 @@ MonoBehaviour:
   _overrideMarkerType: 3
   _wallThickness: 0.05
   _stoppedHitDamageReduction: 0.5
-  _maxHealth: 60
+  _maxHealth: 45
   _visualModel: {fileID: 4762752447515537889}
   _size: 3
   _missileType: 2

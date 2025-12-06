@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4562726513352008444}
   - component: {fileID: 4458767067416715126}
   m_Layer: 0
-  m_Name: MLS-3 Spinal
+  m_Name: LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,15 +154,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coldLaunchEffect:
     ParticleEffect: {fileID: 0}
-    Sound: {fileID: 0}
+    Sound: {fileID: 11400000, guid: 50fa4344741e4e24897f07af2e48c106, type: 2}
     Delay: 0
   _hotLaunchEffect:
     ParticleEffect: {fileID: 0}
-    Sound: {fileID: 0}
+    Sound: {fileID: 11400000, guid: 50fa4344741e4e24897f07af2e48c106, type: 2}
     Delay: 0
   _doorAnimation: {fileID: 0}
   _visibility: {fileID: 0}
-  _ejectionVelocity: 2
+  _ejectionVelocity: 3.5
   _ejectionDirection: {x: 0, y: 0, z: 1}
   _addRotation: {x: 0, y: 0, z: 0}
   _launchDelay: 1
@@ -229,13 +229,13 @@ MonoBehaviour:
   _disabledParticles: {fileID: 1582863080481320259}
   _saveKey: 
   _modId: 0
-  _shortUIName: 
+  _shortUIName: RLS-4
   _smallImage: {fileID: 21300000, guid: 57637debfef43a8429f32f0e3f652c00, type: 3}
   _largeImage: {fileID: 21300000, guid: 01f96ebd4ce72c240838b0b419c5885d, type: 3}
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Size 4 Torpedo Launcher
-  _longDescription: A simple tube launcher designed to eject three torpedoes from
-    a vertical spinal mount. Excellent for ambushing or skirmish warfare.
+  _longDescription: A simple tube launcher designed to eject two torpedoes from a
+    vertical spinal mount. Excellent for ambushing or skirmish warfare.
   _flavorText: 
   _category: Weapons - Missile
   _costBreakdownClass: 2
@@ -243,7 +243,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 15
+  _pointCost: 20
   _type: 0
   _size: {x: 2, y: 8, z: 2}
   _interiorOverhang: 0

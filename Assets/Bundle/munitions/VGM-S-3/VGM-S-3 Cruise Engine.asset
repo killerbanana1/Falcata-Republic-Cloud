@@ -20,10 +20,10 @@ MonoBehaviour:
   _image: {fileID: 0}
   _description: 
   _speed: {x: 15, y: 30}
-  _speedCost: {x: 0, y: 0}
+  _speedCost: {x: 0, y: 1}
   _thrust: {x: 10, y: 15}
   _thrustCost: {x: 0, y: 0}
-  _flightTimePerIncrement: {x: 40, y: 200}
+  _flightTimePerIncrement: {x: 40, y: 160}
   _flightTimeCost: {x: 0, y: 0}
   _maxThrustAngle: {x: 10, y: 35}
   _turnRate: {x: 0.5, y: 1.25}

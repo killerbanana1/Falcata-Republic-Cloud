@@ -7044,11 +7044,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _className: Acheron
-  _hullClassification: Assualt Ship
+  _hullClassification: Assault Ship
   _hullSymbolOptions:
   - ACV
   - LPS
-  - VAS
+  - DDH
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _hideInFleetEditor: 0
@@ -7059,7 +7059,7 @@ MonoBehaviour:
   _screenshot: {fileID: 21300000, guid: cdd3160f593958a438a996b0f56454c5, type: 3}
   _longDescription: WIP
   _flavorText: WIP
-  _pointCost: 150
+  _pointCost: 125
   _mass: 8250
   _weightClass: 1
   _tankFacing: 1
@@ -7085,6 +7085,10 @@ MonoBehaviour:
   - _statName: hull-missilechannels
     _literal: 1
     _modifier: 0
+    _permanent: 0
+  - _statName: sensor-maxposerror
+    _literal: 0
+    _modifier: -0.15
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}
   _radarSignature: {fileID: 6735343248398704078}

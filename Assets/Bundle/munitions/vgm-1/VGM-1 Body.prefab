@@ -141,7 +141,7 @@ MonoBehaviour:
   _allowColorSelection: 1
   _baseColor: {r: 1, g: 0.78431374, b: 0, a: 1}
   _stripeColor: {r: 0.49019608, g: 0.19607843, b: 0, a: 1}
-  _socketWeight: 0.33
+  _socketWeight: 0.4
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
   _sockets:

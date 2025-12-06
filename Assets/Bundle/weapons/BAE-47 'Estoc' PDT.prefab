@@ -343,7 +343,7 @@ MonoBehaviour:
   _statGroupSubtype: 
   _burstDuration: 4
   _cooldownStyle: 3
-  _cooldownTime: 2.5
+  _cooldownTime: 1.25
   _gradualCooldownSpeed: 0.2
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 0

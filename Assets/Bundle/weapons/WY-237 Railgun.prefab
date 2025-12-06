@@ -124,8 +124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461011945884504064}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.0068925046, z: 0}
-  m_LocalScale: {x: 81.77297, y: 81.772964, z: 81.772964}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 80, y: 80, z: 80}
   m_Children: []
   m_Father: {fileID: 976922563404194150}
   m_RootOrder: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 55
+  _pointCost: 50
   _type: 0
   _size: {x: 6, y: 4, z: 6}
   _interiorOverhang: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   ResourcesProvided: []
   ResourcesRequired:
   - _resourceName: Power
-    _amount: 1800
+    _amount: 1200
     _perUnit: 0
     _onlyWhenOperating: 1
   _uniqueDebuffs: []
@@ -397,8 +397,8 @@ MonoBehaviour:
   _timeBetweenMuzzles: 1.35
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
-  _magazineSize: 6
-  _reloadTime: 28
+  _magazineSize: 8
+  _reloadTime: 25
   _reloadStatSubtype: energy
   _recycleStatSubtype: energy
   _randomlyDeviateReloadTime: 1
@@ -587,6 +587,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &7449343927999451579
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -603,7 +604,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -748,6 +748,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &8395998729716459622
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -764,10 +765,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1045,6 +1042,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &3662846357687837175
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1061,10 +1059,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  _hasEyes: 1
+  _hasEyes: 0
   _eyeType: 0
   _sightDistance: 2
   _showCellNumber: 0
@@ -489,6 +489,7 @@ GameObject:
   - component: {fileID: 4762752445813931448}
   - component: {fileID: 4762752445813931398}
   - component: {fileID: 4762752445813931399}
+  - component: {fileID: 1753524576975953366}
   m_Layer: 0
   m_Name: Engine
   m_TagString: Untagged
@@ -586,6 +587,22 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1753524576975953366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4762752445813931449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1594382245, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particles: {fileID: 4762752445813931398}
+  _fullDisableDelay: 0
+  _disableWhenNotPlaying: 1
+  _playBools: []
 --- !u!1 &4762752445829077799
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +654,7 @@ MonoBehaviour:
   _collider: {fileID: 0}
   _sigSize:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 1.5, y: 1.5, z: 4}
+    m_Extent: {x: 2, y: 2, z: 5}
   _randomPointInBounds: 0
   _crossSectionSampler: {fileID: 0}
   _constantReturn: 0
