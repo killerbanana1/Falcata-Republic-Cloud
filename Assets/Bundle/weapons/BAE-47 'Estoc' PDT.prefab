@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8293174358017933954}
   - component: {fileID: 5107044001225598414}
   - component: {fileID: 3474529969925757838}
+  - component: {fileID: 7907425150972918954}
   m_Layer: 0
   m_Name: LOD0 Barrel
   m_TagString: Untagged
@@ -162,6 +163,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7907425150972918954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521274779045773287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1771112323, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 3474529969925757838}
+  _fade: 0
 --- !u!1 &1829063171819272405
 GameObject:
   m_ObjectHideFlags: 0

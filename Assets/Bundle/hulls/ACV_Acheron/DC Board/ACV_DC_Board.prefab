@@ -694,6 +694,10 @@ PrefabInstance:
       propertyPath: _detailGroup
       value: 
       objectReference: {fileID: 8413029348494307328}
+    - target: {fileID: 788635653459890613, guid: 4cabe46d75b7c364cafcf8b59392d9f0, type: 3}
+      propertyPath: _interiorGroup
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043277834081218583, guid: 4cabe46d75b7c364cafcf8b59392d9f0, type: 3}
       propertyPath: _detailGroup
       value: 
@@ -762,6 +766,10 @@ PrefabInstance:
       propertyPath: _detailGroup
       value: 
       objectReference: {fileID: 5315287721749048568}
+    - target: {fileID: 3760376474351232131, guid: 4cabe46d75b7c364cafcf8b59392d9f0, type: 3}
+      propertyPath: _interiorGroup
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4051280596025697490, guid: 4cabe46d75b7c364cafcf8b59392d9f0, type: 3}
       propertyPath: _detailGroup
       value: 
