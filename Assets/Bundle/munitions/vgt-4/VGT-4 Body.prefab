@@ -126,7 +126,7 @@ MonoBehaviour:
   _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
   _socketWeight: 2.5
   _socketWeightCostScaling: 1
-  _uniformSocketCostScaling: 0.75
+  _uniformSocketCostScaling: 0.5
   _sockets:
   - SocketType: 16
     Fixed: 0
