@@ -427,7 +427,7 @@ MonoBehaviour:
   _overriddenThreatSize: 3
   _missileIcon: {fileID: 21300000, guid: 7674fae8c42d4604e8e2de3da5e6b4f1, type: 3}
   _hotLaunchReleaseDistance: 1.5
-  _programmingTimeRequired: 18
+  _programmingTimeRequired: 15
   _rackMountingRadius: 0.0569
   _rackMeshLods:
   - {fileID: 5419826387672780117}

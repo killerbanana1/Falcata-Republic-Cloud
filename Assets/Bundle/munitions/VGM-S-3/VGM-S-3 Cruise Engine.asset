@@ -20,7 +20,7 @@ MonoBehaviour:
   _image: {fileID: 0}
   _description: 
   _speed: {x: 15, y: 30}
-  _speedCost: {x: 0, y: 1}
+  _speedCost: {x: 0, y: 0}
   _thrust: {x: 10, y: 15}
   _thrustCost: {x: 0, y: 0}
   _flightTimePerIncrement: {x: 40, y: 160}
@@ -30,7 +30,7 @@ MonoBehaviour:
   _singleSpeed: 0
   _maxStrafeSpeed: {x: 2.5, y: 4}
   _strafeThrust: {x: 0.4, y: 0.8}
-  _preIgnitionTurnRateMultiplier: 1.6
+  _preIgnitionTurnRateMultiplier: 2.5
   _appliesModifiers: 0
   _modifiers: []
   _balanceValues:

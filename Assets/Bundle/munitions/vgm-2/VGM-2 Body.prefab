@@ -126,7 +126,7 @@ MonoBehaviour:
   _overriddenThreatSize: 3
   _missileIcon: {fileID: 21300000, guid: eecdaefbb5c0e9545a668d0c2d0694b4, type: 3}
   _hotLaunchReleaseDistance: 1
-  _programmingTimeRequired: 8
+  _programmingTimeRequired: 5
   _rackMountingRadius: 0.0292
   _rackMeshLods:
   - {fileID: 5419826387672780117}
@@ -142,7 +142,7 @@ MonoBehaviour:
   _allowColorSelection: 1
   _baseColor: {r: 1, g: 0.18431373, b: 0.18431373, a: 1}
   _stripeColor: {r: 1, g: 0.9529412, b: 0.8745098, a: 1}
-  _socketWeight: 0.8
+  _socketWeight: 1
   _socketWeightCostScaling: 1
   _uniformSocketCostScaling: 1
   _sockets:

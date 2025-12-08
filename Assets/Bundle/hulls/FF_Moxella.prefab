@@ -6790,6 +6790,10 @@ MonoBehaviour:
   _visionDistance: 5
   _identityWorkRequired: 200
   BaseModifiers:
+  - _statName: hull-missilechannels
+    _literal: 3
+    _modifier: 0
+    _permanent: 0
   - _statName: discreteweapon-reload
     _literal: 0
     _modifier: -0.15
@@ -6797,10 +6801,6 @@ MonoBehaviour:
   - _statName: discreteweapon-reload:ETC
     _literal: 0
     _modifier: -0.15
-    _permanent: 0
-  - _statName: hull-missilechannels
-    _literal: 2
-    _modifier: 0
     _permanent: 0
   _selectVolume: {fileID: 5132376608656868247}
   _radarSignature: {fileID: 6735343248398704078}

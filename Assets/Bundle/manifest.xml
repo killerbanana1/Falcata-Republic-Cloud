@@ -131,4 +131,8 @@
 	<Entry Name="Falcata Republic" Address="faction/Falcata Republic.asset"/>
   </Factions>
 
+  <Scenarios>
+	<!--Entry Name="Command" Address="scenario/Command.asset"/-->
+  </Scenarios>
+
 </BundleManifest>

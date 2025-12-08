@@ -181,7 +181,7 @@ MonoBehaviour:
   - SocketType: 2
     Fixed: 0
     Resizable: 1
-    MinSize: 1
+    MinSize: 2
     MaxSize: 18
     DefaultSize: 9
     ResizeLinkedTo: 6

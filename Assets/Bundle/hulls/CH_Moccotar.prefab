@@ -8285,7 +8285,7 @@ MonoBehaviour:
   _identityWorkRequired: 200
   BaseModifiers:
   - _statName: hull-missilechannels
-    _literal: 1
+    _literal: 2
     _modifier: 0
     _permanent: 0
   - _statName: hull-component-max-repair
