@@ -19,4 +19,4 @@ MonoBehaviour:
   _doppler: 0
   _rolloffMode: 0
   _vacuumEffect: 1
-  _clip: {fileID: 8300000, guid: 7ca722ffa4e96764d97a3b71d2539b41, type: 3}
+  _clip: {fileID: 8300000, guid: 038620ece3d59054fa3a99f40119abf1, type: 3}

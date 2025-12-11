@@ -1074,7 +1074,7 @@ MonoBehaviour:
   _defensiveAutoFireGap: 1
   _missileClasses:
   - Missile
-  - Hybrid Missile
+  - Staged Missile
   _missileSize: 3
   _supportMixedSalvos: 1
   _moduleRoot: {fileID: 6660878528450715860}

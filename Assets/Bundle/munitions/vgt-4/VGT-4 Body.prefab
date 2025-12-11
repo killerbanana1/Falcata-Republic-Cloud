@@ -70,7 +70,7 @@ MonoBehaviour:
   _repoolDelay: 12
   _pointCost: 3
   _pointDivision: 1
-  _storageVolume: 40
+  _storageVolume: 35
   _munitionName: VGT-400 Plover
   _descriptionText: Torpedos focus on dealing incredible damage at short ranges,
     and the SGT-3 is no exception.  They are usually launched inside a target's point

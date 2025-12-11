@@ -70,7 +70,7 @@ MonoBehaviour:
   _maxFlightTime: 650
   _flightSpeed: 2.2
   _repoolDelay: 12
-  _pointCost: 4
+  _pointCost: 6
   _pointDivision: 1
   _storageVolume: 30
   _munitionName: 
