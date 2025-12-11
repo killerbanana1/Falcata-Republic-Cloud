@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3308760513440065321}
   - component: {fileID: 1555824926837731671}
   - component: {fileID: 596295078552692144}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 7467020229055012204}
   - component: {fileID: 8792451965747461393}
   - component: {fileID: 4439227020201119492}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 7948925784463495668}
   - component: {fileID: 2616072748401164360}
   - component: {fileID: 5755195961610927258}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 4739926960041968188}
   - component: {fileID: 6686344965536591358}
   - component: {fileID: 5325069909845696878}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 5743360738944090241}
   - component: {fileID: 3428403898495870323}
   - component: {fileID: 7898584536269264486}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 1089915476660743531}
   - component: {fileID: 8396418521685687692}
   - component: {fileID: 6942452701133325746}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 5166535788204698343}
   - component: {fileID: 3297686419729509516}
   - component: {fileID: 2484217481959645632}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 7133697402176069343}
   - component: {fileID: 4862284947632861995}
   - component: {fileID: 5585838586704440215}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 8986800328944941103}
   - component: {fileID: 551612507957638460}
   - component: {fileID: 3573744253799631991}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 3186937307272063703}
   - component: {fileID: 3809371778913358328}
   - component: {fileID: 4581826533251106131}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 6360071460516319301}
   - component: {fileID: 9004226736627015468}
   - component: {fileID: 8887494048728823050}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 761664950748257454}
   - component: {fileID: 3074153178936261627}
   - component: {fileID: 9208744281627601277}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 4615047789061465222}
   - component: {fileID: 1818000976109988192}
   - component: {fileID: 2031514377409544373}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 5269868934969277240}
   - component: {fileID: 1758000645763706288}
   - component: {fileID: 8494731864551764188}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 2288171795248445408}
   - component: {fileID: 1826549770963991072}
   - component: {fileID: 5936941160120813747}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 4927329200734330451}
   - component: {fileID: 648771368242898489}
   - component: {fileID: 5556640448478680314}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 2157424459640373102}
   - component: {fileID: 1783031431559326933}
   - component: {fileID: 2142240239360390381}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 4510929097403042248}
   - component: {fileID: 2499128767423723859}
   - component: {fileID: 1373532131734256188}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 4868427678817180292}
   - component: {fileID: 4522233113946477101}
   - component: {fileID: 1399967084270026888}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 3261251168597344457}
   - component: {fileID: 3579885655990725804}
   - component: {fileID: 7322902064870689728}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 7977387479993938082}
   - component: {fileID: 9192547657254847289}
   - component: {fileID: 5278270082774477841}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 8614955128075906429}
   - component: {fileID: 3451279943692092014}
   - component: {fileID: 1808712882350737386}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1296,7 +1296,7 @@ GameObject:
   - component: {fileID: 1162295822051209439}
   - component: {fileID: 5618589259287290634}
   - component: {fileID: 2419607905760955537}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   - component: {fileID: 1097259142934437838}
   - component: {fileID: 2265255349334766324}
   - component: {fileID: 5099568256458699850}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 4721114151670824795}
   - component: {fileID: 2429606169056001788}
   - component: {fileID: 2959311607149413038}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 6540760182871694289}
   - component: {fileID: 7681700232443145620}
   - component: {fileID: 6335410226770320882}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,7 +1512,7 @@ GameObject:
   - component: {fileID: 4586731981740796467}
   - component: {fileID: 1048857700940942574}
   - component: {fileID: 8264183467358894444}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1566,7 @@ GameObject:
   - component: {fileID: 4335755174228902399}
   - component: {fileID: 4357502653332415248}
   - component: {fileID: 7899656308753553779}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 1176624632026802041}
   - component: {fileID: 3851109655203790971}
   - component: {fileID: 2135897467004615164}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 786367182257557188}
   - component: {fileID: 1011075126573959932}
   - component: {fileID: 920670935110145555}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 2428459631463176073}
   - component: {fileID: 2102126144783251869}
   - component: {fileID: 7144552605145334939}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 4084526081178209919}
   - component: {fileID: 4186928704925835744}
   - component: {fileID: 5117336660805008968}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1836,7 +1836,7 @@ GameObject:
   - component: {fileID: 5926379246150282851}
   - component: {fileID: 917297548986118230}
   - component: {fileID: 5266489939731222822}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1890,7 +1890,7 @@ GameObject:
   - component: {fileID: 7345801000740580722}
   - component: {fileID: 5896431576854290867}
   - component: {fileID: 3762878805737082956}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1942,7 +1942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4421958325033607598}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 1000966546411482558}
   - component: {fileID: 2208504219369679925}
   - component: {fileID: 3240244110243174310}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 1579997218434039003}
   - component: {fileID: 7077026624604961595}
   - component: {fileID: 7074595691820579576}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 9013293741325789707}
   - component: {fileID: 976396389250358882}
   - component: {fileID: 1510440696932207156}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2187,7 +2187,7 @@ GameObject:
   - component: {fileID: 2284507248005879679}
   - component: {fileID: 6541961906880888912}
   - component: {fileID: 7088776639344347372}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2241,7 +2241,7 @@ GameObject:
   - component: {fileID: 610631098174924442}
   - component: {fileID: 8095662945508998345}
   - component: {fileID: 8558540493782264463}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2295,7 +2295,7 @@ GameObject:
   - component: {fileID: 8223041340397217860}
   - component: {fileID: 2507532122820581741}
   - component: {fileID: 8281121103194188460}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2349,7 @@ GameObject:
   - component: {fileID: 863459164014507148}
   - component: {fileID: 6164644361945118427}
   - component: {fileID: 604764290427057153}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,7 +2403,7 @@ GameObject:
   - component: {fileID: 1836685292424568200}
   - component: {fileID: 6443332819602523058}
   - component: {fileID: 351196873375591380}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2457,7 +2457,7 @@ GameObject:
   - component: {fileID: 3294017061874583560}
   - component: {fileID: 5002937697994412765}
   - component: {fileID: 3273082586717514805}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2511,7 +2511,7 @@ GameObject:
   - component: {fileID: 5222510097130333215}
   - component: {fileID: 3501418964511131754}
   - component: {fileID: 5696298824890769580}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2565,7 +2565,7 @@ GameObject:
   - component: {fileID: 5748294152044935307}
   - component: {fileID: 2839085085742539802}
   - component: {fileID: 5428919602063439475}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2619,7 +2619,7 @@ GameObject:
   - component: {fileID: 8517098282026965224}
   - component: {fileID: 2338551942972874263}
   - component: {fileID: 5852536326721651932}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2673,7 +2673,7 @@ GameObject:
   - component: {fileID: 1426388916281781088}
   - component: {fileID: 136357711558004603}
   - component: {fileID: 9108609970186089119}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2727,7 +2727,7 @@ GameObject:
   - component: {fileID: 7652328744663816345}
   - component: {fileID: 2548878194211576276}
   - component: {fileID: 6500414405936085044}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Stern_Collider.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2781,7 +2781,7 @@ GameObject:
   - component: {fileID: 2278356276294187077}
   - component: {fileID: 944839411137516761}
   - component: {fileID: 5601070464629679216}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2835,7 +2835,7 @@ GameObject:
   - component: {fileID: 5402217470826497128}
   - component: {fileID: 1138728957512377567}
   - component: {fileID: 7942263461322653904}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2889,7 +2889,7 @@ GameObject:
   - component: {fileID: 4905783020438055905}
   - component: {fileID: 5699398981508390501}
   - component: {fileID: 7897317022229427963}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: ACV_Vasamon_Bow_Collider.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}

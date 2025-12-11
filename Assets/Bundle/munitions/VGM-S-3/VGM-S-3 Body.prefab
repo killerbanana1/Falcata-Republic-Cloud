@@ -390,13 +390,11 @@ MonoBehaviour:
   _pointDivision: 1
   _storageVolume: 30
   _munitionName: VGM-S-300 Arquebus
-  _descriptionText: Hybrid missiles combine the characteristics found in two other
-    classes of missiles.  The SGM-H-3 is a Size 3 missiles built from a long-range
-    cruise bus which offers moderate speed and long range to deliver a Size 2 sprint
-    vehicle to the target at high speed.  These are the most expensive and dangerous
-    missiles that can be found, and only two or three are required to destroy a heavy
-    target.
-  _optionalFlavorText: 
+  _descriptionText: The Arquebus is a two staged missile designed to strike heavy
+    targets riding on a slower cruise stage before diving at the enemy ships on a
+    conventional second stage. It is still inferior to its AN counterparts in speed,
+    but makes up for it in warhead capacity and cost efficacy.
+  _optionalFlavorText: 'Make it pointy! Round is not scary. '
   _screenshot: {fileID: 21300000, guid: 7a69b6c6b2c013c4a943558332423646, type: 3}
   _weightClassDiscrepancy: 1
   _recommendedTargetTypes: 
@@ -421,7 +419,7 @@ MonoBehaviour:
   _visualModel: {fileID: 4762752447515537889}
   _size: 3
   _missileType: 2
-  _missileClass: Hybrid Missile
+  _missileClass: Staged Missile
   _costAsSubmunitionMult: 1
   _overrideThreatSize: 0
   _overriddenThreatSize: 3
@@ -438,7 +436,7 @@ MonoBehaviour:
   _designationBase: VGM-S-3
   _missileDesignation: VGM-S-300
   _missileNickname: Arquebus
-  _bodySubtitle: Size 3 Hybrid Missile
+  _bodySubtitle: Size 3 Staged Missile
   _bodyFunctionalDescription: dual-stage conventional missile designed to strike
     heavy targets
   _allowColorSelection: 1

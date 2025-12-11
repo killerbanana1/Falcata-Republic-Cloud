@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 251162630359994243}
   m_LocalRotation: {x: 0.49999997, y: 0.5000001, z: -0.50000006, w: -0.49999988}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 71.59556, y: 71.59556, z: 107.26062}
+  m_LocalScale: {x: 60.856228, y: 60.856228, z: 91.17151}
   m_Children: []
   m_Father: {fileID: 430124977306337645}
   m_RootOrder: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   - 500
   - 680
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -468,6 +469,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &7516567253867803210
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -484,7 +486,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -563,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2407247124522172383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.254, z: 0.329}
+  m_LocalPosition: {x: 0, y: 0.213, z: 0.252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7556883518335531923}
@@ -698,6 +699,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &2594859538405914235
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -714,7 +716,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -827,6 +828,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &2360880555400997092
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -843,7 +845,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1054,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 7523917172976829911}
   m_LocalRotation: {x: -0.7071068, y: -0.00000005338508, z: -0.00000005338508, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.005, z: 0.008211894}
-  m_LocalScale: {x: 100, y: 94.227936, z: 72.58738}
+  m_LocalScale: {x: 85, y: 80.09375, z: 61.699272}
   m_Children: []
   m_Father: {fileID: 198137662463541911}
   m_RootOrder: 0
