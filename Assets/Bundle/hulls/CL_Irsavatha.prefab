@@ -11221,7 +11221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7027934322377314373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: -20.55}
+  m_LocalPosition: {x: 0, y: 0.65, z: -20.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058544557933740229}
@@ -11238,7 +11238,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25, z: 1.5}
+  m_Size: {x: 1.5, y: 0.25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7236717395392327841
 MonoBehaviour:
@@ -11253,7 +11253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Compartment9
-  _size: {x: 4, y: 1, z: 6}
+  _size: {x: 6, y: 1, z: 4}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1
@@ -12843,7 +12843,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25, z: 1.5}
+  m_Size: {x: 1.5, y: 0.25, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6670564995985112319
 MonoBehaviour:
@@ -12858,7 +12858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Compartment10
-  _size: {x: 4, y: 1, z: 6}
+  _size: {x: 6, y: 1, z: 6}
   _interiorOverhangSpace: 63
   _attachPoint: {x: 0, y: 0, z: 0}
   _type: 1

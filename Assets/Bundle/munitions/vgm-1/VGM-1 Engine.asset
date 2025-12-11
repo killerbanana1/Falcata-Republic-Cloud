@@ -21,8 +21,8 @@ MonoBehaviour:
   _description: 
   _speed: {x: 20, y: 40}
   _speedCost: {x: 0, y: 0}
-  _thrust: {x: 7.5, y: 16.5}
-  _thrustCost: {x: 0, y: 0.5}
+  _thrust: {x: 7.5, y: 15}
+  _thrustCost: {x: 0, y: 0}
   _flightTimePerIncrement: {x: 2.5, y: 8.5}
   _flightTimeCost: {x: 0, y: 0}
   _maxThrustAngle: {x: 20, y: 60}

@@ -83,11 +83,11 @@ MonoBehaviour:
   _canTile: 0
   _consistentCostForTiled: 0
   Modifiers:
-  - _statName: discreteweapon-recycle:recoilless
+  - _statName: discreteweapon-recycle:Recoilless
     _literal: 0
     _modifier: -0.25
     _permanent: 0
-  - _statName: discreteweapon-reload:recoilless
+  - _statName: discreteweapon-reload:Recoilless
     _literal: 0
     _modifier: -0.1
     _permanent: 0

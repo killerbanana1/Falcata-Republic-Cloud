@@ -341,9 +341,9 @@ MonoBehaviour:
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.291, y: 0.287, z: -0.052}
   _statGroupSubtype: 
-  _burstDuration: 4
+  _burstDuration: 2.5
   _cooldownStyle: 3
-  _cooldownTime: 1.5
+  _cooldownTime: 0.75
   _gradualCooldownSpeed: 0.2
   _stopFiringOnTargetChange: 0
   _battleShortIgnoreCooldown: 0

@@ -92,6 +92,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &4177314325100348989
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,7 +109,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   _compoundingMultiplier: 1
   _pointCost: 15
   _type: 0
-  _size: {x: 2, y: 8, z: 2}
+  _size: {x: 2, y: 6, z: 2}
   _interiorOverhang: 0
   _removeSocketCap: 0
   _mass: 3
@@ -529,6 +529,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &5510249366570904529
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -545,7 +546,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -592,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4177314326910372885}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4177314326211283217}
@@ -612,11 +612,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _traverse: {fileID: 4177314326211283217}
-  _minTraverse: -18
-  _maxTraverse: 18
+  _minTraverse: -25
+  _maxTraverse: 25
   _elevate: {fileID: 4177314325361944014}
-  _minElevate: -18
-  _maxElevate: 18
+  _minElevate: -25
+  _maxElevate: 25
   _barrel: {fileID: 4177314325361944014}
   _traverseSound: {fileID: 11400000, guid: 37ea5eacc92fea74ea5198a709b7a788, type: 2}
   _traverseSource: {fileID: 4709153642542508715}

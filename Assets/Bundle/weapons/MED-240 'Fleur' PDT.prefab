@@ -722,7 +722,7 @@ MonoBehaviour:
   _factionKey: Falcata Republic/Falcata Republic
   _shortDescription: Class 1 Flak
   _longDescription: 40mm Flak Cannon, has a higher output and slightly smaller shells
-    compared to the ubiquitous Rebound. The Mk25 'Rebound' fires short-range 50mm
+    compared to the ubiquitous Rebound. The MED-240 'Fleur' fires short-range 40mm
     flak rounds, detonating roughly in proximity of the approaching threat, typically
     missiles or personal craft. As the weapon lacks a Fire Control radar it is entirely
     reliant on the host warship's sensors, but is highly resistant to radar jamming
@@ -742,7 +742,7 @@ MonoBehaviour:
   _compoundingCostClass: 
   _firstInstanceFree: 0
   _compoundingMultiplier: 1
-  _pointCost: 20
+  _pointCost: 15
   _type: 0
   _size: {x: 2, y: 1, z: 2}
   _interiorOverhang: 0

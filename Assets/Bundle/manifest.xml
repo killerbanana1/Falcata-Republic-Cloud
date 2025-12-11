@@ -132,7 +132,8 @@
   </Factions>
 
   <Scenarios>
-	<!--Entry Name="Command" Address="scenario/Command.asset"/-->
+	<Entry Name="Command" Address="scenario/Command.asset"/>
+	<!--Entry Name="Supremacy" Address="scenario/Supremacy.asset"/-->
   </Scenarios>
 
 </BundleManifest>
