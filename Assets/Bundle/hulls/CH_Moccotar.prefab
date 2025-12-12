@@ -166,7 +166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250535844246394847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.25, z: 3.25}
+  m_LocalPosition: {x: 0, y: -1, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -256,7 +256,7 @@ Transform:
   m_GameObject: {fileID: 327568234118502586}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: -1.9566177, y: 0.07667337, z: -8.734542}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 7145135140057217304}
   m_RootOrder: 2
@@ -1592,7 +1592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2215852415272815495}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.7429245, z: -6.4389877}
+  m_LocalPosition: {x: 0, y: 1.7429245, z: -6.444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -1635,11 +1635,11 @@ MonoBehaviour:
   _collider: {fileID: 2340415108392287932}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 140
+    RightAngle: 140
+    UseElevationLimit: 1
+    ElevationAngle: 15
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -2443,7 +2443,7 @@ Transform:
   m_GameObject: {fileID: 3026239684708221605}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0.009389473, y: 0.7422816, z: -8.77097}
-  m_LocalScale: {x: 1.4, y: 1.4000001, z: 1.4000001}
+  m_LocalScale: {x: 1.55, y: 1.55, z: 1.55}
   m_Children: []
   m_Father: {fileID: 7145135140057217304}
   m_RootOrder: 0
@@ -2751,11 +2751,11 @@ MonoBehaviour:
   _collider: {fileID: 1498760876809670322}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 160
+    RightAngle: 155
+    UseElevationLimit: 1
+    ElevationAngle: 20
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -3466,7 +3466,7 @@ MonoBehaviour:
   m_Script: {fileID: 1832581930, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _originalMaterial: {fileID: 2100000, guid: c608b5b7fdf8a864487f239b1effc63e, type: 2}
+  _originalMaterial: {fileID: 2100000, guid: 1b783c4757ad14140bc2ad9d615a6724, type: 2}
   _additionalMaterialTargets: []
   _originalMaterials:
   - {fileID: 2100000, guid: 1140a055eac470743acc3102d125ab61, type: 2}
@@ -3718,7 +3718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4718395996451065401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 3.2}
+  m_LocalPosition: {x: 0, y: -0.5, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -3981,7 +3981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4835652810269436712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 3.2}
+  m_LocalPosition: {x: 0, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -4495,7 +4495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5489339759826183973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.25, z: 5.5}
+  m_LocalPosition: {x: 0, y: -0.25, z: 5.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -4667,7 +4667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5489339761479893263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.25, z: 7}
+  m_LocalPosition: {x: 0, y: -0.25, z: 7.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -5148,6 +5148,7 @@ GameObject:
   - component: {fileID: 7552184177426743636}
   - component: {fileID: 8838651387999836755}
   - component: {fileID: 8675191449836248937}
+  - component: {fileID: 4075440991419260207}
   m_Layer: 0
   m_Name: CH_Mocc_Remake_Antenna
   m_TagString: Untagged
@@ -5176,7 +5177,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5822048252957494467}
-  m_Mesh: {fileID: -460141900240982668, guid: a970359c0eb7c29429dbc39cff3ea19b, type: 3}
+  m_Mesh: {fileID: -460141900240982668, guid: afaa0cb1494f1b841b0530e9b9f5552b, type: 3}
 --- !u!23 &8675191449836248937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5196,7 +5197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bde22c365e84efc4b82b155a0bf8bb57, type: 2}
+  - {fileID: 2100000, guid: 1f66ce9a0b0e95a4f80e2e16743bcc05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5218,6 +5219,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4075440991419260207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822048252957494467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 379092634, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5911411544954201243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,7 +5257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5911411544954201243}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.445009, z: -3.4474978}
+  m_LocalPosition: {x: 0, y: 2.445009, z: -3.407}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -5287,11 +5300,11 @@ MonoBehaviour:
   _collider: {fileID: 8662082402302034703}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 130
+    RightAngle: 130
+    UseElevationLimit: 1
+    ElevationAngle: 25
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -5347,7 +5360,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25, z: 1}
+  m_Size: {x: 0.75, y: 0.25, z: 0.75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3674649151466897765
 MonoBehaviour:
@@ -5785,7 +5798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6768746820836669903}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -2.1991508, z: -4.7270947}
+  m_LocalPosition: {x: 0, y: -1.998, z: -4.7270947}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -5802,7 +5815,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Size: {x: 0.75, y: 1, z: 0.75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6768746820836669897
 MonoBehaviour:
@@ -5817,9 +5830,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _key: Mount9
-  _size: {x: 2, y: 2, z: 2}
+  _size: {x: 3, y: 4, z: 3}
   _interiorOverhangSpace: 63
-  _attachPoint: {x: 0, y: 2, z: 0}
+  _attachPoint: {x: 0, y: 4, z: 0}
   _type: 0
   _shortName: MT9
   _defaultComponent: 
@@ -5828,11 +5841,11 @@ MonoBehaviour:
   _collider: {fileID: 6768746820836669898}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 140
+    RightAngle: 140
+    UseElevationLimit: 1
+    ElevationAngle: 19
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -6079,11 +6092,11 @@ MonoBehaviour:
   _collider: {fileID: 6768746822230515568}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 130
+    RightAngle: 130
+    UseElevationLimit: 1
+    ElevationAngle: 22
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -6596,7 +6609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7145135139490388661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.3044398, z: -0.5264313}
+  m_LocalPosition: {x: 0, y: 2.3044398, z: -0.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -7077,8 +7090,8 @@ MonoBehaviour:
   _hasTraverseLimits: 1
   _traverseLimits:
     LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
+    LeftAngle: 140
+    RightAngle: 140
     UseElevationLimit: 0
     ElevationAngle: 0
   _hasForwardLimits: 0
@@ -7927,7 +7940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7145135139984562251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 1, z: 3}
+  m_LocalPosition: {x: -1.5, y: 0.5, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -10190,7 +10203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7145135140916892859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1, z: 3}
+  m_LocalPosition: {x: 1.5, y: 0.5, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
@@ -10998,7 +11011,7 @@ Transform:
   m_GameObject: {fileID: 7145135141175745874}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 1.9566174, y: 0.076673366, z: -8.734542}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 7145135140057217304}
   m_RootOrder: 1
@@ -11887,11 +11900,11 @@ MonoBehaviour:
   _collider: {fileID: 7360126194812452393}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 170
+    RightAngle: 170
+    UseElevationLimit: 1
+    ElevationAngle: 7
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -13207,11 +13220,11 @@ MonoBehaviour:
   _collider: {fileID: 2472474070380567882}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 0
-    LeftAngle: 0
-    RightAngle: 0
-    UseElevationLimit: 0
-    ElevationAngle: 0
+    LimitFiringOnly: 1
+    LeftAngle: 155
+    RightAngle: 160
+    UseElevationLimit: 1
+    ElevationAngle: 20
   _hasForwardLimits: 0
   _forwardLimits:
     LimitFiringOnly: 0
@@ -13537,7 +13550,7 @@ MonoBehaviour:
   m_Script: {fileID: 1832581930, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _originalMaterial: {fileID: 2100000, guid: 3800305f9be36f64688aace15bd257a1, type: 2}
+  _originalMaterial: {fileID: 2100000, guid: b04ffda3548acdc4b8b11aaccec47a11, type: 2}
   _additionalMaterialTargets: []
   _originalMaterials:
   - {fileID: 2100000, guid: e9cdeed837ad96644b1344339378349d, type: 2}
@@ -13958,7 +13971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199124895652040884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.75, z: 3.25}
+  m_LocalPosition: {x: 0, y: 1.5, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7897108295232424805}
