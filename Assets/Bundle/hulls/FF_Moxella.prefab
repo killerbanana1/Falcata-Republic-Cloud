@@ -1535,10 +1535,10 @@ MonoBehaviour:
   _collider: {fileID: 636653848}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 1
+    LimitFiringOnly: 0
     LeftAngle: 265
     RightAngle: 58
-    UseElevationLimit: 1
+    UseElevationLimit: 0
     ElevationAngle: 0
   _hasForwardLimits: 0
   _forwardLimits:
