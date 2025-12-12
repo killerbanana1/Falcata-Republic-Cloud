@@ -1398,7 +1398,6 @@ Transform:
   - {fileID: 4996059473384278890}
   - {fileID: 6795068723751244562}
   - {fileID: 7147412693863401139}
-  - {fileID: 5557205279724826081}
   - {fileID: 8694868266238339893}
   - {fileID: 6578779484748842382}
   m_Father: {fileID: 9215692620851378299}
@@ -3471,7 +3470,22 @@ MonoBehaviour:
   _originalMaterials:
   - {fileID: 2100000, guid: 1140a055eac470743acc3102d125ab61, type: 2}
   - {fileID: 2100000, guid: 1b783c4757ad14140bc2ad9d615a6724, type: 2}
-  _targets: []
+  _targets:
+  - Type: 1
+    Size: {x: 480, y: 230}
+    Alignment: 514
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
+  - Type: 1
+    Size: {x: 480, y: 230}
+    Alignment: 514
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
+  - Type: 2
+    Size: {x: 128, y: 128}
+    Alignment: 514
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
   _materialIndex: 1
 --- !u!1 &4636231801127486357
 GameObject:
@@ -3678,7 +3692,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12, y: 7, z: 22.5}
+  m_Size: {x: 12, y: 7, z: 27}
   m_Center: {x: 0, y: 0, z: 1.5}
 --- !u!114 &2514141619646218216
 MonoBehaviour:
@@ -3863,7 +3877,7 @@ Transform:
   m_Children:
   - {fileID: 6586246972718106546}
   m_Father: {fileID: 1691927426653939140}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2872992676331375247
 MonoBehaviour:
@@ -4430,7 +4444,7 @@ Transform:
   m_Children:
   - {fileID: 2589409407590748671}
   m_Father: {fileID: 1691927426653939140}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2626800733314409979
 MonoBehaviour:
@@ -4727,37 +4741,6 @@ MonoBehaviour:
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
   _craftApproachDir: {x: 0, y: 0, z: 1}
---- !u!1 &5557205279724826082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5557205279724826081}
-  m_Layer: 0
-  m_Name: Moc_Antenna
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5557205279724826081
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5557205279724826082}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7552184177426743636}
-  m_Father: {fileID: 1691927426653939140}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5560077924955916904
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,100 +5120,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 7917069864554330099, guid: 83ffb04605062db40a72fb3d0ec29ec3, type: 3}
---- !u!1 &5822048252957494467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7552184177426743636}
-  - component: {fileID: 8838651387999836755}
-  - component: {fileID: 8675191449836248937}
-  - component: {fileID: 4075440991419260207}
-  m_Layer: 0
-  m_Name: CH_Mocc_Remake_Antenna
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7552184177426743636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5822048252957494467}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0054776096}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 5557205279724826081}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8838651387999836755
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5822048252957494467}
-  m_Mesh: {fileID: -460141900240982668, guid: afaa0cb1494f1b841b0530e9b9f5552b, type: 3}
---- !u!23 &8675191449836248937
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5822048252957494467}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1f66ce9a0b0e95a4f80e2e16743bcc05, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4075440991419260207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5822048252957494467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 379092634, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5911411544954201243
 GameObject:
   m_ObjectHideFlags: 0
@@ -12969,7 +12858,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351911661227720817}
-  m_Mesh: {fileID: 1569020356739611552, guid: a970359c0eb7c29429dbc39cff3ea19b, type: 3}
+  m_Mesh: {fileID: 1569020356739611552, guid: 2a0760f2a14908b4fb2ca32c73917914, type: 3}
 --- !u!23 &5782350845624093784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13555,7 +13444,22 @@ MonoBehaviour:
   _originalMaterials:
   - {fileID: 2100000, guid: e9cdeed837ad96644b1344339378349d, type: 2}
   - {fileID: 2100000, guid: b04ffda3548acdc4b8b11aaccec47a11, type: 2}
-  _targets: []
+  _targets:
+  - Type: 0
+    Size: {x: 834, y: 106}
+    Alignment: 513
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
+  - Type: 2
+    Size: {x: 128, y: 128}
+    Alignment: 514
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
+  - Type: 2
+    Size: {x: 128, y: 128}
+    Alignment: 514
+    Font: {fileID: 0}
+    FontMaterial: {fileID: 0}
   _materialIndex: 1
 --- !u!1 &8713092681931546454
 GameObject:
@@ -14092,9 +13996,9 @@ MonoBehaviour:
   _className: Moccotar
   _hullClassification: Heavy Cruiser
   _hullSymbolOptions:
-  - CH
-  - CA
   - BC
+  - CA
+  - CH
   _factionKey: Falcata Republic/Falcata Republic
   _overrideEquipmentFactionKey: 
   _hideInFleetEditor: 0
@@ -14195,7 +14099,67 @@ MonoBehaviour:
   - {fileID: 1748556036675705498}
   - {fileID: 4480437035494515060}
   _armorThickness: 48
-  _dynamicArmorZones: []
+  _dynamicArmorZones:
+  - HullSeg: {fileID: 1748556036675705498}
+    GetCollidersFromSegment: 0
+    Colliders:
+    - {fileID: 729343789621338427}
+    - {fileID: 7834892501404281562}
+    - {fileID: 1770463852457596365}
+    - {fileID: 305585065700759739}
+    - {fileID: 8827736662021837306}
+    - {fileID: 808158421823693043}
+    - {fileID: 784091768172980235}
+    - {fileID: 5162259759458974714}
+    - {fileID: 7158757714652838661}
+    - {fileID: 8456056186343391637}
+    - {fileID: 7795926836860738964}
+    - {fileID: 1200463072442625735}
+    - {fileID: 6593257691766598485}
+    - {fileID: 1533568695735164225}
+    - {fileID: 4888036154558322291}
+    - {fileID: 2472783081926248737}
+    - {fileID: 2125021903758512216}
+    TexelsPerMeter: 22
+  - HullSeg: {fileID: 3171038376772388029}
+    GetCollidersFromSegment: 0
+    Colliders:
+    - {fileID: 4970185708202760732}
+    - {fileID: 6938878920016064950}
+    - {fileID: 4756196678013362728}
+    - {fileID: 4036882913130932555}
+    - {fileID: 2894461123167516514}
+    - {fileID: 2720337399496620434}
+    - {fileID: 4268046150666927261}
+    - {fileID: 2514895672872149134}
+    - {fileID: 4222292626915460991}
+    - {fileID: 8503583584880062730}
+    - {fileID: 8422824151237162703}
+    - {fileID: 57449796233100376}
+    - {fileID: 558054455303368839}
+    - {fileID: 75812899758779528}
+    TexelsPerMeter: 22
+  - HullSeg: {fileID: 4480437035494515060}
+    GetCollidersFromSegment: 0
+    Colliders:
+    - {fileID: 8065157322548623972}
+    - {fileID: 87450063984369555}
+    - {fileID: 5577535536539649141}
+    - {fileID: 3005346815419007872}
+    - {fileID: 9057470560930994288}
+    - {fileID: 8622536652510265843}
+    - {fileID: 3955424655585720403}
+    - {fileID: 2626048994946048866}
+    - {fileID: 3730607684044185668}
+    - {fileID: 541152611861045548}
+    - {fileID: 1655788405004746928}
+    - {fileID: 6932077310756747870}
+    - {fileID: 4107411490625286926}
+    - {fileID: 323356895395639578}
+    - {fileID: 5438839318956274506}
+    - {fileID: 6541600702343095919}
+    - {fileID: 8628564744301471702}
+    TexelsPerMeter: 22
   _colliderSamplerPrefab: {fileID: 1924084239581280370, guid: 91f1df6d18db77e468b7863b8e8e6b9e, type: 3}
   _shoulderCamOffset: {x: 0, y: 8, z: -10}
 --- !u!114 &9215692620851378278
@@ -14212,9 +14176,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _subVolumes:
   - Box:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    Weight: 0
+      m_Center: {x: 0, y: 0, z: -0.76}
+      m_Extent: {x: 1.5, y: 2.52, z: 2.48}
+    Weight: 10
+  - Box:
+      m_Center: {x: 1.77, y: 0, z: -0.06}
+      m_Extent: {x: 1.5, y: 0.51, z: 2.05}
+    Weight: 5
+  - Box:
+      m_Center: {x: -1.77, y: 0, z: -0.06}
+      m_Extent: {x: 1.5, y: 0.51, z: 2.05}
+    Weight: 5
+  - Box:
+      m_Center: {x: 0, y: 0.31, z: 6.65}
+      m_Extent: {x: 1.5, y: 1.44, z: 4.64}
+    Weight: 10
+  - Box:
+      m_Center: {x: 0, y: 0.07, z: -5.49}
+      m_Extent: {x: 1.5, y: 1.44, z: 2.65}
+    Weight: 10
   _lineBackZ: -2
   _lineForwardZ: 2
 --- !u!114 &9215692620851378277

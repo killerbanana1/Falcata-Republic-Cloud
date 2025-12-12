@@ -78,6 +78,7 @@ MonoBehaviour:
   _bindToTag: 
   _rotateToFit: 2
   _canTile: 0
+  _consistentCostForTiled: 0
   Modifiers:
   - _statName: hull-component-max-repair
     _literal: 0.05
@@ -130,4 +131,4 @@ MonoBehaviour:
   _movementSpeed: 0.5
   _repairPerTick: 0.3
   _canRestore: 1
-  _restoreCount: 1
+  _restoreCount: 2
