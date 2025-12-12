@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 1
+  _baseAccuracy: 0.8
   _flash: {fileID: 7333378686667604822}
   _fireAnimation: {fileID: 6918859909764505941}
   _bulletLook: 0
@@ -237,7 +237,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808705520999248827}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 18ff915cd31fae24e9a7ca63593fecec, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 5c1864dd5c310624287595310774ee64, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -268,6 +268,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &7011321019929287500
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -284,12 +285,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -357,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ignoreAccuracyModifiers: 1
-  _baseAccuracy: 1
+  _baseAccuracy: 0.8
   _flash: {fileID: 1441790701449016971}
   _fireAnimation: {fileID: 794456486}
   _bulletLook: 0
@@ -372,7 +367,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841362382563297408}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 18ff915cd31fae24e9a7ca63593fecec, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 5c1864dd5c310624287595310774ee64, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -403,6 +398,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &7317351081512994259
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -419,12 +415,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -808,6 +798,10 @@ MonoBehaviour:
   _compatibleAmmoTags:
   - Class: Ballistic/Chemical/Timed
     Subclass: 40mm
+  - Class: Ballistic/Chemical/Timed
+    Subclass: 1-40mm
+  - Class: Ballistic/Chemical/Timed
+    Subclass: 2-40mm
   _detailType: Ballistic PDT
   _leadTargets: 1
   _leadIterations: 10
@@ -823,11 +817,11 @@ MonoBehaviour:
   _positionTargetIsDirection: 0
   _shoulderCamEnabled: 1
   _shoulderCamOffset: {x: 0.059, y: 0.163, z: 0.085}
-  _timeBetweenMuzzles: 0.175
+  _timeBetweenMuzzles: 0.15
   _resetMuzzleIndexOnReload: 1
   _randomlyDeviateMuzzleTime: 0
   _magazineSize: 16
-  _reloadTime: 1.5
+  _reloadTime: 1.25
   _reloadStatSubtype: 
   _recycleStatSubtype: belt
   _randomlyDeviateReloadTime: 0
@@ -1031,6 +1025,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &3251539860711087997
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1047,9 +1042,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

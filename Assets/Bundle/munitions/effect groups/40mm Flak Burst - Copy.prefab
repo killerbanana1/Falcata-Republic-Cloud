@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4056459483443200471}
   - component: {fileID: 4056459483443200470}
   m_Layer: 0
-  m_Name: 40mm Flak Burst
+  m_Name: 40mm Flak Burst - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   _lingerFrames: 5
   _armorPenetration: 0.2
   _heatPower: 2
-  _componentDamage: 15
+  _componentDamage: 20
   _blastRadius: 5
   _scaleDamageOverArea: 1
   _armorDamageScaling:
