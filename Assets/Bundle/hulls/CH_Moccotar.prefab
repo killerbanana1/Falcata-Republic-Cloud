@@ -14120,7 +14120,7 @@ MonoBehaviour:
     - {fileID: 4888036154558322291}
     - {fileID: 2472783081926248737}
     - {fileID: 2125021903758512216}
-    TexelsPerMeter: 22
+    TexelsPerMeter: 19
   - HullSeg: {fileID: 3171038376772388029}
     GetCollidersFromSegment: 0
     Colliders:
@@ -14138,7 +14138,7 @@ MonoBehaviour:
     - {fileID: 57449796233100376}
     - {fileID: 558054455303368839}
     - {fileID: 75812899758779528}
-    TexelsPerMeter: 22
+    TexelsPerMeter: 19
   - HullSeg: {fileID: 4480437035494515060}
     GetCollidersFromSegment: 0
     Colliders:
@@ -14159,7 +14159,7 @@ MonoBehaviour:
     - {fileID: 5438839318956274506}
     - {fileID: 6541600702343095919}
     - {fileID: 8628564744301471702}
-    TexelsPerMeter: 22
+    TexelsPerMeter: 19
   _colliderSamplerPrefab: {fileID: 1924084239581280370, guid: 91f1df6d18db77e468b7863b8e8e6b9e, type: 3}
   _shoulderCamOffset: {x: 0, y: 8, z: -10}
 --- !u!114 &9215692620851378278

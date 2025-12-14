@@ -131,4 +131,4 @@ MonoBehaviour:
   _movementSpeed: 0.5
   _repairPerTick: 0.3
   _canRestore: 1
-  _restoreCount: 2
+  _restoreCount: 1

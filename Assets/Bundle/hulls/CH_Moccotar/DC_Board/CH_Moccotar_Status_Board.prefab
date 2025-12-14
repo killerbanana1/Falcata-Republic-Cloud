@@ -2087,8 +2087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graphic: {fileID: 6023308635580234996}
   _partKeys:
-  - BRPanel
   - BLPanel
+  - BRPanel
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0
@@ -2374,8 +2374,6 @@ MonoBehaviour:
   - Thruster14
   - Thruster15
   - Thruster16
-  - Thruster17
-  - Thruster18
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0
@@ -3413,8 +3411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graphic: {fileID: 6659666449809548885}
   _partKeys:
-  - TRPanel
   - TLPanel
+  - TRPanel
   _tooltip: {fileID: 0}
   _detailGroup: {fileID: 0}
   _interiorGroup: 0
