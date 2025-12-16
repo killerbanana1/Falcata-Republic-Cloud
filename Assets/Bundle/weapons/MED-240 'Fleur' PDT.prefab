@@ -798,10 +798,6 @@ MonoBehaviour:
   _compatibleAmmoTags:
   - Class: Ballistic/Chemical/Timed
     Subclass: 40mm
-  - Class: Ballistic/Chemical/Timed
-    Subclass: 1-40mm
-  - Class: Ballistic/Chemical/Timed
-    Subclass: 2-40mm
   _detailType: Ballistic PDT
   _leadTargets: 1
   _leadIterations: 10

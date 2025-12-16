@@ -50,7 +50,7 @@
 	<Entry Name="E80 'Miasma'  Jammer" Address="weapons/E80 'Miasma'  Jammer.prefab"/>
 	<Entry Name="E67 'Fugue' Illuminator" Address="weapons/E67 'Fugue' Illuminator.prefab"/>
 	<Entry Name="RF99 'Quintain' Radar" Address="weapons/RF99 'Quintain' Radar.prefab"/>
-	<Entry Name="E44 'Lysandre' Illuminator" Address="weapons/E44 'Lysandre' Illuminator.prefab"/>
+	<!-- <Entry Name="E44 'Lysandre' Illuminator" Address="weapons/E44 'Lysandre' Illuminator.prefab"/> -->
 	<Entry Name="E71 'Mecure' Jammer" Address="weapons/E71 'Mecure' Jammer.prefab"/>
 	<Entry Name="E32 'Stiletto' Dazzler" Address="weapons/E32 'Stiletto' Dazzler.prefab"/>
 

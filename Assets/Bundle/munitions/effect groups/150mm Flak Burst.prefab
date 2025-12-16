@@ -154,22 +154,13 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: -1
-      value: 0.49957216
-      inSlope: 1.1134791
-      outSlope: 1.1134791
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.09699001
-    - serializedVersion: 3
-      time: -0.3776332
-      value: 0.8491587
-      inSlope: 0.29807094
-      outSlope: 0.29807094
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17307496
-      outWeight: 0.10417942
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 1
@@ -177,7 +168,7 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -226,6 +217,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &6900112655898163900
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -242,7 +234,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
