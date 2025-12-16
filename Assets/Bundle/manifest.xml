@@ -116,7 +116,7 @@
   <MissileComponents>
 	<!--Entry Name="Fixed Laser-Guided Seeker" Address="munitions/missile components/Fixed Laser-Guided Seeker.asset"/-->
 	<Entry Name="Extended Anti-Radiation Seeker" Address="munitions/missile components/Extended Anti-Radiation Seeker.asset"/>
-	<Entry Name="HEI+" Address="munitions/missile components/HEI+.asset"/>
+	<!-- <Entry Name="HEI+" Address="munitions/missile components/HEI+.asset"/> -->
   </MissileComponents>
 
   <Spaceframes>

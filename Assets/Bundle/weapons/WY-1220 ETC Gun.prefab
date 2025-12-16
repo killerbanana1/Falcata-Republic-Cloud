@@ -555,6 +555,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &5681126308224027855
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -571,7 +572,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -750,6 +750,7 @@ MonoBehaviour:
   - 500
   - 750
   _randomOffsetSquish: 1
+  _aimpointSelectionTime: 10
   _integratedFireControl: {fileID: 0}
   _waitForFCLock: 0
   _allowVisualTargeting: 1
@@ -773,10 +774,6 @@ MonoBehaviour:
   - _statName: hull-sigmult-radar
     _literal: 0
     _modifier: 0.15
-    _permanent: 0
-  - _statName: muzzle-accuracy
-    _literal: 0
-    _modifier: 0.5
     _permanent: 0
   _overheatDamage: 18
   _overheatDamageSubtype: 
@@ -856,6 +853,7 @@ VisualEffect:
       m_Array: []
 --- !u!73398921 &5681126309429315182
 VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -872,7 +870,6 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
-  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
