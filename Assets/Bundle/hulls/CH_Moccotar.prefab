@@ -540,7 +540,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6942268142322123816}
   - component: {fileID: 4490124504125642350}
-  - component: {fileID: 700635212809005861}
   m_Layer: 12
   m_Name: Radar Signature
   m_TagString: Untagged
@@ -579,7 +578,7 @@ MonoBehaviour:
   _includeSimpleMultiplierWithStat: 0
   _hideInSignatureSummary: 0
   _preferSignatureRandomPoints: 0
-  _collider: {fileID: 700635212809005861}
+  _collider: {fileID: 0}
   _sigSize:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 4.75, y: 3.5, z: 9.5}
@@ -588,19 +587,6 @@ MonoBehaviour:
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
   _detailedOcclusionTest: 0
---- !u!65 &700635212809005861
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883968767848614332}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.5, y: 7, z: 19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &900692194016243905
 GameObject:
   m_ObjectHideFlags: 0
