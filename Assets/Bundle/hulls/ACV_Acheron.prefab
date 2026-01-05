@@ -12519,7 +12519,7 @@ MonoBehaviour:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 2, y: 2, z: 6.5}
   _randomPointInBounds: 0
-  _crossSectionSampler: {fileID: 11400000, guid: c62c142d461e85d4f8bba43940ae83ee, type: 2}
+  _crossSectionSampler: {fileID: 11400000, guid: 4d9e3cbb764e1834385f7954cfb4c60f, type: 2}
   _constantReturn: 0
   _illuminationPowerMultiplier: 1
   _detailedOcclusionTest: 0
