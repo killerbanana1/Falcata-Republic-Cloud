@@ -22,19 +22,19 @@ MonoBehaviour:
   _screenshot: {fileID: 0}
   _tags:
     Class: Ballistic/Chemical
-    Subclass: 69420mm
+    Subclass: 150mm
   _role: 2
   _weightClassDiscrepancy: 2
   _recommendedTargetTypes: 0200000003000000
   _maxFlightTime: 8.5
   _flightSpeed: 80
   _repoolDelay: 5
-  _armorPenetration: 0.5
+  _armorPenetration: 0.2
   _armorDamageRadius: 0.2
-  _heatPower: 500
-  _componentDamage: 40
+  _heatPower: 0
+  _componentDamage: 50
   _randomEffectMultiplier: 0.1
-  _neverCrit: 1
+  _neverCrit: 0
   _crewVulnerabilityMultiplier: 0.1
   _maxPenetrationDistance: 0.5
   _neverOverpen: 0
@@ -124,5 +124,5 @@ MonoBehaviour:
   _alwaysSpreadThroughStructure: 0
   _playDestructionEffectOnTimeout: 1
   _fuzeMargin: 0.1
-  _minFuzeTime: 0.5
-  _fuzeAdvanceRetard: 0
+  _minFuzeTime: 0.25
+  _fuzeAdvanceRetard: -0.05

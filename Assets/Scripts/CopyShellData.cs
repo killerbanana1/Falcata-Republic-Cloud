@@ -161,6 +161,7 @@ public class CopyShellData : IModEntryPoint
 
         Map<LightweightKineticShell>("Stock/450mm AP Shell", "Falcata Republic/380mm AP Shell");
         Map<LightweightExplosiveShell>("Stock/450mm HE Shell", "Falcata Republic/380mm HE Shell");
+        Map<LightweightClusterShell>("Stock/100mm Grapeshot", "Falcata Republic/380mm CLU Shell");
         //Map<LightweightProximityShell>("Stock/250mm HE-RPF Shell", "Falcata Republic/380mm HE-ABF Shell");
         Map<LightweightKineticShell>("Stock/120mm AP Shell", "Falcata Republic/200mm RP-HEI Shell");
         Map<LightweightKineticShell>("Stock/250mm AP Shell", "Falcata Republic/220mm AP Shell");

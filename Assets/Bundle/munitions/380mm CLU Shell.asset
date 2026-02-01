@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 548285470, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 380mm CLU Shell
+  m_EditorClassIdentifier: 
+  _pointCost: 1
+  _pointDivision: 50
+  _storageVolume: 0.35
+  _factionKey: Falcata Republic/Falcata Republic
+  _flavorText: A canister of small, hardened metal beads.  Their low mass allows
+    for higher velocity compared to standard shells.  Can be used against lightly
+    armored targets to directly attack crew and damage delicate systems, or against
+    missiles in flight.
+  _screenshot: {fileID: 0}
+  _tags:
+    Class: Ballistic/Cannister
+    Subclass: 380mm
+  _role: 1
+  _weightClassDiscrepancy: 0
+  _recommendedTargetTypes: 010000000200000003000000
+  _maxFlightTime: 9
+  _flightSpeed: 120
+  _repoolDelay: 5
+  _armorPenetration: 16
+  _armorDamageRadius: 0.4
+  _heatPower: 0
+  _componentDamage: 100
+  _randomEffectMultiplier: 5
+  _neverCrit: 1
+  _crewVulnerabilityMultiplier: 1
+  _maxPenetrationDistance: -1
+  _neverOverpen: 0
+  _overrideComponentSearchDistance: 5
+  _overpenDamageMultiplier: 0.2
+  _overpenDamageSpreadMethod: 0
+  _ignoreDamageReduction: 0
+  _alwaysSpreadDamage: 0
+  _forceBodyWakeup: 0
+  _applyImpulseOnImpact: 0
+  _impulseMagnitude: 0
+  _effectsGroups:
+    _surfaceGroups:
+    - _surfaceType: 
+      _ricochetEffects:
+      - {fileID: 2357699483268532098, guid: 5d8e6f0ab3943f245855b44fd106af55, type: 3}
+      _impactEffects:
+      - {fileID: 2357699483268532098, guid: 4f6dc5257e7a4b447aec3ee1ee4cab33, type: 3}
+      _penetratingEffects:
+      - {fileID: 2357699483268532098, guid: 4f6dc5257e7a4b447aec3ee1ee4cab33, type: 3}
+      _penetrationExitEffects: []
+      _destructionEffects: []
+    - _surfaceType: Surface-Rock
+      _ricochetEffects:
+      - {fileID: 2357699483268532098, guid: 5e7e90ed1a41ab94e96353123a4c24b4, type: 3}
+      _impactEffects:
+      - {fileID: 2357699483268532098, guid: 5e7e90ed1a41ab94e96353123a4c24b4, type: 3}
+      _penetratingEffects:
+      - {fileID: 2357699483268532098, guid: 5e7e90ed1a41ab94e96353123a4c24b4, type: 3}
+      _penetrationExitEffects:
+      - {fileID: 2357699483268532098, guid: 5e7e90ed1a41ab94e96353123a4c24b4, type: 3}
+      _destructionEffects: []
+  _modId: 0
+  _munitionName: 
+  _munitionKey: ccdc2a0f-83e1-4998-9b1b-a153f0ec4fe6
+  _tracerEffect:
+    _effectAsset: {fileID: 8926484042661614526, guid: 5c1864dd5c310624287595310774ee64, type: 3}
+    _colors:
+    - Name: Color
+      Value: {r: 1, g: 0.03137255, b: 0, a: 1}
+    _gradients: []
+    _floats:
+    - Name: Group Stretching
+      Value: 0.45
+    - Name: Lifetime
+      Value: 6
+    - Name: Group Radius
+      Value: 0.25
+  _whine: {fileID: 8300000, guid: 3a3519090b043e04d8b1a7bedbd19371, type: 3}
+  _castType: 2
+  _spherecastRadius: 1
+  _rayAngle: 30
+  _rayCount: 8
+  _alwaysDoStructureDamage: 0
+  _dedicatedStructureDamage: 0
+  _alwaysSpreadThroughStructure: 0
+  _playDestructionEffectOnTimeout: 0
+  _lookaheadSphereRadius: 1.25
+  _includeMunitions: 1

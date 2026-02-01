@@ -7059,7 +7059,7 @@ MonoBehaviour:
   _screenshot: {fileID: 21300000, guid: cdd3160f593958a438a996b0f56454c5, type: 3}
   _longDescription: WIP
   _flavorText: WIP
-  _pointCost: 125
+  _pointCost: 150
   _mass: 8250
   _weightClass: 1
   _tankFacing: 1

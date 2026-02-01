@@ -1,49 +1,71 @@
-/*using System.IO;
 using Modding;
 using UnityEngine;
+using System;
+using System.Reflection;
+using System.IO;
 
-public class CopyFleetFolder : IModEntry
+public class CopyFleetFolder : IModEntryPoint
 {
-    public string folderNameToCopy = "Starter Fleets - Falcata";
-    public string newFolderName    = "Starter Fleets - Falcata";
+    private const string SourceFolderName = "Starter Fleets - Falcata";
 
-    void Start()
+    public void PreLoad()
     {
-        CopyFolder();
+        Debug.Log("[CopyFleetFolder] PreLoad");
     }
 
-    void CopyFolder()
+    public void PostLoad()
     {
-        string gameRoot = Directory.GetCurrentDirectory();
+        Debug.Log("[CopyFleetFolder] PostLoad");
 
-        string source = Path.Combine(Application.streamingAssetsPath, folderNameToCopy);
-        string dest   = Path.Combine(gameRoot, "Saves", "Fleets", newFolderName);
+        try
+        {
+            CopyFleetFolderFromModRoot();
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("[CopyFleetFolder] Exception:\n" + e);
+        }
+    }
+
+    private void CopyFleetFolderFromModRoot()
+    {
+        string modRoot = Path.GetDirectoryName(typeof(CopyFleetFolder).Assembly.Location);
+
+        string source = Path.Combine(modRoot, SourceFolderName);
+
+        string dest = Path.Combine(Directory.GetCurrentDirectory(), "Saves", "Fleets", SourceFolderName);
+
+        Debug.Log("[CopyFleetFolder] Source: " + source);
+        Debug.Log("[CopyFleetFolder] Dest:   " + dest);
 
         if (!Directory.Exists(source))
         {
-            Debug.LogError("Source folder not found: " + source);
+            Debug.LogError("[CopyFleetFolder] Source folder not found!");
             return;
         }
 
+        if (Directory.Exists(dest))
+        {
+            Debug.Log("[Falcata Folder] Removing existing fleet folder");
+            Directory.Delete(dest, recursive: true);
+        }
+
         CopyDirectory(source, dest);
-        Debug.Log("Copied fleet folder to: " + dest);
+        Debug.Log("[Falcata Folder] Fleet folder copied (overwrite complete)");
     }
 
-    void CopyDirectory(string sourceDir, string destDir)
+    private void CopyDirectory(string sourceDir, string destDir)
     {
-        if (!Directory.Exists(destDir))
-            Directory.CreateDirectory(destDir);
+        Directory.CreateDirectory(destDir);
 
         foreach (string file in Directory.GetFiles(sourceDir))
         {
-            string dest = Path.Combine(destDir, Path.GetFileName(file));
-            File.Copy(file, dest, overwrite: true);
+            File.Copy(file, Path.Combine(destDir, Path.GetFileName(file)), overwrite: false);
         }
 
-        foreach (string folder in Directory.GetDirectories(sourceDir))
+        foreach (string dir in Directory.GetDirectories(sourceDir))
         {
-            string destFolder = Path.Combine(destDir, Path.GetFileName(folder));
-            CopyDirectory(folder, destFolder);
+            CopyDirectory(dir, Path.Combine(destDir, Path.GetFileName(dir)));
         }
     }
-}*/
+}

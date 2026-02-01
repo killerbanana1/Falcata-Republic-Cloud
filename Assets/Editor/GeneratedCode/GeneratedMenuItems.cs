@@ -6,6 +6,11 @@ using System.Reflection;
 using Munitions;
 using Munitions.ModularMissiles;
 using FleetEditor.MissileEditor;
+using Ships;
+using SmallCraft;
+using SmallCraft.Components;
+using FleetEditor;
+using FleetEditor.CraftEditor;
 
 public class Holder : MonoBehaviour
 {
@@ -15,7 +20,6 @@ public class GeneratedMenuItems : MonoBehaviour {
     static AssetBundle stock; 
     static AssetBundle stockf1; 
     static AssetBundle stockf2; 
-    static AssetBundle stockmaps; 
 
         public static object GetPrivateField(object instance, string fieldName)
         {
@@ -70,6 +74,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -82,6 +130,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -94,6 +186,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -116,6 +252,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -128,6 +308,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -140,6 +364,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -152,6 +420,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -164,6 +476,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -236,6 +592,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -258,6 +658,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -270,6 +714,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -282,6 +770,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -304,6 +836,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -316,6 +892,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -328,6 +948,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -340,6 +1004,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -352,6 +1060,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -364,6 +1116,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -396,6 +1192,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -408,6 +1248,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -430,6 +1314,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -462,6 +1390,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -484,6 +1456,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -496,6 +1512,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -518,6 +1578,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -540,6 +1644,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -572,6 +1720,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -584,6 +1776,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -596,6 +1832,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -608,6 +1888,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -640,6 +1964,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -652,6 +2020,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -664,6 +2076,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -676,6 +2132,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -728,6 +2228,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -750,6 +2294,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -762,6 +2350,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -794,6 +2426,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -806,6 +2482,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -838,6 +2558,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -880,6 +2644,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -912,6 +2720,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -954,6 +2806,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -966,6 +2862,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -988,6 +2928,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1040,6 +3024,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1052,6 +3080,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1064,6 +3136,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1096,6 +3212,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1108,6 +3268,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1150,6 +3354,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1162,6 +3410,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1184,6 +3476,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1196,6 +3532,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1208,6 +3588,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1220,6 +3644,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1232,6 +3700,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1244,6 +3756,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1276,6 +3832,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1288,6 +3888,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1310,6 +3954,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1322,6 +4010,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1334,6 +4066,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1346,6 +4122,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1358,6 +4178,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1380,6 +4244,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1392,6 +4300,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1404,6 +4356,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1416,6 +4412,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1428,6 +4468,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1440,6 +4524,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1452,6 +4580,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1474,6 +4646,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1486,6 +4702,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1498,6 +4758,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1510,6 +4814,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1522,6 +4870,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1534,6 +4926,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1546,6 +4982,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1558,6 +5038,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1570,6 +5094,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1582,6 +5150,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1594,6 +5206,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1606,6 +5262,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1618,6 +5318,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1650,6 +5394,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1662,6 +5450,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1674,6 +5506,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1686,6 +5562,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1698,6 +5618,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1720,6 +5684,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1752,6 +5760,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1764,6 +5816,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1786,6 +5882,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1798,6 +5938,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1810,6 +5994,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1822,6 +6050,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1844,6 +6116,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1856,6 +6172,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1868,6 +6228,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1880,6 +6284,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1892,6 +6340,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1904,6 +6396,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1916,6 +6452,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1928,6 +6508,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1940,6 +6564,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1952,6 +6620,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1964,6 +6676,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1986,6 +6742,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -1998,6 +6798,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2010,6 +6854,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2022,6 +6910,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2044,6 +6976,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2056,6 +7032,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2068,6 +7088,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2090,6 +7154,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2112,6 +7220,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2124,6 +7276,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2136,6 +7332,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2148,6 +7388,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2160,6 +7444,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2172,6 +7500,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2184,6 +7556,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2196,6 +7612,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2218,6 +7678,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2230,6 +7734,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2242,6 +7790,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2254,6 +7846,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2266,6 +7902,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2278,6 +7958,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2290,6 +8014,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2302,6 +8070,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2314,6 +8126,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2336,11 +8192,65 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F2/F2/Munitions/250mm Bomb Shell.asset")]
+    private static void MenuItem203() {
+        Debug.Log("Selected item: 250mm Bomb Shell");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = new GameObject("250mm Bomb Shell holder");
+        goh.AddComponent<Holder>().a = stockf2.LoadAsset<ScriptableObject>("250mm Bomb Shell"); 
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm HE-SH Shell.asset")]
-    private static void MenuItem203() {
+    private static void MenuItem204() {
         Debug.Log("Selected item: 600mm HE-SH Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2350,7 +8260,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/600mm Bomb Shell.asset")]
-    private static void MenuItem204() {
+    private static void MenuItem205() {
         Debug.Log("Selected item: 600mm Bomb Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2360,7 +8270,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800-R Drive.prefab")]
-    private static void MenuItem205() {
+    private static void MenuItem206() {
         Debug.Log("Selected item: BW800-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2368,11 +8278,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E30 Illuminator.prefab")]
-    private static void MenuItem206() {
+    private static void MenuItem207() {
         Debug.Log("Selected item: E30 Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2380,11 +8334,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Small Mounted Hangar.prefab")]
-    private static void MenuItem207() {
+    private static void MenuItem208() {
         Debug.Log("Selected item: Small Mounted Hangar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2392,11 +8390,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500-R Drive.prefab")]
-    private static void MenuItem208() {
+    private static void MenuItem209() {
         Debug.Log("Selected item: BW1500-R Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2404,11 +8446,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/TALS-2 'Talisman' Launcher.prefab")]
-    private static void MenuItem209() {
+    private static void MenuItem210() {
         Debug.Log("Selected item: TALS-2 'Talisman' Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2416,11 +8502,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4D2 Decoy Container (Line Ship).prefab")]
-    private static void MenuItem210() {
+    private static void MenuItem211() {
         Debug.Log("Selected item: CM-4D2 Decoy Container (Line Ship)");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2428,11 +8558,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/R400 'Bloodhound' LRT Radar.prefab")]
-    private static void MenuItem211() {
+    private static void MenuItem212() {
         Debug.Log("Selected item: R400 'Bloodhound' LRT Radar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2440,11 +8614,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T20 Cannon.prefab")]
-    private static void MenuItem212() {
+    private static void MenuItem213() {
         Debug.Log("Selected item: T20 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2452,11 +8670,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/L50 'Blackjack' Laser Dazzler.prefab")]
-    private static void MenuItem213() {
+    private static void MenuItem214() {
         Debug.Log("Selected item: L50 'Blackjack' Laser Dazzler");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2464,11 +8726,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30 'Mattock' Mine.prefab")]
-    private static void MenuItem214() {
+    private static void MenuItem215() {
         Debug.Log("Selected item: M-30 'Mattock' Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2476,11 +8782,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-1 'Perch' Rocket.prefab")]
-    private static void MenuItem215() {
+    private static void MenuItem216() {
         Debug.Log("Selected item: R-1 'Perch' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2488,11 +8838,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Container Bank Hangar.prefab")]
-    private static void MenuItem216() {
+    private static void MenuItem217() {
         Debug.Log("Selected item: Container Bank Hangar");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2500,11 +8894,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P20 'Bastion' PDT.prefab")]
-    private static void MenuItem217() {
+    private static void MenuItem218() {
         Debug.Log("Selected item: P20 'Bastion' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2512,11 +8950,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Damage Control Complex.prefab")]
-    private static void MenuItem218() {
+    private static void MenuItem219() {
         Debug.Log("Selected item: Damage Control Complex");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2524,11 +9006,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/J75 'Warbler' Jammer.prefab")]
-    private static void MenuItem219() {
+    private static void MenuItem220() {
         Debug.Log("Selected item: J75 'Warbler' Jammer");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2536,11 +9062,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Large DC Storage.prefab")]
-    private static void MenuItem220() {
+    private static void MenuItem221() {
         Debug.Log("Selected item: Large DC Storage");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2548,21 +9118,65 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
-    [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm Flak Shell.asset")]
-    private static void MenuItem221() {
-        Debug.Log("Selected item: 100mm Flak Shell");
+    [MenuItem("Load Asset/Stock-F2/F2/Munitions/250mm Flak Shell.asset")]
+    private static void MenuItem222() {
+        Debug.Log("Selected item: 250mm Flak Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
-        GameObject goh = new GameObject("100mm Flak Shell holder");
-        goh.AddComponent<Holder>().a = stockf2.LoadAsset<ScriptableObject>("100mm Flak Shell"); 
+        GameObject goh = new GameObject("250mm Flak Shell holder");
+        goh.AddComponent<Holder>().a = stockf2.LoadAsset<ScriptableObject>("250mm Flak Shell"); 
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL36 Launcher.prefab")]
-    private static void MenuItem222() {
+    private static void MenuItem223() {
         Debug.Log("Selected item: RL36 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2570,11 +9184,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Ithaca Bridgemaster.prefab")]
-    private static void MenuItem223() {
+    private static void MenuItem224() {
         Debug.Log("Selected item: Ithaca Bridgemaster");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2582,28 +9240,60 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm AP Shell.asset")]
-    private static void MenuItem224() {
+    private static void MenuItem225() {
         Debug.Log("Selected item: 100mm AP Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
         GameObject goh = new GameObject("100mm AP Shell holder");
         goh.AddComponent<Holder>().a = stockf2.LoadAsset<ScriptableObject>("100mm AP Shell"); 
-        
-    }
-
-    [MenuItem("Load Asset/Stock-F2/F2/Weapons/C60 Cannon.prefab")]
-    private static void MenuItem225() {
-        Debug.Log("Selected item: C60 Cannon");
-        if (stockf2 == null)
-            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
-        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("C60 Cannon"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
         
     }
 
@@ -2616,6 +9306,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2628,6 +9362,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2650,6 +9428,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2662,6 +9484,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2674,6 +9540,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2686,6 +9596,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2698,6 +9652,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2720,6 +9718,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2732,6 +9774,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2744,6 +9830,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2776,11 +9906,65 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F2/F2/Munitions/500mm Fragmentation Block.asset")]
+    private static void MenuItem241() {
+        Debug.Log("Selected item: 500mm Fragmentation Block");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = new GameObject("500mm Fragmentation Block holder");
+        goh.AddComponent<Holder>().a = stockf2.LoadAsset<ScriptableObject>("500mm Fragmentation Block"); 
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Bomber/OSP Bomber Frame.prefab")]
-    private static void MenuItem241() {
+    private static void MenuItem242() {
         Debug.Log("Selected item: OSP Bomber Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2788,18 +9972,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-F2/F2/Munitions/EA14 Chaff Decoy.prefab")]
-    private static void MenuItem242() {
-        Debug.Log("Selected item: EA14 Chaff Decoy");
-        if (stockf2 == null)
-            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
-        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("EA14 Chaff Decoy"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
@@ -2812,11 +10028,111 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F2/F2/Munitions/EA14 Chaff Decoy.prefab")]
+    private static void MenuItem244() {
+        Debug.Log("Selected item: EA14 Chaff Decoy");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("EA14 Chaff Decoy"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW2000 Drive.prefab")]
-    private static void MenuItem244() {
+    private static void MenuItem245() {
         Debug.Log("Selected item: BW2000 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2824,11 +10140,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P60 'Grazer' PDT.prefab")]
-    private static void MenuItem245() {
+    private static void MenuItem246() {
         Debug.Log("Selected item: P60 'Grazer' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2836,11 +10196,111 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F2/F2/Weapons/ML-9 Mine Launcher Old.prefab")]
+    private static void MenuItem247() {
+        Debug.Log("Selected item: ML-9 Mine Launcher Old");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("ML-9 Mine Launcher Old"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/TE45 Mass Driver.prefab")]
-    private static void MenuItem246() {
+    private static void MenuItem248() {
         Debug.Log("Selected item: TE45 Mass Driver");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2848,11 +10308,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C53 Cannon.prefab")]
-    private static void MenuItem247() {
+    private static void MenuItem249() {
         Debug.Log("Selected item: C53 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2860,11 +10364,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/P11 'Pavise' PDT.prefab")]
-    private static void MenuItem248() {
+    private static void MenuItem250() {
         Debug.Log("Selected item: P11 'Pavise' PDT");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2872,11 +10420,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/500mm Fracturing Block.asset")]
-    private static void MenuItem249() {
+    private static void MenuItem251() {
         Debug.Log("Selected item: 500mm Fracturing Block");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2886,7 +10478,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C81 Plasma Cannon.prefab")]
-    private static void MenuItem250() {
+    private static void MenuItem252() {
         Debug.Log("Selected item: C81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2894,11 +10486,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW1500 Drive.prefab")]
-    private static void MenuItem251() {
+    private static void MenuItem253() {
         Debug.Log("Selected item: BW1500 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2906,11 +10542,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/RL18 Launcher.prefab")]
-    private static void MenuItem252() {
+    private static void MenuItem254() {
         Debug.Log("Selected item: RL18 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2918,11 +10598,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/100mm HE Shell.asset")]
-    private static void MenuItem253() {
+    private static void MenuItem255() {
         Debug.Log("Selected item: 100mm HE Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2932,7 +10656,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Shuttle Clipper.prefab")]
-    private static void MenuItem254() {
+    private static void MenuItem256() {
         Debug.Log("Selected item: Shuttle Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2940,11 +10664,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Citadel Magazine.prefab")]
-    private static void MenuItem255() {
+    private static void MenuItem257() {
         Debug.Log("Selected item: Citadel Magazine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2952,11 +10720,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Tug Clipper.prefab")]
-    private static void MenuItem256() {
+    private static void MenuItem258() {
         Debug.Log("Selected item: Tug Clipper");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2964,11 +10776,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-3 'Spearfish' Rocket.prefab")]
-    private static void MenuItem257() {
+    private static void MenuItem259() {
         Debug.Log("Selected item: R-3 'Spearfish' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2976,11 +10832,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Interceptor/OSP Interceptor Frame.prefab")]
-    private static void MenuItem258() {
+    private static void MenuItem260() {
         Debug.Log("Selected item: OSP Interceptor Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -2988,11 +10888,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/E20 'Lighthouse' Illuminator.prefab")]
-    private static void MenuItem259() {
+    private static void MenuItem261() {
         Debug.Log("Selected item: E20 'Lighthouse' Illuminator");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3000,11 +10944,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4R12 Rocket Container.prefab")]
-    private static void MenuItem260() {
+    private static void MenuItem262() {
         Debug.Log("Selected item: CM-4R12 Rocket Container");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3012,11 +11000,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Bulker Line Ship.prefab")]
-    private static void MenuItem261() {
+    private static void MenuItem263() {
         Debug.Log("Selected item: Bulker Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3024,11 +11056,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-50 'Auger' Sprint Mine.prefab")]
-    private static void MenuItem262() {
+    private static void MenuItem264() {
         Debug.Log("Selected item: M-50 'Auger' Sprint Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3036,11 +11112,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Civilian Reactor.prefab")]
-    private static void MenuItem263() {
+    private static void MenuItem265() {
         Debug.Log("Selected item: Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3048,11 +11168,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Ocello Cruiser.prefab")]
-    private static void MenuItem264() {
+    private static void MenuItem266() {
         Debug.Log("Selected item: Ocello Cruiser");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3060,11 +11224,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/Sundrive Racing Pro.prefab")]
-    private static void MenuItem265() {
+    private static void MenuItem267() {
         Debug.Log("Selected item: Sundrive Racing Pro");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3072,11 +11280,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Craft/Scout/OSP Scout Frame.prefab")]
-    private static void MenuItem266() {
+    private static void MenuItem268() {
         Debug.Log("Selected item: OSP Scout Frame");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3084,11 +11336,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T81 Plasma Cannon.prefab")]
-    private static void MenuItem267() {
+    private static void MenuItem269() {
         Debug.Log("Selected item: T81 Plasma Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3096,11 +11392,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Ore Carrier.prefab")]
-    private static void MenuItem268() {
+    private static void MenuItem270() {
         Debug.Log("Selected item: Ore Carrier");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3108,11 +11448,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C90 Cannon.prefab")]
-    private static void MenuItem269() {
+    private static void MenuItem271() {
         Debug.Log("Selected item: C90 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3120,11 +11504,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Light Civilian Reactor.prefab")]
-    private static void MenuItem270() {
+    private static void MenuItem272() {
         Debug.Log("Selected item: Light Civilian Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3132,11 +11560,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C65 Cannon.prefab")]
-    private static void MenuItem271() {
+    private static void MenuItem273() {
         Debug.Log("Selected item: C65 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3144,11 +11616,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/C30 Cannon.prefab")]
-    private static void MenuItem272() {
+    private static void MenuItem274() {
         Debug.Log("Selected item: C30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3156,11 +11672,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Jury-Rigged Reactor.prefab")]
-    private static void MenuItem273() {
+    private static void MenuItem275() {
         Debug.Log("Selected item: Jury-Rigged Reactor");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3168,11 +11728,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Bulwark Huntress.prefab")]
-    private static void MenuItem274() {
+    private static void MenuItem276() {
         Debug.Log("Selected item: Bulwark Huntress");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3180,11 +11784,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/M-30-N 'Mattock' Cooperative Mine.prefab")]
-    private static void MenuItem275() {
+    private static void MenuItem277() {
         Debug.Log("Selected item: M-30-N 'Mattock' Cooperative Mine");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3192,11 +11840,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/400mm Plasma Ampoule.asset")]
-    private static void MenuItem276() {
+    private static void MenuItem278() {
         Debug.Log("Selected item: 400mm Plasma Ampoule");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3206,7 +11898,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-S-4 Body.prefab")]
-    private static void MenuItem277() {
+    private static void MenuItem279() {
         Debug.Log("Selected item: CM-S-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3214,11 +11906,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Stack Launcher.prefab")]
-    private static void MenuItem278() {
+    private static void MenuItem280() {
         Debug.Log("Selected item: Container Stack Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3226,11 +11962,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/CM-4/CM-4 Body.prefab")]
-    private static void MenuItem279() {
+    private static void MenuItem281() {
         Debug.Log("Selected item: CM-4 Body");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3238,11 +12018,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Components/Container Datalink Array.prefab")]
-    private static void MenuItem280() {
+    private static void MenuItem282() {
         Debug.Log("Selected item: Container Datalink Array");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3250,11 +12074,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/CHI-7700 Drive.prefab")]
-    private static void MenuItem281() {
+    private static void MenuItem283() {
         Debug.Log("Selected item: CHI-7700 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3262,11 +12130,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/ML-9 Mine Launcher.prefab")]
-    private static void MenuItem282() {
+    private static void MenuItem284() {
         Debug.Log("Selected item: ML-9 Mine Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3274,11 +12186,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/T30 Cannon.prefab")]
-    private static void MenuItem283() {
+    private static void MenuItem285() {
         Debug.Log("Selected item: T30 Cannon");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3286,11 +12242,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Drives/BW800 Drive.prefab")]
-    private static void MenuItem284() {
+    private static void MenuItem286() {
         Debug.Log("Selected item: BW800 Drive");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3298,11 +12298,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/MLS-2 Launcher.prefab")]
-    private static void MenuItem285() {
+    private static void MenuItem287() {
         Debug.Log("Selected item: MLS-2 Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3310,11 +12354,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/R-2 'Piranha' Rocket.prefab")]
-    private static void MenuItem286() {
+    private static void MenuItem288() {
         Debug.Log("Selected item: R-2 'Piranha' Rocket");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3322,23 +12410,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
-        
-    }
-
-    [MenuItem("Load Asset/Stock-F2/F2/Weapons/R550 Early Warning Radar.prefab")]
-    private static void MenuItem287() {
-        Debug.Log("Selected item: R550 Early Warning Radar");
-        if (stockf2 == null)
-            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
-        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R550 Early Warning Radar"));
-        ModularMissile missile = goh.GetComponent<ModularMissile>();
-        if (missile != null)
-            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/SALS-2 'Ward' Launcher.prefab")]
-    private static void MenuItem288() {
+    private static void MenuItem289() {
         Debug.Log("Selected item: SALS-2 'Ward' Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3346,11 +12466,111 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
+        
+    }
+
+    [MenuItem("Load Asset/Stock-F2/F2/Weapons/R550 Early Warning Radar.prefab")]
+    private static void MenuItem290() {
+        Debug.Log("Selected item: R550 Early Warning Radar");
+        if (stockf2 == null)
+            stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
+        GameObject goh = Instantiate(stockf2.LoadAsset<GameObject>("R550 Early Warning Radar"));
+        ModularMissile missile = goh.GetComponent<ModularMissile>();
+        if (missile != null)
+            Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Weapons/Container Bank Launcher.prefab")]
-    private static void MenuItem289() {
+    private static void MenuItem291() {
         Debug.Log("Selected item: Container Bank Launcher");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3358,11 +12578,55 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Munitions/250mm HE-HC Shell.asset")]
-    private static void MenuItem290() {
+    private static void MenuItem292() {
         Debug.Log("Selected item: 250mm HE-HC Shell");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3372,7 +12636,7 @@ public class GeneratedMenuItems : MonoBehaviour {
     }
 
     [MenuItem("Load Asset/Stock-F2/F2/Hulls/Container Line Ship.prefab")]
-    private static void MenuItem291() {
+    private static void MenuItem293() {
         Debug.Log("Selected item: Container Line Ship");
         if (stockf2 == null)
             stockf2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/stock-f2"));
@@ -3380,6 +12644,50 @@ public class GeneratedMenuItems : MonoBehaviour {
         ModularMissile missile = goh.GetComponent<ModularMissile>();
         if (missile != null)
             Instantiate(((MissileSchematic)GetPrivateField(missile, "_schematicPrefab")).gameObject);
+        Spacecraft plane = goh.GetComponent<Spacecraft>();
+        if (plane != null)
+        {
+            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, "_editorSchematic")).gameObject);
+            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, "_sockets"))
+            {
+                if (socket is StaticSpacecraftSocket)
+                {
+                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, "_componentOptionPrefabs");
+                    foreach (CraftComponent component in staticcomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.gameObject);
+                            if(GetPrivateField(component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, "_schematicLayer")).gameObject);
+                            }
+                            if(component is CraftDecoyLauncherComponent)
+                            {
+                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);
+                            }
+                        }
+                }
+                if (socket is VariableSpacecraftSocket)
+                {
+                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, "_options");
+                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)
+                        if (component != null)
+                        {
+                            Instantiate(component.Component.gameObject);
+                            if(GetPrivateField(component.Component, "_schematicLayer") != null)
+                            {
+                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, "_schematicLayer")).gameObject);
+                            }
+                        }
+                }
+            }
+        }
+        Hull hull = goh.GetComponent<Hull>();
+        if (hull != null)
+        {
+            Instantiate((GameObject)GetPrivateField(hull, "_statusDisplayPrefab"));
+            Instantiate((GameObject)GetPrivateField(hull, "_damageControlBoardPrefab"));
+        }
         
     }
 

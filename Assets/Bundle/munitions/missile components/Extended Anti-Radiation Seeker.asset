@@ -16,13 +16,13 @@ MonoBehaviour:
   _modId: 0
   _factionKey: Falcata Republic/Falcata Republic
   _settingsPanelName: Seeker - Arad
-  _pointCost: 4
+  _pointCost: 1
   _image: {fileID: 21300000, guid: f9830f201bcaf0a4b8db33c295312f86, type: 3}
   _description: The extended anti-radiation seeker is a long-range enhancement of
     the standard anti-radiation seeker, designed to home in on radiated energy sources
     across the vast expanse of space. However, it is incapable of discriminating
     signal types.
-  _validatorCost: 4
+  _validatorCost: 0.5
   _validatorOnly: 0
   _tooCloseDistance: 100
   _validatorMemoryLength: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   _allAspectValSigStrength: 1
   _overrideSignatureAbbrev: 
   _targetTypeCostMultipliers:
+  - 4
   - 1
-  - 999
-  - 999
+  - 6
   _targetType: 0

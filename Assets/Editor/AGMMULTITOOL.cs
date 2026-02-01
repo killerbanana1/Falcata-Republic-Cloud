@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEditor;
+using System;
 using System.Collections;
 using System.IO;
 using System.Text;
 using UnityEngine.Rendering;
 using System.Collections.Generic;
-using System;
 using System.Linq;
 //using FleetEditor.MissileEditor;
 //using Munitions.ModularMissiles;
@@ -14,8 +14,6 @@ using System.Reflection;
 //using Ships;
 //using static Sound.AnnouncerVoiceSet;
 using UnityEngine.UI;
-using Game.Sensors;
-using Utility;
 //using static UnityEngine.Rendering.DebugUI;
 //using UnityEngine.InputSystem;
 //using UnityEngine.UIElements;
@@ -28,7 +26,7 @@ using Utility;
 [InitializeOnLoad]
 public class Information : EditorWindow
 {
-    static string[] bundles = { "stock", "stock-f1", "stock-f2", "stock-maps" };
+    static string[] bundles = { "stock", "stock-f1", "stock-f2",};
     Dictionary<string, bool> foldouts = new Dictionary<string, bool>();
     string mods = " muzzle-accuracy, sensor-maxrange, sensor-power, sensor-gain, sensor-sensitivity, sensor-aperture, sensor-maxposerror, sensor-maxvelerror, sensor-lockmultiplier, sensor-minlocksnr, sensor-noisefiltering, sensor-burnthrupowermultiplier, sensor-burnthrudamageprob, component-maxhp, component-dr, component-workspeed, component-raredebuffchance, intel-effort, intel-accuracy, comms-power, comms-bandwidth, comms-gain, continuousweapon-burstduration, continuousweapon-cooldown, continuousweapon-overheatdamageprob, continuousweapon-directdamagemultiplier, damagecontrol-movespeed, damagecontrol-repairspeed, discreteweapon-recycle, discreteweapon-reload, powerplant-prodefficiency, hull-mass, hull-maxspeed, hull-turnrate, hull-linearmotor, hull-angularmotor, hull-sigmult-radar, hull-crewvuln, hull-armorthickness, hull-componentdr, hull-visiondistance, hull-flankdamageprob, hull-identificationwork, hull-missilechannels, hull-missileprogspeed, hull-structurehp, tubelauncher-reload, turret-traverse, turret-elevate, missile-health, missile-progtime, missile-sigmult-radar, missile-boostphaseduration, missile-earlystrafe, missile-earlyturn, missile-failrate";
     int tab;
@@ -195,7 +193,7 @@ public class Information : EditorWindow
 [InitializeOnLoad]
 public class AGMMULTITOOL : EditorWindow
 {
-    static string[] bundles = { "stock", "stock-f1", "stock-f2", "stock-maps" };
+    static string[] bundles = { "stock", "stock-f1", "stock-f2" };
     static AssetBundle stock;
     string abloc = "";
 
@@ -227,28 +225,8 @@ public class AGMMULTITOOL : EditorWindow
 
     }
 
-    [MenuItem("Load Asset/Load CSS")]
-    static void LoadCSSAsset()
-    {
-        bool warning = EditorUtility.DisplayDialog("WARNING",
-        "This may cause performance issues and will prevent assets from being individually loaded"
-        , "Load Assets", "Do not load assets");
-        if (warning)
-        {
-                var stock = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/Editor/AssetBundles/css"));
-                var prefabs = stock.LoadAllAssets<GameObject>();
 
-                foreach (GameObject prefab in prefabs)
-                {
-                    Instantiate(prefab);
-                }
-        }
-
-
-    }
-
-
-    [MenuItem("AGM's Toolkit/Quick Build Uncompressed AssetBundles")]
+    [MenuItem("AGM's Toolkit/Build Uncompressed AssetBundles")]
     static void BuildUncompressedAssetBundle()
     {
         CreateFolders();
@@ -256,7 +234,7 @@ public class AGMMULTITOOL : EditorWindow
         BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.UncompressedAssetBundle, EditorUserBuildSettings.activeBuildTarget);
     }
 
-    [MenuItem("AGM's Toolkit/Build LZ4 Compressed AssetBundles (Recommended)")]
+    [MenuItem("AGM's Toolkit/Build LZ4 Compressed AssetBundles")]
     static void BuildChunkBasedCompression()
     {
         CreateFolders();
@@ -273,6 +251,7 @@ public class AGMMULTITOOL : EditorWindow
     }
 
 
+    [MenuItem("AGM's Toolkit/Build AssetBundles")]
     /*
     static void BuildAllAssetBundles()
     {
@@ -327,7 +306,7 @@ public class AGMMULTITOOL : EditorWindow
         LoadAssetMenu(false);
     }
 
-    static void LoadAssetMenu(bool advanced = false)
+    static void LoadAssetMenu(bool advanced = true)
     {
         Debug.Log("Asset menu advanced: " + advanced);
         CreateFolders();
@@ -346,8 +325,11 @@ public class AGMMULTITOOL : EditorWindow
             sb.AppendLine("using Munitions;");
             sb.AppendLine("using Munitions.ModularMissiles;");
             sb.AppendLine("using FleetEditor.MissileEditor;");
-
-
+            sb.AppendLine("using Ships;");
+            sb.AppendLine("using SmallCraft;");
+            sb.AppendLine("using SmallCraft.Components;");
+            sb.AppendLine("using FleetEditor;");
+            sb.AppendLine("using FleetEditor.CraftEditor;");
         }
         sb.AppendLine("");
         sb.AppendLine("public class Holder : MonoBehaviour");
@@ -437,6 +419,53 @@ public class AGMMULTITOOL : EditorWindow
                             sb.AppendLine("        ModularMissile missile = goh.GetComponent<ModularMissile>();");
                             sb.AppendLine("        if (missile != null)");
                             sb.AppendLine("            Instantiate(((MissileSchematic)GetPrivateField(missile, \"_schematicPrefab\")).gameObject);");
+
+
+                            sb.AppendLine("        Spacecraft plane = goh.GetComponent<Spacecraft>();");
+                            sb.AppendLine("        if (plane != null)");
+                            sb.AppendLine("        {");
+                            sb.AppendLine("            Instantiate(((SpacecraftSchematic)GetPrivateField(plane, \"_editorSchematic\")).gameObject);");
+                            sb.AppendLine("            foreach(SpacecraftSocket socket in (SpacecraftSocket[])GetPrivateField(plane, \"_sockets\"))");
+                            sb.AppendLine("            {");
+                            sb.AppendLine("                if (socket is StaticSpacecraftSocket)");
+                            sb.AppendLine("                {");
+                            sb.AppendLine("                    CraftComponent[] staticcomponents = (CraftComponent[])GetPrivateField(socket, \"_componentOptionPrefabs\");");
+                            sb.AppendLine("                    foreach (CraftComponent component in staticcomponents)");
+                            sb.AppendLine("                        if (component != null)");
+                            sb.AppendLine("                        {");
+                            sb.AppendLine("                            Instantiate(component.gameObject);");
+                            sb.AppendLine("                            if(GetPrivateField(component, \"_schematicLayer\") != null)");
+                            sb.AppendLine("                            {");
+                            sb.AppendLine("                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component, \"_schematicLayer\")).gameObject);");
+                            sb.AppendLine("                            }");
+                            sb.AppendLine("                            if(component is CraftDecoyLauncherComponent)");
+                            sb.AppendLine("                            {");
+                            sb.AppendLine("                                Instantiate(((CraftDecoyLauncherComponent)component).CloudPrefab.gameObject);");
+                            sb.AppendLine("                            }");
+                            sb.AppendLine("                        }");
+                            sb.AppendLine("                }");
+                            sb.AppendLine("                if (socket is VariableSpacecraftSocket)");
+                            sb.AppendLine("                {");
+                            sb.AppendLine("                    VariableSpacecraftSocket.VariableSocketOption[] variablecomponents = (VariableSpacecraftSocket.VariableSocketOption[])GetPrivateField(socket, \"_options\");");
+                            sb.AppendLine("                    foreach (VariableSpacecraftSocket.VariableSocketOption component in variablecomponents)");
+                            sb.AppendLine("                        if (component != null)");
+                            sb.AppendLine("                        {");
+                            sb.AppendLine("                            Instantiate(component.Component.gameObject);");
+                            sb.AppendLine("                            if(GetPrivateField(component.Component, \"_schematicLayer\") != null)");
+                            sb.AppendLine("                            {");
+                            sb.AppendLine("                                Instantiate(((SpacecraftSchematicLayer)GetPrivateField(component.Component, \"_schematicLayer\")).gameObject);");
+                            sb.AppendLine("                            }");
+                            sb.AppendLine("                        }");
+                            sb.AppendLine("                }");
+                            sb.AppendLine("            }");
+                            sb.AppendLine("        }");
+
+                            sb.AppendLine("        Hull hull = goh.GetComponent<Hull>();");
+                            sb.AppendLine("        if (hull != null)");
+                            sb.AppendLine("        {");
+                            sb.AppendLine("            Instantiate((GameObject)GetPrivateField(hull, \"_statusDisplayPrefab\"));");
+                            sb.AppendLine("            Instantiate((GameObject)GetPrivateField(hull, \"_damageControlBoardPrefab\"));");
+                            sb.AppendLine("        }");
                         }
 
                     }
@@ -531,7 +560,6 @@ public class AGMMULTITOOL : EditorWindow
         Directory.CreateDirectory(Application.dataPath + "/Editor");
         //Directory.CreateDirectory(Application.dataPath + "/Editor/Plugins");
         Directory.CreateDirectory(Application.dataPath + "/Editor/GeneratedCode");
-        Directory.CreateDirectory(Application.dataPath + "/GeneratedCode");
         Directory.CreateDirectory(Application.dataPath + "/Editor/AssetBundles");
         Directory.CreateDirectory(Application.dataPath + "/Editor/Mods");
     }
@@ -566,313 +594,10 @@ public class AGMMULTITOOL : EditorWindow
             EditorUtility.DisplayDialog("Render Pipeline Error", "You are using the Built in render pipeline when you should be using the High Definetion Render Pipeline", "Ok");
         }
     }
-
-    [MenuItem("AGM's Toolkit/Generate Custom Signature Tool")]
-    static void GenerateCustomSignature()
-    {
-        CreateFolders();
-        string scriptFile = Application.dataPath + "/GeneratedCode/CustomSignature.cs";
-        File.AppendAllText(scriptFile, "\n");
-
-        System.IO.File.Delete(scriptFile);
-        System.IO.File.WriteAllText(scriptFile,
-@"
-
-
-
-using Game.Sensors;
-using UnityEditor;
-using UnityEngine;
-using Utility;
-using System.Reflection;
-using System;
-using static Networking.SkirmishDedicatedServerConfig;
-using UnityEngine.InputSystem.HID;
-
-[ExecuteInEditMode]
-public class CustomSignature : Signature
-{
-
-    protected override void Awake()
-    {
-        mesh = new Mesh();
-        IcoSphere.Create(mesh, 1f, CrossSection.IcosphereRecursions);
-
-        base.Awake();
-    }
-    public enum BakeMode
-    {
-        Vanilla,
-        Tartiflette,
-        TartifletteAdvanced,
-        AGM
-    }
-
-    public BakeMode bakeMode = BakeMode.Vanilla;
-    public bool ContinouslyRecalculateRCS = true;
-    public bool SimulateSingleBake = true;
-    public float MaxRCS = 1;
-    public float MinRCS = 1;
-    public float SuggestedMinRCS = 1;
-    public float RadiusMultiplier = 1;
-    public int Steps = 30;
-    public int Bounces = 0;
-    private GameObject radarsource = null;
-    private Mesh mesh;
-    float radius => _collider.size.MaxComponent() * RadiusMultiplier;
-
-
-    public float TartReturn(Ray r)
-    {
-        if (Physics.Raycast(r, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-            return 1.0f - Mathf.Abs(Vector3.Dot(r.direction, hit.normal));
-        return 1;
-    }
-    public float TartReturnAdvanced(Ray r)
-    {
-        if (Physics.Raycast(r, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-            return 1.0f + Mathf.Abs(Vector3.Dot(r.direction, hit.normal));
-        return 0;
-    }
-    public float VanillaReturn(Ray r)
-    {
-        if (Physics.Raycast(r, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-            return 1.0f - Mathf.Abs(Vector3.Dot(r.direction, hit.normal));
-        return 0.0f;
-    }
-    public float AGMReturn(Ray r, Color color)
-    {
-        float dot = 0;
-        float lastdot = 1;
-        if (Bounces <= 0)
-        {
-            if (Physics.Raycast(r, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-            {
-                dot = Mathf.Abs(Vector3.Dot(r.direction, hit.normal));
-                Debug.DrawLine(hit.point, hit.point + (hit.normal) * dot, color, Time.deltaTime);
-                return dot;
-            }
-        }
-        Ray currentdirection = r;
-        while (lastdot > 0.01)
-        {
-            
-            if (Physics.Raycast(currentdirection, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-            {
-                //Debug.DrawLine(currentdirection.origin, hit.point, Color.green, Time.deltaTime);
-                lastdot = Mathf.Abs(Vector3.Dot(r.direction, hit.normal)) * lastdot;
-                Debug.DrawLine(hit.point, hit.point + (hit.normal) * lastdot, color, Time.deltaTime);
-                DebugExtension.DebugPoint(hit.point, Color.green, 0.1f, Time.deltaTime);
-                
-                currentdirection = new Ray(hit.point + hit.normal * 0.01f, Vector3.Reflect(currentdirection.direction, hit.normal));
-                dot += lastdot;
-            }
-            else
-                lastdot = 0;
-
-
-        }
-
-
-        return dot;
-    }
-
-    public float VanillaSum(float dotSum)
-    {
-        return 1.0f - (dotSum / (Steps * Steps));
-    }
-    public float TartSumAdvanced(float dotSum)
-    {
-        return (dotSum / (Steps * Steps));
-    }
-    public float AGMSum(float dotSum)
-    {
-        return dotSum;
-    }
-    [ContextMenu(""Generate XSection Sampler"")]
-    public void GenerateCrossSectionSampler()
-    {
-        CalculateSigSize(out float largest, out float smallest, out float _);
-        MaxRCS = largest * 10;
-        MinRCS = smallest * 10;
-        Vector2[] uv = mesh.uv;
-        IcoSphere.Create(mesh, 1f, CrossSection.IcosphereRecursions);
-        for (int i = 0; i < mesh.vertexCount; ++i)
-        {
-            Vector3 normal = mesh.normals[i];
-            if (Mathf.Abs(normal.x) < 0.01f && Mathf.Abs(normal.z) < 0.01f)
-                normal = new Vector3(0.01f, 1, 0.01f);
-            Vector3 direction = -normal.normalized;
-            Vector3 right = Vector3.Cross(direction, Vector3.up).normalized * (radius / (float)Steps);
-            Vector3 up = Vector3.Cross(right, direction).normalized * (radius / (float)Steps);
-            Vector3 start = (normal * radius) - (right.normalized * radius / 2f) - (up.normalized * radius / 2f);
-            float dotSum = 0.0f;
-            for (int x = 0; x < Steps; ++x)
-            {
-                for (int y = 0; y < Steps; ++y)
-                {
-                    Ray r = new Ray(start + (right * x) + (up * y), direction);
-                    switch(bakeMode)
-                    {
-                        case BakeMode.AGM:
-                            dotSum += AGMReturn(r, Color.clear);
-                            break;
-                        case BakeMode.Tartiflette:
-                            dotSum += TartReturn(r);
-                            break;
-                        default:
-                            dotSum += VanillaReturn(r);
-                            break;
-                    }
-                }
-            }
-            switch (bakeMode)
-            {
-                case BakeMode.AGM:
-                    dotSum = AGMSum(dotSum);
-                    break;
-                default:
-                    dotSum = VanillaSum(dotSum);
-                    break;
-            }
-            uv[i] = new Vector2(dotSum, 0f);
-            //Debug.Log(mesh.normals[i] + "" "" + dotSum);
-        }
-        float minValue = 1.0f;
-        float maxValue = -1.0f;
-        for (int i = 0; i < uv.Length; ++i)
-        {
-            minValue = Mathf.Min(minValue, uv[i].x);
-            maxValue = Mathf.Max(maxValue, uv[i].x);
-        }
-        SuggestedMinRCS = MaxRCS * (minValue / maxValue);
-        for (int i = 0; i < uv.Length; ++i)
-            uv[i] = new Vector2(uv[i].x.Remap(minValue, maxValue, 0.0f, 1.0f), 0f);
-        mesh.uv = uv;
-        SetVal(this, ""_crossSectionSampler"", CrossSection.CreateFromIcosohedron(mesh));
-    }
-
-    [ContextMenu(""Save Sampler"")]
-    public void SaveSampler()
-    {
-        CrossSection _crossSectionSampler = GetVal<CrossSection>(this, ""_crossSectionSampler"");
-        if (_crossSectionSampler == null)
-            return;
-        string path = EditorUtility.SaveFilePanel(""Save Mesh"", ""Assets/"", ""Radar Cross Section"", ""asset"");
-        if (string.IsNullOrEmpty(path))
-            return;
-        path = FileUtil.GetProjectRelativePath(path);
-        AssetDatabase.CreateAsset(_crossSectionSampler, path);
-        AssetDatabase.SaveAssets();
-    }
-
-    void Update()
-    {
-        if(ContinouslyRecalculateRCS)
-            GenerateCrossSectionSampler();
-    }
-
-    void OnRenderObject()
-    {   
-        if(SimulateSingleBake)
-        {
-            if (radarsource == null)
-                radarsource = new GameObject(""radarsource"");
-            Vector3 direction = -radarsource.transform.position.normalized;
-            Vector3 right = Vector3.Cross(direction, Vector3.up).normalized * (radius / (float)Steps);
-            Vector3 up = Vector3.Cross(right, direction).normalized * (radius / (float)Steps);
-            Vector3 start = (radarsource.transform.position.normalized * radius) - (right.normalized * radius / 2f) - (up.normalized * radius / 2f);
-            //Debug.DrawLine(start, Color.blue, Time.deltaTime);
-            Debug.DrawLine(start, start + (right * Steps), Color.white, Time.deltaTime);
-            Debug.DrawLine(start + (up * Steps), start + (right * Steps) + (up * Steps), Color.white, Time.deltaTime);
-            Debug.DrawLine(start + (up * Steps), start, Color.white, Time.deltaTime);
-            Debug.DrawLine(start + (right * Steps) , start + (right * Steps) + (up * Steps), Color.white, Time.deltaTime);
-            //Debug.DrawLine(start + (up * Steps), start + (right * Steps), Color.white, Time.deltaTime);
-            //Debug.DrawLine(start, start + (right * Steps) + (up * Steps), Color.white, Time.deltaTime);
-            for (int x = 0; x < Steps; ++x)
-            {
-                for (int y = 0; y < Steps; ++y)
-                {
-                    
-                    Ray r = new Ray(start + (right * x) + (up * y), direction);
-
-                    Color color = Color.blue;
-
-                    if(x == 0 || y == 0 || x == Steps - 1 || y == Steps - 1)
-                        color = Color.red;
-
-                    float dot = AGMReturn(r, color);
-                    if (Physics.Raycast(r, out RaycastHit hit, radius * 2.5f, SpecialLayers.Mask_Default, QueryTriggerInteraction.Ignore))
-                    {
-                        
-                        DebugExtension.DebugPoint(hit.point, Color.white, 0.1f, Time.deltaTime);
-                        Debug.DrawLine(r.origin, r.origin + (r.direction) * dot, color, Time.deltaTime);
-                    }
-                    else
-                    {
-                        //DebugExtension.DebugPoint(r.origin, Color.white, 0.1f, Time.deltaTime);
-                    }
-                }
-            }
-        }
-        CrossSection _crossSectionSampler = GetVal<CrossSection>(this, ""_crossSectionSampler"");
-
-
-        if (_crossSectionSampler != null)
-        {
-
-            CalculateSigSize(out float largest, out float smallest, out float _);
-            MaxRCS = largest * 10;
-            MinRCS= smallest * 10;
-            for (int i = 0; i < mesh.vertexCount; ++i)
-            {
-                float valueatpoint = _crossSectionSampler.QueryViewingAngle(mesh.vertices[i]);
-                float sigatpoint = Mathf.Sqrt(Mathf.Lerp(smallest, largest, valueatpoint)) ;
-                //DebugExtension.DebugWireSphere(mesh.vertices[i] * (_crossSectionSampler.QueryViewingAngle(mesh.vertices[i]) + 1) * 5, _color, duration: 1f, radius: 0.1f);
-                //Debug.DrawRay(Vector3.zero, mesh.vertices[i] * (_crossSectionSampler.QueryViewingAngle(mesh.vertices[i])+1) * 5, Color.red, 1f);
-                Debug.DrawLine(mesh.vertices[i] * Mathf.Sqrt(smallest) * -1f, mesh.vertices[i] * sigatpoint * -1f, new Color(0, 0.25f, 0.5f), Time.deltaTime);
-                DebugExtension.DebugWireSphere(mesh.vertices[i] * sigatpoint * -1, Color.blue, duration: Time.deltaTime, radius: Mathf.Lerp(0.1f, 0.3f, valueatpoint));
-            }
-        }
-    }
-
-    public static T GetVal<T>(object instance, string fieldName, Type type = null)
-    {
-        if (type == null)
-            type = instance.GetType();
-        FieldInfo field = type.GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
-        if (field != null)
-            return (T)field.GetValue(instance);
-        else if (type.BaseType != null)
-            return (T)GetVal<T>(instance, fieldName, type.BaseType);
-        return default(T);
-    }
-    public static void SetVal(System.Object instance, string fieldName, System.Object value, Type type = null)
-    {
-        if (type == null)
-            type = instance.GetType();
-        FieldInfo field = type.GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
-        if (field != null)
-            field.SetValue(instance, value);
-        else if (type.BaseType != null)
-            SetVal(instance, fieldName, value, type.BaseType);
-    }
-
-}
-
-
-"
-        , System.Text.Encoding.UTF8);
-        AssetDatabase.ImportAsset("Assets/GeneratedCode/CustomSignature.cs");
-    }
-
-
     static AGMMULTITOOL()
     {
         return;
     }
-
-
 }
 
 

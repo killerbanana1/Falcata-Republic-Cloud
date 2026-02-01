@@ -88,6 +88,7 @@
   	<!-- Kinetic -->
     <Entry Name="380mm AP Shell" Address="munitions/380mm AP Shell.asset"/>
 	<Entry Name="380mm HE Shell" Address="munitions/380mm HE Shell.asset"/>
+	<Entry Name="380mm CLU Shell" Address="munitions/380mm CLU Shell.asset"/>
 	<!--<Entry Name="380mm HE-ABF Shell" Address="munitions/380mm HE-ABF Shell.asset"/>-->
 	<Entry Name="200mm RP-HEI Shell" Address="munitions/200mm RP-HEI Shell.asset"/>
 	<Entry Name="220mm AP Shell" Address="munitions/220mm AP Shell.asset"/>
