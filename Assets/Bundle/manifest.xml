@@ -9,7 +9,7 @@
 	<Entry Name="CL_Kaliare" Address="hulls/CL_Kaliare.prefab"/>
 	<Entry Name="CL_Irsavatha" Address="hulls/CL_Irsavatha.prefab"/>
 	<Entry Name="CH_Moccotar" Address="hulls/CH_Moccotar.prefab"/>
-	<Entry Name="ACV_Acheron" Address="hulls/ACV_Acheron.prefab"/>
+	<Entry Name="ACV_Tonryr" Address="hulls/ACV_Tonryr.prefab"/>
   </Hulls>
 
   <Components>

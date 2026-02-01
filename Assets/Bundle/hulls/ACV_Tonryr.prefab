@@ -6999,7 +6999,7 @@ GameObject:
   - component: {fileID: 2075078681327711173}
   - component: {fileID: 2075078681327711172}
   m_Layer: 0
-  m_Name: ACV_Acheron
+  m_Name: ACV_Tonryr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7043,7 +7043,7 @@ MonoBehaviour:
   m_Script: {fileID: -581704016, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _className: Acheron
+  _className: Tonryr
   _hullClassification: Assault Ship
   _hullSymbolOptions:
   - ACV
