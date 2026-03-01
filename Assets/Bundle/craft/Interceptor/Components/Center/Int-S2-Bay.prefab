@@ -113,8 +113,8 @@ MonoBehaviour:
     - {fileID: 2239660431324268849}
   _componentPriority: 0
   _pointCost: 0
-  _description: S1 Missile Bay
-  _schematicLayer: {fileID: 0}
+  _description: S2 Missile Bay
+  _schematicLayer: {fileID: 6067571628014747388, guid: 476a57d4b86a1564fa8f3215fc3226ab, type: 3}
   _additionalSwapWork: 0
   _componentMass: 0
   _modifiers: []

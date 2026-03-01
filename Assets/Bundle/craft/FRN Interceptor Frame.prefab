@@ -610,7 +610,7 @@ MonoBehaviour:
   _modifiers: []
   _socket: {fileID: 0}
   _craft: {fileID: 0}
-  CloudPrefab: {fileID: 0}
+  CloudPrefab: {fileID: 1779503329453639964, guid: b9340659f9c7aee4bbaebaf74e667d8f, type: 3}
   LaunchCount: 10
   LaunchSpacing: 0.25
   PointLifetime: 6
@@ -701,7 +701,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2383338746440854305}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1379,7 +1379,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3836265555197138678}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 1.889e-42, y: 6e-44, z: 1.0240714e+12}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4462463757031980971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,10 +1392,9 @@ MonoBehaviour:
   m_Script: {fileID: 590015063, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: wingbottom
-  _options:
-  - Component: {fileID: 0}
+  _options: []
   _baseSwapWork: 10
   _emptyPlug: {fileID: 0}
   _componentOptionInstances: []
@@ -1621,16 +1620,16 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: fuselage
   _configurable: 1
   _emptyPlug: {fileID: 0}
   _allowEmpty: 1
   _installedComponent: {fileID: 0}
   _componentOptionPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8254329666936975937, guid: aaa95cf5ab7ca1b478103172767e62a5, type: 3}
+  - {fileID: 6530873186589089092, guid: e57af5252e514dd43ba364a39b3c8522, type: 3}
+  - {fileID: 2296354723887611551, guid: 7d08bc4ec3ff4a74d854f27fcd52bc28, type: 3}
 --- !u!1 &3323068490445903160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1711,7 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: nose
   _configurable: 1
   _emptyPlug: {fileID: 9005663933314354158}
@@ -1763,15 +1762,15 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: avionics
   _configurable: 1
   _emptyPlug: {fileID: 0}
   _allowEmpty: 1
   _installedComponent: {fileID: 0}
   _componentOptionPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4296517112629251734, guid: 740564d47aac52f4b89edbcb4bf41369, type: 3}
+  - {fileID: 713686294256375047, guid: cd7cb1010061cd647abe104e7fd2a128, type: 3}
 --- !u!1 &3852560731506673098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,13 +1796,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3852560731506673098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.005, z: -0.306}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7062401, y: -0, z: -0, w: 0.7079724}
+  m_LocalPosition: {x: 0, y: 0, z: -0.255}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 2555182378559954042}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.86, y: 0, z: 0}
 --- !u!2083052967 &1189970168956319007
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -1812,7 +1811,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3852560731506673098}
   m_Enabled: 1
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 8926484042661614526, guid: c59374f0d47cec04499e6a03b948a32f, type: 3}
   m_InitialEventName: 
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
@@ -1854,7 +1853,38 @@ VisualEffect:
     m_AnimationCurve:
       m_Array: []
     m_Gradient:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 766.9961, g: 278.08478, b: 12.047037, a: 1}
+          key1: {r: 0, g: 0, b: 0, a: 1}
+          key2: {r: 0, g: 0, b: 0, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 65535
+          ctime2: 0
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 65535
+          atime2: 0
+          atime3: 0
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 2
+          m_NumAlphaKeys: 2
+        m_Name: Spark Colour
+        m_Overridden: 1
     m_NamedObject:
       m_Array: []
     m_Bool:
@@ -1942,7 +1972,7 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: centerline
   _configurable: 1
   _emptyPlug: {fileID: 929277239076585738}
@@ -1996,7 +2026,7 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: countermeasures
   _configurable: 1
   _emptyPlug: {fileID: 0}
@@ -2134,7 +2164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particles: {fileID: 4637230609518007763}
   _activeSides: 1
-  _throttleName: Throttle
+  _throttleName: Power
   _afterburnerName: Afterburner
 --- !u!2083052967 &4439082593196250832
 VisualEffect:
@@ -2545,7 +2575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435328649052}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 1
@@ -2707,7 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435562971828}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 2
@@ -2869,7 +2899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435597552981}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 1
@@ -3031,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435611251790}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 10
@@ -3193,7 +3223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435769240306}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 2
@@ -3355,7 +3385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435955792128}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 9
@@ -3517,7 +3547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435957221497}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 8
@@ -3679,7 +3709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436100037257}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 6
@@ -3841,7 +3871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436145167774}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 8
@@ -4003,7 +4033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436283720129}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 8
   _alternateSides: 0
   _normalAttitude: 32
@@ -4165,7 +4195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436336192102}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 2
@@ -4327,7 +4357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436386110358}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 8
   _alternateSides: 0
   _normalAttitude: 16
@@ -4489,7 +4519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436421906694}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 4
@@ -4651,7 +4681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436471414465}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 5
@@ -4813,7 +4843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436592432246}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 1
@@ -4975,7 +5005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436782819052}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 4
   _alternateSides: 0
   _normalAttitude: 32
@@ -5137,7 +5167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436790244545}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 1
@@ -5299,7 +5329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436972299490}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 2
@@ -5461,7 +5491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044437118742293}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 4
   _alternateSides: 0
   _normalAttitude: 16
@@ -5623,7 +5653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 1777816993271175947}
-  _alternateModeName: Alternate
+  _alternateModeName: 
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 4
@@ -5823,15 +5853,15 @@ MonoBehaviour:
   m_Script: {fileID: -1162212029, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parentCraft: {fileID: 0}
+  _parentCraft: {fileID: 4051716913290653429}
   _socketKey: engine
   _configurable: 1
   _emptyPlug: {fileID: 0}
   _allowEmpty: 1
   _installedComponent: {fileID: 0}
   _componentOptionPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 166125585593422277, guid: 1afd12e2902d7cd4981bc6851eb6de16, type: 3}
+  - {fileID: 5385526372613858720, guid: 1c85ede95689a594ba87a43c98f52925, type: 3}
 --- !u!1 &7624584339828969669
 GameObject:
   m_ObjectHideFlags: 0

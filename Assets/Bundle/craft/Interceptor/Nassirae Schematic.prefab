@@ -126,7 +126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _highlightFadeTime: 0.1
   _highlightedSocketColor: 1
-  _fixedSocketHighlights: []
+  _fixedSocketHighlights:
+  - SocketKey: nose
+    Highlight: {fileID: 6224372688797069481}
+  - SocketKey: centerline
+    Highlight: {fileID: 4675393767237145941}
   _layerContent: {fileID: 4277329932145058018}
 --- !u!1 &8078591952710744838
 GameObject:

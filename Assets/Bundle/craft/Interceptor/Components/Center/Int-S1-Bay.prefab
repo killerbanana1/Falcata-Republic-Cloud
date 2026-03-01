@@ -452,7 +452,7 @@ MonoBehaviour:
   _componentPriority: 0
   _pointCost: 0
   _description: S1 Missile Bay
-  _schematicLayer: {fileID: 0}
+  _schematicLayer: {fileID: 5150183820582140960, guid: b4f5d8a0a9c4cf540bf3d60611bafdf5, type: 3}
   _additionalSwapWork: 0
   _componentMass: 0
   _modifiers: []

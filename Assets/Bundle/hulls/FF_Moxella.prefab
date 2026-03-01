@@ -6739,19 +6739,20 @@ MonoBehaviour:
   _damageControlBoardPrefab: {fileID: 4087337310496090401, guid: dd856362d6115f74b96353abee901702, type: 3}
   _screenshot: {fileID: 21300000, guid: 054ca24c02079644f9cbe6ff5afc76c8, type: 3}
   _longDescription: "The Moxella Class destroyer is a highly capable scout and escort
-    vessel in use with the Falcatan Navy. It was several decades ago in cooperation
-    with Alliance navy engineers, and as such incorperates many elements of Allaince
-    design. However, it is still doctrinally different from a typical alliance destroyer,
-    focusing much more on speed and lightweight firepower than the heavy spinal punch-up
-    of Shelter's Keystone class. \r\n\r\nBalance Info:\r\nMoxellas are a proper gunboat
-    destroyer, while their armor may be thin, the ability to place a drive in front
-    of their CIC means that for relatively cheap, they can function as a highly survivable
-    and highly capable skirmish asset. Capable of contesting cap points, squishing
-    enemy cappers, and running from enemy cruisers that they cant beat in a 1v1.
-    That said, if one Moxella is capable, two are deadly. Making use of Electro-thermal
-    cannons, these ships can easily outmaneuver a Vauxhaul, and pack a scary punch
-    against something like an Axford. The Moxella is also a capable missile ship,
-    with ample modules for large salvos, and plentiful slots for ammunition. "
+    vessel in use with the Falcatan Navy. It was designed several decades ago in
+    cooperation with Alliance navy engineers, and as such incorperates many elements
+    of Allaince design. However, it is still doctrinally different from a typical
+    alliance destroyer, focusing much more on speed and lightweight firepower than
+    the heavy spinal punch-up of Shelter's Keystone class. \r\n\r\nBalance Info:\r\nMoxellas
+    are a proper gunboat destroyer, while their armor may be thin, the ability to
+    place a drive in front of their CIC means that for relatively cheap, they can
+    function as a highly survivable and highly capable skirmish asset. Capable of
+    contesting cap points, squishing enemy cappers, and running from enemy cruisers
+    that they cant beat in a 1v1. That said, if one Moxella is capable, two are deadly.
+    Making use of Electro-thermal cannons, these ships can easily outmaneuver a Vauxhaul,
+    and pack a scary punch against something like an Axford. The Moxella is also
+    a capable missile ship, with ample modules for large salvos, and plentiful slots
+    for ammunition. "
   _flavorText: "I've been told the Moxella's were named after senator Moxee Iselin,
     for her diplomatic efforts with the Alliance in the aftermath of Venuma. Now
     I figure that name was some sort of knuckleheaded joke, since Iselin was one

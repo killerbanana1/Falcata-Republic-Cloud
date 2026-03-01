@@ -360,11 +360,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _saveKey: int_nose_20mm
   _componentName: 20mm Gun
-  _lods: []
+  _lods:
+  - Renderers:
+    - {fileID: 8216745921898955314}
+    - {fileID: 8051106644938598190}
   _componentPriority: 0
   _pointCost: 0
   _description: 20mm autocannon used for anti-craft and missile work
-  _schematicLayer: {fileID: 0}
+  _schematicLayer: {fileID: 7520881660743503479, guid: 3285b931b0983c64b83532c16f4e130e, type: 3}
   _additionalSwapWork: 0
   _componentMass: 0
   _modifiers: []
@@ -394,7 +397,7 @@ MonoBehaviour:
   OnTargetCheckAngle: 0
   OnTargetAngle: 5
   OnTargetDisplacement: 3
-  AimCheckFrom: {fileID: 0}
+  AimCheckFrom: {fileID: 7513408791634953229}
   LoadoutSlots:
   - StartIndex: 0
     Width: 1
