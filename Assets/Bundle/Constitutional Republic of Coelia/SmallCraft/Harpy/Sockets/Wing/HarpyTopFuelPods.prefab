@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5363005019507724094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5919567463260873651}
+  - component: {fileID: 1324548595231524464}
+  m_Layer: 0
+  m_Name: HarpyTopFuelPods
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5919567463260873651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5363005019507724094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5669273645143901015}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324548595231524464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5363005019507724094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -728732664, guid: e255ea05ae13f2b49a88aca2730e109e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _saveKey: ca79ca9c-a601-420f-8090-1b1b97446400
+  _componentName: Fuel Tanks
+  _lods:
+  - Renderers:
+    - {fileID: 3124515789325379843}
+    - {fileID: 3955388092969837759}
+  _componentPriority: 0
+  _pointCost: 0
+  _description: Two external fuel tanks mounted to the topside of the wings.
+  _schematicLayer: {fileID: 0}
+  _additionalSwapWork: 0
+  _componentMass: 4
+  _socket: {fileID: 0}
+  _craft: {fileID: 0}
+  _loadoutSlots:
+  - StartIndex: 4
+    Width: 2
+  _fuelCapacity: 2000
+--- !u!1001 &5271453651438937276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5919567463260873651}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2126977047704990273, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 219367733e15ed444a317cb22a97e352, type: 2}
+    - target: {fileID: -16981230407729149, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51de64abbc87299439991c3f54d9b6af, type: 2}
+    - target: {fileID: 919132149155446097, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+      propertyPath: m_Name
+      value: HarpyTopFuelTanks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+--- !u!4 &5669273645143901015 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+  m_PrefabInstance: {fileID: 5271453651438937276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3955388092969837759 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -16981230407729149, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+  m_PrefabInstance: {fileID: 5271453651438937276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3124515789325379843 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2126977047704990273, guid: a642e464ecfa4924fac6ed07526e2013, type: 3}
+  m_PrefabInstance: {fileID: 5271453651438937276}
+  m_PrefabAsset: {fileID: 0}

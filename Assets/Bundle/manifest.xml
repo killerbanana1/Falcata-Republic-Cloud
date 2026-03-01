@@ -121,7 +121,7 @@
   </MissileComponents>
 
   <Spaceframes>
-  	<!--Entry Name="AN Interceptor" Address="F1/Craft/Interceptor/AN Interceptor Frame.prefab"/-->
+  	<Entry Name="FRN Interceptor" Address="craft/FRN Interceptor Frame.prefab"/>
   </Spaceframes>
 
   <Debuffs>

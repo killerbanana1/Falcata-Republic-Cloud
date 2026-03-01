@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7906706244433505134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274294936550315801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2138861611, guid: e255ea05ae13f2b49a88aca2730e109e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ignoreAccuracyModifiers: 0
+  _baseAccuracy: 0.1
+  _flash: {fileID: 0}
+  _fireAnimation: {fileID: 0}
+  _fireSound: {fileID: 0}
+--- !u!1 &5083855396916742137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103411385465697812}
+  - component: {fileID: 4680805153481828748}
+  m_Layer: 0
+  m_Name: HarpyBottomRocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2103411385465697812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083855396916742137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5176455075512819648}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4680805153481828748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083855396916742137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 856199781, guid: e255ea05ae13f2b49a88aca2730e109e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _saveKey: b6807345-c1d2-426a-93bb-d060c2958cbb
+  _componentName: Rocket Pod
+  _lods:
+  - Renderers:
+    - {fileID: 8334713631650277816}
+  _componentPriority: 0
+  _pointCost: 0
+  _description: A Rocket Pod
+  _schematicLayer: {fileID: 0}
+  _additionalSwapWork: 0
+  _componentMass: 8
+  _socket: {fileID: 0}
+  _craft: {fileID: 0}
+  Muzzles:
+  - {fileID: 7906706244433505134}
+  - {fileID: 6761565664543320489}
+  Mode: 0
+  Category: 0
+  IterateMuzzles: 1
+  DiscreteCycleTime: 0.8
+  DiscretePIPPriorityTime: 0
+  MinimumFiringTime: 1
+  _accuracyMarks:
+  - 50
+  - 100
+  _countAsStrikeMissile: 1
+  AmmoStorageVolume: 24
+  DisallowAgainstShips: 0
+  RTBStandoffWeapon: 0
+  OptimalTargetWeight: 1
+  CheckObstaclesInWay: 1
+  CheckFriendlyShipsInWay: 1
+  TargetRangeFraction: 0.8
+  RestrictTrueMaxRange: 1
+  MinRange: 5
+  OnTargetCheckAngle: 0
+  OnTargetAngle: 2
+  OnTargetDisplacement: 6
+  AimCheckFrom: {fileID: 5176455075512819648}
+  LoadoutSlots:
+  - StartIndex: 2
+    Width: 2
+  AmmoTags:
+  - Class: Pod Rocket
+    Subclass: S1
+  AutoEnableForNewLoadout: 0
+  TimedFuzeAdjustment: 0
+  _runtime: {fileID: 0}
+--- !u!114 &6761565664543320489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085274248712660418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2138861611, guid: e255ea05ae13f2b49a88aca2730e109e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ignoreAccuracyModifiers: 0
+  _baseAccuracy: 0.1
+  _flash: {fileID: 0}
+  _fireAnimation: {fileID: 0}
+  _fireSound: {fileID: 0}
+--- !u!1001 &4637809359970695211
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2103411385465697812}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_Name
+      value: HarpyBottomRocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744205334115651987, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51de64abbc87299439991c3f54d9b6af, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+--- !u!4 &5176455075512819648 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+  m_PrefabInstance: {fileID: 4637809359970695211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8334713631650277816 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3744205334115651987, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+  m_PrefabInstance: {fileID: 4637809359970695211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1274294936550315801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5905340012670611250, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+  m_PrefabInstance: {fileID: 4637809359970695211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6085274248712660418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7768722850687394327, guid: b2a1a42f5844bff4fa45e3a99f4f6714, type: 3}
+  m_PrefabInstance: {fileID: 4637809359970695211}
+  m_PrefabAsset: {fileID: 0}
