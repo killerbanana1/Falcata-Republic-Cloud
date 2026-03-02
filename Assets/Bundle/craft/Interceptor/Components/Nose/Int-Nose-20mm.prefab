@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: -762302499, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ignoreAccuracyModifiers: 0
-  _baseAccuracy: 0.01
+  _ignoreAccuracyModifiers: 1
+  _baseAccuracy: 0.15
   _cylinderCast: 0
   _bulletRayLengthMultiplier: 1
   _fireEffect: {fileID: 7495319527656098503}
@@ -156,13 +156,34 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 13
+        m_Name: RoF
+        m_Overridden: 1
+      - m_Value: 45
+        m_Name: Velocity
+        m_Overridden: 1
+      - m_Value: 0.25
+        m_Name: TracerSize
+        m_Overridden: 1
+      - m_Value: 0.03
+        m_Name: Projectile Radius
+        m_Overridden: 1
+      - m_Value: 0.4
+        m_Name: Lifetime
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0, z: 100}
+        m_Name: Kill Sphere Pos
+        m_Overridden: 0
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 766.9961, y: 213.19888, z: 0, w: 0}
+        m_Name: Tracer Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -172,9 +193,105 @@ VisualEffect:
     m_AnimationCurve:
       m_Array: []
     m_Gradient:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 766.9961, g: 212.83138, b: 0, a: 0}
+          key1: {r: 0, g: 0, b: 0, a: 0.16129707}
+          key2: {r: 0, g: 0, b: 0, a: 1}
+          key3: {r: 0, g: 0, b: 0, a: 0.9577465}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 13493
+          ctime1: 65535
+          ctime2: 0
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 964
+          atime2: 5975
+          atime3: 50886
+          atime4: 65535
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 2
+          m_NumAlphaKeys: 5
+        m_Name: Color Gradient
+        m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 766.9961, g: 243.94125, b: 0, a: 0}
+          key1: {r: 14.754423, g: 0.84973115, b: 0, a: 1}
+          key2: {r: 10.007511, g: 0.5763488, b: 0, a: 0.9577465}
+          key3: {r: 4.5333204, g: 0.26108128, b: 0, a: 0}
+          key4: {r: 4.5333204, g: 0.26108128, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 1704
+          ctime1: 10859
+          ctime2: 27780
+          ctime3: 42427
+          ctime4: 42806
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 4420
+          atime2: 60358
+          atime3: 65535
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 4
+          m_NumAlphaKeys: 4
+        m_Name: Color Gradient Trail
+        m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 1308.1467, g: 321.7456, b: 0, a: 1}
+          key1: {r: 9.849155, g: 7.428163, b: 6.73645, a: 1}
+          key2: {r: 0, g: 0, b: 0, a: 0.67058825}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 65535
+          ctime2: 0
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 31509
+          atime2: 56696
+          atime3: 65535
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 2
+          m_NumAlphaKeys: 4
+        m_Name: Gradient
+        m_Overridden: 1
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 2800000, guid: 3c99a663c7ee6fa4e828de1862faa8a1, type: 3}
+        m_Name: TracerTexture
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!73398921 &7858548626599149019
@@ -194,7 +311,7 @@ VFXRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -228,7 +345,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3c537d6225529bc48ae8c61e1ca0aa1a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.089
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -337,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4001827772132620229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3074397754943937960}
@@ -375,7 +492,7 @@ MonoBehaviour:
   _craft: {fileID: 0}
   Muzzles:
   - {fileID: 2219740615089065979}
-  Mode: 0
+  Mode: 1
   Category: 0
   IterateMuzzles: 0
   DiscreteCycleTime: 0.25
@@ -529,18 +646,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c48f949649fd92042b127e570fbef220, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 25
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -575,7 +692,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

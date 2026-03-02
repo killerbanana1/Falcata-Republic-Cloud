@@ -529,7 +529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857012175782625723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.043}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1045309159889147968}
@@ -2575,7 +2575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435328649052}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 1
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435562971828}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 2
@@ -2899,7 +2899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435597552981}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 1
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435611251790}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 10
@@ -3223,7 +3223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435769240306}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 2
@@ -3385,7 +3385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435955792128}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 9
@@ -3547,7 +3547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044435957221497}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 8
@@ -3709,7 +3709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436100037257}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 6
@@ -3871,7 +3871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436145167774}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 8
@@ -4033,7 +4033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436283720129}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 8
   _alternateSides: 0
   _normalAttitude: 32
@@ -4195,7 +4195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436336192102}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 2
@@ -4357,7 +4357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436386110358}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 8
   _alternateSides: 0
   _normalAttitude: 16
@@ -4519,7 +4519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436421906694}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 4
@@ -4681,7 +4681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436471414465}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 5
@@ -4843,7 +4843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436592432246}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 1
@@ -5005,7 +5005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436782819052}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 4
   _alternateSides: 0
   _normalAttitude: 32
@@ -5167,7 +5167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436790244545}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 16
   _alternateSides: 0
   _normalAttitude: 1
@@ -5329,7 +5329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044436972299490}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 2
@@ -5491,7 +5491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 5455044437118742293}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 4
   _alternateSides: 0
   _normalAttitude: 16
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 1777816993271175947}
-  _alternateModeName: 
+  _alternateModeName: Alternate
   _normalSides: 32
   _alternateSides: 0
   _normalAttitude: 4
