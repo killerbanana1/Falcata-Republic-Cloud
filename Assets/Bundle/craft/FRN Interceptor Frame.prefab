@@ -243,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929277239076585738}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.043}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 3178680893786808690}
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 114582723, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _saveKey: cml-standard
+  _saveKey: fcml-standard
   _componentName: Standard CM Launcher
   _lods: []
   _componentPriority: 0
@@ -757,17 +757,18 @@ MonoBehaviour:
   _lodGroup: {fileID: -7317310617906093407}
   _baseLODInputs:
   - Renderers:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - Renderers:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - Renderers:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 3463411283180339981}
+    - {fileID: 1611363781170570000}
+    - {fileID: 7733723201393519824}
+    - {fileID: 6532229810491774267}
+    - {fileID: 237223681398589562}
+    - {fileID: 1012205143134876497}
+    - {fileID: 4424246206502430860}
+    - {fileID: 8717525291774591788}
+    - {fileID: 8323641080720596857}
+    - {fileID: 6892460720382828470}
+    - {fileID: 1716757597048220329}
+    - {fileID: 5946542200530679414}
   _landingAnchorOffset: {x: 0, y: 0.17, z: -0.017}
   _gearDownControlName: GearDown
   _gearDownTagName: GearDown
@@ -1108,7 +1109,7 @@ MonoBehaviour:
   _missileTerminatedTimeBuffer: 2
   _maxCommandMissiles: 1
   _minimumTimeBetweenShots: 2
-  _minimumTimeBetweenBombs: 3
+  _minimumTimeBetweenBombs: 1
   _checkObstaclesRadius: 1
   _missilePipPriority: 0
   _unguidedPipPriority: 10
@@ -1213,26 +1214,29 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2383338746440854305}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: -0.000050053, z: 0.0720824}
+  m_LocalReferencePoint: {x: 0, y: -0.04132583, z: 0.0720824}
   m_Size: 1.3805404
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.036319215
+  - screenRelativeHeight: 0.0065499144
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3463411283180339981}
     - renderer: {fileID: 1611363781170570000}
     - renderer: {fileID: 4458306393543526064}
     - renderer: {fileID: 1812207317731743562}
-  - screenRelativeHeight: 0.015102072
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.0020864196
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 0}
+    - renderer: {fileID: 7733723201393519824}
+    - renderer: {fileID: 6532229810491774267}
+    - renderer: {fileID: 237223681398589562}
+    - renderer: {fileID: 1012205143134876497}
+    - renderer: {fileID: 4424246206502430860}
+    - renderer: {fileID: 8717525291774591788}
+    - renderer: {fileID: 8323641080720596857}
+    - renderer: {fileID: 6892460720382828470}
+    - renderer: {fileID: 1716757597048220329}
+    - renderer: {fileID: 5946542200530679414}
   m_Enabled: 1
 --- !u!114 &-1168319248036536722
 MonoBehaviour:
@@ -1394,7 +1398,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentCraft: {fileID: 4051716913290653429}
   _socketKey: wingbottom
-  _options: []
+  _options:
+  - Component: {fileID: 1455380980930213197, guid: d868325df671afd40a2abf6f42b9891e, type: 3}
+  - Component: {fileID: 2599469248795717016, guid: 36dfad57dc45337408c19aea8650c2be, type: 3}
+  - Component: {fileID: 6525436582170965188, guid: 3814ea1854371384cb0d3c7828714cc3, type: 3}
   _baseSwapWork: 10
   _emptyPlug: {fileID: 0}
   _componentOptionInstances: []
@@ -1507,7 +1514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3271377426560818434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7031158297494164942}
@@ -1719,6 +1726,8 @@ MonoBehaviour:
   _installedComponent: {fileID: 0}
   _componentOptionPrefabs:
   - {fileID: 2917452867050076921, guid: e6681c198006a2c4197208bb02ba1838, type: 3}
+  - {fileID: 3839458963637492799, guid: 7092dc56328a884438fb1bf72f9dc306, type: 3}
+  - {fileID: 8688112002345767585, guid: 07ee359d94a8573409037d91c09a7aa0, type: 3}
 --- !u!1 &3625069007685330457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +1991,7 @@ MonoBehaviour:
   - {fileID: 698078585613892495, guid: 7d0d2df606566d0469fe81c4400feddd, type: 3}
   - {fileID: 2239660430513232764, guid: add5a1f4f49f114469e88d8931a4fbea, type: 3}
   - {fileID: 8636309383622187519, guid: 9c8e3f97566ccb94690e24a4ea8a0152, type: 3}
+  - {fileID: 166125585593422277, guid: 358a2c0d140650144944fa6a335196e2, type: 3}
 --- !u!1 &4219509974137707693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,6 +2044,8 @@ MonoBehaviour:
   _installedComponent: {fileID: 42690906426024750}
   _componentOptionPrefabs:
   - {fileID: 42690906426024750}
+  - {fileID: 3735254682652445969, guid: f4bf814cd8638fb48b0c107979e0c91d, type: 3}
+  - {fileID: 2848307589304814811, guid: 446043921094b1246b194a67727c58dc, type: 3}
 --- !u!1 &4437565163886446509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,7 +6307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9005663933314354158}
   m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.043}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8627352270752160521}
