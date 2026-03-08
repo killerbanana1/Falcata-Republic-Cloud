@@ -1109,7 +1109,7 @@ MonoBehaviour:
   _missileTerminatedTimeBuffer: 2
   _maxCommandMissiles: 1
   _minimumTimeBetweenShots: 2
-  _minimumTimeBetweenBombs: 1
+  _minimumTimeBetweenBombs: 2
   _checkObstaclesRadius: 1
   _missilePipPriority: 0
   _unguidedPipPriority: 10
