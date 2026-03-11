@@ -1717,6 +1717,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -4823535980817609249, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &812394609190711381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4451702220147893133}
+  - component: {fileID: 9179397214062743808}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4451702220147893133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812394609190711381}
+  m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -1.792}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &9179397214062743808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812394609190711381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &853767487682346109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3175,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -8822557338354332190, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &1566316619767344528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2330042918136042700}
+  - component: {fileID: 3368967705166736226}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2330042918136042700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566316619767344528}
+  m_LocalRotation: {x: -0.66446304, y: 0.2418448, z: 0.66446304, w: 0.2418448}
+  m_LocalPosition: {x: -1.48, y: 1.99, z: 1.311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: -140, y: 90, z: 0}
+--- !u!114 &3368967705166736226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566316619767344528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &1575499760338000487
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,6 +4524,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -8257260607153521789, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &2340569239098069270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623065924926030309}
+  - component: {fileID: 340743811113126928}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1623065924926030309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340569239098069270}
+  m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -2.943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &340743811113126928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340569239098069270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &2343433937391549737
 GameObject:
   m_ObjectHideFlags: 0
@@ -5547,6 +5691,23 @@ MonoBehaviour:
   - {fileID: 1017106902363129580}
   _lifeboats:
   - {fileID: 4421909619074321878}
+  - {fileID: 9179397214062743808}
+  - {fileID: 2125672424443084107}
+  - {fileID: 340743811113126928}
+  - {fileID: 2183802101866850908}
+  - {fileID: 6488041656216932662}
+  - {fileID: 3967528895276497002}
+  - {fileID: 3939535777265503916}
+  - {fileID: 7108385671517499620}
+  - {fileID: 98943635440420833}
+  - {fileID: 3501614431690538624}
+  - {fileID: 1434326920291897554}
+  - {fileID: 5056183987246600973}
+  - {fileID: 3368967705166736226}
+  - {fileID: 4061414742269592802}
+  - {fileID: 5654914829231610288}
+  - {fileID: 4326446257351255074}
+  - {fileID: 346796706614171049}
   _simpleDesignTips: []
   _parameterizedDesignTips: []
   _lifeboatPrefab: {fileID: 0}
@@ -6052,6 +6213,102 @@ MonoBehaviour:
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
   _craftApproachDir: {x: 0, y: 0, z: 1}
+--- !u!1 &3534603052428450315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5278012050481450254}
+  - component: {fileID: 3967528895276497002}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5278012050481450254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534603052428450315}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -4.979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &3967528895276497002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534603052428450315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
+--- !u!1 &3579813511883255841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597330146467884042}
+  - component: {fileID: 4061414742269592802}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &597330146467884042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579813511883255841}
+  m_LocalRotation: {x: -0.39030978, y: 0.39030978, z: 0.58962554, w: 0.58962554}
+  m_LocalPosition: {x: -0.699, y: 2.188, z: 4.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: -112.994, y: 180, z: -90}
+--- !u!114 &4061414742269592802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579813511883255841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &3608338922153523977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6138,6 +6395,54 @@ MonoBehaviour:
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
   _craftApproachDir: {x: 0, y: 0, z: 1}
+--- !u!1 &3721029063913541059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8971103862603090511}
+  - component: {fileID: 3501614431690538624}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8971103862603090511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721029063913541059}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -1.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &3501614431690538624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721029063913541059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &3827713143836982874
 GameObject:
   m_ObjectHideFlags: 0
@@ -11520,6 +11825,54 @@ MonoBehaviour:
   _useDefinedCraftReleasePoint: 0
   _craftReleasePoint: {x: 0, y: 0, z: 0}
   _craftApproachDir: {x: 0, y: 0, z: 1}
+--- !u!1 &3842004991865713091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5495925925215078555}
+  - component: {fileID: 2125672424443084107}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5495925925215078555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842004991865713091}
+  m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -2.366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &2125672424443084107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842004991865713091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &3997471837004459130
 GameObject:
   m_ObjectHideFlags: 0
@@ -11574,6 +11927,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -2746461348424908692, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &3998593988810802361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5572150276926608987}
+  - component: {fileID: 6488041656216932662}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5572150276926608987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998593988810802361}
+  m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -4.099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &6488041656216932662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998593988810802361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &4016198624532232139
 GameObject:
   m_ObjectHideFlags: 0
@@ -11812,6 +12213,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 2249742724701050303, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &4205358878668208755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779866551905893453}
+  - component: {fileID: 4326446257351255074}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779866551905893453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205358878668208755}
+  m_LocalRotation: {x: -0.5405805, y: 0.5405805, z: -0.45582098, w: -0.45582098}
+  m_LocalPosition: {x: 0.312, y: -2.193, z: 6.272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 80.276, y: 180, z: -90}
+--- !u!114 &4326446257351255074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205358878668208755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &4334530922636016495
 GameObject:
   m_ObjectHideFlags: 0
@@ -11972,7 +12421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4421909619074321880}
   m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
-  m_LocalPosition: {x: 1.611, y: -1.331, z: 6.305}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -1.218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4421909619548405711}
@@ -12023,6 +12472,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4421909619074321879}
+  - {fileID: 4451702220147893133}
+  - {fileID: 5495925925215078555}
+  - {fileID: 1623065924926030309}
+  - {fileID: 6409282496298348666}
+  - {fileID: 5572150276926608987}
+  - {fileID: 5278012050481450254}
+  - {fileID: 1868178974420057950}
+  - {fileID: 5347398747212959248}
+  - {fileID: 6807120774390667965}
+  - {fileID: 8971103862603090511}
+  - {fileID: 2881760203607966818}
+  - {fileID: 3648267108230740189}
+  - {fileID: 2330042918136042700}
+  - {fileID: 597330146467884042}
+  - {fileID: 3165415432719164827}
+  - {fileID: 1779866551905893453}
+  - {fileID: 4838395512762076967}
   m_Father: {fileID: 3013732519360535411}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12354,6 +12820,54 @@ Transform:
   m_Father: {fileID: 2557508512701447127}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &5084969306573796583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5347398747212959248}
+  - component: {fileID: 7108385671517499620}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5347398747212959248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5084969306573796583}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -3.824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &7108385671517499620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5084969306573796583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &5141261949502964396
 GameObject:
   m_ObjectHideFlags: 0
@@ -13312,6 +13826,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 8559436768072877117, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &5707200221276618828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3165415432719164827}
+  - component: {fileID: 5654914829231610288}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3165415432719164827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707200221276618828}
+  m_LocalRotation: {x: -0.39030978, y: 0.39030978, z: 0.58962554, w: 0.58962554}
+  m_LocalPosition: {x: 0.699, y: 2.188, z: 4.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: -112.994, y: 180, z: -90}
+--- !u!114 &5654914829231610288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707200221276618828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &5710275712495940037
 GameObject:
   m_ObjectHideFlags: 0
@@ -13846,6 +14408,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -4836166563523059629, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &6061325883432146358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868178974420057950}
+  - component: {fileID: 3939535777265503916}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1868178974420057950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061325883432146358}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -4.403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &3939535777265503916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061325883432146358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &6070473611056592890
 GameObject:
   m_ObjectHideFlags: 0
@@ -14328,6 +14938,54 @@ Transform:
   m_Father: {fileID: 3616849027668366033}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &6329210575741554847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4838395512762076967}
+  - component: {fileID: 346796706614171049}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4838395512762076967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329210575741554847}
+  m_LocalRotation: {x: -0.5405805, y: 0.5405805, z: -0.45582098, w: -0.45582098}
+  m_LocalPosition: {x: -0.312, y: -2.193, z: 6.272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 80.276, y: 180, z: -90}
+--- !u!114 &346796706614171049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329210575741554847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &6349987711346782583
 GameObject:
   m_ObjectHideFlags: 0
@@ -14490,6 +15148,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -1024574277948644173, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &6405010924334153450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3648267108230740189}
+  - component: {fileID: 5056183987246600973}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3648267108230740189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405010924334153450}
+  m_LocalRotation: {x: -0.24184473, y: 0.66446304, z: 0.24184473, w: 0.66446304}
+  m_LocalPosition: {x: 1.48, y: 1.99, z: 1.311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: -40, y: 90, z: 0}
+--- !u!114 &5056183987246600973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405010924334153450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &6436404509798257516
 GameObject:
   m_ObjectHideFlags: 0
@@ -14544,6 +15250,54 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -3191424583036422441, guid: 0f641dc0b050d454da6d050b1ab4ca20, type: 3}
+--- !u!1 &6458604960463177748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6807120774390667965}
+  - component: {fileID: 98943635440420833}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6807120774390667965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458604960463177748}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -2.129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &98943635440420833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458604960463177748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &6505938504944571337
 GameObject:
   m_ObjectHideFlags: 0
@@ -17490,6 +18244,102 @@ MonoBehaviour:
   m_Script: {fileID: -1654375035, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8623680752787738300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2881760203607966818}
+  - component: {fileID: 1434326920291897554}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2881760203607966818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623680752787738300}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.396, y: -0.143, z: -0.977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1434326920291897554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623680752787738300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
+--- !u!1 &8656990245794707147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6409282496298348666}
+  - component: {fileID: 2183802101866850908}
+  m_Layer: 0
+  m_Name: Lifeboat 1 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6409282496298348666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656990245794707147}
+  m_LocalRotation: {x: 0.18301243, y: 0.6830126, z: -0.18301235, w: 0.683013}
+  m_LocalPosition: {x: 2.228, y: -1.188, z: -3.522}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4421909619548405711}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &2183802101866850908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656990245794707147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -611735610, guid: ed7bf313b5d0b5446af45ecfa2e409ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visibility: {fileID: 0}
+  _ejectionVelocity: 0.25
+  _ignitionDelay: 4
+  _effect: {fileID: 0}
+  _launchSound: {fileID: 0}
 --- !u!1 &8741956888283025100
 GameObject:
   m_ObjectHideFlags: 0
