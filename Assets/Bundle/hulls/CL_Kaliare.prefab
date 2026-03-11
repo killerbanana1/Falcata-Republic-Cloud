@@ -10782,7 +10782,7 @@ MonoBehaviour:
   _simpleDesignTips: []
   _parameterizedDesignTips: []
   _lifeboatPrefab: {fileID: 0}
-  _driveFlareScaling: 0.8
+  _driveFlareScaling: 1.2
   _wakeSigStrength: 200
   _customMissileAnnouncement: {fileID: 0}
   _baseCraftRepairSlots: 0

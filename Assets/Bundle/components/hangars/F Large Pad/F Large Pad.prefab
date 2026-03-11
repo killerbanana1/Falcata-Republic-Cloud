@@ -320,7 +320,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.75, y: 2, z: 2.75}
-  m_Center: {x: 0, y: -0.25, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!2083052967 &2725993481273309812
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -601,16 +601,12 @@ LODGroup:
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
     - renderer: {fileID: 7904043168670607287}
     - renderer: {fileID: 4802460385556458871}
+    - renderer: {fileID: 2335272632168074088}
+    - renderer: {fileID: 7240522516260903045}
+    - renderer: {fileID: 9223067131651667133}
+    - renderer: {fileID: 5477088451726854477}
   m_Enabled: 1
 --- !u!95 &5360215872996021911
 Animator:
@@ -668,7 +664,7 @@ MonoBehaviour:
   _openSound: {fileID: 0}
   _closeSound: {fileID: 0}
   _launchLandingDelay: 2
-  _padGridSizeSmall: 1
+  _padGridSizeSmall: 0
   _padSize: {x: 6, y: 4, z: 6}
   _supportLaunch: 1
   _supportLanding: 1

@@ -7111,7 +7111,7 @@ MonoBehaviour:
   _simpleDesignTips: []
   _parameterizedDesignTips: []
   _lifeboatPrefab: {fileID: 0}
-  _driveFlareScaling: 0.75
+  _driveFlareScaling: 1
   _wakeSigStrength: 150
   _customMissileAnnouncement: {fileID: 0}
   _baseCraftRepairSlots: 0
@@ -8164,8 +8164,8 @@ GameObject:
   - component: {fileID: 1381153728606532401}
   - component: {fileID: 2649454748036572309}
   - component: {fileID: 671521710649797471}
-  m_Layer: 0
-  m_Name: Hangar 1
+  m_Layer: 11
+  m_Name: Small Pad 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8224,8 +8224,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.75, y: 1.5, z: 1.75}
-  m_Center: {x: 0, y: -0.25, z: 0}
+  m_Size: {x: 1.75, y: 1.25, z: 1.75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!2083052967 &4745870441277741565
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -9381,8 +9381,8 @@ GameObject:
   - component: {fileID: 4950332520839407038}
   - component: {fileID: 6639793651962420288}
   - component: {fileID: 7717996674080555613}
-  m_Layer: 0
-  m_Name: Hangar 2
+  m_Layer: 11
+  m_Name: Small Pad 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9441,8 +9441,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.75, y: 1.5, z: 1.75}
-  m_Center: {x: 0, y: -0.25, z: 0}
+  m_Size: {x: 1.75, y: 1.25, z: 1.75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!2083052967 &6193913824735460860
 VisualEffect:
   m_ObjectHideFlags: 0

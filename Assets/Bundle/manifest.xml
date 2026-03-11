@@ -10,6 +10,7 @@
 	<Entry Name="CL_Irsavatha" Address="hulls/CL_Irsavatha.prefab"/>
 	<Entry Name="CH_Moccotar" Address="hulls/CH_Moccotar.prefab"/>
 	<Entry Name="ACV_Tonryr" Address="hulls/ACV_Tonryr.prefab"/>
+	<Entry Name="BCV_Ballisque" Address="hulls/BCV_Ballisque.prefab"/>
   </Hulls>
 
   <Components>

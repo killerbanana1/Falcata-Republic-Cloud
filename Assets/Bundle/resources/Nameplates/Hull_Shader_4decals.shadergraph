@@ -2351,7 +2351,7 @@
     },
     "m_Name": "Decal4DestUV",
     "m_DefaultReferenceName": "Vector4_3043bdad6a0e47bc9cb70d2da50fe8dd",
-    "m_OverrideReferenceName": "_decal4DestUV_1",
+    "m_OverrideReferenceName": "_decal4DestUV",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
