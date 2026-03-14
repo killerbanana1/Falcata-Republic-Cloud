@@ -7243,10 +7243,10 @@ MonoBehaviour:
   _collider: {fileID: 3827713144204594843}
   _hasTraverseLimits: 1
   _traverseLimits:
-    LimitFiringOnly: 1
+    LimitFiringOnly: 0
     LeftAngle: 135
     RightAngle: 135
-    UseElevationLimit: 1
+    UseElevationLimit: 0
     ElevationAngle: 18
   _hasForwardLimits: 0
   _forwardLimits:
@@ -18714,7 +18714,7 @@ MonoBehaviour:
   _closeSound: {fileID: 0}
   _launchLandingDelay: 2
   _padGridSizeSmall: 0
-  _padSize: {x: 6, y: 4, z: 6}
+  _padSize: {x: 11, y: 6, z: 11}
   _supportLaunch: 1
   _supportLanding: 1
   _allowLandingPipelining: 1
